@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker
+    working_directory: ~/build
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build base image
+          command: |
+            TAG=bionic-20180224
+            docker build -t quay.io/cybozu/ubuntu:$TAG -f ./base/Dockerfile .
+      - run:
+          name: Build dev image
+          command: |
+            TAG=bionic-20180224
+            docker build -t quay.io/cybozu/ubuntu-dev:$TAG -f ./dev/Dockerfile .
+      - deploy:
+          name: Push Docker images to Quay.io
+          command: |
+            TAG=bionic-20180224
+            docker tag quay.io/cybozu/ubuntu:$TAG quay.io/cybozu/ubuntu:18.04
+            docker tag quay.io/cybozu/ubuntu-dev:$TAG quay.io/cybozu/ubuntu-dev:18.04
+            docker login -u $QUAY_USER -p $QUAY_PASSWORD quay.io
+            docker push quay.io/cybozu/ubuntu:$TAG
+            docker push quay.io/cybozu/ubuntu:18.04
+            docker push quay.io/cybozu/ubuntu-dev:$TAG
+            docker push quay.io/cybozu/ubuntu-dev:18.04
