@@ -8,12 +8,14 @@ RUN apt-get update \
         netbase \
         apt-utils \
         apt-transport-https \
+        ca-certificates \
         curl \
     && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
 
 RUN locale-gen en_US.UTF-8 \
-    && update-locale LNAG=en_US.UTF-8 \
-    && echo "UTC" > /etc/timezone \
+    && update-locale LANG=en_US.UTF-8 \
+    && echo "Etc/UTC" > /etc/timezone \
     && dpkg-reconfigure -f noninteractive tzdata
 
 CMD ["/bin/bash"]
