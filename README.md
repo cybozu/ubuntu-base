@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/cybozu/ubuntu-base.svg?style=svg)](https://circleci.com/gh/cybozu/ubuntu-base)
+
 # ubuntu-base
 
 Minimal container images based on Ubuntu 18.04
