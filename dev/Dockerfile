@@ -1,4 +1,4 @@
-FROM quay.io/cybozu/ubuntu:bionic-20180224
+FROM quay.io/cybozu/ubuntu:latest
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
