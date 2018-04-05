@@ -23,6 +23,14 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
+          name: Build base image
+          command: |
+            docker build -t quay.io/cybozu/ubuntu:latest -f ./base/Dockerfile .
+      - run:
+          name: Build dev image
+          command: |
+            docker build -t quay.io/cybozu/ubuntu-dev:latest -f ./dev/Dockerfile .
+      - run:
           name: Login to Quay.io
           command:  docker login -u $QUAY_USER -p $QUAY_PASSWORD quay.io
       - run:
