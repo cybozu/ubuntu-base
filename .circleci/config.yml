@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Push base Docker image to Quay.io
           command: |
-            TAG=`git describe --abbrev=0`
+            TAG=`git describe --abbrev=0 --tags`
             docker tag quay.io/cybozu/ubuntu:latest quay.io/cybozu/ubuntu:$TAG
             docker tag quay.io/cybozu/ubuntu:$TAG quay.io/cybozu/ubuntu:18.04
             docker push quay.io/cybozu/ubuntu:$TAG
@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Push dev Docker image to Quay.io
           command: |
-            TAG=`git describe --abbrev=0`
+            TAG=`git describe --abbrev=0 --tags`
             docker tag quay.io/cybozu/ubuntu-dev:$TAG quay.io/cybozu/ubuntu-dev:18.04
             docker tag quay.io/cybozu/ubuntu-dev:latest quay.io/cybozu/ubuntu-dev:$TAG
             docker push quay.io/cybozu/ubuntu-dev:$TAG
