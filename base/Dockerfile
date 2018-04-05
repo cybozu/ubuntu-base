@@ -4,7 +4,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         locales \
         tzdata \
-        procps \
+        openssl \
         netbase \
         apt-utils \
         apt-transport-https \
