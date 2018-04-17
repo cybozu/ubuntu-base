@@ -15,6 +15,10 @@ jobs:
           name: Build dev image
           command: |
             docker build -t quay.io/cybozu/ubuntu-dev:latest -f ./dev/Dockerfile .
+      - run:
+          name: Build debug image
+          command: |
+            docker build -t quay.io/cybozu/ubuntu-debug:latest -f ./debug/Dockerfile .
   push:
     docker:
       - image: docker:stable-git
@@ -30,6 +34,10 @@ jobs:
           name: Build dev image
           command: |
             docker build -t quay.io/cybozu/ubuntu-dev:latest -f ./dev/Dockerfile .
+      - run:
+          name: Build debug image
+          command: |
+            docker build -t quay.io/cybozu/ubuntu-debug:latest -f ./debug/Dockerfile .
       - run:
           name: Login to Quay.io
           command:  docker login -u $QUAY_USER -p $QUAY_PASSWORD quay.io
@@ -49,6 +57,14 @@ jobs:
             docker tag quay.io/cybozu/ubuntu-dev:$TAG quay.io/cybozu/ubuntu-dev:18.04
             docker push quay.io/cybozu/ubuntu-dev:$TAG
             docker push quay.io/cybozu/ubuntu-dev:18.04
+      - run:
+          name: Push debug Docker image to Quay.io
+          command: |
+            TAG=`git describe --abbrev=0 --tags`
+            docker tag quay.io/cybozu/ubuntu-debug:latest quay.io/cybozu/ubuntu-debug:$TAG
+            docker tag quay.io/cybozu/ubuntu-debug:$TAG quay.io/cybozu/ubuntu-debug:18.04
+            docker push quay.io/cybozu/ubuntu-debug:$TAG
+            docker push quay.io/cybozu/ubuntu-debug:18.04
 
 workflows:
   version: 2
