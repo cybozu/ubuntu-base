@@ -8,6 +8,7 @@ RUN apt-get update \
         netbase \
         apt-utils \
         apt-transport-https \
+        libreadline7 \
         ca-certificates \
         curl \
     && rm -rf /var/lib/apt/lists/* \
