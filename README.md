@@ -10,5 +10,5 @@ https://quay.io/repository/cybozu/ubuntu
 ## ubuntu-dev
 https://quay.io/repository/cybozu/ubuntu-dev
 
-## ubuntu-dev
+## ubuntu-debug
 https://quay.io/repository/cybozu/ubuntu-debug
