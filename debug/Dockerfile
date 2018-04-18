@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         dnsutils \
         net-tools \
         iproute2 \
-    && rm -rf /var/lib/apt/lists/* \
-    && apt-get clean
+        jq \
+    && rm -rf /var/lib/apt/lists/*
 
 CMD ["/bin/bash"]
