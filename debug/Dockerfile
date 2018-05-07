@@ -1,4 +1,4 @@
-FROM quay.io/cybozu/ubuntu:18.04
+FROM quay.io/cybozu/ubuntu:latest
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         traceroute \
