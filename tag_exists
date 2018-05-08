@@ -7,7 +7,7 @@ fi
 
 API=https://quay.io/api/v1/repository/cybozu
 NAME="$1"
-TAG=$(cat "$NAME"/TAG)
+TAG=$(cat TAG)
 
 for t in $(curl -s -H 'Accept-Encoding: application/json' $API/"$NAME" | jq -r '.tags[]|.name'); do
     if [ "$t" = "$TAG" ]; then

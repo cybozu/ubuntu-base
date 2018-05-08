@@ -12,13 +12,12 @@ jobs:
           command: |
             apk add --no-cache curl jq
       - run:
-          name: Check TAG files
+          name: Extract build targets
           command: |
-            for tag in */TAG; do
-                d=$(dirname $tag)
-                c="$(./tag_exists $d)"
+            for image in ubuntu ubuntu-dev ubuntu-debug; do
+                c="$(./tag_exists $image)"
                 if [ "$c" = ng ]; then
-                    echo $d >> BUILDS
+                    echo $image >> BUILDS
                 fi
             done
       - run:
@@ -46,11 +45,11 @@ jobs:
             for d in $(cat BUILDS); do
                 echo
                 echo "pushing $d ..."
-                TAG=$(cat $d/TAG)
+                TAG=$(cat TAG)
                 docker tag quay.io/cybozu/${d}:latest quay.io/cybozu/${d}:$TAG
                 docker push quay.io/cybozu/${d}:$TAG
-                if [ -f $d/BRANCH ]; then
-                    BRANCH=$(cat $d/BRANCH)
+                if [ -f BRANCH ]; then
+                    BRANCH=$(cat BRANCH)
                     docker tag quay.io/cybozu/${d}:$TAG quay.io/cybozu/${d}:$BRANCH
                     docker push quay.io/cybozu/${d}:$BRANCH
                 fi
