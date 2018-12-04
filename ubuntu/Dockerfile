@@ -1,4 +1,4 @@
-FROM quay.io/cybozu/ubuntu-minimal:bionic-20180821
+FROM quay.io/cybozu/ubuntu-minimal:bionic-20181112
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
