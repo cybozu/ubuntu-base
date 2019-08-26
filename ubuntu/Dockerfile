@@ -1,4 +1,6 @@
-FROM quay.io/cybozu/ubuntu-minimal:bionic-20190515
+FROM k8s.gcr.io/pause:3.1
+
+FROM quay.io/cybozu/ubuntu-minimal:bionic-20190807
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -17,5 +19,7 @@ RUN locale-gen en_US.UTF-8 \
     && update-locale LANG=en_US.UTF-8 \
     && echo "Etc/UTC" > /etc/timezone \
     && dpkg-reconfigure -f noninteractive tzdata
+
+COPY --from=0 /pause /usr/local/bin/pause
 
 CMD ["/bin/bash"]
