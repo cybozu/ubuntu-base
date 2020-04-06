@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 
-ARG HUB_VERSION=2.12.4
+ARG HUB_VERSION=2.14.2
 RUN curl -fsL -o /tmp/hub.tgz https://github.com/github/hub/releases/download/v${HUB_VERSION}/hub-linux-amd64-${HUB_VERSION}.tgz \
     && tar -C /tmp -xzf /tmp/hub.tgz \
     && /tmp/hub-linux-amd64-${HUB_VERSION}/install \
