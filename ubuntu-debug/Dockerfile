@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         gdb \
         vim \
         openssh-client \
+        s3cmd \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["/bin/bash"]
