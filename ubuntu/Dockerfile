@@ -1,6 +1,6 @@
 FROM k8s.gcr.io/pause:3.2
 
-FROM quay.io/cybozu/ubuntu-minimal:bionic-20200903
+FROM quay.io/cybozu/ubuntu-minimal:bionic-20200921
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
