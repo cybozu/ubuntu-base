@@ -2,7 +2,7 @@
 
 # ubuntu-base
 
-Minimal container images based on Ubuntu 18.04
+Basic Ubuntu container images for Cybozu products
 
 ## ubuntu
 https://quay.io/repository/cybozu/ubuntu
