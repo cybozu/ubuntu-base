@@ -1,6 +1,9 @@
-version: 2
+version: 2.1
 jobs:
   build:
+    parameters:
+      version:
+        type: string
     working_directory: /app
     docker:
       - image: docker:stable
@@ -13,15 +16,17 @@ jobs:
             apk add --no-cache curl jq
       - run:
           name: Extract build targets
+          working_directory: <<parameters.version>>
           command: |
             for image in ubuntu ubuntu-dev ubuntu-debug; do
-                c="$(./tag_exists $image)"
+                c="$(../tag_exists $image)"
                 if [ "$c" = ng ]; then
                     echo $image >> BUILDS
                 fi
             done
       - run:
           name: Build images
+          working_directory: <<parameters.version>>
           command: |
             if [ ! -f BUILDS ]; then
                 echo "nothing to build."
@@ -34,6 +39,7 @@ jobs:
             done
       - deploy:
           name: Push Docker image to Quay.io
+          working_directory: <<parameters.version>>
           command: |
             if [ "${CIRCLE_BRANCH}" != "master" ]; then
                 exit 0
@@ -59,4 +65,9 @@ workflows:
   version: 2
   main:
     jobs:
-      - build
+      - build:
+          name: Build 18.04 images
+          version: "18.04"
+      - build:
+          name: Build 20.04 images
+          version: "20.04"
