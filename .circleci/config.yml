@@ -8,12 +8,12 @@ jobs:
     docker:
       - image: docker:stable
     steps:
-      - checkout
-      - setup_remote_docker
       - run:
           name: Install tools
           command: |
-            apk add --no-cache curl jq
+            apk add --no-cache curl jq git
+      - checkout
+      - setup_remote_docker
       - run:
           name: Extract build targets
           working_directory: <<parameters.version>>
