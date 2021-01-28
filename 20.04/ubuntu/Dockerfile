@@ -1,6 +1,6 @@
 FROM k8s.gcr.io/pause:3.2
 
-FROM quay.io/cybozu/ubuntu-minimal:focal-20200925
+FROM quay.io/cybozu/ubuntu-minimal:focal-20210119
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
