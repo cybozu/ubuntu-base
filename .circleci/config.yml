@@ -41,7 +41,7 @@ jobs:
           name: Push Docker image to Quay.io
           working_directory: <<parameters.version>>
           command: |
-            if [ "${CIRCLE_BRANCH}" != "master" ]; then
+            if [ "${CIRCLE_BRANCH}" != "main" ]; then
                 exit 0
             fi
             if [ ! -f BUILDS ]; then
