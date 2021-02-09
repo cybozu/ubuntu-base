@@ -16,4 +16,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         s3cmd \
     && rm -rf /var/lib/apt/lists/*
 
+RUN setcap -r /usr/bin/ping
+
 CMD ["/bin/bash"]
