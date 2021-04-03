@@ -13,6 +13,7 @@ RUN apt-get update \
         libreadline7 \
         ca-certificates \
         curl \
+    && apt-get -y upgrade \
     && rm -rf /var/lib/apt/lists/*
 
 RUN locale-gen en_US.UTF-8 \
