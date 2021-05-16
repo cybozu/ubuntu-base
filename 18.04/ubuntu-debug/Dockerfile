@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         vim \
         openssh-client \
         s3cmd \
+        mysql-client \
         less \
     && rm -rf /var/lib/apt/lists/*
 
