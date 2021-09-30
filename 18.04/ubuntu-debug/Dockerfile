@@ -16,6 +16,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         s3cmd \
         mysql-client \
         less \
+        lv \
+        sysstat \
+        file \
+        binutils \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["/bin/bash"]
