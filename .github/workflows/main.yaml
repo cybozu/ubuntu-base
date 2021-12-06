@@ -16,24 +16,54 @@ jobs:
         working-directory: ${{ matrix.ubuntu-version }}
     steps:
       - uses: actions/checkout@v2
-      - name: Extract build targets
+      - name: Extract targets
         run: |
+          TAG_MINIMAL=$(cat TAG_MINIMAL)
+          c="$(../tag_exists ubuntu-minimal $TAG_MINIMAL)"
+          if [ "$c" = ng ]; then
+              echo "copy ubuntu-minimal:$TAG_MINIMAL"
+              echo yes! > COPY_MINIMAL
+          fi
+          TAG=$(cat TAG)
           for image in ubuntu ubuntu-dev ubuntu-debug; do
-              c="$(../tag_exists $image)"
+              c="$(../tag_exists $image $TAG)"
               if [ "$c" = ng ]; then
+                  echo "build $image:$TAG"
                   echo $image >> BUILDS
               fi
           done
+      - name: Pull minimal image
+        run: |
+          if [ ! -f COPY_MINIMAL ]; then
+              echo "nothing to pull."
+              exit 0
+          fi
+          TAG_MINIMAL=$(cat TAG_MINIMAL)
+          echo
+          echo "pulling ubuntu-minimal ..."
+          docker pull ubuntu:$TAG_MINIMAL
+          docker tag ubuntu:$TAG_MINIMAL quay.io/cybozu/ubuntu-minimal:$TAG_MINIMAL
+      - name: Push minimal image
+        if: github.event_name != 'pull_request'
+        run: |
+          if [ ! -f COPY_MINIMAL ]; then
+              exit 0
+          fi
+          echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
+          TAG_MINIMAL=$(cat TAG_MINIMAL)
+          echo "pushing ubuntu-minimal ..."
+          docker push quay.io/cybozu/ubuntu-minimal:$TAG_MINIMAL
       - name: Build images
         run: |
           if [ ! -f BUILDS ]; then
               echo "nothing to build."
               exit 0
           fi
+          TAG_MINIMAL=$(cat TAG_MINIMAL)
           for d in $(cat BUILDS); do
               echo
               echo "building $d ..."
-              docker build -t quay.io/cybozu/${d}:latest ${d}
+              docker build -t quay.io/cybozu/${d}:latest --build-arg TAG_MINIMAL=$TAG_MINIMAL ${d}
           done
       - name: Push docker images
         if: github.event_name != 'pull_request'
