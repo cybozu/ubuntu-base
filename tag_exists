@@ -1,19 +1,19 @@
 #!/bin/sh -e
 
-if [ $# -ne 1 ]; then
-    echo "Usage: tag_exists NAME"
+if [ $# -ne 2 ]; then
+    echo "Usage: tag_exists NAME TAG"
     exit 1
 fi
 
-API=https://quay.io/api/v1/repository/cybozu
 NAME="$1"
-TAG=$(cat TAG)
+TAG="$2"
 
-for t in $(curl -s -H 'Accept-Encoding: application/json' $API/"$NAME" | jq -r '.tags[]|.name'); do
-    if [ "$t" = "$TAG" ]; then
-        echo "ok"
-        exit 0
-    fi
-done
+API=https://quay.io/api/v1
+STATUS=$(curl -s "$API/repository/cybozu/$NAME/tag/$TAG/images" -o /dev/null -w '%{http_code}\n')
+
+if [ "$STATUS" = "200" ]; then
+    echo "ok"
+    exit 0
+fi
 
 echo "ng"

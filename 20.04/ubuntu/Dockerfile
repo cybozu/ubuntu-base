@@ -1,6 +1,8 @@
+ARG TAG_MINIMAL
+
 FROM k8s.gcr.io/pause:3.2
 
-FROM quay.io/cybozu/ubuntu-minimal:focal-20210921
+FROM quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
