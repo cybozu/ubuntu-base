@@ -21,8 +21,8 @@ jobs:
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           c="$(../tag_exists ubuntu-minimal $TAG_MINIMAL)"
           if [ "$c" = ng ]; then
-              echo "copy ubuntu-minimal:$TAG_MINIMAL"
-              echo yes! > COPY_MINIMAL
+              echo "update ubuntu-minimal:$TAG_MINIMAL"
+              echo "yes!" > NEED_UPDATE_MINIMAL
           fi
           TAG=$(cat TAG)
           for image in ubuntu ubuntu-dev ubuntu-debug; do
@@ -34,7 +34,7 @@ jobs:
           done
       - name: Pull minimal image
         run: |
-          if [ ! -f COPY_MINIMAL ]; then
+          if [ ! -f NEED_UPDATE_MINIMAL ]; then
               echo "nothing to pull."
               exit 0
           fi
@@ -46,7 +46,7 @@ jobs:
       - name: Push minimal image
         if: github.event_name != 'pull_request'
         run: |
-          if [ ! -f COPY_MINIMAL ]; then
+          if [ ! -f NEED_UPDATE_MINIMAL ]; then
               exit 0
           fi
           echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
