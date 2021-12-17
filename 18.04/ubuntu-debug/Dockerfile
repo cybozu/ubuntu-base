@@ -1,25 +1,26 @@
 FROM quay.io/cybozu/ubuntu:latest
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-        traceroute \
-        telnet \
-        tcpdump \
+        awscli \
+        binutils \
         dnsutils \
-        net-tools \
-        iproute2 \
-        jq \
-        iputils-ping \
-        strace \
+        file \
         gdb \
-        vim \
-        openssh-client \
-        s3cmd \
-        mysql-client \
+        iproute2 \
+        iputils-ping \
+        jq \
         less \
         lv \
+        mysql-client \
+        net-tools \
+        openssh-client \
+        s3cmd \
+        strace \
         sysstat \
-        file \
-        binutils \
+        tcpdump \
+        telnet \
+        traceroute \
+        vim \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["/bin/bash"]
