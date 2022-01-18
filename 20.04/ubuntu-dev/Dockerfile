@@ -16,7 +16,7 @@ RUN curl -fsL -o /tmp/hub.tgz https://github.com/github/hub/releases/download/v$
     && /tmp/hub-linux-amd64-${HUB_VERSION}/install \
     && mkdir -p /usr/share/doc/hub \
     && cp /tmp/hub-linux-amd64-${HUB_VERSION}/LICENSE /usr/share/doc/hub/LICENSE \
-    && rm -rf /tmp/hub-linux-amd64-${HUB_VERSION} \
+    && rm -rf /tmp/hub-linux-amd64-${HUB_VERSION} /tmp/hub.tgz \
     && curl -o /tmp/gh.deb -fsL https://github.com/cli/cli/releases/download/v${GH_VERSION}/gh_${GH_VERSION}_linux_amd64.deb \
     && dpkg -i /tmp/gh.deb \
     && rm /tmp/gh.deb
