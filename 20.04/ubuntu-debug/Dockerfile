@@ -1,3 +1,12 @@
+FROM quay.io/cybozu/golang:1.17-focal AS builder
+
+WORKDIR /go/src/github.com/fullstorydev/grpcurl
+ARG GRPCURL_VERSION=1.8.6
+RUN curl -fsSL -o grpcurl.tar.gz "https://github.com/fullstorydev/grpcurl/archive/v${GRPCURL_VERSION}.tar.gz" \
+    && tar -x -z --strip-components 1 -f grpcurl.tar.gz \
+    && rm -f grpcurl.tar.gz \
+    && CGO_ENABLED=0 go install -ldflags "-X \"main.version=${GRPCURL_VERSION}\"" ./cmd/grpcurl
+
 FROM quay.io/cybozu/ubuntu:latest
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -24,5 +33,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN setcap -r /usr/bin/ping
+
+COPY --from=builder /go/bin/grpcurl /usr/local/bin
+COPY --from=builder /go/src/github.com/fullstorydev/grpcurl/LICENSE /usr/local/grpcurl/LICENSE
 
 CMD ["/bin/bash"]
