@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         awscli \
         bind9-dnsutils \
         binutils \
+        expect \
         file \
         gdb \
         iproute2 \
