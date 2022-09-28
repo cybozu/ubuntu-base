@@ -1,11 +1,11 @@
-FROM quay.io/cybozu/golang:1.18-focal AS builder
+FROM --platform=$BUILDPLATFORM quay.io/cybozu/golang:1.18-focal AS builder
 
 WORKDIR /go/src/github.com/fullstorydev/grpcurl
 ARG GRPCURL_VERSION=1.8.7
 RUN curl -fsSL -o grpcurl.tar.gz "https://github.com/fullstorydev/grpcurl/archive/v${GRPCURL_VERSION}.tar.gz" \
     && tar -x -z --strip-components 1 -f grpcurl.tar.gz \
     && rm -f grpcurl.tar.gz \
-    && CGO_ENABLED=0 go install -ldflags "-X \"main.version=${GRPCURL_VERSION}\"" ./cmd/grpcurl
+    && GOARCH=${TARGETARCH} CGO_ENABLED=0 go build -ldflags "-X \"main.version=${GRPCURL_VERSION}\"" -o /go/bin/grpcurl ./cmd/grpcurl
 
 FROM quay.io/cybozu/ubuntu:latest
 
