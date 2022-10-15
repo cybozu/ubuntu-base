@@ -1,4 +1,5 @@
-FROM quay.io/cybozu/ubuntu:latest
+ARG TAG
+FROM quay.io/cybozu/ubuntu:${TAG}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \

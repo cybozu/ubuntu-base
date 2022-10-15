@@ -8,7 +8,8 @@ RUN curl -fsSL -o grpcurl.tar.gz "https://github.com/fullstorydev/grpcurl/archiv
     && rm -f grpcurl.tar.gz \
     && GOARCH=${TARGETARCH} CGO_ENABLED=0 go build -ldflags "-X \"main.version=${GRPCURL_VERSION}\"" -o /go/bin/grpcurl ./cmd/grpcurl
 
-FROM quay.io/cybozu/ubuntu:latest
+ARG TAG
+FROM quay.io/cybozu/ubuntu:${TAG}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         awscli \
