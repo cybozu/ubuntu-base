@@ -16,14 +16,32 @@ jobs:
         working-directory: ${{ matrix.ubuntu-version }}
     steps:
       - uses: actions/checkout@v2
-      - name: Extract targets
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+        with:
+          platforms: linux/amd64,linux/arm64/v8
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Login to container registry
+        if: github.event_name != 'pull_request'
+        run: echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
+      - name: Build and push ubuntu-minimal image if needed
+        if: github.event_name != 'pull_request'
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           c="$(../tag_exists ubuntu-minimal $TAG_MINIMAL)"
           if [ "$c" = ng ]; then
-              echo "update ubuntu-minimal:$TAG_MINIMAL"
-              echo "yes!" > NEED_UPDATE_MINIMAL
+              echo
+              echo "building ubuntu-minimal ..."
+              docker buildx build \
+                --platform linux/amd64,linux/arm64/v8 \
+                --push \
+                -t quay.io/cybozu/ubuntu-minimal:$TAG_MINIMAL \
+                --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+                ubuntu-minimal
           fi
+      - name: Extract targets
+        run: |
           TAG=$(cat TAG)
           for image in ubuntu ubuntu-dev ubuntu-debug; do
               c="$(../tag_exists $image $TAG)"
@@ -32,52 +50,25 @@ jobs:
                   echo $image >> BUILDS
               fi
           done
-      - name: Pull minimal image
-        run: |
-          if [ ! -f NEED_UPDATE_MINIMAL ]; then
-              echo "nothing to pull."
-              exit 0
-          fi
-          TAG_MINIMAL=$(cat TAG_MINIMAL)
-          echo
-          echo "pulling ubuntu-minimal ..."
-          docker pull ubuntu:$TAG_MINIMAL
-          docker tag ubuntu:$TAG_MINIMAL quay.io/cybozu/ubuntu-minimal:$TAG_MINIMAL
-      - name: Push minimal image
+      - name: Build and push images
         if: github.event_name != 'pull_request'
-        run: |
-          if [ ! -f NEED_UPDATE_MINIMAL ]; then
-              exit 0
-          fi
-          echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
-          TAG_MINIMAL=$(cat TAG_MINIMAL)
-          echo "pushing ubuntu-minimal ..."
-          docker push quay.io/cybozu/ubuntu-minimal:$TAG_MINIMAL
-      - name: Build images
         run: |
           if [ ! -f BUILDS ]; then
               echo "nothing to build."
               exit 0
           fi
           TAG_MINIMAL=$(cat TAG_MINIMAL)
-          for d in $(cat BUILDS); do
-              echo
-              echo "building $d ..."
-              docker build -t quay.io/cybozu/${d}:latest --build-arg TAG_MINIMAL=$TAG_MINIMAL ${d}
-          done
-      - name: Push docker images
-        if: github.event_name != 'pull_request'
-        run: |
-          if [ ! -f BUILDS ]; then
-              exit 0
-          fi
-          echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
           TAG=$(cat TAG)
           BRANCH=$(cat BRANCH)
           for d in $(cat BUILDS); do
-              echo "pushing ${d} ..."
-              docker tag quay.io/cybozu/${d}:latest quay.io/cybozu/${d}:$TAG
-              docker push quay.io/cybozu/${d}:$TAG
-              docker tag quay.io/cybozu/${d}:latest quay.io/cybozu/${d}:$BRANCH
-              docker push quay.io/cybozu/${d}:$BRANCH
+              echo
+              echo "building $d ..."
+              docker buildx build \
+                --platform linux/amd64,linux/arm64/v8 \
+                --push \
+                -t quay.io/cybozu/${d}:$TAG \
+                -t quay.io/cybozu/${d}:$BRANCH \
+                --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+                --build-arg TAG=$TAG \
+                ${d}
           done

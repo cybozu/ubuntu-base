@@ -1,0 +1,3 @@
+ARG TAG_MINIMAL
+
+FROM ubuntu:${TAG_MINIMAL}
