@@ -26,6 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         net-tools \
         openssh-client \
         s3cmd \
+        sqlite3 \
         strace \
         sysstat \
         tcpdump \
