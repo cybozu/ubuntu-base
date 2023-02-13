@@ -24,6 +24,8 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
+        with:
+          version: v0.9.1
       - name: Login to container registry
         if: github.event_name != 'pull_request'
         run: echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
