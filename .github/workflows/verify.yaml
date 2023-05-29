@@ -1,0 +1,117 @@
+name: verify
+on:
+  schedule:
+    - cron: '0 0 * * 1-5' # At 00:00 on every day-of-week from Monday through Friday (UTC) (crontab.guru)
+
+jobs:
+  build:
+    name: Verify images by Trivy
+    permissions:
+      contents: write
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Generate ID
+        id: genid
+        run: echo "id=$(date +'%Y%m%d')-${{ github.run_id }}-${{ github.run_number }}-${{ github.run_attempt }}" >> $GITHUB_OUTPUT
+
+      - uses: actions/checkout@v3
+        with:
+          ref: trivy
+
+      - name: Fetch main branch
+        run: git fetch origin main --depth 1
+
+      - name: Mkdir
+        run: mkdir -p trivy-result page trivy-result/${{ steps.genid.outputs.id }}
+
+      - name: Get tag for Ubuntu 18.04 LTS
+        run: echo "tag=$(git show origin/main:18.04/TAG)" >> $GITHUB_OUTPUT
+        id: get-1804-tag
+
+      - name: Run Trivy (quay.io/cybozu/ubuntu:${{ env.tag }})
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: quay.io/cybozu/ubuntu:${{ env.tag }}
+          format: json
+          output: trivy-result/${{ steps.genid.outputs.id }}/${{ env.tag }}.json
+        env:
+          tag: ${{ steps.get-1804-tag.outputs.tag }}
+
+      - name: Get tag for Ubuntu 20.04 LTS
+        run: echo "tag=$(git show origin/main:20.04/TAG)" >> $GITHUB_OUTPUT
+        id: get-2004-tag
+
+      - name: Run Trivy (quay.io/cybozu/ubuntu:${{ env.tag }})
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: quay.io/cybozu/ubuntu:${{ env.tag }}
+          format: json
+          output: trivy-result/${{ steps.genid.outputs.id }}/${{ env.tag }}.json
+        env:
+          tag: ${{ steps.get-2004-tag.outputs.tag }}
+
+      - name: Get tag for Ubuntu 22.04 LTS
+        run: echo "tag=$(git show origin/main:22.04/TAG)" >> $GITHUB_OUTPUT
+        id: get-2204-tag
+
+      - name: Run Trivy (quay.io/cybozu/ubuntu:${{ env.tag }})
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: quay.io/cybozu/ubuntu:${{ env.tag }}
+          format: json
+          output: trivy-result/${{ steps.genid.outputs.id }}/${{ env.tag }}.json
+        env:
+          tag: ${{ steps.get-2204-tag.outputs.tag }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+
+      - name: Build daily-usn
+        run: cd daily-usn && go build -v ./...
+
+      - name: Generate HTML
+        run: |
+          new_result=trivy-result/$(ls -r trivy-result | sed -n '1 p')
+          old_result=trivy-result/$(ls -r trivy-result | sed -n '2 p')
+          daily-usn/daily-usn ${{ steps.genid.outputs.id }} $old_result $new_result | tee page/${{ steps.genid.outputs.id }}.html
+
+      - name: Generate index.html
+        run: echo "<a href=\"$HTML_FILE_NAME\">$HTML_FILE_NAME</a><br />" >> page/index.html
+        env:
+          HTML_FILE_NAME: "${{ steps.genid.outputs.id }}.html"
+
+      - name: Upload generated HTML as an artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: page
+
+      - name: Push results
+        run: |
+          git remote set-url origin https://github-actions:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "[bot] Daily update (${{ steps.genid.outputs.id }})"
+          git push origin trivy
+
+  deploy:
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
