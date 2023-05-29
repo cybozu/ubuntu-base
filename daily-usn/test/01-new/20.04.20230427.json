@@ -1,0 +1,162 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "quay.io/cybozu/ubuntu:20.04.20230427",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "20.04"
+    },
+    "ImageID": "sha256:666de18f7f6ebcd92a64be43ebad1b7d2f71cc406961a58bd673735275bde581",
+    "DiffIDs": [
+      "sha256:6f37ca73c74f2cef0ddefd960260f2033c16c84583c5507a4f37b1cf7631dc20",
+      "sha256:454b0c31b34e72708ab0857abcb2fecdcf4f15653ae97ba6e649415f93827d93",
+      "sha256:c4cd44bdc801ee454c5074fb6cdee59fa51408991d3defd6833742278c00ba44",
+      "sha256:b909a18fec0ac7a5682528af6e87e6f661417e2417fc88066823b7ffa6e57ed3"
+    ],
+    "RepoTags": [
+      "quay.io/cybozu/ubuntu:20.04.20230427"
+    ],
+    "RepoDigests": [
+      "quay.io/cybozu/ubuntu@sha256:2ad7ff198e8a00acd68485356baaaf30020d0541a079a01fa2c6badc59bcf2db"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-04-27T02:41:15.121639933Z",
+      "history": [
+        {
+          "created": "2023-04-13T13:05:13.496726073Z",
+          "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-13T13:05:13.557712287Z",
+          "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-13T13:05:13.637326115Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-13T13:05:13.704319522Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=20.04",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-13T13:05:15.451478418Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:d05d1c0936b046937bd5755876db2f8da3ed8ccbcf464bb56c312fbc7ed78589 in / "
+        },
+        {
+          "created": "2023-04-13T13:05:15.714908196Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-27T02:41:13.144354999Z",
+          "created_by": "RUN /bin/sh -c apt-get update     && apt-get install -y --no-install-recommends         locales         tzdata         openssl         netbase         apt-utils         apt-transport-https         libreadline8         ca-certificates         curl     && apt-get -y upgrade     && rm -rf /var/lib/apt/lists/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-04-27T02:41:15.097889472Z",
+          "created_by": "RUN /bin/sh -c locale-gen en_US.UTF-8     && update-locale LANG=en_US.UTF-8     && echo \"Etc/UTC\" > /etc/timezone     && dpkg-reconfigure -f noninteractive tzdata # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-04-27T02:41:15.121639933Z",
+          "created_by": "COPY /pause /usr/local/bin/pause # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-04-27T02:41:15.121639933Z",
+          "created_by": "CMD [\"/bin/bash\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:6f37ca73c74f2cef0ddefd960260f2033c16c84583c5507a4f37b1cf7631dc20",
+          "sha256:454b0c31b34e72708ab0857abcb2fecdcf4f15653ae97ba6e649415f93827d93",
+          "sha256:c4cd44bdc801ee454c5074fb6cdee59fa51408991d3defd6833742278c00ba44",
+          "sha256:b909a18fec0ac7a5682528af6e87e6f661417e2417fc88066823b7ffa6e57ed3"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/bash"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Labels": {
+          "org.opencontainers.image.ref.name": "ubuntu",
+          "org.opencontainers.image.version": "20.04"
+        },
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "quay.io/cybozu/ubuntu:20.04.20230427 (ubuntu 20.04)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2016-2781",
+          "PkgID": "coreutils@8.30-3ubuntu2",
+          "PkgName": "coreutils",
+          "InstalledVersion": "8.30-3ubuntu2",
+          "Layer": {
+            "Digest": "sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e",
+            "DiffID": "sha256:6f37ca73c74f2cef0ddefd960260f2033c16c84583c5507a4f37b1cf7631dc20"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
+          "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 2.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 6.2,
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/oss-sec/2016/q1/452",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "https://access.redhat.com/security/cve/CVE-2016-2781",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2781",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+            "https://lore.kernel.org/patchwork/patch/793178/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+            "https://www.cve.org/CVERecord?id=CVE-2016-2781"
+          ],
+          "PublishedDate": "2017-02-07T15:59:00Z",
+          "LastModifiedDate": "2021-02-25T17:15:00Z"
+        }
+      ]
+    }
+  ]
+}
