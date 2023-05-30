@@ -6,7 +6,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"net/url"
@@ -348,7 +347,7 @@ func generateReportEntries(trivyResultOldDir string, trivyResultDir string) ([]R
 			oldVuls = oldResults.Results[0].Vulnerabilities
 		}
 		diffTrivyVuls := diffTrivyVulnerabilities(oldVuls, newResults.Results[0].Vulnerabilities)
-		rawTrivyJSON, err := ioutil.ReadFile(newFilePath)
+		rawTrivyJSON, err := os.ReadFile(newFilePath)
 		if err != nil {
 			return nil, err
 		}
