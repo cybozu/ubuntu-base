@@ -6,7 +6,7 @@ on:
 jobs:
   scan:
     name: Scan an Docker image by Trivy
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         version: [18.04, 20.04, 22.04]
@@ -16,9 +16,9 @@ jobs:
         run: echo "tag=$(git show origin/main:${{ matrix.version }}/TAG)" >> $GITHUB_OUTPUT
         id: get-tag
       - name: Run Trivy (quay.io/cybozu/ubuntu:${{ env.tag }})
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.10.0
         with:
-          image-ref: quay.io/cybozu/ubuntu:${{ env.tag }}
+          image-ref: ghcr.io/cybozu/ubuntu:${{ env.tag }}
           format: json
           output: ${{ env.tag }}.json
         env:
@@ -88,8 +88,8 @@ jobs:
       - name: Push results
         run: |
           git remote set-url origin https://github-actions:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "neco@cybozu.com"
+          git config --local user.name "cybozu-neco"
           git add .
           git commit -m "[bot] Daily update (${{ steps.genid.outputs.id }})"
           git push origin trivy
@@ -108,7 +108,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     # Specify runner + deployment step
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
