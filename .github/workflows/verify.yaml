@@ -15,7 +15,7 @@ jobs:
       - name: Get tag
         run: echo "tag=$(git show origin/main:${{ matrix.version }}/TAG)" >> $GITHUB_OUTPUT
         id: get-tag
-      - name: Run Trivy (quay.io/cybozu/ubuntu:${{ env.tag }})
+      - name: Run Trivy (ghcr.io/cybozu/ubuntu:${{ env.tag }})
         uses: aquasecurity/trivy-action@0.10.0
         with:
           image-ref: ghcr.io/cybozu/ubuntu:${{ env.tag }}
