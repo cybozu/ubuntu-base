@@ -1,3 +1,3 @@
-module github.com/ushitora-anqou/daily-usn
+module github.com/cybozu/ubuntu-base/daily-usn
 
 go 1.20
