@@ -155,6 +155,62 @@
           ],
           "PublishedDate": "2017-02-07T15:59:00Z",
           "LastModifiedDate": "2021-02-25T17:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2009-5155",
+          "PkgID": "libc-bin@2.27-3ubuntu1.6",
+          "PkgName": "libc-bin",
+          "InstalledVersion": "2.27-3ubuntu1.6",
+          "Layer": {
+            "Digest": "sha256:0c5227665c11379f79e9da3d3e4f1724f9316b87d259ac0131628ca1b923a392",
+            "DiffID": "sha256:b7e0fa7bfe7f9796f1268cca2e65a8bfb1e010277652cee9a9c9d077a83db3c4"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2009-5155",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result",
+          "Description": "In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-19"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://git.savannah.gnu.org/cgit/gnulib.git/commit/?id=5513b40999149090987a0341c018d05d3eea1272",
+            "https://access.redhat.com/security/cve/CVE-2009-5155",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-5155",
+            "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=22793",
+            "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=32806",
+            "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34238",
+            "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2009-5155",
+            "https://security.netapp.com/advisory/ntap-20190315-0002/",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=11053",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=18986",
+            "https://sourceware.org/git/gitweb.cgi?p=glibc.git;h=eb04c21373e2a2885f3d52ff192b0499afe3c672",
+            "https://support.f5.com/csp/article/K64119434",
+            "https://support.f5.com/csp/article/K64119434?utm_source=f5support&amp;utm_medium=RSS",
+            "https://ubuntu.com/security/notices/USN-4954-1",
+            "https://www.cve.org/CVERecord?id=CVE-2009-5155"
+          ],
+          "PublishedDate": "2019-02-26T02:29:00Z",
+          "LastModifiedDate": "2021-06-29T15:15:00Z"
         }
       ]
     }

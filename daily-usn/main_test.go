@@ -15,9 +15,12 @@ func TestProcess(t *testing.T) {
 		result[2].ArtifactName != "quay.io/cybozu/ubuntu:22.04.20230427" {
 		t.Fatal("Invalid ArtifactName")
 	}
-	if len(result[0].AllVuls) != 1 || len(result[0].DiffVuls) != 1 ||
+	if len(result[0].AllVuls) != 2 || len(result[0].DiffVuls) != 1 ||
 		len(result[1].AllVuls) != 1 || len(result[1].DiffVuls) != 1 ||
 		len(result[2].AllVuls) != 1 || len(result[2].DiffVuls) != 1 {
 		t.Fatal("Invalid length of AllVuls and/or DiffVuls")
+	}
+	if result[0].DiffVuls[0].USNUrl != "https://ubuntu.com/security/notices/USN-4954-1" {
+		t.Fatal("Invalid USNUrl")
 	}
 }

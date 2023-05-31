@@ -10,7 +10,6 @@ import (
 	"net/http"
 	"net/url"
 	"os"
-	"path"
 	"path/filepath"
 	"text/template"
 )
@@ -113,7 +112,7 @@ func NewVulnerability(j *TrivyJSONResultVulnerability) *Vulnerability {
 	}
 	usnLink := ""
 	if usnId != "" {
-		usnLink = path.Join("https://ubuntu.com/security/notices/", usnId)
+		usnLink = "https://ubuntu.com/security/notices/" + usnId
 	}
 
 	return &Vulnerability{
