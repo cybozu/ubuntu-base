@@ -1,0 +1,161 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "quay.io/cybozu/ubuntu:22.04.20230427",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "22.04"
+    },
+    "ImageID": "sha256:16af665c208245617ab74a5c59818c6b70620938410637d87cca6060411010aa",
+    "DiffIDs": [
+      "sha256:b93c1bd012ab8fda60f5b4f5906bf244586e0e3292d84571d3abb56472248466",
+      "sha256:e3f4700ecd697feb8363fe7b6c44c7c5e3d478a0494ef275da4f9fc29f0e8fd7",
+      "sha256:c2f33a472412e1604d198c6dda9001a35f0e65f120605219c208433fdb9d7a2b",
+      "sha256:e26231e3b937631da075fac906fd2468c67144edff589792a5691933a378ea58"
+    ],
+    "RepoTags": [
+      "quay.io/cybozu/ubuntu:22.04.20230427"
+    ],
+    "RepoDigests": [
+      "quay.io/cybozu/ubuntu@sha256:d3eeca4a5cdeabfe187bf9e78ea3d585fb2817342d445c14bf99d9c0b7f9487d"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-04-27T02:41:11.824499762Z",
+      "history": [
+        {
+          "created": "2023-03-08T04:44:25.225589475Z",
+          "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-08T04:44:25.380763616Z",
+          "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-08T04:44:25.43565156Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-08T04:44:25.487233076Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-08T04:44:27.440479984Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:c8ef6447752cab2541ffca9e3cfa27d581f3491bc8f356f6eafd951243609341 in / "
+        },
+        {
+          "created": "2023-03-08T04:44:27.714921351Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-27T02:41:09.841315182Z",
+          "created_by": "RUN /bin/sh -c apt-get update     && apt-get install -y --no-install-recommends         locales         tzdata         openssl         netbase         apt-utils         apt-transport-https         libreadline8         ca-certificates         curl     && apt-get -y upgrade     && rm -rf /var/lib/apt/lists/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-04-27T02:41:11.812236921Z",
+          "created_by": "RUN /bin/sh -c locale-gen en_US.UTF-8     && update-locale LANG=en_US.UTF-8     && echo \"Etc/UTC\" > /etc/timezone     && dpkg-reconfigure -f noninteractive tzdata # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-04-27T02:41:11.824499762Z",
+          "created_by": "COPY /pause /usr/local/bin/pause # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-04-27T02:41:11.824499762Z",
+          "created_by": "CMD [\"/bin/bash\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:b93c1bd012ab8fda60f5b4f5906bf244586e0e3292d84571d3abb56472248466",
+          "sha256:e3f4700ecd697feb8363fe7b6c44c7c5e3d478a0494ef275da4f9fc29f0e8fd7",
+          "sha256:c2f33a472412e1604d198c6dda9001a35f0e65f120605219c208433fdb9d7a2b",
+          "sha256:e26231e3b937631da075fac906fd2468c67144edff589792a5691933a378ea58"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/bash"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Labels": {
+          "org.opencontainers.image.ref.name": "ubuntu",
+          "org.opencontainers.image.version": "22.04"
+        },
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "quay.io/cybozu/ubuntu:22.04.20230427 (ubuntu 22.04)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-3715",
+          "PkgID": "bash@5.1-6ubuntu1",
+          "PkgName": "bash",
+          "InstalledVersion": "5.1-6ubuntu1",
+          "Layer": {
+            "Digest": "sha256:2ab09b027e7f3a0c2e8bb1944ac46de38cebab7145f0bd6effebfe5492c818b6",
+            "DiffID": "sha256:b93c1bd012ab8fda60f5b4f5906bf244586e0e3292d84571d3abb56472248466"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3715",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "a heap-buffer-overflow in valid_parameter_transform",
+          "Description": "A flaw was found in the bash package, where a heap-buffer overflow can occur in valid parameter_transform. This issue may lead to memory problems.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:0340",
+            "https://access.redhat.com/security/cve/CVE-2022-3715",
+            "https://bugzilla.redhat.com/2126720",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2126720",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3715",
+            "https://errata.almalinux.org/9/ALSA-2023-0340.html",
+            "https://errata.rockylinux.org/RLSA-2023:0340",
+            "https://linux.oracle.com/cve/CVE-2022-3715.html",
+            "https://linux.oracle.com/errata/ELSA-2023-0340.html",
+            "https://lists.gnu.org/archive/html/bug-bash/2022-08/msg00147.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3715",
+            "https://www.cve.org/CVERecord?id=CVE-2022-3715"
+          ],
+          "PublishedDate": "2023-01-05T15:15:00Z",
+          "LastModifiedDate": "2023-02-24T18:38:00Z"
+        }
+      ]
+    }
+  ]
+}
