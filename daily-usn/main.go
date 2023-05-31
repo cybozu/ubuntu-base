@@ -106,6 +106,8 @@ func fetchUSNFromCVE(cveId string) (string, error) {
 
 func NewVulnerability(j *TrivyJSONResultVulnerability) *Vulnerability {
 	id := j.VulnerabilityID
+	PrimaryUrl := "https://nvd.nist.gov/vuln/detail/" + id
+
 	usnId, err := fetchUSNFromCVE(id)
 	if err != nil {
 		log.Printf("Couldn't fetch USN from CVE: %s: %v", id, err)
@@ -122,7 +124,7 @@ func NewVulnerability(j *TrivyJSONResultVulnerability) *Vulnerability {
 		FixedVersion:     j.FixedVersion,
 		ID:               id,
 		USN:              usnId,
-		PrimaryUrl:       j.PrimaryURL,
+		PrimaryUrl:       PrimaryUrl,
 		USNUrl:           usnLink,
 		Title:            j.Title,
 		Description:      j.Description,

@@ -23,4 +23,7 @@ func TestProcess(t *testing.T) {
 	if result[0].DiffVuls[0].USNUrl != "https://ubuntu.com/security/notices/USN-4954-1" {
 		t.Fatal("Invalid USNUrl")
 	}
+	if result[0].DiffVuls[0].PrimaryUrl != "https://nvd.nist.gov/vuln/detail/CVE-2009-5155" {
+		t.Fatalf("Invalid PrimaryUrl: %s", result[0].DiffVuls[0].PrimaryUrl)
+	}
 }
