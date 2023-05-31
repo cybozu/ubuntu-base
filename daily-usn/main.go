@@ -223,8 +223,8 @@ func generateHTML(reportId string, entries []ReportEntry) (string, error) {
 {{ range . }}
 <tr class="severity-{{ .Severity }}">
     <td>{{ .PkgName }}</td>
-    <td><a href="{{ .PrimaryUrl }}">{{ .ID }}</a></td>
-    <td><a href="{{ .USNUrl }}">{{ .USN }}</a></td>
+    <td><a href="{{ .PrimaryUrl }}" target="_blank" rel="noopener noreferrer">{{ .ID }}</a></td>
+    <td><a href="{{ .USNUrl }}" target="_blank" rel="noopener noreferrer">{{ .USN }}</a></td>
     <td>{{ .Severity }}</td>
     <td>{{ .InstalledVersion }}</td>
     <td>{{ .FixedVersion }}</td>
