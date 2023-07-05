@@ -1,0 +1,42 @@
+name: main
+on:
+  pull_request:
+jobs:
+  create-pr:
+    name: Update minimal images
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check diffs
+        run: |
+          TOKEN=$(curl -sSf "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io"| jq -r .token)
+          FOCAL_TAG=$(curl -sSf -H "Authorization: Bearer $TOKEN" "https://registry-1.docker.io/v2/library/ubuntu/tags/list" | jq -r '.tags[] | select(. | test("focal-.*"))' | tail -n1)
+          JAMMY_TAG=$(curl -sSf -H "Authorization: Bearer $TOKEN" "https://registry-1.docker.io/v2/library/ubuntu/tags/list" | jq -r '.tags[] | select(. | test("jammy-.*"))' | tail -n1)
+          sed -i -e "s/focal-[0-9]\{8\}/$FOCAL_TAG/g" ./20.04/TAG_MINIMAL
+          sed -i -e "s/jammy-[0-9]\{8\}/$JAMMY_TAG/g" ./22.04/TAG_MINIMAL
+          
+          diffs=$(git status -s)
+          if [ -n "$diffs" ]; then
+            echo "diffs found"
+            echo "FOCAL_TAG=$FOCAL_TAG" >> $GITHUB_ENV
+            echo "JAMMY_TAG=$JAMMY_TAG" >> $GITHUB_ENV
+            echo "DIFF=1" >> $GITHUB_ENV
+          fi
+      - name: Create PR
+        if: env.DIFF == '1'
+        run: |
+          TODAY=$(date "+%Y%m%d")
+          sed -i -e "s/20\.04\.[0-9]\{8\}/20\.04\.$TODAY/g" ./20.04/TAG
+          sed -i -e "s/22\.04\.[0-9]\{8\}/22\.04\.$TODAY/g" ./22.04/TAG
+          
+          git config --global user.email "neco@cybozu.com"
+          git config --global user.name "cybozu-neco"
+          
+          BRANCH=minimal-$TODAY
+          git checkout -b $BRANCH
+          git add .
+          git commit -m "Update minimal images"
+          git push origin $BRANCH
+          gh pr create --title "Update minimal images" --body "Update minimal images for Ubuntu $FOCAL_TAG and $JAMMY_TAG"
