@@ -1,0 +1,72 @@
+name: update
+on:
+  schedule:
+    - cron: '0 22 * * *'
+jobs:
+  update:
+    name: Update images
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        ubuntu-version: [ "20.04", "22.04" ]
+    defaults:
+      run:
+        working-directory: ${{ matrix.ubuntu-version }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check minimal image updates
+        run: |
+          if [ "${{ matrix.ubuntu-version }}" = "20.04" ]; then
+            codename=focal
+          elif [ "${{ matrix.ubuntu-version }}" = "22.04" ]; then
+            codename=jammy
+          else
+            echo "Unknown Ubuntu version: ${{ matrix.ubuntu-version }}"
+            exit 1
+          fi
+          
+          TOKEN=$(curl -sSf "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io"| jq -r .token)
+          LATEST_TAG=$(curl -sSf -H "Authorization: Bearer $TOKEN" "https://registry-1.docker.io/v2/library/ubuntu/tags/list" | jq -r ".tags[] | select(. | test(\"$codename-.*\"))" | tail -n1)
+          if [ -z "$LATEST_TAG" ]; then
+            echo "Failed to get the latest tag for $codename"
+            exit 1
+          fi
+          
+          sed -i -e "s/$codename-[0-9]\{8\}/$LATEST_TAG/g" ./TAG_MINIMAL
+          
+          diffs=$(git status -s)
+          if [ -n "$diffs" ]; then
+            echo "NEED_UPDATE=1" >> $GITHUB_ENV
+          fi
+      - name: Check package updates
+        if: env.NEED_UPDATE != '1'
+        run: |
+          TAG_MINIMAL=$(cat ./TAG_MINIMAL)
+          TAG=$(cat ./TAG)
+          for img in ubuntu ubuntu-debug ubuntu-dev; do
+            docker pull ghcr.io/cybozu/$img:$TAG
+            CURRENT_ID=$(docker inspect --format='{{.Id}}' ghcr.io/cybozu/$img:$TAG)
+            docker build -t $img:${{ matrix.ubuntu-version }}-new --build-arg TAG_MINIMAL=$TAG_MINIMAL --build-arg TAG=$TAG ./$img/
+            NEW_ID=$(docker inspect --format='{{.Id}}' $img:${{ matrix.ubuntu-version }}-new)
+            if [ "$CURRENT_ID" != "$NEW_ID" ]; then
+              echo "NEED_UPDATE=1" >> $GITHUB_ENV
+              exit 0
+            fi
+          done
+      - name: Create PR
+        if: env.NEED_UPDATE == '1'
+        run: |
+          TODAY=$(date "+%Y%m%d")
+          sed -i -e "s/${{ matrix.ubuntu-version }}\.[0-9]\{8\}/${{ matrix.ubuntu-version }}\.$TODAY/g" ./TAG
+          
+          git config --global user.email "neco@cybozu.com"
+          git config --global user.name "cybozu-neco"
+          
+          BRANCH=update-${{ matrix.ubuntu-version }}-$TODAY
+          git checkout -b $BRANCH
+          git add .
+          git commit -m "Update images for ${{ matrix.ubuntu-version }}"
+          git push origin $BRANCH
+          gh pr create --title "Update images for ${{ matrix.ubuntu-version }}" --body "Update images for ${{ matrix.ubuntu-version }}"
