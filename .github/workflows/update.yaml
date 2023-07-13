@@ -36,23 +36,31 @@ jobs:
           
           sed -i -e "s/$codename-[0-9]\{8\}/$LATEST_TAG/g" ./TAG_MINIMAL
           
+          echo "Update images for ${{ matrix.ubuntu-version }}" > ./BODY
+          
           diffs=$(git status -s)
           if [ -n "$diffs" ]; then
             echo "NEED_UPDATE=1" >> $GITHUB_ENV
+            echo "- Minimal image updated: $LATEST_TAG" >> ./BODY
           fi
       - name: Check package updates
-        if: env.NEED_UPDATE != '1'
         run: |
           TAG_MINIMAL=$(cat ./TAG_MINIMAL)
           TAG=$(cat ./TAG)
           for img in ubuntu ubuntu-debug ubuntu-dev; do
             docker pull ghcr.io/cybozu/$img:$TAG
-            CURRENT_ID=$(docker inspect --format='{{.Id}}' ghcr.io/cybozu/$img:$TAG)
             docker build -t $img:${{ matrix.ubuntu-version }}-new --build-arg TAG_MINIMAL=$TAG_MINIMAL --build-arg TAG=$TAG ./$img/
-            NEW_ID=$(docker inspect --format='{{.Id}}' $img:${{ matrix.ubuntu-version }}-new)
-            if [ "$CURRENT_ID" != "$NEW_ID" ]; then
-              echo "NEED_UPDATE=1" >> $GITHUB_ENV
-              exit 0
+          
+            docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
+            docker run --rm $img:${{ matrix.ubuntu-version }}-new dpkg -l > $img-${{ matrix.ubuntu-version }}-new
+            if ! diff -u $img-$TAG $img-${{ matrix.ubuntu-version }}-new; then
+              echo "- $img:${{ matrix.ubuntu-version }}: package updated" >> ./BODY
+              echo "```diff" >> ./BODY
+              diff -u $img-$TAG $img-${{ matrix.ubuntu-version }}-new >> ./BODY || true
+              echo -e "```\n" >> ./BODY
+              if [ "$NEED_UPDATE" != "1" ]; then
+                echo "NEED_UPDATE=1" >> $GITHUB_ENV
+              fi
             fi
           done
       - name: Create PR
@@ -69,4 +77,4 @@ jobs:
           git add .
           git commit -m "Update images for ${{ matrix.ubuntu-version }}"
           git push origin $BRANCH
-          gh pr create --title "Update images for ${{ matrix.ubuntu-version }}" --body "Update images for ${{ matrix.ubuntu-version }}"
+          gh pr create --title "Update images for ${{ matrix.ubuntu-version }}" --body-file ./BODY
