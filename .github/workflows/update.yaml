@@ -16,6 +16,10 @@ jobs:
         working-directory: ${{ matrix.ubuntu-version }}
     steps:
       - uses: actions/checkout@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        with:
+          version: v0.9.1
       - name: Check minimal image updates
         run: |
           if [ "${{ matrix.ubuntu-version }}" = "20.04" ]; then
@@ -49,7 +53,7 @@ jobs:
           TAG=$(cat ./TAG)
           for img in ubuntu ubuntu-debug ubuntu-dev; do
             docker pull ghcr.io/cybozu/$img:$TAG
-            docker build --platform linux/amd64 -t $img:${{ matrix.ubuntu-version }}-new --build-arg TAG_MINIMAL=$TAG_MINIMAL --build-arg TAG=$TAG ./$img/
+            docker buildx build --platform linux/amd64 -t $img:${{ matrix.ubuntu-version }}-new --build-arg TAG_MINIMAL=$TAG_MINIMAL --build-arg TAG=$TAG ./$img/
           
             docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
             docker run --rm $img:${{ matrix.ubuntu-version }}-new dpkg -l > $img-${{ matrix.ubuntu-version }}-new
