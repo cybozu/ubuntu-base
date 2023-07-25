@@ -2,6 +2,7 @@ name: update
 on:
   schedule:
     - cron: '0 22 * * 0-4'
+  pull_request:
 jobs:
   update:
     name: Update images
@@ -21,6 +22,7 @@ jobs:
         with:
           version: v0.9.1
       - name: Check minimal image updates
+        shell: bash -xe {0}
         run: |
           if [ "${{ matrix.ubuntu-version }}" = "20.04" ]; then
             codename=focal
@@ -48,15 +50,17 @@ jobs:
             echo "- Minimal image updated: $LATEST_TAG" >> ./BODY
           fi
       - name: Check package updates
+        shell: bash -xe {0}
         run: |
           TAG_MINIMAL=$(cat ./TAG_MINIMAL)
           TAG=$(cat ./TAG)
           for img in ubuntu ubuntu-debug ubuntu-dev; do
             docker pull ghcr.io/cybozu/$img:$TAG
-            docker buildx build --platform linux/amd64 -t $img:${{ matrix.ubuntu-version }}-new --build-arg TAG_MINIMAL=$TAG_MINIMAL --build-arg TAG=$TAG ./$img/
+            docker buildx build --platform linux/amd64 -t $img:${{ matrix.ubuntu-version }}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL --build-arg TAG=$TAG ./$img/
           
             docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
             docker run --rm $img:${{ matrix.ubuntu-version }}-new dpkg -l > $img-${{ matrix.ubuntu-version }}-new
+            docker image rm $img:${{ matrix.ubuntu-version }}-new
             if ! diff -u $img-$TAG $img-${{ matrix.ubuntu-version }}-new; then
               echo "- $img:${{ matrix.ubuntu-version }}: package updated" >> ./BODY
               echo "```diff" >> ./BODY
@@ -69,6 +73,7 @@ jobs:
           done
       - name: Create PR
         if: env.NEED_UPDATE == '1'
+        shell: bash -xe {0}
         run: |
           TODAY=$(date "+%Y%m%d")
           sed -i -e "s/${{ matrix.ubuntu-version }}\.[0-9]\{8\}/${{ matrix.ubuntu-version }}\.$TODAY/g" ./TAG
