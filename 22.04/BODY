@@ -1,0 +1,36 @@
+Update images for 22.04
+- Minimal image updated: jammy-20230624
+- ubuntu:22.04: package updated
+```diff
+--- ubuntu-22.04.20230725	2023-07-26 22:02:37.049137148 +0000
++++ ubuntu-22.04-new	2023-07-26 22:02:37.425140605 +0000
+@@ -58,7 +58,7 @@
+ ii  libkeyutils1:amd64        1.6.1-2ubuntu3                          amd64        Linux Key Management Utilities (library)
+ ii  libkrb5-3:amd64           1.19.2-2ubuntu0.2                       amd64        MIT Kerberos runtime libraries
+ ii  libkrb5support0:amd64     1.19.2-2ubuntu0.2                       amd64        MIT Kerberos runtime libraries - Support library
+-ii  libldap-2.5-0:amd64       2.5.14+dfsg-0ubuntu0.22.04.2            amd64        OpenLDAP libraries
++ii  libldap-2.5-0:amd64       2.5.15+dfsg-0ubuntu0.22.04.1            amd64        OpenLDAP libraries
+ ii  liblz4-1:amd64            1.9.3-2build2                           amd64        Fast LZ compression algorithm library - runtime
+ ii  liblzma5:amd64            5.2.5-2ubuntu1                          amd64        XZ-format compression library
+ ii  libmount1:amd64           2.37.2-4ubuntu3                         amd64        device mounting library
+```
+
+- ubuntu-debug:22.04: package updated
+```diff
+--- ubuntu-debug-22.04.20230725	2023-07-26 22:04:09.058411874 +0000
++++ ubuntu-debug-22.04-new	2023-07-26 22:04:09.430416839 +0000
+@@ -188,9 +188,9 @@
+ ii  mawk                        1.3.4.20200120-3                        amd64        Pattern scanning and text processing language
+ ii  media-types                 7.0.0                                   all          List of standard media types and their usual file extension
+ ii  mount                       2.37.2-4ubuntu3                         amd64        tools for mounting and manipulating filesystems
+-ii  mysql-client                8.0.33-0ubuntu0.22.04.2                 all          MySQL database client (metapackage depending on the latest version)
+-ii  mysql-client-8.0            8.0.33-0ubuntu0.22.04.2                 amd64        MySQL database client binaries
+-ii  mysql-client-core-8.0       8.0.33-0ubuntu0.22.04.2                 amd64        MySQL database core client binaries
++ii  mysql-client                8.0.33-0ubuntu0.22.04.4                 all          MySQL database client (metapackage depending on the latest version)
++ii  mysql-client-8.0            8.0.33-0ubuntu0.22.04.4                 amd64        MySQL database client binaries
++ii  mysql-client-core-8.0       8.0.33-0ubuntu0.22.04.4                 amd64        MySQL database core client binaries
+ ii  mysql-common                5.8+1.0.8                               all          MySQL database common files, e.g. /etc/mysql/my.cnf
+ ii  ncurses-base                6.3-2ubuntu0.1                          all          basic terminal type definitions
+ ii  ncurses-bin                 6.3-2ubuntu0.1                          amd64        terminal-related programs and man pages
+```
+
