@@ -2,6 +2,7 @@ name: update
 on:
   schedule:
     - cron: '0 22 * * 0-4'
+  pull_request:
 jobs:
   update:
     name: Update images
@@ -39,6 +40,7 @@ jobs:
             exit 1
           fi
           
+          TAG_MINIMAL=$(cat ./TAG_MINIMAL)
           sed -i -e "s/$codename-[0-9]\{8\}/$LATEST_TAG/g" ./TAG_MINIMAL
           
           echo "Update images for ${{ matrix.ubuntu-version }}" > ./BODY
@@ -46,7 +48,7 @@ jobs:
           diffs=$(git status -s)
           if [ -n "$diffs" ]; then
             echo "NEED_UPDATE=1" >> $GITHUB_ENV
-            echo "- Minimal image updated: $LATEST_TAG" >> ./BODY
+            echo "- Update minimal image from $TAG_MINIMAL to $LATEST_TAG" >> ./BODY
           fi
       - name: Check package updates
         shell: bash -xe {0}
@@ -61,7 +63,7 @@ jobs:
             docker run --rm $img:${{ matrix.ubuntu-version }}-new dpkg -l > $img-${{ matrix.ubuntu-version }}-new
             docker image rm $img:${{ matrix.ubuntu-version }}-new
             if ! diff -u $img-$TAG $img-${{ matrix.ubuntu-version }}-new; then
-              echo "- $img:${{ matrix.ubuntu-version }}: package updated" >> ./BODY
+              echo "- Update $img:${{ matrix.ubuntu-version }} packages" >> ./BODY
               echo '```diff' >> ./BODY
               diff -u $img-$TAG $img-${{ matrix.ubuntu-version }}-new >> ./BODY || true
               echo -e '```\n' >> ./BODY
@@ -82,7 +84,7 @@ jobs:
           
           BRANCH=update-${{ matrix.ubuntu-version }}-$TODAY
           git checkout -b $BRANCH
-          git add .
+          git add -u
           git commit -m "Update images for ${{ matrix.ubuntu-version }}"
           git push origin $BRANCH
           gh pr create --title "Update images for ${{ matrix.ubuntu-version }}" --body-file ./BODY
