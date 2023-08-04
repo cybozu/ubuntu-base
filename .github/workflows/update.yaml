@@ -2,6 +2,7 @@ name: update
 on:
   schedule:
     - cron: '0 22 * * 0-4'
+  pull_request:
 jobs:
   update:
     name: Update images
@@ -53,13 +54,15 @@ jobs:
         run: |
           TAG_MINIMAL=$(cat ./TAG_MINIMAL)
           TAG=$(cat ./TAG)
+          
+          docker buildx use default
+          docker buildx build -t quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ubuntu-minimal
           for img in ubuntu ubuntu-debug ubuntu-dev; do
             docker pull ghcr.io/cybozu/$img:$TAG
-            docker buildx build --platform linux/amd64 -t $img:${{ matrix.ubuntu-version }}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL --build-arg TAG=$TAG ./$img/
+            docker buildx build --platform linux/amd64 -t quay.io/cybozu/$img:${{ matrix.ubuntu-version }}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${{ matrix.ubuntu-version }}-new ./$img/
           
             docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
-            docker run --rm $img:${{ matrix.ubuntu-version }}-new dpkg -l > $img-${{ matrix.ubuntu-version }}-new
-            docker image rm $img:${{ matrix.ubuntu-version }}-new
+            docker run --rm quay.io/cybozu/$img:${{ matrix.ubuntu-version }}-new dpkg -l > $img-${{ matrix.ubuntu-version }}-new
             if ! diff -u $img-$TAG $img-${{ matrix.ubuntu-version }}-new; then
               echo "- Update $img:${{ matrix.ubuntu-version }} packages" >> ./BODY
               echo '```diff' >> ./BODY
@@ -69,6 +72,11 @@ jobs:
                 echo "NEED_UPDATE=1" >> $GITHUB_ENV
               fi
             fi
+          done
+          
+          docker image rm quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new
+          for img in ubuntu ubuntu-debug ubuntu-dev; do
+            docker image rm quay.io/cybozu/$img:${{ matrix.ubuntu-version }}-new
           done
       - name: Create PR
         if: env.NEED_UPDATE == '1'
