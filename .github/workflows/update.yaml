@@ -7,13 +7,8 @@ jobs:
     name: Update images
     env:
       GH_TOKEN: ${{ secrets.CYBOZU_NECO_PAT }}
+      UBUNTU_VERSION: "20.04 22.04"
     runs-on: ubuntu-22.04
-    strategy:
-      matrix:
-        ubuntu-version: [ "20.04", "22.04" ]
-    defaults:
-      run:
-        working-directory: ${{ matrix.ubuntu-version }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Docker Buildx
@@ -23,73 +18,79 @@ jobs:
       - name: Check minimal image updates
         shell: bash -xe {0}
         run: |
-          if [ "${{ matrix.ubuntu-version }}" = "20.04" ]; then
-            codename=focal
-          elif [ "${{ matrix.ubuntu-version }}" = "22.04" ]; then
-            codename=jammy
-          else
-            echo "Unknown Ubuntu version: ${{ matrix.ubuntu-version }}"
-            exit 1
-          fi
-          
           TOKEN=$(curl -sSf "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io"| jq -r .token)
-          LATEST_TAG=$(curl -sSf -H "Authorization: Bearer $TOKEN" "https://registry-1.docker.io/v2/library/ubuntu/tags/list" | jq -r ".tags[] | select(. | test(\"$codename-.*\"))" | tail -n1)
-          if [ -z "$LATEST_TAG" ]; then
-            echo "Failed to get the latest tag for $codename"
-            exit 1
-          fi
           
-          TAG_MINIMAL=$(cat ./TAG_MINIMAL)
-          sed -i -e "s/$codename-[0-9]\{8\}/$LATEST_TAG/g" ./TAG_MINIMAL
-          
-          echo "Update images for ${{ matrix.ubuntu-version }}" > ./BODY
-          
-          if [[ "$TAG_MINIMAL" != "$LATEST_TAG" ]]; then
-            echo "NEED_UPDATE=1" >> $GITHUB_ENV
-            echo "- Update minimal image from $TAG_MINIMAL to $LATEST_TAG" >> ./BODY
-          fi
+          for version in ${{ env.UBUNTU_VERSION }}; do
+            if [ "${version}" = "20.04" ]; then
+              codename=focal
+            elif [ "${version}" = "22.04" ]; then
+              codename=jammy
+            else
+              echo "Unknown Ubuntu version: ${version}"
+              exit 1
+            fi
+            LATEST_TAG=$(curl -sSf -H "Authorization: Bearer $TOKEN" "https://registry-1.docker.io/v2/library/ubuntu/tags/list" | jq -r ".tags[] | select(. | test(\"$codename-.*\"))" | tail -n1)
+            if [ -z "$LATEST_TAG" ]; then
+              echo "Failed to get the latest tag for $codename"
+              exit 1
+            fi
+            
+            TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
+            sed -i -e "s/$codename-[0-9]\{8\}/$LATEST_TAG/g" ./$version/TAG_MINIMAL
+            
+            if [[ "$TAG_MINIMAL" != "$LATEST_TAG" ]]; then
+              echo "NEED_UPDATE=1" >> $GITHUB_ENV
+              echo "- Update $version minimal image from $TAG_MINIMAL to $LATEST_TAG" >> ./BODY
+            fi
+          done
       - name: Check package updates
         shell: bash -xe {0}
         run: |
-          TAG_MINIMAL=$(cat ./TAG_MINIMAL)
-          TAG=$(cat ./TAG)
-          
           docker buildx use default
-          docker buildx build -t quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ubuntu-minimal
-          for img in ubuntu ubuntu-debug ubuntu-dev; do
-            docker pull ghcr.io/cybozu/$img:$TAG
-            docker buildx build --platform linux/amd64 -t quay.io/cybozu/$img:${{ matrix.ubuntu-version }}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${{ matrix.ubuntu-version }}-new ./$img/
           
-            docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
-            docker run --rm quay.io/cybozu/$img:${{ matrix.ubuntu-version }}-new dpkg -l > $img-${{ matrix.ubuntu-version }}-new
-            if ! diff -u $img-$TAG $img-${{ matrix.ubuntu-version }}-new; then
-              echo "- Update $img:${{ matrix.ubuntu-version }} packages" >> ./BODY
-              echo '```diff' >> ./BODY
-              diff -u $img-$TAG $img-${{ matrix.ubuntu-version }}-new >> ./BODY || true
-              echo -e '```\n' >> ./BODY
-              if [ "$NEED_UPDATE" != "1" ]; then
-                echo "NEED_UPDATE=1" >> $GITHUB_ENV
+          for version in ${{ env.UBUNTU_VERSION }}; do
+            TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
+            TAG=$(cat ./$version/TAG)
+            
+            docker buildx build -t quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ./$version/ubuntu-minimal
+            for img in ubuntu ubuntu-debug ubuntu-dev; do
+              docker pull ghcr.io/cybozu/$img:$TAG
+              docker buildx build --platform linux/amd64 -t quay.io/cybozu/$img:${version}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${version}-new ./$version/$img/
+            
+              docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
+              docker run --rm quay.io/cybozu/$img:${version}-new dpkg -l > $img-${version}-new
+              if ! diff -u $img-$TAG $img-${version}-new; then
+                echo "- Update $img:${version} packages" >> ./BODY
+                echo '```diff' >> ./BODY
+                diff -u $img-$TAG $img-${version}-new >> ./BODY || true
+                echo -e '```\n' >> ./BODY
+                if [ "$NEED_UPDATE" != "1" ]; then
+                  echo "NEED_UPDATE=1" >> $GITHUB_ENV
+                fi
               fi
-            fi
-          done
-          
-          docker image rm quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new
-          for img in ubuntu ubuntu-debug ubuntu-dev; do
-            docker image rm quay.io/cybozu/$img:${{ matrix.ubuntu-version }}-new
+            done
+            
+            docker image rm quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new
+            for img in ubuntu ubuntu-debug ubuntu-dev; do
+              docker image rm quay.io/cybozu/$img:${version}-new
+            done
           done
       - name: Create PR
         if: env.NEED_UPDATE == '1'
         shell: bash -xe {0}
         run: |
           TODAY=$(date "+%Y%m%d")
-          sed -i -e "s/${{ matrix.ubuntu-version }}\.[0-9]\{8\}/${{ matrix.ubuntu-version }}\.$TODAY/g" ./TAG
+          
+          for version in ${{ env.UBUNTU_VERSION }}; do
+            sed -i -e "s/${version}\.[0-9]\{8\}/${version}\.$TODAY/g" ./$version/TAG
+          done
           
           git config --global user.email "neco@cybozu.com"
           git config --global user.name "cybozu-neco"
-          
-          BRANCH=update-${{ matrix.ubuntu-version }}-$TODAY
+
+          BRANCH=update-$TODAY
           git checkout -b $BRANCH
           git add -u
-          git commit -m "Update images for ${{ matrix.ubuntu-version }}"
+          git commit -m "Update images ($TODAY)"
           git push origin $BRANCH
-          gh pr create --title "Update images for ${{ matrix.ubuntu-version }}" --body-file ./BODY
+          gh pr create --title "Update images ($TODAY)" --body-file ./BODY
