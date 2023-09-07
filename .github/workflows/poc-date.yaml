@@ -1,0 +1,27 @@
+name: main
+on:
+  push:
+    branches:
+      - 'poc-date'
+env:
+  go-version: 1.19
+jobs:
+  build:
+    name: poc-date
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: show date
+        run: |
+          date "+%Y%m%d"
+          date
+          echo
+          date --date='TZ="Asia/Tokyo" now' "+%Y%m%d" || true
+          date --date='TZ="Asia/Tokyo" now' || true
+          echo
+          timedatectl show || true
+          echo
+          timedatectl set-timezone Asia/Tokyo || true
+          echo
+          date "+%Y%m%d"
+          date
