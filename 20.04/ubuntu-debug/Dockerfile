@@ -14,7 +14,7 @@ FROM quay.io/cybozu/ubuntu:${TAG}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         awscli \
-        bash-complection \
+        bash-completion \
         bind9-dnsutils \
         binutils \
         expect \
