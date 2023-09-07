@@ -16,6 +16,9 @@ jobs:
           date "+%Y%m%d"
           date
           echo
+          TZ="Asia/Tokyo" date --date='now' "+%Y%m%d" || true
+          TZ="Asia/Tokyo" date --date='now' || true
+          echo
           date --date='TZ="Asia/Tokyo" now' "+%Y%m%d" || true
           date --date='TZ="Asia/Tokyo" now' || true
           echo
