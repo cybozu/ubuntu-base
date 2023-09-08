@@ -1,7 +1,7 @@
 name: update
 on:
   schedule:
-    - cron: '0 22 * * 0-4'
+    - cron: '0 22 * * 0-4' # 7:00 weekday, JST
 jobs:
   update:
     name: Update images
@@ -79,7 +79,7 @@ jobs:
         if: env.NEED_UPDATE == '1'
         shell: bash -xe {0}
         run: |
-          TODAY=$(date "+%Y%m%d")
+          TODAY=$(TZ="Asia/Tokyo" date "+%Y%m%d")
           
           for version in ${{ env.UBUNTU_VERSION }}; do
             sed -i -e "s/${version}\.[0-9]\{8\}/${version}\.$TODAY/g" ./$version/TAG
