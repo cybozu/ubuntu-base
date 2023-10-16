@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
 env:
-  go-version: 1.19
+  go-version: 1.21
 jobs:
   build:
     name: Build images
@@ -25,7 +25,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
-          version: v0.9.1
+          version: v0.11.2
       - name: Login to container registry
         if: github.event_name != 'pull_request'
         run: echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
