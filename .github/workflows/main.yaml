@@ -97,3 +97,21 @@ jobs:
                 --build-arg TAG=$TAG \
                 ${dir}
           done
+      - name: Install Trivy
+        if: github.event_name != 'pull_request'
+        run: |
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+      - name: Scan images
+        if: github.event_name != 'pull_request'
+        env:
+          YAMORY_ACCESS_TOKEN: ${{ secrets.YAMORY_ACCESS_TOKEN }}
+        run: |
+          if [ ! -f BUILDS ]; then
+              echo "nothing to scan."
+              exit 0
+          fi
+          for d in $(cat BUILDS); do
+              echo
+              echo "scanning $d:$TAG ..."
+              YAMORY_IMAGE_NAME="${d}:$TAG" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
+          done
