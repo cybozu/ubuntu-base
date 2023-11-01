@@ -110,6 +110,7 @@ jobs:
               echo "nothing to scan."
               exit 0
           fi
+          TAG=$(cat TAG)
           for d in $(cat BUILDS); do
               echo
               echo "scanning $d:$TAG ..."
