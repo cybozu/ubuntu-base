@@ -111,8 +111,9 @@ jobs:
               exit 0
           fi
           TAG=$(cat TAG)
+          BRANCH=$(cat BRANCH)
           for d in $(cat BUILDS); do
               echo
               echo "scanning $d:$TAG ..."
-              YAMORY_IMAGE_NAME="${d}:$TAG" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
+              YAMORY_IMAGE_IDENTIFIER="${d}:$BRANCH" YAMORY_IMAGE_NAME="${d}:$TAG" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
           done
