@@ -36,7 +36,7 @@ jobs:
             fi
             
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
-            sed -i -e "s/$codename-[0-9]\{8\}/$LATEST_TAG/g" ./$version/TAG_MINIMAL
+            echo $LATEST_TAG > ./$version/TAG_MINIMAL
             
             if [[ "$TAG_MINIMAL" != "$LATEST_TAG" ]]; then
               echo "NEED_UPDATE=1" >> $GITHUB_ENV
@@ -82,7 +82,7 @@ jobs:
           TODAY=$(TZ="Asia/Tokyo" date "+%Y%m%d")
           
           for version in ${{ env.UBUNTU_VERSION }}; do
-            sed -i -e "s/${version}\.[0-9]\{8\}/${version}\.$TODAY/g" ./$version/TAG
+            echo $version.$TODAY > ./$version/TAG
           done
           
           git config --global user.email "neco@cybozu.com"
