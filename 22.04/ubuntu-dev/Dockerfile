@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ARG TARGETARCH
 ARG HUB_VERSION=2.14.2
-ARG GH_VERSION=2.14.3
+ARG GH_VERSION=2.45.0
 RUN curl -fsL -o /tmp/hub.tgz https://github.com/github/hub/releases/download/v${HUB_VERSION}/hub-linux-${TARGETARCH}-${HUB_VERSION}.tgz \
     && tar -C /tmp -xzf /tmp/hub.tgz \
     && /tmp/hub-linux-${TARGETARCH}-${HUB_VERSION}/install \
