@@ -1,6 +1,6 @@
 ARG TAG_MINIMAL
 
-FROM k8s.gcr.io/pause:3.6
+FROM registry.k8s.io/pause:3.9
 
 FROM quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}
 
