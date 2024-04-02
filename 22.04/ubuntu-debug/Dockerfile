@@ -28,11 +28,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         net-tools \
         openssh-client \
         s3cmd \
+        screen \
         sqlite3 \
         strace \
         sysstat \
         tcpdump \
         telnet \
+        tmux \
         traceroute \
         vim \
         apache2-utils \
