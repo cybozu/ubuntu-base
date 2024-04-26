@@ -11,6 +11,7 @@ RUN curl -fsSL -o grpcurl.tar.gz "https://github.com/fullstorydev/grpcurl/archiv
 FROM quay.io/cybozu/ubuntu:${TAG}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+        apache2-utils \
         awscli \
         bash-completion \
         bind9-dnsutils \
@@ -27,7 +28,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         mysql-client \
         net-tools \
         openssh-client \
+        perl-modules \
         s3cmd \
+        smartmontools \
         sqlite3 \
         strace \
         sysstat \
@@ -35,8 +38,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         telnet \
         traceroute \
         vim \
-        apache2-utils \
-        perl-modules \
     && rm -rf /var/lib/apt/lists/*
 
 RUN setcap -r /usr/bin/ping
