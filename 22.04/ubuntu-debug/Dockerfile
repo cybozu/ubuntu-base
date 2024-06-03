@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         perl-modules \
         s3cmd \
         smartmontools \
+        socat \
         sqlite3 \
         strace \
         sysstat \

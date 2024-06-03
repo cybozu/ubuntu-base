@@ -34,6 +34,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         s3cmd \
         smartmontools \
         sqlite3 \
+        socat \
         strace \
         sysstat \
         tcpdump \
