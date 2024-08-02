@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         net-tools \
         openssh-client \
         perl-modules \
+        rsync \
         s3cmd \
         smartmontools \
         sqlite3 \
