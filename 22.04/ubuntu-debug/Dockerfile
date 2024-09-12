@@ -48,4 +48,7 @@ RUN setcap -r /usr/bin/ping
 COPY --from=builder /go/bin/grpcurl /usr/local/bin
 COPY --from=builder /go/src/github.com/fullstorydev/grpcurl/LICENSE /usr/local/grpcurl/LICENSE
 
+RUN adduser --disabled-password --gecos "" --uid 10000 cybozu
+USER cybozu
+
 CMD ["/bin/bash"]
