@@ -5,14 +5,14 @@ on:
     branches:
       - 'main'
 env:
-  go-version: 1.21
+  go-version: 1.23
 jobs:
   build:
     name: Build images
     strategy:
       matrix:
-        ubuntu-version: ["20.04", "22.04"]
-    runs-on: ubuntu-22.04
+        ubuntu-version: ["20.04", "22.04", "24.04"]
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: ${{ matrix.ubuntu-version }}
@@ -25,7 +25,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
-          version: v0.11.2
+          version: v0.17.1
       - name: Login to container registry
         if: github.event_name != 'pull_request'
         run: echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
@@ -36,7 +36,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup golang
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version: ${{ env.go-version }}
       - name: Install container-tag-exists

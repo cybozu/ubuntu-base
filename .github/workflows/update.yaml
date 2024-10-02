@@ -7,14 +7,14 @@ jobs:
     name: Update images
     env:
       GH_TOKEN: ${{ secrets.CYBOZU_NECO_PAT }}
-      UBUNTU_VERSION: "20.04 22.04"
-    runs-on: ubuntu-22.04
+      UBUNTU_VERSION: "20.04 22.04 24.04"
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
-          version: v0.11.2
+          version: v0.17.1
       - name: Check minimal image updates
         shell: bash -xe {0}
         run: |
@@ -25,6 +25,8 @@ jobs:
               codename=focal
             elif [ "${version}" = "22.04" ]; then
               codename=jammy
+            elif [ "${version}" = "24.04" ]; then
+              codename=noble
             else
               echo "Unknown Ubuntu version: ${version}"
               exit 1
