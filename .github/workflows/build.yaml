@@ -15,14 +15,6 @@ jobs:
         working-directory: ${{ matrix.ubuntu-version }}
     steps:
       - uses: actions/checkout@v4
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-        with:
-          platforms: linux/amd64,linux/arm64/v8
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-        with:
-          version: v0.17.1
       - name: Setup golang
         uses: actions/setup-go@v5
         with:
@@ -31,15 +23,19 @@ jobs:
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           TAG=$(cat TAG)
-          BRANCH=$(cat BRANCH)
-          for image in ubuntu-minimal ubuntu ubuntu-dev ubuntu-debug; do
+          
+          echo
+          echo "building ubuntu-minimal:$TAG_MINIMAL..."
+          docker build \
+            -t ghcr.io/cybozu/ubuntu-minimal:$TAG_MINIMAL \
+            --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+            ubuntu-minimal
+
+          for image in ubuntu ubuntu-dev ubuntu-debug; do
               echo
-              echo "building $image ..."
-              docker buildx build \
-                --platform linux/amd64,linux/arm64/v8 \
-                --load \
+              echo "building $image:$TAG..."
+              docker build \
                 -t ghcr.io/cybozu/${image}:$TAG \
-                -t ghcr.io/cybozu/${image}:$BRANCH \
                 --build-arg TAG_MINIMAL=$TAG_MINIMAL \
                 --build-arg TAG=$TAG \
                 ${image}
