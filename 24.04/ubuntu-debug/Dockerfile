@@ -13,7 +13,6 @@ FROM ghcr.io/cybozu/ubuntu:${TAG}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         apache2-utils \
-        awscli \
         bash-completion \
         bind9-dnsutils \
         binutils \
