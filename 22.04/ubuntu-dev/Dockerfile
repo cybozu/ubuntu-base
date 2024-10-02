@@ -1,13 +1,14 @@
 ARG TAG
-FROM quay.io/cybozu/ubuntu:${TAG}
+
+FROM ghcr.io/cybozu/ubuntu:${TAG}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         git \
-        openssh-client \
         jq \
         libreadline-dev \
         libssl-dev \
+        openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
 ARG TARGETARCH

@@ -45,7 +45,7 @@ jobs:
         if: github.event_name != 'pull_request'
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
-          for repo in quay.io ghcr.io; do 
+          for repo in quay.io ghcr.io; do
             c="$(container-tag-exists ${repo}/cybozu/ubuntu-minimal $TAG_MINIMAL 2>&1)"
             if [ "$c" = "" ]; then
               echo
@@ -63,7 +63,7 @@ jobs:
       - name: Extract targets
         run: |
           TAG=$(cat TAG)
-          for repo in quay.io ghcr.io; do 
+          for repo in quay.io ghcr.io; do
             for image in ubuntu ubuntu-dev ubuntu-debug; do
                 c="$(container-tag-exists ${repo}/cybozu/$image $TAG 2>&1)"
                 if [ "$c" = "" ]; then

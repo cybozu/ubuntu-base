@@ -19,7 +19,7 @@ jobs:
         shell: bash -xe {0}
         run: |
           TOKEN=$(curl -sSf "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io"| jq -r .token)
-          
+
           for version in ${{ env.UBUNTU_VERSION }}; do
             if [ "${version}" = "20.04" ]; then
               codename=focal
@@ -34,10 +34,10 @@ jobs:
               echo "Failed to get the latest tag for $codename"
               exit 1
             fi
-            
+
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
             echo $LATEST_TAG > ./$version/TAG_MINIMAL
-            
+
             if [[ "$TAG_MINIMAL" != "$LATEST_TAG" ]]; then
               echo "NEED_UPDATE=1" >> $GITHUB_ENV
               echo "- Update $version minimal image from $TAG_MINIMAL to $LATEST_TAG" >> ./BODY
@@ -47,16 +47,16 @@ jobs:
         shell: bash -xe {0}
         run: |
           docker buildx use default
-          
+
           for version in ${{ env.UBUNTU_VERSION }}; do
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
             TAG=$(cat ./$version/TAG)
-            
+
             docker buildx build -t quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ./$version/ubuntu-minimal
             for img in ubuntu ubuntu-debug ubuntu-dev; do
               docker pull ghcr.io/cybozu/$img:$TAG
               docker buildx build --platform linux/amd64 -t quay.io/cybozu/$img:${version}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${version}-new ./$version/$img/
-            
+
               docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
               docker run --rm quay.io/cybozu/$img:${version}-new dpkg -l > $img-${version}-new
               if ! diff -u $img-$TAG $img-${version}-new; then
@@ -69,7 +69,7 @@ jobs:
                 fi
               fi
             done
-            
+
             docker image rm quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new
             for img in ubuntu ubuntu-debug ubuntu-dev; do
               docker image rm quay.io/cybozu/$img:${version}-new
@@ -80,11 +80,11 @@ jobs:
         shell: bash -xe {0}
         run: |
           TODAY=$(TZ="Asia/Tokyo" date "+%Y%m%d")
-          
+
           for version in ${{ env.UBUNTU_VERSION }}; do
             echo $version.$TODAY > ./$version/TAG
           done
-          
+
           git config --global user.email "neco@cybozu.com"
           git config --global user.name "cybozu-neco"
 

@@ -1,20 +1,20 @@
 ARG TAG_MINIMAL
 
-FROM k8s.gcr.io/pause:3.6
+FROM registry.k8s.io/pause:3.10
 
-FROM quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}
+FROM ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        locales \
-        tzdata \
-        openssl \
-        netbase \
-        apt-utils \
         apt-transport-https \
-        libreadline8 \
+        apt-utils \
         ca-certificates \
         curl \
+        libreadline8 \
+        locales \
+        netbase \
+        openssl \
+        tzdata \
     && apt-get -y upgrade \
     && rm -rf /var/lib/apt/lists/*
 
