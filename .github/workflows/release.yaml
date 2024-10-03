@@ -1,14 +1,13 @@
-name: main
+name: release
 on:
-  pull_request:
   push:
     branches:
       - 'main'
 env:
   go-version: 1.23
 jobs:
-  build:
-    name: Build images
+  release:
+    name: release images
     strategy:
       matrix:
         ubuntu-version: ["20.04", "22.04", "24.04"]
@@ -27,7 +26,6 @@ jobs:
         with:
           version: v0.17.1
       - name: Login to container registry
-        if: github.event_name != 'pull_request'
         run: echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
@@ -42,7 +40,6 @@ jobs:
       - name: Install container-tag-exists
         run: go install github.com/Hsn723/container-tag-exists@latest
       - name: Build and push ubuntu-minimal image if needed
-        if: github.event_name != 'pull_request'
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           for repo in quay.io ghcr.io; do
@@ -75,7 +72,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push images
-        if: github.event_name != 'pull_request'
         run: |
           if [ ! -f BUILDS ]; then
               echo "nothing to build."
@@ -98,11 +94,9 @@ jobs:
                 ${dir}
           done
       - name: Install Trivy
-        if: github.event_name != 'pull_request'
         run: |
           curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
       - name: Scan images
-        if: github.event_name != 'pull_request'
         env:
           YAMORY_ACCESS_TOKEN: ${{ secrets.YAMORY_ACCESS_TOKEN }}
         run: |

@@ -13,7 +13,6 @@ FROM ghcr.io/cybozu/ubuntu:${TAG}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         apache2-utils \
-        awscli \
         bash-completion \
         bind9-dnsutils \
         binutils \
@@ -41,8 +40,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         tcpdump \
         telnet \
         traceroute \
+        unzip \
         vim \
     && rm -rf /var/lib/apt/lists/*
+
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-$(uname -m).zip" -o "awscliv2.zip" \
+  && unzip awscliv2.zip \
+  && ./aws/install \
+  && rm -f awscliv2.zip
 
 RUN setcap -r /usr/bin/ping
 
