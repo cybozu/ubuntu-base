@@ -23,7 +23,7 @@ jobs:
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           TAG=$(cat TAG)
-          
+
           echo
           echo "building ubuntu-minimal:$TAG_MINIMAL..."
           docker build \
