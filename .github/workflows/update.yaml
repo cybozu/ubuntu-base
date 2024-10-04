@@ -54,13 +54,13 @@ jobs:
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
             TAG=$(cat ./$version/TAG)
 
-            docker buildx build -t quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ./$version/ubuntu-minimal
+            docker buildx build -t ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ./$version/ubuntu-minimal
             for img in ubuntu ubuntu-debug ubuntu-dev; do
               docker pull ghcr.io/cybozu/$img:$TAG
-              docker buildx build --platform linux/amd64 -t quay.io/cybozu/$img:${version}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${version}-new ./$version/$img/
+              docker buildx build --platform linux/amd64 -t ghcr.io/cybozu/$img:${version}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${version}-new ./$version/$img/
 
               docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
-              docker run --rm quay.io/cybozu/$img:${version}-new dpkg -l > $img-${version}-new
+              docker run --rm ghcr.io/cybozu/$img:${version}-new dpkg -l > $img-${version}-new
               if ! diff -u $img-$TAG $img-${version}-new; then
                 echo "- Update $img:${version} packages" >> ./BODY
                 echo '```diff' >> ./BODY
@@ -72,9 +72,9 @@ jobs:
               fi
             done
 
-            docker image rm quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new
+            docker image rm ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new
             for img in ubuntu ubuntu-debug ubuntu-dev; do
-              docker image rm quay.io/cybozu/$img:${version}-new
+              docker image rm ghcr.io/cybozu/$img:${version}-new
             done
           done
       - name: Create PR
