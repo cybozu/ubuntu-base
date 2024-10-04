@@ -2,6 +2,7 @@ name: update
 on:
   schedule:
     - cron: '0 22 * * 0-4' # 7:00 weekday, JST
+  workflow_dispatch:
 jobs:
   update:
     name: Update images
