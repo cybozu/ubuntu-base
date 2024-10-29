@@ -3,7 +3,7 @@ ARG TAG
 FROM --platform=$BUILDPLATFORM ghcr.io/cybozu/golang:1.23-jammy AS builder
 
 WORKDIR /go/src/github.com/fullstorydev/grpcurl
-ARG GRPCURL_VERSION=1.8.9
+ARG GRPCURL_VERSION=1.9.1
 RUN curl -fsSL -o grpcurl.tar.gz "https://github.com/fullstorydev/grpcurl/archive/v${GRPCURL_VERSION}.tar.gz" \
     && tar -x -z --strip-components 1 -f grpcurl.tar.gz \
     && rm -f grpcurl.tar.gz \
