@@ -9,7 +9,7 @@ jobs:
   release:
     name: release images
     strategy:
-      max-parallel: 1
+      fail-fast: false
       matrix:
         ubuntu-version: ["20.04", "22.04", "24.04"]
     runs-on: ubuntu-24.04
