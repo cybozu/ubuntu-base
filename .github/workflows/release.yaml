@@ -102,6 +102,9 @@ jobs:
     name: Scan images
     runs-on: ubuntu-24.04
     needs: build
+    defaults:
+      run:
+        working-directory: ${{ matrix.ubuntu-version }}
     steps:
       - name: Install Trivy
         run: |
