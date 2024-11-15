@@ -70,6 +70,9 @@ jobs:
                 fi
             done
           done
+          if [ -f BUILDS ]; then
+            echo "builds=$(cat BUILDS | tr '\n' ' ')" >> $GITHUB_OUTPUT
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push images
@@ -107,13 +110,13 @@ jobs:
         env:
           YAMORY_ACCESS_TOKEN: ${{ secrets.YAMORY_ACCESS_TOKEN }}
         run: |
-          if [ ! -f BUILDS ]; then
+          if [ -z "${{ needs.build.outputs.builds }}" ]; then
               echo "nothing to scan."
               exit 0
           fi
           TAG=$(cat TAG)
           BRANCH=$(cat BRANCH)
-          for d in $(cat BUILDS); do
+          for d in ${{ needs.build.outputs.builds }}; do
               echo
               echo "scanning $d:$TAG ..."
               YAMORY_IMAGE_IDENTIFIER="${d}:$BRANCH" YAMORY_IMAGE_NAME="${d}:$TAG" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
