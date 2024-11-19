@@ -70,9 +70,6 @@ jobs:
                 fi
             done
           done
-          if [ -f BUILDS ]; then
-            echo "builds=$(cat BUILDS | tr '\n' ' ')" >> $GITHUB_OUTPUT
-          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push images
