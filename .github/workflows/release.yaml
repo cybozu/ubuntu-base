@@ -102,25 +102,23 @@ jobs:
     name: Scan images
     runs-on: ubuntu-24.04
     needs: build
-    defaults:
-      run:
-        working-directory: ${{ matrix.ubuntu-version }}
+    env:
+      YAMORY_ACCESS_TOKEN: ${{ secrets.YAMORY_ACCESS_TOKEN }}
+      ubuntu-version: "20.04 22.04 24.04"
+      ubuntu-image: "ubuntu-debug ubuntu-dev"
+
     steps:
       - name: Install Trivy
         run: |
           curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
       - name: Scan images
-        env:
-          YAMORY_ACCESS_TOKEN: ${{ secrets.YAMORY_ACCESS_TOKEN }}
         run: |
-          if [ -z "${{ needs.build.outputs.builds }}" ]; then
-              echo "nothing to scan."
-              exit 0
-          fi
-          TAG=$(cat TAG)
-          BRANCH=$(cat BRANCH)
-          for d in ${{ needs.build.outputs.builds }}; do
-              echo
-              echo "scanning $d:$TAG ..."
-              YAMORY_IMAGE_IDENTIFIER="${d}:$BRANCH" YAMORY_IMAGE_NAME="${d}:$TAG" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
-          done
+            for ubuntu_version in ${{ env.ubuntu-version }}; do
+              cd $ubuntu_version
+              TAG=$(cat TAG)
+              for ubuntu_image in ${{ env.ubuntu-image }}; do
+                  echo
+                  echo "scanning ${ubuntu_image}:${TAG} ..."
+                  YAMORY_IMAGE_IDENTIFIER="ghcr.io/cybozu/${ubuntu_image}:${ubuntu_version}" YAMORY_IMAGE_NAME="${ubuntu_image}:${TAG}" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
+              done
+            done
