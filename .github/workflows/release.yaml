@@ -63,11 +63,11 @@ jobs:
           TAG=$(cat TAG)
           for repo in ghcr.io quay.io; do
             for image in ubuntu ubuntu-dev ubuntu-debug; do
-                c="$(container-tag-exists ${repo}/cybozu/$image $TAG 2>&1)"
-                if [ "$c" = "" ]; then
-                    echo "build ${repo}/cybozu/$image:$TAG"
-                    echo ${repo}/cybozu/$image >> BUILDS
-                fi
+              c="$(container-tag-exists ${repo}/cybozu/$image $TAG 2>&1)"
+              if [ "$c" = "" ]; then
+                echo "build ${repo}/cybozu/$image:$TAG"
+                echo ${repo}/cybozu/$image >> BUILDS
+              fi
             done
           done
         env:
@@ -75,24 +75,24 @@ jobs:
       - name: Build and push images
         run: |
           if [ ! -f BUILDS ]; then
-              echo "nothing to build."
-              exit 0
+            echo "nothing to build."
+            exit 0
           fi
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           TAG=$(cat TAG)
           BRANCH=$(cat BRANCH)
           for d in $(cat BUILDS); do
-              echo
-              echo "building $d ..."
-              dir=$(echo ${d} | awk -F'/' '{print $3}')
-              docker buildx build \
-                --platform linux/amd64,linux/arm64/v8 \
-                --push \
-                -t ${d}:$TAG \
-                -t ${d}:$BRANCH \
-                --build-arg TAG_MINIMAL=$TAG_MINIMAL \
-                --build-arg TAG=$TAG \
-                ${dir}
+            echo
+            echo "building $d ..."
+            dir=$(echo ${d} | awk -F'/' '{print $3}')
+            docker buildx build \
+              --platform linux/amd64,linux/arm64/v8 \
+              --push \
+              -t ${d}:$TAG \
+              -t ${d}:$BRANCH \
+              --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+              --build-arg TAG=$TAG \
+              ${dir}
           done
 
   scan:
@@ -110,12 +110,12 @@ jobs:
           curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
       - name: Scan images
         run: |
-            for ubuntu_version in ${{ env.ubuntu-version }}; do
-              cd $ubuntu_version
-              TAG=$(cat TAG)
-              for ubuntu_image in ${{ env.ubuntu-image }}; do
-                  echo
-                  echo "scanning ${ubuntu_image}:${TAG} ..."
-                  YAMORY_IMAGE_IDENTIFIER="ghcr.io/cybozu/${ubuntu_image}:${ubuntu_version}" YAMORY_IMAGE_NAME="${ubuntu_image}:${TAG}" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
-              done
+          for ubuntu_version in ${{ env.ubuntu-version }}; do
+            cd $ubuntu_version
+            TAG=$(cat TAG)
+            for ubuntu_image in ${{ env.ubuntu-image }}; do
+              echo
+              echo "scanning ${ubuntu_image}:${TAG} ..."
+              YAMORY_IMAGE_IDENTIFIER="ghcr.io/cybozu/${ubuntu_image}:${ubuntu_version}" YAMORY_IMAGE_NAME="${ubuntu_image}:${TAG}" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
             done
+          done
