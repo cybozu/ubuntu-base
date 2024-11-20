@@ -6,7 +6,7 @@ on:
 env:
   go-version: 1.23
 jobs:
-  build:
+  release:
     name: Build and release images
     strategy:
       fail-fast: false
@@ -98,7 +98,7 @@ jobs:
   scan:
     name: Scan images
     runs-on: ubuntu-24.04
-    needs: build
+    needs: release
     env:
       YAMORY_ACCESS_TOKEN: ${{ secrets.YAMORY_ACCESS_TOKEN }}
       ubuntu-version: "20.04 22.04 24.04"
