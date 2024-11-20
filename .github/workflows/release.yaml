@@ -116,6 +116,6 @@ jobs:
             for ubuntu_image in ${{ env.ubuntu-image }}; do
               echo
               echo "scanning ${ubuntu_image}:${TAG} ..."
-              YAMORY_IMAGE_IDENTIFIER="ghcr.io/cybozu/${ubuntu_image}:${ubuntu_version}" YAMORY_IMAGE_NAME="${ubuntu_image}:${TAG}" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
+              YAMORY_IMAGE_IDENTIFIER="ghcr.io/cybozu/${ubuntu_image}:${ubuntu_version}" YAMORY_IMAGE_NAME="ghcr.io/cybozu/${ubuntu_image}:${TAG}" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
             done
           done
