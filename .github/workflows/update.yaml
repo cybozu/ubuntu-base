@@ -39,9 +39,9 @@ jobs:
             fi
 
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
-            echo $LATEST_TAG > ./$version/TAG_MINIMAL
 
             if [[ "$TAG_MINIMAL" != "$LATEST_TAG" ]]; then
+              echo $LATEST_TAG > ./$version/TAG_MINIMAL
               echo "NEED_UPDATE=1" >> $GITHUB_ENV
               echo "- Update $version minimal image from $TAG_MINIMAL to $LATEST_TAG" >> ./BODY
             fi
