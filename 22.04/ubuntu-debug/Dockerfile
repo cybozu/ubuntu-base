@@ -26,6 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         binutils \
         bsdmainutils \
         expect \
+        conntrack \
         file \
         gdb \
         iproute2 \
