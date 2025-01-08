@@ -53,9 +53,9 @@ jobs:
         shell: bash -xe {0}
         run: |
           docker buildx use default
+          updated_versions=(${{ env.UPDATED_VERSIONS }})
 
-          for version in ${UPDATED_VERSIONS}; do
-            echo cat ./$version/TAG_MINIMAL: $(cat ./$version/TAG_MINIMAL)
+          for version in ${{ env.UBUNTU_VERSION }}; do
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
             TAG=$(cat ./$version/TAG)
 
@@ -71,6 +71,7 @@ jobs:
                 echo '```diff' >> ./BODY
                 diff -u $img-$TAG $img-${version}-new >> ./BODY || true
                 echo -e '```\n' >> ./BODY
+                updated_versions+=($version)
               fi
             done
 
@@ -79,6 +80,8 @@ jobs:
               docker image rm ghcr.io/cybozu/$img:${version}-new
             done
           done
+
+          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >>$GITHUB_ENV
       - name: Create PR
         if: env.UPDATED_VERSIONS != ''
         shell: bash -xe {0}
