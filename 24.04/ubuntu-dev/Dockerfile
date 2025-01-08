@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 ARG TARGETARCH
-ARG GH_VERSION=2.62.0
+ARG GH_VERSION=2.65.0
 RUN curl -fsL -o /tmp/gh.tgz https://github.com/cli/cli/releases/download/v${GH_VERSION}/gh_${GH_VERSION}_linux_${TARGETARCH}.tar.gz \
     && tar -C /tmp -xzf /tmp/gh.tgz \
     && cp /tmp/gh_${GH_VERSION}_linux_${TARGETARCH}/bin/gh /usr/local/bin \
