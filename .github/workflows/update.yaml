@@ -48,7 +48,7 @@ jobs:
             fi
           done
 
-          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >>$GITHUB_ENV
+          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >> $GITHUB_ENV
       - name: Check package updates
         shell: bash -xe {0}
         run: |
@@ -81,7 +81,7 @@ jobs:
             done
           done
 
-          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >>$GITHUB_ENV
+          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >> $GITHUB_ENV
       - name: Create PR
         if: env.UPDATED_VERSIONS != ''
         shell: bash -xe {0}
