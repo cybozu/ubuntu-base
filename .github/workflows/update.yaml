@@ -20,6 +20,7 @@ jobs:
         shell: bash -xe {0}
         run: |
           TOKEN=$(curl -sSf "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io"| jq -r .token)
+          updated_versions=()
 
           for version in ${{ env.UBUNTU_VERSION }}; do
             if [ "${version}" = "20.04" ]; then
@@ -39,17 +40,20 @@ jobs:
             fi
 
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
-            echo $LATEST_TAG > ./$version/TAG_MINIMAL
 
             if [[ "$TAG_MINIMAL" != "$LATEST_TAG" ]]; then
-              echo "NEED_UPDATE=1" >> $GITHUB_ENV
+              echo $LATEST_TAG > ./$version/TAG_MINIMAL
+              updated_versions+=($version)
               echo "- Update $version minimal image from $TAG_MINIMAL to $LATEST_TAG" >> ./BODY
             fi
           done
+
+          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >> $GITHUB_ENV
       - name: Check package updates
         shell: bash -xe {0}
         run: |
           docker buildx use default
+          updated_versions=(${{ env.UPDATED_VERSIONS }})
 
           for version in ${{ env.UBUNTU_VERSION }}; do
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
@@ -67,9 +71,7 @@ jobs:
                 echo '```diff' >> ./BODY
                 diff -u $img-$TAG $img-${version}-new >> ./BODY || true
                 echo -e '```\n' >> ./BODY
-                if [ "$NEED_UPDATE" != "1" ]; then
-                  echo "NEED_UPDATE=1" >> $GITHUB_ENV
-                fi
+                updated_versions+=($version)
               fi
             done
 
@@ -78,13 +80,15 @@ jobs:
               docker image rm ghcr.io/cybozu/$img:${version}-new
             done
           done
+
+          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >> $GITHUB_ENV
       - name: Create PR
-        if: env.NEED_UPDATE == '1'
+        if: env.UPDATED_VERSIONS != ''
         shell: bash -xe {0}
         run: |
           TODAY=$(TZ="Asia/Tokyo" date "+%Y%m%d")
 
-          for version in ${{ env.UBUNTU_VERSION }}; do
+          for version in ${UPDATED_VERSIONS}; do
             echo $version.$TODAY > ./$version/TAG
           done
 
