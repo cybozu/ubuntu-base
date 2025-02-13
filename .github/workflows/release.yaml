@@ -12,7 +12,7 @@ jobs:
       fail-fast: false
       matrix:
         ubuntu-version: ["20.04", "22.04", "24.04"]
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     defaults:
       run:
         working-directory: ${{ matrix.ubuntu-version }}
@@ -97,7 +97,7 @@ jobs:
 
   scan:
     name: Scan images
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     needs: release
     env:
       YAMORY_ACCESS_TOKEN: ${{ secrets.YAMORY_ACCESS_TOKEN }}
