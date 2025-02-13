@@ -22,6 +22,8 @@ jobs:
         uses: docker/setup-qemu-action@v3
         with:
           platforms: linux/amd64,linux/arm64/v8
+          # Workaround to avoid segmentation fault. see: https://github.com/tonistiigi/binfmt/issues/240#issuecomment-2653726563
+          image: tonistiigi/binfmt:qemu-v7.0.0-28
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
