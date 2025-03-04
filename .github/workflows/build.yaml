@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         ubuntu-version: ["20.04", "22.04", "24.04"]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: ${{ matrix.ubuntu-version }}
