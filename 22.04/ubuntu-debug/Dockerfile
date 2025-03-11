@@ -25,8 +25,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         bind9-dnsutils \
         binutils \
         bsdmainutils \
-        expect \
         conntrack \
+        expect \
         file \
         gdb \
         iproute2 \
@@ -34,6 +34,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         jq \
         less \
         lv \
+        moreutils \
         mysql-client \
         net-tools \
         openssh-client \

@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         jq \
         less \
         lv \
+        moreutils \
         mysql-client \
         net-tools \
         openssh-client \
@@ -34,8 +35,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         rsync \
         s3cmd \
         smartmontools \
-        sqlite3 \
         socat \
+        sqlite3 \
         strace \
         sysstat \
         tcpdump \
