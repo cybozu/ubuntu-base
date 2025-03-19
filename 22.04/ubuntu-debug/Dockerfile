@@ -33,6 +33,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         iputils-ping \
         jq \
         less \
+        lsb-release \
         lv \
         moreutils \
         mysql-client \
