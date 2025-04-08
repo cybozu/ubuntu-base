@@ -8,7 +8,7 @@ jobs:
     name: Update images
     env:
       GH_TOKEN: ${{ secrets.CYBOZU_NECO_PAT }}
-      UBUNTU_VERSION: "20.04 22.04 24.04"
+      UBUNTU_VERSION: "22.04 24.04"
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -23,9 +23,7 @@ jobs:
           updated_versions=()
 
           for version in ${{ env.UBUNTU_VERSION }}; do
-            if [ "${version}" = "20.04" ]; then
-              codename=focal
-            elif [ "${version}" = "22.04" ]; then
+            if [ "${version}" = "22.04" ]; then
               codename=jammy
             elif [ "${version}" = "24.04" ]; then
               codename=noble
