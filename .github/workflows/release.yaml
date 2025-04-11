@@ -3,8 +3,9 @@ on:
   push:
     branches:
       - 'main'
+concurrency: ${{ github.workflow }}
 env:
-  go-version: 1.23
+  go-version: 1.24
 jobs:
   release:
     name: Build and release images
@@ -25,7 +26,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
-          version: v0.17.1
+          version: v0.22.0
       - name: Login to container registry
         run: echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
       - name: Login to GitHub Container Registry
@@ -78,18 +79,29 @@ jobs:
             echo "nothing to build."
             exit 0
           fi
+
+          # Update LATEST_VERSION if the latest version is updated.
+          LATEST_VERSION=24.04
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           TAG=$(cat TAG)
           BRANCH=$(cat BRANCH)
+          LATEST_TAG=""
+
           for d in $(cat BUILDS); do
             echo
             echo "building $d ..."
             dir=$(echo ${d} | awk -F'/' '{print $3}')
+
+            if [[ "${BRANCH}" == "${LATEST_VERSION}" ]]; then
+              LATEST_TAG="-t ${d}:latest"
+            fi
+
             docker buildx build \
               --platform linux/amd64,linux/arm64/v8 \
               --push \
               -t ${d}:$TAG \
               -t ${d}:$BRANCH \
+              ${LATEST_TAG} \
               --build-arg TAG_MINIMAL=$TAG_MINIMAL \
               --build-arg TAG=$TAG \
               ${dir}
