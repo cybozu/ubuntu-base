@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ubuntu-version: ["20.04", "22.04", "24.04"]
+        ubuntu-version: ["22.04", "24.04"]
     runs-on: ubuntu-24.04
     defaults:
       run:
@@ -101,7 +101,7 @@ jobs:
     needs: release
     env:
       YAMORY_ACCESS_TOKEN: ${{ secrets.YAMORY_ACCESS_TOKEN }}
-      ubuntu-version: "20.04 22.04 24.04"
+      ubuntu-version: "22.04 24.04"
       ubuntu-image: "ubuntu-debug ubuntu-dev"
     steps:
       - name: Checkout repository
