@@ -29,6 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         expect \
         file \
         gdb \
+        iperf3 \
         iproute2 \
         iputils-ping \
         jq \
