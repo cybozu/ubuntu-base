@@ -9,7 +9,6 @@ RUN apt-get update \
         apt-transport-https \
         apt-utils \
         ca-certificates \
-        cron \
         curl \
         libreadline8 \
         locales \
