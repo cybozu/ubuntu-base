@@ -72,14 +72,50 @@ jobs:
                 updated_versions+=($version)
               fi
             done
+          done
+          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >> $GITHUB_ENV
+      - name: Update package documentation
+        if: env.UPDATED_VERSIONS != ''
+        shell: bash -xe {0}
+        run: |
+          for version in ${UPDATED_VERSIONS}; do
+            TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
 
-            docker image rm ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new
             for img in ubuntu ubuntu-debug ubuntu-dev; do
-              docker image rm ghcr.io/cybozu/$img:${version}-new
+              docker run --rm ghcr.io/cybozu/$img:${version}-new dpkg -l | awk 'NR>5 {print $2 "\t" $3 "\t" $4 "\t" substr($0, match($0, /[[:space:]]+[^[:space:]]+[[:space:]]+[^[:space:]]+[[:space:]]+[^[:space:]]+[[:space:]]+/) + RLENGTH)}' > /tmp/${img}-${version}-packages.txt
+
+              echo "# $img:${version} Packages" > ./docs/${img}-${version}.md
+              echo "" >> ./docs/${img}-${version}.md
+              echo "| Name | Version | Description |" >> ./docs/${img}-${version}.md
+              echo "|------|---------|-------------|" >> ./docs/${img}-${version}.md
+
+              while IFS=$'\t' read -r name pkg_version arch description; do
+                if [ -n "$name" ] && [ "$name" != "Desired=Unknown/Install/Remove/Purge/Hold" ]; then
+                  echo "| $name | $pkg_version | $description |" >> ./docs/${img}-${version}.md
+                fi
+              done < /tmp/${img}-${version}-packages.txt
+
+              rm -f /tmp/${img}-${version}-packages.txt
             done
           done
 
-          echo "UPDATED_VERSIONS=$(printf '%s\n' "${updated_versions[@]}" | paste -sd ' ')" >> $GITHUB_ENV
+          GRPCURL_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:22.04-new grpcurl --version 2>&1 | head -1 | sed 's/grpcurl \([0-9.]*\).*/\1/' || echo "unknown")
+          echo "| grpcurl | $GRPCURL_VERSION | gRPC reflection and command-line tool |" >> ./docs/ubuntu-debug-22.04.md
+          CRANE_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:22.04-new crane version 2>/dev/null | head -1 | sed 's/.*version \([0-9.]*\).*/\1/' || echo "unknown")
+          echo "| crane | $CRANE_VERSION | crane is a tool for interacting with remote images and registries. |" >> ./docs/ubuntu-debug-22.04.md
+
+          GH_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-dev:22.04-new gh --version 2>/dev/null | head -1 | sed 's/gh version \([0-9.]*\).*/\1/' || echo "unknown")
+          echo "| gh | $GH_VERSION | Work seamlessly with GitHub from the command line. |" >> ./docs/ubuntu-dev-22.04.md
+
+          GRPCURL_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:24.04-new grpcurl --version 2>&1 | head -1 | sed 's/grpcurl \([0-9.]*\).*/\1/' || echo "unknown")
+          echo "| grpcurl | $GRPCURL_VERSION | gRPC reflection and command-line tool |" >> ./docs/ubuntu-debug-24.04.md
+          CRANE_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:24.04-new crane version 2>/dev/null | head -1 | sed 's/.*version \([0-9.]*\).*/\1/' || echo "unknown")
+          echo "| crane | $CRANE_VERSION | crane is a tool for interacting with remote images and registries. |" >> ./docs/ubuntu-debug-24.04.md
+          AWSCLI_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:24.04-new aws --version 2>/dev/null | head -1 | sed 's/aws-cli\/\([0-9.]*\).*/\1/' || echo "unknown")
+          echo "| awscli | $AWSCLI_VERSION | Universal Command Line Interface for Amazon Web Services. |" >> ./docs/ubuntu-debug-24.04.md
+
+          GH_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-dev:24.04-new gh --version 2>/dev/null | head -1 | sed 's/gh version \([0-9.]*\).*/\1/' || echo "unknown")
+          echo "| gh | $GH_VERSION | Work seamlessly with GitHub from the command line. |" >> ./docs/ubuntu-dev-24.04.md
       - name: Create PR
         if: env.UPDATED_VERSIONS != ''
         shell: bash -xe {0}
