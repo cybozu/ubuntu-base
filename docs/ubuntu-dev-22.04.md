@@ -19,7 +19,6 @@
 | coreutils | 8.32-4.1ubuntu1.2 | GNU core utilities |
 | cpp | 4:11.2.0-1ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-11 | 11.4.0-1ubuntu1~22.04 | GNU C preprocessor |
-| cron | 3.0pl1-137ubuntu3 | process scheduling daemon |
 | curl | 7.81.0-1ubuntu1.20 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |

@@ -24,7 +24,6 @@
 | ca-certificates | 20240203~22.04.1 | Common CA certificates |
 | conntrack | 1:1.4.6-2build2 | Program to modify the conntrack tables |
 | coreutils | 8.32-4.1ubuntu1.2 | GNU core utilities |
-| cron | 3.0pl1-137ubuntu3 | process scheduling daemon |
 | curl | 7.81.0-1ubuntu1.20 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
@@ -246,7 +245,7 @@
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
 | python3-s3transfer | 0.5.0-1 | Amazon S3 Transfer Manager for Python3 |
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
-| python3-urllib3 | 1.26.5-1~exp1ubuntu0.2 | HTTP library with thread-safe connection pooling for Python3 |
+| python3-urllib3 | 1.26.5-1~exp1ubuntu0.3 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
 | python3.10 | 3.10.12-1~22.04.10 | Interactive high-level object-oriented language (version 3.10) |
 | python3.10-minimal | 3.10.12-1~22.04.10 | Minimal subset of the Python language (version 3.10) |
