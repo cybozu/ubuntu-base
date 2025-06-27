@@ -261,3 +261,6 @@
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries. |
 | awscli | 2.27.40 | Universal Command Line Interface for Amazon Web Services. |
+| grpcurl | 1.9.2 | gRPC reflection and command-line tool |
+| crane | 0.20.2 | crane is a tool for interacting with remote images and registries. |
+| awscli | 2.27.44 | Universal Command Line Interface for Amazon Web Services. |
