@@ -282,4 +282,4 @@
 | xz-utils | 5.2.5-2ubuntu1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
-| crane | 0.20.2 | crane is a tool for interacting with remote images and registries. |
+| crane | 0.20.2 | crane is a tool for interacting with remote images and registries |

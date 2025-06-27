@@ -94,28 +94,26 @@ jobs:
                   echo "| $name | $pkg_version | $description |" >> ./docs/${img}-${version}.md
                 fi
               done < /tmp/${img}-${version}-packages.txt
-
               rm -f /tmp/${img}-${version}-packages.txt
+
+              if [ "$img" = "ubuntu-debug" ]; then
+                GRPCURL_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new grpcurl --version 2>&1 | head -1 | sed 's/grpcurl \([0-9.]*\).*/\1/' || echo "unknown")
+                echo "| grpcurl | $GRPCURL_VERSION | gRPC reflection and command-line tool |" >>  ./docs/${img}-${version}.md
+                CRANE_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new crane version 2>/dev/null | head -1 | sed 's/.*version \([0-9.]*\).*/\1/' || echo "unknown")
+                echo "| crane | $CRANE_VERSION | crane is a tool for interacting with remote images and registries |" >> ./docs/${img}-${version}.md
+
+                if [ "$version" = "24.04" ]; then
+                  AWSCLI_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new aws --version 2>/dev/null | head -1 | sed 's/aws-cli\/\([0-9.]*\).*/\1/' || echo "unknown")
+                  echo "| awscli | $AWSCLI_VERSION | Universal Command Line Interface for Amazon Web Services |" >> ./docs/${img}-${version}.md
+                fi
+              fi
+
+              if [ "$img" = "ubuntu-dev" ]; then
+                GH_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new gh --version 2>/dev/null | head -1 | sed 's/gh version \([0-9.]*\).*/\1/' || echo "unknown")
+                echo "| gh | $GH_VERSION | Work seamlessly with GitHub from the command line |" >> ./docs/${img}-${version}.md
+              fi
             done
           done
-
-          GRPCURL_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:22.04-new grpcurl --version 2>&1 | head -1 | sed 's/grpcurl \([0-9.]*\).*/\1/' || echo "unknown")
-          echo "| grpcurl | $GRPCURL_VERSION | gRPC reflection and command-line tool |" >> ./docs/ubuntu-debug-22.04.md
-          CRANE_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:22.04-new crane version 2>/dev/null | head -1 | sed 's/.*version \([0-9.]*\).*/\1/' || echo "unknown")
-          echo "| crane | $CRANE_VERSION | crane is a tool for interacting with remote images and registries. |" >> ./docs/ubuntu-debug-22.04.md
-
-          GH_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-dev:22.04-new gh --version 2>/dev/null | head -1 | sed 's/gh version \([0-9.]*\).*/\1/' || echo "unknown")
-          echo "| gh | $GH_VERSION | Work seamlessly with GitHub from the command line. |" >> ./docs/ubuntu-dev-22.04.md
-
-          GRPCURL_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:24.04-new grpcurl --version 2>&1 | head -1 | sed 's/grpcurl \([0-9.]*\).*/\1/' || echo "unknown")
-          echo "| grpcurl | $GRPCURL_VERSION | gRPC reflection and command-line tool |" >> ./docs/ubuntu-debug-24.04.md
-          CRANE_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:24.04-new crane version 2>/dev/null | head -1 | sed 's/.*version \([0-9.]*\).*/\1/' || echo "unknown")
-          echo "| crane | $CRANE_VERSION | crane is a tool for interacting with remote images and registries. |" >> ./docs/ubuntu-debug-24.04.md
-          AWSCLI_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-debug:24.04-new aws --version 2>/dev/null | head -1 | sed 's/aws-cli\/\([0-9.]*\).*/\1/' || echo "unknown")
-          echo "| awscli | $AWSCLI_VERSION | Universal Command Line Interface for Amazon Web Services. |" >> ./docs/ubuntu-debug-24.04.md
-
-          GH_VERSION=$(docker run --rm ghcr.io/cybozu/ubuntu-dev:24.04-new gh --version 2>/dev/null | head -1 | sed 's/gh version \([0-9.]*\).*/\1/' || echo "unknown")
-          echo "| gh | $GH_VERSION | Work seamlessly with GitHub from the command line. |" >> ./docs/ubuntu-dev-24.04.md
       - name: Create PR
         if: env.UPDATED_VERSIONS != ''
         shell: bash -xe {0}
