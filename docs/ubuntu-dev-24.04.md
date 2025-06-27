@@ -203,5 +203,4 @@
 | util-linux | 2.39.3-9ubuntu6.2 | miscellaneous system utilities |
 | xz-utils | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
-| gh | 2.65.0 | Work seamlessly with GitHub from the command line. |
-| gh | 2.65.0 | Work seamlessly with GitHub from the command line. |
+| gh | 2.65.0 | Work seamlessly with GitHub from the command line |
