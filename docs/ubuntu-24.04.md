@@ -2,7 +2,6 @@
 
 | Name | Version | Description |
 |------|---------|-------------|
-| adduser | 3.137ubuntu1 | add and remove users and groups |
 | apt | 2.8.3 | commandline package manager |
 | apt-transport-https | 2.8.3 | transitional package for https support |
 | apt-utils | 2.8.3 | package management related utility programs |
@@ -12,8 +11,6 @@
 | bsdutils | 1:2.39.3-9ubuntu6.2 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20240203 | Common CA certificates |
 | coreutils | 9.4-3ubuntu6 | GNU core utilities |
-| cron | 3.0pl1-184ubuntu2 | process scheduling daemon |
-| cron-daemon-common | 3.0pl1-184ubuntu2 | process scheduling daemon's configuration files |
 | curl | 8.5.0-2ubuntu10.6 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
@@ -29,9 +26,7 @@
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
-| libapparmor1:amd64 | 4.0.1really4.0.1-0ubuntu0.24.04.4 | changehat AppArmor library |
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
-| libargon2-1:amd64 | 0~20190702+dfsg-4build1 | memory-hard hashing function - runtime library |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libattr1:amd64 | 1:2.5.2-1build1.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
@@ -45,13 +40,10 @@
 | libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
-| libcryptsetup12:amd64 | 2:2.7.0-1ubuntu4.2 | disk encryption support - shared library |
 | libcurl4t64:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
-| libdevmapper1.02.1:amd64 | 2:1.02.185-3ubuntu3.2 | Linux Kernel Device Mapper userspace library |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
-| libfdisk1:amd64 | 2.39.3-9ubuntu6.2 | fdisk partitioning library |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC support library |
 | libgcrypt20:amd64 | 1.10.3-2build1 | LGPL Crypto library - runtime library |
@@ -61,10 +53,8 @@
 | libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (public-key cryptos) |
 | libidn2-0:amd64 | 2.3.7-2build1.1 | Internationalized domain names (IDNA2008/TR46) library |
-| libjson-c5:amd64 | 0.17-1build1 | JSON manipulation library - shared library |
 | libk5crypto3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
-| libkmod2:amd64 | 31+20240202-2ubuntu7.1 | libkmod shared library |
 | libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
 | libkrb5support0:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Support library |
 | libldap2:amd64 | 2.6.7+dfsg-1~exp1ubuntu8.2 | OpenLDAP libraries |
@@ -98,7 +88,6 @@
 | libssh-4:amd64 | 0.10.6-2build2 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
-| libsystemd-shared:amd64 | 255.4-1ubuntu8.8 | systemd shared private library |
 | libsystemd0:amd64 | 255.4-1ubuntu8.8 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.1 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
@@ -122,8 +111,6 @@
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
 | sed | 4.9-2build1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
-| systemd | 255.4-1ubuntu8.8 | system and service manager |
-| systemd-dev | 255.4-1ubuntu8.8 | systemd development files |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
 | tar | 1.35+dfsg-3build1 | GNU version of the tar archiving utility |
 | tzdata | 2025b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
