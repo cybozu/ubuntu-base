@@ -21,8 +21,6 @@
 | cpp-13 | 13.3.0-6ubuntu2~24.04 | GNU C preprocessor |
 | cpp-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04 | GNU C preprocessor for x86_64-linux-gnu |
 | cpp-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C preprocessor (cpp) for the amd64 architecture |
-| cron | 3.0pl1-184ubuntu2 | process scheduling daemon |
-| cron-daemon-common | 3.0pl1-184ubuntu2 | process scheduling daemon's configuration files |
 | curl | 8.5.0-2ubuntu10.6 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
@@ -51,9 +49,7 @@
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | jq | 1.7.1-3build1 | lightweight and flexible command-line JSON processor |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
-| libapparmor1:amd64 | 4.0.1really4.0.1-0ubuntu0.24.04.4 | changehat AppArmor library |
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
-| libargon2-1:amd64 | 0~20190702+dfsg-4build1 | memory-hard hashing function - runtime library |
 | libasan8:amd64 | 14.2.0-4ubuntu2~24.04 | AddressSanitizer -- a fast memory error detector |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libatomic1:amd64 | 14.2.0-4ubuntu2~24.04 | support library providing __atomic built-in functions |
@@ -76,20 +72,17 @@
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt-dev:amd64 | 1:4.4.36-4build1 | libcrypt development files |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
-| libcryptsetup12:amd64 | 2:2.7.0-1ubuntu4.2 | disk encryption support - shared library |
 | libctf-nobfd0:amd64 | 2.42-4ubuntu2.5 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.42-4ubuntu2.5 | Compact C Type Format library (runtime, BFD dependency) |
 | libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
 | libcurl4t64:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
-| libdevmapper1.02.1:amd64 | 2:1.02.185-3ubuntu3.2 | Linux Kernel Device Mapper userspace library |
 | libdpkg-perl | 1.22.6ubuntu6.1 | Dpkg perl modules |
 | libedit2:amd64 | 3.1-20230828-1build1 | BSD editline and history libraries |
 | liberror-perl | 0.17029-2 | Perl module for error/exception handling in an OO-ish way |
 | libexpat1:amd64 | 2.6.1-2ubuntu0.3 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
-| libfdisk1:amd64 | 2.39.3-9ubuntu6.2 | fdisk partitioning library |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
 | libgcc-13-dev:amd64 | 13.3.0-6ubuntu2~24.04 | GCC support library (development files) |
@@ -110,10 +103,8 @@
 | libitm1:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Transactional Memory Library |
 | libjansson4:amd64 | 2.14-2build2 | C library for encoding, decoding and manipulating JSON data |
 | libjq1:amd64 | 1.7.1-3build1 | lightweight and flexible command-line JSON processor - shared library |
-| libjson-c5:amd64 | 0.17-1build1 | JSON manipulation library - shared library |
 | libk5crypto3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
-| libkmod2:amd64 | 31+20240202-2ubuntu7.1 | libkmod shared library |
 | libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
 | libkrb5support0:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Support library |
 | libldap2:amd64 | 2.6.7+dfsg-1~exp1ubuntu8.2 | OpenLDAP libraries |
@@ -159,7 +150,6 @@
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
-| libsystemd-shared:amd64 | 255.4-1ubuntu8.8 | systemd shared private library |
 | libsystemd0:amd64 | 255.4-1ubuntu8.8 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.1 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
@@ -170,7 +160,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.2 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 6.8.0-62.65 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 6.8.0-63.66 | Linux Kernel Headers for development |
 | locales | 2.39-0ubuntu8.4 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
@@ -193,8 +183,6 @@
 | rpcsvc-proto | 1.4.2-0ubuntu7 | RPC protocol compiler and definitions |
 | sed | 4.9-2build1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
-| systemd | 255.4-1ubuntu8.8 | system and service manager |
-| systemd-dev | 255.4-1ubuntu8.8 | systemd development files |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
 | tar | 1.35+dfsg-3build1 | GNU version of the tar archiving utility |
 | tzdata | 2025b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |

@@ -23,8 +23,6 @@
 | ca-certificates | 20240203 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
 | coreutils | 9.4-3ubuntu6 | GNU core utilities |
-| cron | 3.0pl1-184ubuntu2 | process scheduling daemon |
-| cron-daemon-common | 3.0pl1-184ubuntu2 | process scheduling daemon's configuration files |
 | curl | 8.5.0-2ubuntu10.6 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
@@ -49,11 +47,9 @@
 | jq | 1.7.1-3build1 | lightweight and flexible command-line JSON processor |
 | less | 590-2ubuntu2.1 | pager program similar to more |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
-| libapparmor1:amd64 | 4.0.1really4.0.1-0ubuntu0.24.04.4 | changehat AppArmor library |
 | libapr1t64:amd64 | 1.7.2-3.1ubuntu0.1 | Apache Portable Runtime Library |
 | libaprutil1t64:amd64 | 1.6.3-1.1ubuntu7 | Apache Portable Runtime Utility Library |
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
-| libargon2-1:amd64 | 0~20190702+dfsg-4build1 | memory-hard hashing function - runtime library |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libattr1:amd64 | 1:2.5.2-1build1.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
@@ -73,7 +69,6 @@
 | libcbor0.10:amd64 | 0.10.2-1.2ubuntu2 | library for parsing and generating CBOR (RFC 7049) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
-| libcryptsetup12:amd64 | 2:2.7.0-1ubuntu4.2 | disk encryption support - shared library |
 | libctf-nobfd0:amd64 | 2.42-4ubuntu2.5 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.42-4ubuntu2.5 | Compact C Type Format library (runtime, BFD dependency) |
 | libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
@@ -83,13 +78,11 @@
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
 | libdebuginfod-common | 0.190-1.1ubuntu0.1 | configuration to enable the Debian debug info server |
 | libdebuginfod1t64:amd64 | 0.190-1.1ubuntu0.1 | library to interact with debuginfod (development files) |
-| libdevmapper1.02.1:amd64 | 2:1.02.185-3ubuntu3.2 | Linux Kernel Device Mapper userspace library |
 | libdw1t64:amd64 | 0.190-1.1ubuntu0.1 | library that provides access to the DWARF debug information |
 | libedit2:amd64 | 3.1-20230828-1build1 | BSD editline and history libraries |
 | libelf1t64:amd64 | 0.190-1.1ubuntu0.1 | library to read and write ELF files |
 | libexpat1:amd64 | 2.6.1-2ubuntu0.3 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
-| libfdisk1:amd64 | 2.39.3-9ubuntu6.2 | fdisk partitioning library |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
 | libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC support library |
@@ -116,7 +109,6 @@
 | libjson-c5:amd64 | 0.17-1build1 | JSON manipulation library - shared library |
 | libk5crypto3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
-| libkmod2:amd64 | 31+20240202-2ubuntu7.1 | libkmod shared library |
 | libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
 | libkrb5support0:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Support library |
 | libldap2:amd64 | 2.6.7+dfsg-1~exp1ubuntu8.2 | OpenLDAP libraries |
@@ -176,7 +168,6 @@
 | libssh-4:amd64 | 0.10.6-2build2 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
-| libsystemd-shared:amd64 | 255.4-1ubuntu8.8 | systemd shared private library |
 | libsystemd0:amd64 | 255.4-1ubuntu8.8 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.1 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
@@ -238,8 +229,6 @@
 | sqlite3 | 3.45.1-1ubuntu2.3 | Command line interface for SQLite 3 |
 | strace | 6.8-0ubuntu2 | System call tracer |
 | sysstat | 12.6.1-2 | system performance tools for Linux |
-| systemd | 255.4-1ubuntu8.8 | system and service manager |
-| systemd-dev | 255.4-1ubuntu8.8 | systemd development files |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
 | tar | 1.35+dfsg-3build1 | GNU version of the tar archiving utility |
 | tcl-expect:amd64 | 5.45.4-3 | Automates interactive applications (Tcl package) |
@@ -260,4 +249,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.27.40 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.27.46 | Universal Command Line Interface for Amazon Web Services |
