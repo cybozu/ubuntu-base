@@ -218,7 +218,7 @@
 | python3-six | 1.16.0-4 | Python 2 and 3 compatibility library |
 | python3.12 | 3.12.3-1ubuntu0.7 | Interactive high-level object-oriented language (version 3.12) |
 | python3.12-minimal | 3.12.3-1ubuntu0.7 | Minimal subset of the Python language (version 3.12) |
-| rclone | 1.60.1+dfsg-3ubuntu0.24.04.2 | rsync for commercial cloud storage |
+| rclone | 1.60.1+dfsg-3ubuntu0.24.04.3 | rsync for commercial cloud storage |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-1ubuntu1.2 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.4.0-2 | command-line Amazon S3 client |
@@ -249,4 +249,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.27.46 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.27.47 | Universal Command Line Interface for Amazon Web Services |
