@@ -37,7 +37,7 @@
 | gdb | 15.0.50.20240403-0ubuntu1 | GNU Debugger |
 | gpgv | 2.4.4-2ubuntu17.2 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
-| gzip | 1.12-1ubuntu3 | GNU compression utilities |
+| gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
 | inetutils-telnet | 2:2.5-3ubuntu4 | telnet client |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
@@ -249,4 +249,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.27.47 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.27.48 | Universal Command Line Interface for Amazon Web Services |

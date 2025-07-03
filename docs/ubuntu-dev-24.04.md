@@ -44,7 +44,7 @@
 | git-man | 1:2.43.0-1ubuntu7.2 | fast, scalable, distributed revision control system (manual pages) |
 | gpgv | 2.4.4-2ubuntu17.2 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
-| gzip | 1.12-1ubuntu3 | GNU compression utilities |
+| gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | jq | 1.7.1-3build1 | lightweight and flexible command-line JSON processor |
