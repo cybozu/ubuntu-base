@@ -36,7 +36,7 @@
 | gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04 | GCC, the GNU Compiler Collection (base package) |
 | git | 1:2.34.1-1ubuntu1.12 | fast, scalable, distributed revision control system |
 | git-man | 1:2.34.1-1ubuntu1.12 | fast, scalable, distributed revision control system (manual pages) |
-| gpgv | 2.2.27-3ubuntu2.3 | GNU privacy guard - signature verification tool |
+| gpgv | 2.2.27-3ubuntu2.4 | GNU privacy guard - signature verification tool |
 | grep | 3.7-1build1 | GNU grep, egrep and fgrep |
 | gzip | 1.10-4ubuntu4.1 | GNU compression utilities |
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |
@@ -136,7 +136,7 @@
 | libsepol2:amd64 | 3.3-1build1 | SELinux library for manipulating binary security policies |
 | libsmartcols1:amd64 | 2.37.2-4ubuntu3.4 | smart column output alignment library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
-| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.3 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.4 | tiny C SSH library (OpenSSL flavor) |
 | libssl-dev:amd64 | 3.0.2-0ubuntu1.19 | Secure Sockets Layer toolkit - development files |
 | libssl3:amd64 | 3.0.2-0ubuntu1.19 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-11-dev:amd64 | 11.4.0-1ubuntu1~22.04 | GNU Standard C++ Library v3 (development files) |

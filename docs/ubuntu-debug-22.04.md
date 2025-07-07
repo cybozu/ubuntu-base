@@ -38,7 +38,7 @@
 | findutils | 4.8.0-1ubuntu3 | utilities for finding files--find, xargs |
 | gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04 | GCC, the GNU Compiler Collection (base package) |
 | gdb | 12.1-0ubuntu1~22.04.2 | GNU Debugger |
-| gpgv | 2.2.27-3ubuntu2.3 | GNU privacy guard - signature verification tool |
+| gpgv | 2.2.27-3ubuntu2.4 | GNU privacy guard - signature verification tool |
 | grep | 3.7-1build1 | GNU grep, egrep and fgrep |
 | groff | 1.22.4-8build1 | GNU troff text-formatting system |
 | groff-base | 1.22.4-8build1 | GNU troff text-formatting system (base system components) |
@@ -168,7 +168,7 @@
 | libsource-highlight4v5 | 3.1.9-4.1build2 | source highlighting library |
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.4 | SQLite 3 shared library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
-| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.3 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.4 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.19 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.16 | systemd utility library |
