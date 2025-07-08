@@ -12,7 +12,7 @@
 | binutils | 2.42-4ubuntu2.5 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.42-4ubuntu2.5 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.42-4ubuntu2.5 | GNU binary utilities, for x86-64-linux-gnu target |
-| bsdutils | 1:2.39.3-9ubuntu6.2 | basic utilities from 4.4BSD-Lite |
+| bsdutils | 1:2.39.3-9ubuntu6.3 | basic utilities from 4.4BSD-Lite |
 | build-essential | 12.10ubuntu1 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor - utilities |
 | ca-certificates | 20240203 | Common CA certificates |
@@ -42,7 +42,7 @@
 | gcc-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C compiler for the amd64 architecture |
 | git | 1:2.43.0-1ubuntu7.2 | fast, scalable, distributed revision control system |
 | git-man | 1:2.43.0-1ubuntu7.2 | fast, scalable, distributed revision control system (manual pages) |
-| gpgv | 2.4.4-2ubuntu17.2 | GNU privacy guard - signature verification tool |
+| gpgv | 2.4.4-2ubuntu17.3 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
@@ -57,7 +57,7 @@
 | libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
 | libbinutils:amd64 | 2.42-4ubuntu2.5 | GNU binary utilities (private shared library) |
-| libblkid1:amd64 | 2.39.3-9ubuntu6.2 | block device ID library |
+| libblkid1:amd64 | 2.39.3-9ubuntu6.3 | block device ID library |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
@@ -112,7 +112,7 @@
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
 | liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression library |
 | libmd0:amd64 | 1.1.0-2build1.1 | message digest functions from BSD systems - shared library |
-| libmount1:amd64 | 2.39.3-9ubuntu6.2 | device mounting library |
+| libmount1:amd64 | 2.39.3-9ubuntu6.3 | device mounting library |
 | libmpc3:amd64 | 1.3.1-1build1.1 | multiple precision complex floating-point library |
 | libmpfr6:amd64 | 4.2.1-1build1.1 | multiple precision floating-point computation |
 | libncurses-dev:amd64 | 6.4+20240113-1ubuntu2 | developer's libraries for ncurses |
@@ -143,9 +143,9 @@
 | libsemanage2:amd64 | 3.5-1build5 | SELinux policy management library |
 | libsepol2:amd64 | 3.5-2build1 | SELinux library for manipulating binary security policies |
 | libsframe1:amd64 | 2.42-4ubuntu2.5 | Library to handle the SFrame format (runtime library) |
-| libsmartcols1:amd64 | 2.39.3-9ubuntu6.2 | smart column output alignment library |
+| libsmartcols1:amd64 | 2.39.3-9ubuntu6.3 | smart column output alignment library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
-| libssh-4:amd64 | 0.10.6-2build2 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.10.6-2ubuntu0.1 | tiny C SSH library (OpenSSL flavor) |
 | libssl-dev:amd64 | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - development files |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04 | GNU Standard C++ Library v3 (development files) |
@@ -157,7 +157,7 @@
 | libubsan1:amd64 | 14.2.0-4ubuntu2~24.04 | UBSan -- undefined behaviour sanitizer (runtime) |
 | libudev1:amd64 | 255.4-1ubuntu8.8 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
-| libuuid1:amd64 | 2.39.3-9ubuntu6.2 | Universally Unique ID library |
+| libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
 | linux-libc-dev:amd64 | 6.8.0-63.66 | Linux Kernel Headers for development |
@@ -167,7 +167,7 @@
 | lto-disabled-list | 47 | list of packages not to build with LTO |
 | make | 4.3-4.1build2 | utility for directing compilation |
 | mawk | 1.3.4.20240123-1build1 | Pattern scanning and text processing language |
-| mount | 2.39.3-9ubuntu6.2 | tools for mounting and manipulating filesystems |
+| mount | 2.39.3-9ubuntu6.3 | tools for mounting and manipulating filesystems |
 | ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
 | ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
@@ -188,7 +188,7 @@
 | tzdata | 2025b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
-| util-linux | 2.39.3-9ubuntu6.2 | miscellaneous system utilities |
+| util-linux | 2.39.3-9ubuntu6.3 | miscellaneous system utilities |
 | xz-utils | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | gh | 2.65.0 | Work seamlessly with GitHub from the command line |
