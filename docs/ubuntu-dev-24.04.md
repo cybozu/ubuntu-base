@@ -40,8 +40,8 @@
 | gcc-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04 | GNU C compiler for the x86_64-linux-gnu architecture |
 | gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
 | gcc-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C compiler for the amd64 architecture |
-| git | 1:2.43.0-1ubuntu7.2 | fast, scalable, distributed revision control system |
-| git-man | 1:2.43.0-1ubuntu7.2 | fast, scalable, distributed revision control system (manual pages) |
+| git | 1:2.43.0-1ubuntu7.3 | fast, scalable, distributed revision control system |
+| git-man | 1:2.43.0-1ubuntu7.3 | fast, scalable, distributed revision control system (manual pages) |
 | gpgv | 2.4.4-2ubuntu17.3 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
