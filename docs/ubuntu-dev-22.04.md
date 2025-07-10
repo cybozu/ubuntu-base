@@ -34,8 +34,8 @@
 | gcc-11 | 11.4.0-1ubuntu1~22.04 | GNU C compiler |
 | gcc-11-base:amd64 | 11.4.0-1ubuntu1~22.04 | GCC, the GNU Compiler Collection (base package) |
 | gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04 | GCC, the GNU Compiler Collection (base package) |
-| git | 1:2.34.1-1ubuntu1.13 | fast, scalable, distributed revision control system |
-| git-man | 1:2.34.1-1ubuntu1.13 | fast, scalable, distributed revision control system (manual pages) |
+| git | 1:2.34.1-1ubuntu1.14 | fast, scalable, distributed revision control system |
+| git-man | 1:2.34.1-1ubuntu1.14 | fast, scalable, distributed revision control system (manual pages) |
 | gpgv | 2.2.27-3ubuntu2.4 | GNU privacy guard - signature verification tool |
 | grep | 3.7-1build1 | GNU grep, egrep and fgrep |
 | gzip | 1.10-4ubuntu4.1 | GNU compression utilities |
