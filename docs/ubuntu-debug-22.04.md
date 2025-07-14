@@ -95,7 +95,7 @@
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
 | libglib2.0-0:amd64 | 2.72.4-0ubuntu2.5 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
-| libgnutls30:amd64 | 3.7.3-4ubuntu1.6 | GNU TLS library - main runtime library |
+| libgnutls30:amd64 | 3.7.3-4ubuntu1.7 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-10build1 | General Purpose Mouse - shared library |
 | libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |

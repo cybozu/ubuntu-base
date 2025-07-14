@@ -61,8 +61,8 @@
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.39-0ubuntu8.4 | GNU C Library: Binaries |
-| libc6:amd64 | 2.39-0ubuntu8.4 | GNU C Library: Shared libraries |
+| libc-bin | 2.39-0ubuntu8.5 | GNU C Library: Binaries |
+| libc6:amd64 | 2.39-0ubuntu8.5 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
 | libcap2-bin | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (utilities) |
@@ -91,7 +91,7 @@
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libglib2.0-0t64:amd64 | 2.80.0-6ubuntu3.4 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
-| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.3 | GNU TLS library - main runtime library |
+| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.4 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-11 | General Purpose Mouse - shared library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.5 | GNU Next Generation profiler (runtime library) |
@@ -186,7 +186,7 @@
 | libxtables12:amd64 | 1.8.10-3ubuntu2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| locales | 2.39-0ubuntu8.4 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.39-0ubuntu8.5 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
 | lsb-release | 12.0-2 | Linux Standard Base version reporting utility (minimal implementation) |
