@@ -1,0 +1,16 @@
+- name: GH
+  version:
+    type: github
+    repo: cli/cli
+- name: GRPCURL
+  version:
+    type: github
+    repo: fullstorydev/grpcurl
+- name: CRANE
+  version:
+    type: github
+    repo: google/go-containerregistry
+- name: AWSCLI
+  version:
+    type: custom
+    expr: 'curl -s "https://raw.githubusercontent.com/aws/aws-cli/v2/CHANGELOG.rst" | head -10 | grep -E "^[0-9]+\.[0-9]+\.[0-9]+" | head -1'

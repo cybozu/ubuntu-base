@@ -1,0 +1,246 @@
+version: '3'
+
+vars:
+  DOCKERFILES:
+    sh: find . -name "Dockerfile" -path "*/ubuntu-*/Dockerfile"
+
+  TOOLS_YAML:
+    sh: cat ./tools.yaml
+  TOOLS:
+    ref: "fromYaml .TOOLS_YAML"
+
+tasks:
+
+  show-current-versions:
+    desc: Show current versions in Dockerfiles
+    silent: true
+    vars:
+      TEMP_FILE:
+        sh: mktemp -t current_versions_XXXXXX.yaml
+    cmds:
+      - echo "Current versions in Dockerfiles:"
+      - task: get-current-versions
+        vars:
+          OUTPUT_FILE: '{{.TEMP_FILE}}'
+      - cat {{.TEMP_FILE}}
+      - rm -f {{.TEMP_FILE}}
+
+  get-current-versions:
+    desc: "Get current versions in YAML format"
+    silent: true
+    internal: true
+    requires:
+      vars: [OUTPUT_FILE]
+    cmds:
+      - |
+        # Initialize empty YAML object
+        echo "{}" > "{{.OUTPUT_FILE}}"
+        
+        # Use yq to properly parse YAML and extract tool names
+        yq '.[] | .name' tools.yaml | while read -r tool_name; do
+          # Create tool entry with dockerfiles array
+          yq eval ".$tool_name = {\"dockerfiles\": []}" -i "{{.OUTPUT_FILE}}"
+          
+          # Check each Dockerfile for this tool's version
+          dockerfiles="{{.DOCKERFILES}}"
+          for dockerfile in $dockerfiles; do
+            version=$(grep "ARG ${tool_name}_VERSION=" "$dockerfile" 2>/dev/null | head -1 | cut -d'=' -f2)
+            if [ -n "$version" ]; then
+              # Add dockerfile entry using yq
+              yq eval ".$tool_name.dockerfiles += [{\"path\": \"$dockerfile\", \"version\": \"$version\"}]" -i "{{.OUTPUT_FILE}}"
+            fi
+          done
+        done
+        
+        echo "Current versions written to: {{.OUTPUT_FILE}}"
+
+  get-latest-versions:
+    desc: "Get latest available versions in YAML format"
+    silent: true
+    internal: true
+    requires:
+      vars: [OUTPUT_FILE]
+    cmds:
+      - |
+        # Initialize empty YAML object
+        echo "{}" > "{{.OUTPUT_FILE}}"
+        
+        # Use yq to properly parse YAML and extract tool information
+        yq '.[] | .name' tools.yaml | while read -r tool_name; do
+          tool_type=$(yq ".[] | select(.name == \"$tool_name\") | .version.type" tools.yaml)
+          tool_repo=$(yq ".[] | select(.name == \"$tool_name\") | .version.repo // \"\"" tools.yaml 2>/dev/null || echo "")
+          tool_expr=$(yq ".[] | select(.name == \"$tool_name\") | .version.expr // \"\"" tools.yaml 2>/dev/null || echo "")
+          # Get latest version based on type
+          case "$tool_type" in
+            github)
+              if [ -n "$tool_repo" ]; then
+                version=$(gh release view --repo "$tool_repo" --json tagName --jq '.tagName' 2>/dev/null | sed 's/v//' || echo "Error: gh command failed")
+              else
+                version="Error: No repo specified"
+              fi
+              ;;
+            custom)
+              if [ -n "$tool_expr" ]; then
+                version=$(eval "$tool_expr" 2>/dev/null || echo "Error: Expression failed")
+              else
+                version="Error: No expression specified"
+              fi
+              ;;
+            *)
+              version="Error: Unknown type $tool_type"
+              ;;
+          esac
+          
+          # Set tool name to version directly
+          yq eval ".$tool_name = \"$version\"" -i "{{.OUTPUT_FILE}}"
+        done
+        
+        echo "Latest versions written to: {{.OUTPUT_FILE}}"
+
+  show-latest-versions:
+    desc: Show latest available versions
+    silent: true
+    vars:
+      TEMP_FILE:
+        sh: mktemp -t latest_versions_XXXXXX.yaml
+    cmds:
+      - echo "Fetching latest versions..."
+      - task: get-latest-versions
+        vars:
+          OUTPUT_FILE: '{{.TEMP_FILE}}'
+      - cat {{.TEMP_FILE}}
+      - rm -f {{.TEMP_FILE}}
+
+  check-updates:
+    desc: "Check if any tools need updates (Usage: task check-updates OUTPUT_FILE=updates.yaml)"
+    silent: true
+    requires:
+      vars: [OUTPUT_FILE]
+    vars:
+      CURRENT_FILE:
+        sh: mktemp -t current_versions_XXXXXX.yaml
+      LATEST_FILE:
+        sh: mktemp -t latest_versions_XXXXXX.yaml
+    cmds:
+      - echo "Checking for tool updates..."
+      - task: get-current-versions
+        vars:
+          OUTPUT_FILE: '{{.CURRENT_FILE}}'
+      - task: get-latest-versions
+        vars:
+          OUTPUT_FILE: '{{.LATEST_FILE}}'
+      - |
+        # Initialize empty YAML object for updates
+        echo "{}" > "{{.OUTPUT_FILE}}"
+        
+        updates_needed=false
+        
+        # Get tool names from current versions
+        yq 'keys[]' {{.CURRENT_FILE}} | while read -r tool_name; do
+          # Get latest version for this tool
+          latest_version=$(yq ".$tool_name" {{.LATEST_FILE}} 2>/dev/null)
+          
+          # Skip if latest version is empty or contains error
+          if [ -z "$latest_version" ] || echo "$latest_version" | grep -q "Error"; then
+            continue
+          fi
+          
+          # Check each dockerfile for this tool
+          tool_needs_update=false
+          dockerfiles_to_update=""
+          
+          # Get the number of dockerfiles for this tool
+          dockerfile_count=$(yq ".$tool_name.dockerfiles | length" {{.CURRENT_FILE}} 2>/dev/null || echo "0")
+          
+          # Check each dockerfile
+          for i in $(seq 0 $((dockerfile_count - 1))); do
+            current_version=$(yq ".$tool_name.dockerfiles[$i].version" {{.CURRENT_FILE}} 2>/dev/null)
+            dockerfile_path=$(yq ".$tool_name.dockerfiles[$i].path" {{.CURRENT_FILE}} 2>/dev/null)
+            
+            # Skip if current version is empty
+            if [ -z "$current_version" ]; then
+              continue
+            fi
+            
+            # Compare versions
+            if [ "$current_version" != "$latest_version" ]; then
+              if [ "$tool_needs_update" = false ]; then
+                # Create tool entry on first update needed
+                yq eval ".$tool_name = {\"latest\": \"$latest_version\", \"dockerfiles\": []}" -i "{{.OUTPUT_FILE}}"
+                tool_needs_update=true
+                echo "  $tool_name: $latest_version"
+              fi
+              
+              # Add dockerfile entry with current and latest versions
+              yq eval ".$tool_name.dockerfiles += [{\"path\": \"$dockerfile_path\", \"current\": \"$current_version\", \"latest\": \"$latest_version\"}]" -i "{{.OUTPUT_FILE}}"
+              dockerfiles_to_update="$dockerfiles_to_update $dockerfile_path"
+              updates_needed=true
+            fi
+          done
+          
+          # Print summary for this tool if updates needed
+          if [ "$tool_needs_update" = true ]; then
+            echo "    Dockerfiles: $dockerfiles_to_update"
+          fi
+        done
+        
+        # Check if any updates were found
+        if ! $updates_needed; then
+          echo "  No updates needed - all tools are up to date!"
+        fi
+        
+        echo ""
+        echo "Updates written to: {{.OUTPUT_FILE}}"
+        echo "Run 'task update-tool-versions OUTPUT_FILE={{.OUTPUT_FILE}}' to apply updates."
+      - rm -f {{.CURRENT_FILE}} {{.LATEST_FILE}}
+
+  update-tool-versions:
+    desc: "Update tool versions"
+    silent: true
+    vars:
+      OUTPUT_FILE:
+        sh: mktemp -t updates_XXXXXX.yaml
+    cmds:
+      - task: check-updates
+        vars:
+          OUTPUT_FILE: '{{.OUTPUT_FILE}}'
+      - |
+        # Check if updates file exists and has content
+        if [ ! -f "{{.OUTPUT_FILE}}" ]; then
+          echo "Error: Updates file {{.OUTPUT_FILE}} not found!"
+          exit 1
+        fi
+        
+        # Check if there are any updates to apply
+        update_count=$(yq 'keys | length' {{.OUTPUT_FILE}} 2>/dev/null || echo "0")
+        if [ "$update_count" = "0" ]; then
+          echo "No updates to apply - all tools are up to date!"
+          exit 0
+        fi
+        
+        echo "Found $update_count tool(s) to update"
+        echo ""
+        
+        # Process each tool that needs updates
+        yq 'keys[]' {{.OUTPUT_FILE}} | while read -r tool_name; do
+          latest_version=$(yq ".$tool_name.latest" {{.OUTPUT_FILE}})
+          echo "Updating $tool_name to version $latest_version..."
+          
+          # Get the number of dockerfiles for this tool
+          dockerfile_count=$(yq ".$tool_name.dockerfiles | length" {{.OUTPUT_FILE}} 2>/dev/null || echo "0")
+          
+          # Update each dockerfile
+          for i in $(seq 0 $((dockerfile_count - 1))); do
+            dockerfile_path=$(yq ".$tool_name.dockerfiles[$i].path" {{.OUTPUT_FILE}})
+            current_version=$(yq ".$tool_name.dockerfiles[$i].current" {{.OUTPUT_FILE}})
+            
+            echo "  Updating $dockerfile_path: $current_version -> $latest_version"
+            
+            # Perform the actual update
+            sed -i "s/ARG ${tool_name}_VERSION=.*/ARG ${tool_name}_VERSION=$latest_version/" "$dockerfile_path"
+          done
+          
+          echo ""
+        done
+        
+        echo "✓ Tool versions updated successfully!"
