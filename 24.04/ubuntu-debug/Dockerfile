@@ -55,7 +55,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         vim \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-$(uname -m).zip" -o "awscliv2.zip" \
+ARG AWSCLI_VERSION=2.27.50
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-$(uname -m)-${AWSCLI_VERSION}.zip" -o "awscliv2.zip" \
   && unzip awscliv2.zip \
   && ./aws/install \
   && rm -rf awscliv2.zip ./aws
