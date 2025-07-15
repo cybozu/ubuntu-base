@@ -61,10 +61,10 @@
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.39-0ubuntu8.4 | GNU C Library: Binaries |
-| libc-dev-bin | 2.39-0ubuntu8.4 | GNU C Library: Development binaries |
-| libc6:amd64 | 2.39-0ubuntu8.4 | GNU C Library: Shared libraries |
-| libc6-dev:amd64 | 2.39-0ubuntu8.4 | GNU C Library: Development Libraries and Header Files |
+| libc-bin | 2.39-0ubuntu8.5 | GNU C Library: Binaries |
+| libc-dev-bin | 2.39-0ubuntu8.5 | GNU C Library: Development binaries |
+| libc6:amd64 | 2.39-0ubuntu8.5 | GNU C Library: Shared libraries |
+| libc6-dev:amd64 | 2.39-0ubuntu8.5 | GNU C Library: Development Libraries and Header Files |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
 | libcbor0.10:amd64 | 0.10.2-1.2ubuntu2 | library for parsing and generating CBOR (RFC 7049) |
@@ -91,7 +91,7 @@
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
-| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.3 | GNU TLS library - main runtime library |
+| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.4 | GNU TLS library - main runtime library |
 | libgomp1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC OpenMP (GOMP) support library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.5 | GNU Next Generation profiler (runtime library) |
@@ -161,7 +161,7 @@
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
 | linux-libc-dev:amd64 | 6.8.0-63.66 | Linux Kernel Headers for development |
-| locales | 2.39-0ubuntu8.4 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.39-0ubuntu8.5 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
 | lto-disabled-list | 47 | list of packages not to build with LTO |
