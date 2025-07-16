@@ -88,10 +88,10 @@
 | libssh-4:amd64 | 0.10.6-2ubuntu0.1 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.8 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.10 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.1 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
-| libudev1:amd64 | 255.4-1ubuntu8.8 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.10 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |

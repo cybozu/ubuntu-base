@@ -168,7 +168,7 @@
 | libssh-4:amd64 | 0.10.6-2ubuntu0.1 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.8 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.10 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.1 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-2 | module for rounded or exact English expression of durations |
@@ -176,7 +176,7 @@
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.4+ds-1.1build1 | transport-independent RPC library - common files |
 | libtirpc3t64:amd64 | 1.3.4+ds-1.1build1 | transport-independent RPC library |
-| libudev1:amd64 | 255.4-1ubuntu8.8 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.10 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libunwind8:amd64 | 1.6.2-3build1.1 | library to determine the call-chain of a program - runtime |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
@@ -249,4 +249,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.27.50 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.27.51 | Universal Command Line Interface for Amazon Web Services |
