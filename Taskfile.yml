@@ -111,3 +111,7 @@ tasks:
           UPDATES_FILE: '{{.OUTPUT_FILE}}'
         cmd: ./scripts/update-tool-versions.sh
 
+  shellcheck:
+    desc: Check shell scripts with shellcheck
+    cmds:
+      - ./scripts/run-shellcheck.sh
