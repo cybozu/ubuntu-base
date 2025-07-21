@@ -47,7 +47,7 @@
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
-| jq | 1.7.1-3build1 | lightweight and flexible command-line JSON processor |
+| jq | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
 | libasan8:amd64 | 14.2.0-4ubuntu2~24.04 | AddressSanitizer -- a fast memory error detector |
@@ -102,7 +102,7 @@
 | libisl23:amd64 | 0.26-3build1.1 | manipulating sets and relations of integer points bounded by linear constraints |
 | libitm1:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Transactional Memory Library |
 | libjansson4:amd64 | 2.14-2build2 | C library for encoding, decoding and manipulating JSON data |
-| libjq1:amd64 | 1.7.1-3build1 | lightweight and flexible command-line JSON processor - shared library |
+| libjq1:amd64 | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor - shared library |
 | libk5crypto3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
 | libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
@@ -160,7 +160,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 6.8.0-63.66 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 6.8.0-64.67 | Linux Kernel Headers for development |
 | locales | 2.39-0ubuntu8.5 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |

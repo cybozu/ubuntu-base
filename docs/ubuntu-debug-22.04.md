@@ -48,7 +48,7 @@
 | iperf3 | 3.9-1+deb11u1build0.22.04.1 | Internet Protocol bandwidth measuring tool |
 | iproute2 | 5.15.0-1ubuntu2 | networking and traffic control tools |
 | iputils-ping | 3:20211215-1 | Tools to test the reachability of network hosts |
-| jq | 1.6-2.1ubuntu3 | lightweight and flexible command-line JSON processor |
+| jq | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor |
 | less | 590-1ubuntu0.22.04.3 | pager program similar to more |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
 | libapr1:amd64 | 1.7.0-8ubuntu0.22.04.2 | Apache Portable Runtime Library |
@@ -107,7 +107,7 @@
 | libipc-run-perl | 20200505.0-1 | Perl module for running processes |
 | libiperf0:amd64 | 3.9-1+deb11u1build0.22.04.1 | Internet Protocol bandwidth measuring tool (runtime files) |
 | libipt2 | 2.0.5-1 | Intel Processor Trace Decoder Library |
-| libjq1:amd64 | 1.6-2.1ubuntu3 | lightweight and flexible command-line JSON processor - shared library |
+| libjq1:amd64 | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor - shared library |
 | libjson-c5:amd64 | 0.15-3~ubuntu1.22.04.2 | JSON manipulation library - shared library |
 | libk5crypto3:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.1-2ubuntu3 | Linux Key Management Utilities (library) |
