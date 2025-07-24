@@ -171,7 +171,7 @@
 | ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
 | ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssh-client | 1:9.6p1-3ubuntu13.12 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:9.6p1-3ubuntu13.13 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | patch | 2.7.6-7build3 | Apply a diff file to an original |
