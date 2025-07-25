@@ -47,7 +47,7 @@
 | init-system-helpers | 1.62 | helper tools for all init systems |
 | iperf3 | 3.9-1+deb11u1build0.22.04.1 | Internet Protocol bandwidth measuring tool |
 | iproute2 | 5.15.0-1ubuntu2 | networking and traffic control tools |
-| iputils-ping | 3:20211215-1 | Tools to test the reachability of network hosts |
+| iputils-ping | 3:20211215-1ubuntu0.1 | Tools to test the reachability of network hosts |
 | jq | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor |
 | less | 590-1ubuntu0.22.04.3 | pager program similar to more |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
