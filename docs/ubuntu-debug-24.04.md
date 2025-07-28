@@ -163,7 +163,7 @@
 | libsodium23:amd64 | 1.0.18-1build3 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build1 | architecture-independent files for source highlighting library |
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
-| libsqlite3-0:amd64 | 3.45.1-1ubuntu2.3 | SQLite 3 shared library |
+| libsqlite3-0:amd64 | 3.45.1-1ubuntu2.4 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.1 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - shared libraries |
@@ -226,7 +226,7 @@
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | smartmontools | 7.4-2build1 | control and monitor storage systems using S.M.A.R.T. |
 | socat | 1.8.0.0-4build3 | multipurpose relay for bidirectional data transfer |
-| sqlite3 | 3.45.1-1ubuntu2.3 | Command line interface for SQLite 3 |
+| sqlite3 | 3.45.1-1ubuntu2.4 | Command line interface for SQLite 3 |
 | strace | 6.8-0ubuntu2 | System call tracer |
 | sysstat | 12.6.1-2 | system performance tools for Linux |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
@@ -249,4 +249,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.27.59 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.27.61 | Universal Command Line Interface for Amazon Web Services |
