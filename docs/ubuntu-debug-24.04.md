@@ -138,7 +138,7 @@
 | libpam0g:amd64 | 1.5.3-5ubuntu5.4 | Pluggable Authentication Modules library |
 | libpcap0.8t64:amd64 | 1.10.4-4.1ubuntu3 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.42-4ubuntu2.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
-| libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.1 | shared Perl library |
+| libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.2 | shared Perl library |
 | libpopt0:amd64 | 1.19+dfsg-1build1 | lib for parsing cmdline parameters |
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.2 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |
@@ -207,9 +207,9 @@
 | openssh-client | 1:9.6p1-3ubuntu13.13 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
-| perl | 5.38.2-3.2ubuntu0.1 | Larry Wall's Practical Extraction and Report Language |
-| perl-base | 5.38.2-3.2ubuntu0.1 | minimal Perl system |
-| perl-modules-5.38 | 5.38.2-3.2ubuntu0.1 | Core Perl modules |
+| perl | 5.38.2-3.2ubuntu0.2 | Larry Wall's Practical Extraction and Report Language |
+| perl-base | 5.38.2-3.2ubuntu0.2 | minimal Perl system |
+| perl-modules-5.38 | 5.38.2-3.2ubuntu0.2 | Core Perl modules |
 | procps | 2:4.0.4-4ubuntu3.2 | /proc file system utilities |
 | python3 | 3.12.3-0ubuntu2 | interactive high-level object-oriented language (default python3 version) |
 | python3-dateutil | 2.8.2-3ubuntu1 | powerful extensions to the standard Python 3 datetime module |
@@ -249,4 +249,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.27.61 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.27.62 | Universal Command Line Interface for Amazon Web Services |

@@ -120,7 +120,7 @@
 | libpam0g:amd64 | 1.4.0-11ubuntu2.6 | Pluggable Authentication Modules library |
 | libpcre2-8-0:amd64 | 10.39-3ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libpcre3:amd64 | 2:8.39-13ubuntu0.22.04.1 | Old Perl 5 Compatible Regular Expression Library - runtime files |
-| libperl5.34:amd64 | 5.34.0-3ubuntu1.4 | shared Perl library |
+| libperl5.34:amd64 | 5.34.0-3ubuntu1.5 | shared Perl library |
 | libprocps8:amd64 | 2:3.3.17-6ubuntu2.1 | library for accessing process information from /proc |
 | libpsl5:amd64 | 0.21.0-1.2build2 | Library for Public Suffix List (shared libraries) |
 | libquadmath0:amd64 | 12.3.0-1ubuntu1~22.04 | GCC Quad-Precision Math Library |
@@ -154,7 +154,7 @@
 | libuuid1:amd64 | 2.37.2-4ubuntu3.4 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
 | libzstd1:amd64 | 1.4.8+dfsg-3build1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 5.15.0-144.157 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 5.15.0-151.161 | Linux Kernel Headers for development |
 | locales | 2.35-0ubuntu3.10 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.8.1-2ubuntu2.2 | system login tools |
 | logsave | 1.46.5-2ubuntu1.2 | save the output of a command in a log file |
@@ -170,9 +170,9 @@
 | openssl | 3.0.2-0ubuntu1.19 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | patch | 2.7.6-7build2 | Apply a diff file to an original |
-| perl | 5.34.0-3ubuntu1.4 | Larry Wall's Practical Extraction and Report Language |
-| perl-base | 5.34.0-3ubuntu1.4 | minimal Perl system |
-| perl-modules-5.34 | 5.34.0-3ubuntu1.4 | Core Perl modules |
+| perl | 5.34.0-3ubuntu1.5 | Larry Wall's Practical Extraction and Report Language |
+| perl-base | 5.34.0-3ubuntu1.5 | minimal Perl system |
+| perl-modules-5.34 | 5.34.0-3ubuntu1.5 | Core Perl modules |
 | procps | 2:3.3.17-6ubuntu2.1 | /proc file system utilities |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rpcsvc-proto | 1.4.2-0ubuntu6 | RPC protocol compiler and definitions |

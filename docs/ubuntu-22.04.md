@@ -110,7 +110,7 @@
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssl | 3.0.2-0ubuntu1.19 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
-| perl-base | 5.34.0-3ubuntu1.4 | minimal Perl system |
+| perl-base | 5.34.0-3ubuntu1.5 | minimal Perl system |
 | procps | 2:3.3.17-6ubuntu2.1 | /proc file system utilities |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | sed | 4.8-1ubuntu2 | GNU stream editor for filtering/transforming text |
