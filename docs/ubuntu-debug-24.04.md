@@ -7,7 +7,7 @@
 | apt | 2.8.3 | commandline package manager |
 | apt-transport-https | 2.8.3 | transitional package for https support |
 | apt-utils | 2.8.3 | package management related utility programs |
-| base-files | 13ubuntu10.2 | Debian base system miscellaneous files |
+| base-files | 13ubuntu10.3 | Debian base system miscellaneous files |
 | base-passwd | 3.6.3build1 | Debian base system master password and group files |
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
 | bash-completion | 1:2.11-8 | programmable completion for the bash shell |
@@ -42,7 +42,7 @@
 | inetutils-telnet | 2:2.5-3ubuntu4 | telnet client |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | iperf3 | 3.16-1build2 | Internet Protocol bandwidth measuring tool |
-| iproute2 | 6.1.0-1ubuntu6 | networking and traffic control tools |
+| iproute2 | 6.1.0-1ubuntu6.2 | networking and traffic control tools |
 | iputils-ping | 3:20240117-1ubuntu0.1 | Tools to test the reachability of network hosts |
 | jq | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor |
 | less | 590-2ubuntu2.1 | pager program similar to more |
@@ -174,8 +174,6 @@
 | libtime-duration-perl | 1.21-2 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
-| libtirpc-common | 1.3.4+ds-1.1build1 | transport-independent RPC library - common files |
-| libtirpc3t64:amd64 | 1.3.4+ds-1.1build1 | transport-independent RPC library |
 | libudev1:amd64 | 255.4-1ubuntu8.10 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libunwind8:amd64 | 1.6.2-3build1.1 | library to determine the call-chain of a program - runtime |
@@ -249,4 +247,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.27.62 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.28.2 | Universal Command Line Interface for Amazon Web Services |
