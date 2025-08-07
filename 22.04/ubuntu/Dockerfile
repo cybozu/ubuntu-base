@@ -10,6 +10,7 @@ RUN apt-get update \
         apt-utils \
         ca-certificates \
         curl \
+        gettext-base \
         libreadline8 \
         locales \
         netbase \
