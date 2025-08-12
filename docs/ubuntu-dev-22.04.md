@@ -34,6 +34,7 @@
 | gcc-11 | 11.4.0-1ubuntu1~22.04 | GNU C compiler |
 | gcc-11-base:amd64 | 11.4.0-1ubuntu1~22.04 | GCC, the GNU Compiler Collection (base package) |
 | gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04 | GCC, the GNU Compiler Collection (base package) |
+| gettext-base | 0.21-4ubuntu4 | GNU Internationalization utilities for the base system |
 | git | 1:2.34.1-1ubuntu1.15 | fast, scalable, distributed revision control system |
 | git-man | 1:2.34.1-1ubuntu1.15 | fast, scalable, distributed revision control system (manual pages) |
 | gpgv | 2.2.27-3ubuntu2.4 | GNU privacy guard - signature verification tool |

@@ -40,6 +40,7 @@
 | gcc-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04 | GNU C compiler for the x86_64-linux-gnu architecture |
 | gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
 | gcc-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C compiler for the amd64 architecture |
+| gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | git | 1:2.43.0-1ubuntu7.3 | fast, scalable, distributed revision control system |
 | git-man | 1:2.43.0-1ubuntu7.3 | fast, scalable, distributed revision control system (manual pages) |
 | gpgv | 2.4.4-2ubuntu17.3 | GNU privacy guard - signature verification tool |

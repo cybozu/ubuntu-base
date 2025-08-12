@@ -35,6 +35,7 @@
 | findutils | 4.9.0-5build1 | utilities for finding files--find, xargs |
 | gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
 | gdb | 15.0.50.20240403-0ubuntu1 | GNU Debugger |
+| gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | gpgv | 2.4.4-2ubuntu17.3 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
@@ -247,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.28.2 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.28.8 | Universal Command Line Interface for Amazon Web Services |
