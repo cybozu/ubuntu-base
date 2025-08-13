@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.137ubuntu1 | add and remove users and groups |
-| apache2-utils | 2.4.58-1ubuntu8.7 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.58-1ubuntu8.8 | Apache HTTP Server (utility programs for web servers) |
 | apt | 2.8.3 | commandline package manager |
 | apt-transport-https | 2.8.3 | transitional package for https support |
 | apt-utils | 2.8.3 | package management related utility programs |
@@ -194,9 +194,9 @@
 | media-types | 10.1.0 | List of standard media types and their usual file extension |
 | moreutils | 0.69-1 | additional Unix utilities |
 | mount | 2.39.3-9ubuntu6.3 | tools for mounting and manipulating filesystems |
-| mysql-client | 8.0.42-0ubuntu0.24.04.2 | MySQL database client (metapackage depending on the latest version) |
-| mysql-client-8.0 | 8.0.42-0ubuntu0.24.04.2 | MySQL database client binaries |
-| mysql-client-core-8.0 | 8.0.42-0ubuntu0.24.04.2 | MySQL database core client binaries |
+| mysql-client | 8.0.43-0ubuntu0.24.04.1 | MySQL database client (metapackage depending on the latest version) |
+| mysql-client-8.0 | 8.0.43-0ubuntu0.24.04.1 | MySQL database client binaries |
+| mysql-client-core-8.0 | 8.0.43-0ubuntu0.24.04.1 | MySQL database core client binaries |
 | mysql-common | 5.8+1.1.0build1 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.8 | display a calendar and the date of Easter |
 | ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.28.8 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.28.9 | Universal Command Line Interface for Amazon Web Services |
