@@ -20,6 +20,7 @@
 | e2fsprogs | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system utilities |
 | findutils | 4.9.0-5build1 | utilities for finding files--find, xargs |
 | gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
+| gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | gpgv | 2.4.4-2ubuntu17.3 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |

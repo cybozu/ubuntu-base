@@ -38,6 +38,7 @@
 | findutils | 4.8.0-1ubuntu3 | utilities for finding files--find, xargs |
 | gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04 | GCC, the GNU Compiler Collection (base package) |
 | gdb | 12.1-0ubuntu1~22.04.2 | GNU Debugger |
+| gettext-base | 0.21-4ubuntu4 | GNU Internationalization utilities for the base system |
 | gpgv | 2.2.27-3ubuntu2.4 | GNU privacy guard - signature verification tool |
 | grep | 3.7-1build1 | GNU grep, egrep and fgrep |
 | groff | 1.22.4-8build1 | GNU troff text-formatting system |
