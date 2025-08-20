@@ -36,7 +36,7 @@
 | expect | 5.45.4-2build1 | Automates interactive applications |
 | file | 1:5.41-3ubuntu0.1 | Recognize the type of data in a file using "magic" numbers |
 | findutils | 4.8.0-1ubuntu3 | utilities for finding files--find, xargs |
-| gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04 | GCC, the GNU Compiler Collection (base package) |
+| gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04.2 | GCC, the GNU Compiler Collection (base package) |
 | gdb | 12.1-0ubuntu1~22.04.2 | GNU Debugger |
 | gettext-base | 0.21-4ubuntu4 | GNU Internationalization utilities for the base system |
 | gpgv | 2.2.27-3ubuntu2.4 | GNU privacy guard - signature verification tool |
@@ -90,7 +90,7 @@
 | libext2fs2:amd64 | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.10.0-1 | library for generating and verifying FIDO 2.0 objects |
-| libgcc-s1:amd64 | 12.3.0-1ubuntu1~22.04 | GCC support library |
+| libgcc-s1:amd64 | 12.3.0-1ubuntu1~22.04.2 | GCC support library |
 | libgcrypt20:amd64 | 1.9.4-3ubuntu3 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
@@ -171,7 +171,7 @@
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.4 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.19 | Secure Sockets Layer toolkit - shared libraries |
-| libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04 | GNU Standard C++ Library v3 |
+| libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.2 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.16 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.1 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
