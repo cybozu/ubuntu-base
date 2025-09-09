@@ -10,7 +10,7 @@
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
 | bsdutils | 1:2.39.3-9ubuntu6.3 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20240203 | Common CA certificates |
-| coreutils | 9.4-3ubuntu6 | GNU core utilities |
+| coreutils | 9.4-3ubuntu6.1 | GNU core utilities |
 | curl | 8.5.0-2ubuntu10.6 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
