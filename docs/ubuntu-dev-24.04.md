@@ -16,7 +16,7 @@
 | build-essential | 12.10ubuntu1 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor - utilities |
 | ca-certificates | 20240203 | Common CA certificates |
-| coreutils | 9.4-3ubuntu6 | GNU core utilities |
+| coreutils | 9.4-3ubuntu6.1 | GNU core utilities |
 | cpp | 4:13.2.0-7ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-13 | 13.3.0-6ubuntu2~24.04 | GNU C preprocessor |
 | cpp-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04 | GNU C preprocessor for x86_64-linux-gnu |
@@ -172,7 +172,7 @@
 | ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
 | ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssh-client | 1:9.6p1-3ubuntu13.13 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:9.6p1-3ubuntu13.14 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | patch | 2.7.6-7build3 | Apply a diff file to an original |

@@ -22,7 +22,7 @@
 | bsdutils | 1:2.39.3-9ubuntu6.3 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20240203 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
-| coreutils | 9.4-3ubuntu6 | GNU core utilities |
+| coreutils | 9.4-3ubuntu6.1 | GNU core utilities |
 | curl | 8.5.0-2ubuntu10.6 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
@@ -203,7 +203,7 @@
 | ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssh-client | 1:9.6p1-3ubuntu13.13 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:9.6p1-3ubuntu13.14 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.5 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl | 5.38.2-3.2ubuntu0.2 | Larry Wall's Practical Extraction and Report Language |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.28.22 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.29.0 | Universal Command Line Interface for Amazon Web Services |
