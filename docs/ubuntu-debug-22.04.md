@@ -194,7 +194,7 @@
 | libxcb1:amd64 | 1.14-3ubuntu3 | X C Binding |
 | libxdmcp6:amd64 | 1:1.1.3-0ubuntu5 | X11 Display Manager Control Protocol library |
 | libxext6:amd64 | 2:1.3.4-1build1 | X11 miscellaneous extension library |
-| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.8 | GNOME XML library |
+| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.9 | GNOME XML library |
 | libxmu6:amd64 | 2:1.1.3-3 | X11 miscellaneous utility library |
 | libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.2 | X11 pixmap library |
 | libxt6:amd64 | 1:1.2.1-1 | X11 toolkit intrinsics library |
