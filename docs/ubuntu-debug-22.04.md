@@ -12,9 +12,9 @@
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
 | bash-completion | 1:2.11-5ubuntu1 | programmable completion for the bash shell |
-| bind9-dnsutils | 1:9.18.30-0ubuntu0.22.04.2 | Clients provided with BIND 9 |
-| bind9-host | 1:9.18.30-0ubuntu0.22.04.2 | DNS Lookup Utility |
-| bind9-libs:amd64 | 1:9.18.30-0ubuntu0.22.04.2 | Shared Libraries used by BIND 9 |
+| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.1 | Clients provided with BIND 9 |
+| bind9-host | 1:9.18.39-0ubuntu0.22.04.1 | DNS Lookup Utility |
+| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.1 | Shared Libraries used by BIND 9 |
 | binutils | 2.38-4ubuntu2.8 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.38-4ubuntu2.8 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.38-4ubuntu2.8 | GNU binary utilities, for x86-64-linux-gnu target |
@@ -212,9 +212,9 @@
 | media-types | 7.0.0 | List of standard media types and their usual file extension |
 | moreutils | 0.66-1 | additional Unix utilities |
 | mount | 2.37.2-4ubuntu3.4 | tools for mounting and manipulating filesystems |
-| mysql-client | 8.0.43-0ubuntu0.22.04.1 | MySQL database client (metapackage depending on the latest version) |
-| mysql-client-8.0 | 8.0.43-0ubuntu0.22.04.1 | MySQL database client binaries |
-| mysql-client-core-8.0 | 8.0.43-0ubuntu0.22.04.1 | MySQL database core client binaries |
+| mysql-client | 8.0.43-0ubuntu0.22.04.2 | MySQL database client (metapackage depending on the latest version) |
+| mysql-client-8.0 | 8.0.43-0ubuntu0.22.04.2 | MySQL database client binaries |
+| mysql-client-core-8.0 | 8.0.43-0ubuntu0.22.04.2 | MySQL database core client binaries |
 | mysql-common | 5.8+1.0.8 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.7+nmu3ubuntu2 | display a calendar and the date of Easter |
 | ncurses-base | 6.3-2ubuntu0.1 | basic terminal type definitions |
