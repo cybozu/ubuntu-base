@@ -62,8 +62,8 @@
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.39-0ubuntu8.5 | GNU C Library: Binaries |
-| libc6:amd64 | 2.39-0ubuntu8.5 | GNU C Library: Shared libraries |
+| libc-bin | 2.39-0ubuntu8.6 | GNU C Library: Binaries |
+| libc6:amd64 | 2.39-0ubuntu8.6 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
 | libcap2-bin | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (utilities) |
@@ -133,10 +133,10 @@
 | libnpth0t64:amd64 | 1.6-3.1build1 | replacement for GNU Pth using system threads |
 | libonig5:amd64 | 6.9.9-1build1 | regular expressions library |
 | libp11-kit0:amd64 | 0.25.3-4ubuntu2.1 | library for loading and coordinating access to PKCS#11 modules - runtime |
-| libpam-modules:amd64 | 1.5.3-5ubuntu5.4 | Pluggable Authentication Modules for PAM |
-| libpam-modules-bin | 1.5.3-5ubuntu5.4 | Pluggable Authentication Modules for PAM - helper binaries |
-| libpam-runtime | 1.5.3-5ubuntu5.4 | Runtime support for the PAM library |
-| libpam0g:amd64 | 1.5.3-5ubuntu5.4 | Pluggable Authentication Modules library |
+| libpam-modules:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM |
+| libpam-modules-bin | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM - helper binaries |
+| libpam-runtime | 1.5.3-5ubuntu5.5 | Runtime support for the PAM library |
+| libpam0g:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules library |
 | libpcap0.8t64:amd64 | 1.10.4-4.1ubuntu3 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.42-4ubuntu2.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.2 | shared Perl library |
@@ -185,7 +185,7 @@
 | libxtables12:amd64 | 1.8.10-3ubuntu2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| locales | 2.39-0ubuntu8.5 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.39-0ubuntu8.6 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
 | lsb-release | 12.0-2 | Linux Standard Base version reporting utility (minimal implementation) |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.30.5 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.30.7 | Universal Command Line Interface for Amazon Web Services |

@@ -35,8 +35,8 @@
 | libblkid1:amd64 | 2.39.3-9ubuntu6.3 | block device ID library |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.39-0ubuntu8.5 | GNU C Library: Binaries |
-| libc6:amd64 | 2.39-0ubuntu8.5 | GNU C Library: Shared libraries |
+| libc-bin | 2.39-0ubuntu8.6 | GNU C Library: Binaries |
+| libc6:amd64 | 2.39-0ubuntu8.6 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
@@ -68,10 +68,10 @@
 | libnghttp2-14:amd64 | 1.59.0-1ubuntu0.2 | library implementing HTTP/2 protocol (shared library) |
 | libnpth0t64:amd64 | 1.6-3.1build1 | replacement for GNU Pth using system threads |
 | libp11-kit0:amd64 | 0.25.3-4ubuntu2.1 | library for loading and coordinating access to PKCS#11 modules - runtime |
-| libpam-modules:amd64 | 1.5.3-5ubuntu5.4 | Pluggable Authentication Modules for PAM |
-| libpam-modules-bin | 1.5.3-5ubuntu5.4 | Pluggable Authentication Modules for PAM - helper binaries |
-| libpam-runtime | 1.5.3-5ubuntu5.4 | Runtime support for the PAM library |
-| libpam0g:amd64 | 1.5.3-5ubuntu5.4 | Pluggable Authentication Modules library |
+| libpam-modules:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM |
+| libpam-modules-bin | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM - helper binaries |
+| libpam-runtime | 1.5.3-5ubuntu5.5 | Runtime support for the PAM library |
+| libpam0g:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules library |
 | libpcre2-8-0:amd64 | 10.42-4ubuntu2.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.2 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |
@@ -97,7 +97,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| locales | 2.39-0ubuntu8.5 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.39-0ubuntu8.6 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
 | mawk | 1.3.4.20240123-1build1 | Pattern scanning and text processing language |

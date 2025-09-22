@@ -66,8 +66,8 @@
 | libbrotli1:amd64 | 1.0.9-2build6 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.11.5-1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5build1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.35-0ubuntu3.10 | GNU C Library: Binaries |
-| libc6:amd64 | 2.35-0ubuntu3.10 | GNU C Library: Shared libraries |
+| libc-bin | 2.35-0ubuntu3.11 | GNU C Library: Binaries |
+| libc6:amd64 | 2.35-0ubuntu3.11 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.7.9-2.2build3 | An alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.44-1ubuntu0.22.04.2 | POSIX 1003.1e capabilities (library) |
 | libcap2-bin | 1:2.44-1ubuntu0.22.04.2 | POSIX 1003.1e capabilities (utilities) |
@@ -202,7 +202,7 @@
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
 | libyaml-0-2:amd64 | 0.2.2-1build2 | Fast YAML 1.1 parser and emitter library |
 | libzstd1:amd64 | 1.4.8+dfsg-3build1 | fast lossless compression algorithm |
-| locales | 2.35-0ubuntu3.10 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.35-0ubuntu3.11 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.8.1-2ubuntu2.2 | system login tools |
 | logsave | 1.46.5-2ubuntu1.2 | save the output of a command in a log file |
 | lsb-base | 11.1.0ubuntu4 | Linux Standard Base init script functionality |
