@@ -28,7 +28,7 @@
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
 | diffutils | 1:3.10-1build1 | File comparison utilities |
-| dpkg | 1.22.6ubuntu6.2 | Debian package management system |
+| dpkg | 1.22.6ubuntu6.5 | Debian package management system |
 | e2fsprogs | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system utilities |
 | expect | 5.45.4-3 | Automates interactive applications |
 | file | 1:5.45-3build1 | Recognize the type of data in a file using "magic" numbers |
@@ -217,7 +217,7 @@
 | python3-six | 1.16.0-4 | Python 2 and 3 compatibility library |
 | python3.12 | 3.12.3-1ubuntu0.8 | Interactive high-level object-oriented language (version 3.12) |
 | python3.12-minimal | 3.12.3-1ubuntu0.8 | Minimal subset of the Python language (version 3.12) |
-| rclone | 1.60.1+dfsg-3ubuntu0.24.04.3 | rsync for commercial cloud storage |
+| rclone | 1.60.1+dfsg-3ubuntu0.24.04.4 | rsync for commercial cloud storage |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-1ubuntu1.2 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.4.0-2 | command-line Amazon S3 client |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.31.0 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.31.1 | Universal Command Line Interface for Amazon Web Services |

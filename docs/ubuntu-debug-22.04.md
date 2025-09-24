@@ -31,7 +31,7 @@
 | diffutils | 1:3.8-0ubuntu2 | File comparison utilities |
 | distro-info-data | 0.52ubuntu0.9 | information about the distributions' releases (data files) |
 | docutils-common | 0.17.1+dfsg-2 | text processing system for reStructuredText - common data |
-| dpkg | 1.21.1ubuntu2.3 | Debian package management system |
+| dpkg | 1.21.1ubuntu2.6 | Debian package management system |
 | e2fsprogs | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system utilities |
 | expect | 5.45.4-2build1 | Automates interactive applications |
 | file | 1:5.41-3ubuntu0.1 | Recognize the type of data in a file using "magic" numbers |
