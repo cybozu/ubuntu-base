@@ -17,7 +17,7 @@
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
 | diffutils | 1:3.8-0ubuntu2 | File comparison utilities |
-| dpkg | 1.21.1ubuntu2.3 | Debian package management system |
+| dpkg | 1.21.1ubuntu2.6 | Debian package management system |
 | e2fsprogs | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system utilities |
 | findutils | 4.8.0-1ubuntu3 | utilities for finding files--find, xargs |
 | gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04.2 | GCC, the GNU Compiler Collection (base package) |

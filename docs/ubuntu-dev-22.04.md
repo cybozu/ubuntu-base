@@ -24,8 +24,8 @@
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
 | diffutils | 1:3.8-0ubuntu2 | File comparison utilities |
-| dpkg | 1.21.1ubuntu2.3 | Debian package management system |
-| dpkg-dev | 1.21.1ubuntu2.3 | Debian package development tools |
+| dpkg | 1.21.1ubuntu2.6 | Debian package management system |
+| dpkg-dev | 1.21.1ubuntu2.6 | Debian package development tools |
 | e2fsprogs | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system utilities |
 | findutils | 4.8.0-1ubuntu3 | utilities for finding files--find, xargs |
 | g++ | 4:11.2.0-1ubuntu1 | GNU C++ compiler |
@@ -72,7 +72,7 @@
 | libcurl4:amd64 | 7.81.0-1ubuntu1.20 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
-| libdpkg-perl | 1.21.1ubuntu2.3 | Dpkg perl modules |
+| libdpkg-perl | 1.21.1ubuntu2.6 | Dpkg perl modules |
 | libedit2:amd64 | 3.1-20210910-1build1 | BSD editline and history libraries |
 | liberror-perl | 0.17029-1 | Perl module for error/exception handling in an OO-ish way |
 | libexpat1:amd64 | 2.4.7-1ubuntu0.6 | XML parsing C library - runtime library |
