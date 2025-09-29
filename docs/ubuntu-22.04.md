@@ -12,7 +12,7 @@
 | bsdutils | 1:2.37.2-4ubuntu3.4 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20240203~22.04.1 | Common CA certificates |
 | coreutils | 8.32-4.1ubuntu1.2 | GNU core utilities |
-| curl | 7.81.0-1ubuntu1.20 | command line tool for transferring data with URL syntax |
+| curl | 7.81.0-1ubuntu1.21 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
@@ -41,7 +41,7 @@
 | libcap2:amd64 | 1:2.44-1ubuntu0.22.04.2 | POSIX 1003.1e capabilities (library) |
 | libcom-err2:amd64 | 1.46.5-2ubuntu1.2 | common error description library |
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
-| libcurl4:amd64 | 7.81.0-1ubuntu1.20 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl4:amd64 | 7.81.0-1ubuntu1.21 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
 | libext2fs2:amd64 | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system libraries |
