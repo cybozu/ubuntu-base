@@ -161,7 +161,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 6.8.0-84.84 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 6.8.0-85.85 | Linux Kernel Headers for development |
 | locales | 2.39-0ubuntu8.6 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
