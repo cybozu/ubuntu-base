@@ -1,0 +1,117 @@
+version: '3'
+
+vars:
+  DOCKERFILES:
+    sh: find . -name "Dockerfile" -path "*/ubuntu-*/Dockerfile"
+
+  TOOLS_YAML: "{{.TASKFILE_DIR}}/tools.yaml"
+  TOOLS_YAML_CONTENT:
+    sh: "cat {{.TOOLS_YAML}}"
+  TOOLS:
+    ref: "fromYaml .TOOLS_YAML_CONTENT"
+
+tasks:
+
+  show-current-tool-versions:
+    desc: Show current tool versions in Dockerfiles
+    silent: true
+    vars:
+      TEMP_FILE:
+        sh: mktemp -t current_versions_XXXXXX.yaml
+    cmds:
+      - echo "Current versions in Dockerfiles:"
+      - task: get-current-tool-versions
+        vars:
+          OUTPUT_FILE: '{{.TEMP_FILE}}'
+          DOCKERFILES: '{{.DOCKERFILES}}'
+          TOOLS_YAML: '{{.TOOLS_YAML}}'
+      - cat {{.TEMP_FILE}}
+      - rm -f {{.TEMP_FILE}}
+
+  get-current-tool-versions:
+    desc: "Get current tool versions in YAML format"
+    silent: true
+    internal: true
+    requires:
+      vars: [OUTPUT_FILE, DOCKERFILES, TOOLS_YAML]
+    env:
+      OUTPUT_FILE: '{{.OUTPUT_FILE}}'
+      DOCKERFILES: '{{.DOCKERFILES}}'
+      TOOLS_YAML: '{{.TOOLS_YAML}}'
+    cmds:
+      - ./scripts/get-current-tool-versions.sh
+
+  get-latest-tool-versions:
+    desc: "Get latest available tool versions in YAML format"
+    silent: true
+    internal: true
+    requires:
+      vars: [OUTPUT_FILE, TOOLS_YAML]
+    env:
+      OUTPUT_FILE: '{{.OUTPUT_FILE}}'
+      TOOLS_YAML: '{{.TOOLS_YAML}}'
+    cmds:
+      - ./scripts/get-latest-tool-versions.sh
+
+  show-latest-tool-versions:
+    desc: Show latest available tool versions
+    silent: true
+    vars:
+      TEMP_FILE:
+        sh: mktemp -t latest_versions_XXXXXX.yaml
+    cmds:
+      - echo "Fetching latest versions..."
+      - task: get-latest-tool-versions
+        vars:
+          OUTPUT_FILE: '{{.TEMP_FILE}}'
+          TOOLS_YAML: '{{.TOOLS_YAML}}'
+      - cat {{.TEMP_FILE}}
+      - rm -f {{.TEMP_FILE}}
+
+  check-tool-updates:
+    desc: "Check if any tools need updates (Usage: task check-tool-updates OUTPUT_FILE=updates.yaml)"
+    silent: true
+    requires:
+      vars: [OUTPUT_FILE, DOCKERFILES]
+    vars:
+      CURRENT_FILE:
+        sh: mktemp -t current_versions_XXXXXX.yaml
+      LATEST_FILE:
+        sh: mktemp -t latest_versions_XXXXXX.yaml
+    cmds:
+      - echo "Checking for tool updates..."
+      - task: get-current-tool-versions
+        vars:
+          OUTPUT_FILE: '{{.CURRENT_FILE}}'
+          DOCKERFILES: '{{.DOCKERFILES}}'
+          TOOLS_YAML: '{{.TOOLS_YAML}}'
+      - task: get-latest-tool-versions
+        vars:
+          OUTPUT_FILE: '{{.LATEST_FILE}}'
+          TOOLS_YAML: '{{.TOOLS_YAML}}'
+      - env:
+          OUTPUT_FILE: '{{.OUTPUT_FILE}}'
+          CURRENT_FILE: '{{.CURRENT_FILE}}'
+          LATEST_FILE: '{{.LATEST_FILE}}'
+        cmd: ./scripts/check-tool-updates.sh
+      - rm -f {{.CURRENT_FILE}} {{.LATEST_FILE}}
+
+  update-tool-versions:
+    desc: "Update tool versions"
+    silent: true
+    vars:
+      OUTPUT_FILE:
+        sh: mktemp -t updates_XXXXXX.yaml
+    cmds:
+      - task: check-tool-updates
+        vars:
+          OUTPUT_FILE: '{{.OUTPUT_FILE}}'
+          DOCKERFILES: '{{.DOCKERFILES}}'
+      - env:
+          UPDATES_FILE: '{{.OUTPUT_FILE}}'
+        cmd: ./scripts/update-tool-versions.sh
+
+  shellcheck:
+    desc: Check shell scripts with shellcheck
+    cmds:
+      - ./scripts/run-shellcheck.sh
