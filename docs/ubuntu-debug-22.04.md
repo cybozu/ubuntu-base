@@ -172,7 +172,7 @@
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.4 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.20 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.2 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 249.11-0ubuntu3.16 | systemd utility library |
+| libsystemd0:amd64 | 249.11-0ubuntu3.17 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.1 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-1 | module for rounded or exact English expression of durations |
@@ -181,7 +181,7 @@
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libuchardet0:amd64 | 0.0.7-1build2 | universal charset detection library - shared library |
-| libudev1:amd64 | 249.11-0ubuntu3.16 | libudev shared library |
+| libudev1:amd64 | 249.11-0ubuntu3.17 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libunwind8:amd64 | 1.3.2-2build2.1 | library to determine the call-chain of a program - runtime |
 | libuuid1:amd64 | 2.37.2-4ubuntu3.4 | Universally Unique ID library |
