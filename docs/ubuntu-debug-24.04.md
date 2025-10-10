@@ -232,7 +232,7 @@
 | tar | 1.35+dfsg-3build1 | GNU version of the tar archiving utility |
 | tcl-expect:amd64 | 5.45.4-3 | Automates interactive applications (Tcl package) |
 | tcl8.6 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - shell |
-| tcpdump | 4.99.4-3ubuntu4 | command-line network traffic analyzer |
+| tcpdump | 4.99.4-3ubuntu4.24.04.1 | command-line network traffic analyzer |
 | telnet | 0.17+2.5-3ubuntu4 | transitional dummy package for inetutils-telnet default switch |
 | traceroute | 1:2.1.5-1 | Traces the route taken by packets over an IPv4/IPv6 network |
 | tzdata | 2025b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.31.11 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.31.12 | Universal Command Line Interface for Amazon Web Services |
