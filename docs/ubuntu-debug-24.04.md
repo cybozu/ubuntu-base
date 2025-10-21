@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.31.14 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.31.18 | Universal Command Line Interface for Amazon Web Services |
