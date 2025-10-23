@@ -12,9 +12,9 @@
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
 | bash-completion | 1:2.11-5ubuntu1 | programmable completion for the bash shell |
-| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.1 | Clients provided with BIND 9 |
-| bind9-host | 1:9.18.39-0ubuntu0.22.04.1 | DNS Lookup Utility |
-| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.1 | Shared Libraries used by BIND 9 |
+| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.2 | Clients provided with BIND 9 |
+| bind9-host | 1:9.18.39-0ubuntu0.22.04.2 | DNS Lookup Utility |
+| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.2 | Shared Libraries used by BIND 9 |
 | binutils | 2.38-4ubuntu2.8 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.38-4ubuntu2.8 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.38-4ubuntu2.8 | GNU binary utilities, for x86-64-linux-gnu target |
