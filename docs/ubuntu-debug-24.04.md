@@ -11,9 +11,9 @@
 | base-passwd | 3.6.3build1 | Debian base system master password and group files |
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
 | bash-completion | 1:2.11-8 | programmable completion for the bash shell |
-| bind9-dnsutils | 1:9.18.39-0ubuntu0.24.04.1 | Clients provided with BIND 9 |
-| bind9-host | 1:9.18.39-0ubuntu0.24.04.1 | DNS Lookup Utility |
-| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.24.04.1 | Shared Libraries used by BIND 9 |
+| bind9-dnsutils | 1:9.18.39-0ubuntu0.24.04.2 | Clients provided with BIND 9 |
+| bind9-host | 1:9.18.39-0ubuntu0.24.04.2 | DNS Lookup Utility |
+| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.24.04.2 | Shared Libraries used by BIND 9 |
 | binutils | 2.42-4ubuntu2.5 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.42-4ubuntu2.5 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.42-4ubuntu2.5 | GNU binary utilities, for x86-64-linux-gnu target |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.31.18 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.31.20 | Universal Command Line Interface for Amazon Web Services |
