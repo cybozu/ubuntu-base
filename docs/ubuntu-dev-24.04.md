@@ -9,9 +9,9 @@
 | base-files | 13ubuntu10.3 | Debian base system miscellaneous files |
 | base-passwd | 3.6.3build1 | Debian base system master password and group files |
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
-| binutils | 2.42-4ubuntu2.5 | GNU assembler, linker and binary utilities |
-| binutils-common:amd64 | 2.42-4ubuntu2.5 | Common files for the GNU assembler, linker and binary utilities |
-| binutils-x86-64-linux-gnu | 2.42-4ubuntu2.5 | GNU binary utilities, for x86-64-linux-gnu target |
+| binutils | 2.42-4ubuntu2.6 | GNU assembler, linker and binary utilities |
+| binutils-common:amd64 | 2.42-4ubuntu2.6 | Common files for the GNU assembler, linker and binary utilities |
+| binutils-x86-64-linux-gnu | 2.42-4ubuntu2.6 | GNU binary utilities, for x86-64-linux-gnu target |
 | bsdutils | 1:2.39.3-9ubuntu6.3 | basic utilities from 4.4BSD-Lite |
 | build-essential | 12.10ubuntu1 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor - utilities |
@@ -57,7 +57,7 @@
 | libattr1:amd64 | 1:2.5.2-1build1.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
-| libbinutils:amd64 | 2.42-4ubuntu2.5 | GNU binary utilities (private shared library) |
+| libbinutils:amd64 | 2.42-4ubuntu2.6 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.39.3-9ubuntu6.3 | block device ID library |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
@@ -73,8 +73,8 @@
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt-dev:amd64 | 1:4.4.36-4build1 | libcrypt development files |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
-| libctf-nobfd0:amd64 | 2.42-4ubuntu2.5 | Compact C Type Format library (runtime, no BFD dependency) |
-| libctf0:amd64 | 2.42-4ubuntu2.5 | Compact C Type Format library (runtime, BFD dependency) |
+| libctf-nobfd0:amd64 | 2.42-4ubuntu2.6 | Compact C Type Format library (runtime, no BFD dependency) |
+| libctf0:amd64 | 2.42-4ubuntu2.6 | Compact C Type Format library (runtime, BFD dependency) |
 | libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
 | libcurl4t64:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
@@ -95,7 +95,7 @@
 | libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.4 | GNU TLS library - main runtime library |
 | libgomp1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC OpenMP (GOMP) support library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
-| libgprofng0:amd64 | 2.42-4ubuntu2.5 | GNU Next Generation profiler (runtime library) |
+| libgprofng0:amd64 | 2.42-4ubuntu2.6 | GNU Next Generation profiler (runtime library) |
 | libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (public-key cryptos) |
 | libhwasan0:amd64 | 14.2.0-4ubuntu2~24.04 | AddressSanitizer -- a fast memory error detector |
@@ -143,7 +143,7 @@
 | libsemanage-common | 3.5-1build5 | Common files for SELinux policy management libraries |
 | libsemanage2:amd64 | 3.5-1build5 | SELinux policy management library |
 | libsepol2:amd64 | 3.5-2build1 | SELinux library for manipulating binary security policies |
-| libsframe1:amd64 | 2.42-4ubuntu2.5 | Library to handle the SFrame format (runtime library) |
+| libsframe1:amd64 | 2.42-4ubuntu2.6 | Library to handle the SFrame format (runtime library) |
 | libsmartcols1:amd64 | 2.39.3-9ubuntu6.3 | smart column output alignment library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.1 | tiny C SSH library (OpenSSL flavor) |
@@ -161,7 +161,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 6.8.0-86.87 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 6.8.0-87.88 | Linux Kernel Headers for development |
 | locales | 2.39-0ubuntu8.6 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
