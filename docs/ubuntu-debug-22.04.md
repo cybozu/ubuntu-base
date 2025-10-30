@@ -169,7 +169,7 @@
 | libsource-highlight4v5 | 3.1.9-4.1build2 | source highlighting library |
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.5 | SQLite 3 shared library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
-| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.4 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.5 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.20 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.2 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.17 | systemd utility library |
@@ -194,7 +194,7 @@
 | libxcb1:amd64 | 1.14-3ubuntu3 | X C Binding |
 | libxdmcp6:amd64 | 1:1.1.3-0ubuntu5 | X11 Display Manager Control Protocol library |
 | libxext6:amd64 | 2:1.3.4-1build1 | X11 miscellaneous extension library |
-| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.9 | GNOME XML library |
+| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.10 | GNOME XML library |
 | libxmu6:amd64 | 2:1.1.3-3 | X11 miscellaneous utility library |
 | libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.2 | X11 pixmap library |
 | libxt6:amd64 | 1:1.2.1-1 | X11 toolkit intrinsics library |
