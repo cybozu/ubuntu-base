@@ -166,7 +166,7 @@
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
 | libsqlite3-0:amd64 | 3.45.1-1ubuntu2.5 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
-| libssh-4:amd64 | 0.10.6-2ubuntu0.1 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.10.6-2ubuntu0.2 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.6 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.11 | systemd utility library |
@@ -181,7 +181,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
 | libuv1t64:amd64 | 1.48.0-1.1build1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-33 | Wietse Venema's TCP wrappers library |
-| libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.5 | GNOME XML library |
+| libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.6 | GNOME XML library |
 | libxtables12:amd64 | 1.8.10-3ubuntu2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.31.24 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.31.26 | Universal Command Line Interface for Amazon Web Services |

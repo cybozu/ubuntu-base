@@ -146,7 +146,7 @@
 | libsframe1:amd64 | 2.42-4ubuntu2.6 | Library to handle the SFrame format (runtime library) |
 | libsmartcols1:amd64 | 2.39.3-9ubuntu6.3 | smart column output alignment library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
-| libssh-4:amd64 | 0.10.6-2ubuntu0.1 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.10.6-2ubuntu0.2 | tiny C SSH library (OpenSSL flavor) |
 | libssl-dev:amd64 | 3.0.13-0ubuntu3.6 | Secure Sockets Layer toolkit - development files |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.6 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04 | GNU Standard C++ Library v3 (development files) |
