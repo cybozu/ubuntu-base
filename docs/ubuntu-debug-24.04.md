@@ -144,9 +144,9 @@
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.2 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |
 | libpython3-stdlib:amd64 | 3.12.3-0ubuntu2.1 | interactive high-level object-oriented language (default python3 version) |
-| libpython3.12-minimal:amd64 | 3.12.3-1ubuntu0.8 | Minimal subset of the Python language (version 3.12) |
-| libpython3.12-stdlib:amd64 | 3.12.3-1ubuntu0.8 | Interactive high-level object-oriented language (standard library, version 3.12) |
-| libpython3.12t64:amd64 | 3.12.3-1ubuntu0.8 | Shared Python runtime library (version 3.12) |
+| libpython3.12-minimal:amd64 | 3.12.3-1ubuntu0.9 | Minimal subset of the Python language (version 3.12) |
+| libpython3.12-stdlib:amd64 | 3.12.3-1ubuntu0.9 | Interactive high-level object-oriented language (standard library, version 3.12) |
+| libpython3.12t64:amd64 | 3.12.3-1ubuntu0.9 | Shared Python runtime library (version 3.12) |
 | libreadline8t64:amd64 | 8.2-4build1 | GNU readline and history libraries, run-time libraries |
 | librtmp1:amd64 | 2.4+20151223.gitfa8646d.1-2build7 | toolkit for RTMP streams (shared library) |
 | libsasl2-2:amd64 | 2.1.28+dfsg1-5ubuntu3.1 | Cyrus SASL - authentication abstraction library |
@@ -215,8 +215,8 @@
 | python3-magic | 2:0.4.27-3 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.12.3-0ubuntu2.1 | minimal subset of the Python language (default python3 version) |
 | python3-six | 1.16.0-4 | Python 2 and 3 compatibility library |
-| python3.12 | 3.12.3-1ubuntu0.8 | Interactive high-level object-oriented language (version 3.12) |
-| python3.12-minimal | 3.12.3-1ubuntu0.8 | Minimal subset of the Python language (version 3.12) |
+| python3.12 | 3.12.3-1ubuntu0.9 | Interactive high-level object-oriented language (version 3.12) |
+| python3.12-minimal | 3.12.3-1ubuntu0.9 | Minimal subset of the Python language (version 3.12) |
 | rclone | 1.60.1+dfsg-3ubuntu0.24.04.4 | rsync for commercial cloud storage |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-1ubuntu1.2 | fast, versatile, remote (and local) file-copying tool |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.32.2 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.32.4 | Universal Command Line Interface for Amazon Web Services |
