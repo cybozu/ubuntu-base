@@ -14,9 +14,9 @@
 | bind9-dnsutils | 1:9.18.39-0ubuntu0.24.04.2 | Clients provided with BIND 9 |
 | bind9-host | 1:9.18.39-0ubuntu0.24.04.2 | DNS Lookup Utility |
 | bind9-libs:amd64 | 1:9.18.39-0ubuntu0.24.04.2 | Shared Libraries used by BIND 9 |
-| binutils | 2.42-4ubuntu2.6 | GNU assembler, linker and binary utilities |
-| binutils-common:amd64 | 2.42-4ubuntu2.6 | Common files for the GNU assembler, linker and binary utilities |
-| binutils-x86-64-linux-gnu | 2.42-4ubuntu2.6 | GNU binary utilities, for x86-64-linux-gnu target |
+| binutils | 2.42-4ubuntu2.7 | GNU assembler, linker and binary utilities |
+| binutils-common:amd64 | 2.42-4ubuntu2.7 | Common files for the GNU assembler, linker and binary utilities |
+| binutils-x86-64-linux-gnu | 2.42-4ubuntu2.7 | GNU binary utilities, for x86-64-linux-gnu target |
 | bsdextrautils | 2.39.3-9ubuntu6.3 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.8 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.39.3-9ubuntu6.3 | basic utilities from 4.4BSD-Lite |
@@ -56,7 +56,7 @@
 | libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
 | libbabeltrace1:amd64 | 1.5.11-3build3 | Babeltrace conversion libraries |
-| libbinutils:amd64 | 2.42-4ubuntu2.6 | GNU binary utilities (private shared library) |
+| libbinutils:amd64 | 2.42-4ubuntu2.7 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.39.3-9ubuntu6.3 | block device ID library |
 | libbpf1:amd64 | 1:1.3.0-2build2 | eBPF helper library (shared library) |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
@@ -70,8 +70,8 @@
 | libcbor0.10:amd64 | 0.10.2-1.2ubuntu2 | library for parsing and generating CBOR (RFC 7049) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
-| libctf-nobfd0:amd64 | 2.42-4ubuntu2.6 | Compact C Type Format library (runtime, no BFD dependency) |
-| libctf0:amd64 | 2.42-4ubuntu2.6 | Compact C Type Format library (runtime, BFD dependency) |
+| libctf-nobfd0:amd64 | 2.42-4ubuntu2.7 | Compact C Type Format library (runtime, no BFD dependency) |
+| libctf0:amd64 | 2.42-4ubuntu2.7 | Compact C Type Format library (runtime, BFD dependency) |
 | libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
 | libcurl4t64:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
@@ -95,7 +95,7 @@
 | libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.4 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-11 | General Purpose Mouse - shared library |
-| libgprofng0:amd64 | 2.42-4ubuntu2.6 | GNU Next Generation profiler (runtime library) |
+| libgprofng0:amd64 | 2.42-4ubuntu2.7 | GNU Next Generation profiler (runtime library) |
 | libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (public-key cryptos) |
 | libibverbs1:amd64 | 50.0-2ubuntu0.2 | Library for direct userspace use of RDMA (InfiniBand/iWARP) |
@@ -159,7 +159,7 @@
 | libsensors-config | 1:3.6.0-9build1 | lm-sensors configuration files |
 | libsensors5:amd64 | 1:3.6.0-9build1 | library to read temperature/voltage/fan sensors |
 | libsepol2:amd64 | 3.5-2build1 | SELinux library for manipulating binary security policies |
-| libsframe1:amd64 | 2.42-4ubuntu2.6 | Library to handle the SFrame format (runtime library) |
+| libsframe1:amd64 | 2.42-4ubuntu2.7 | Library to handle the SFrame format (runtime library) |
 | libsmartcols1:amd64 | 2.39.3-9ubuntu6.3 | smart column output alignment library |
 | libsodium23:amd64 | 1.0.18-1build3 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build1 | architecture-independent files for source highlighting library |
@@ -248,4 +248,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.32.4 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.32.7 | Universal Command Line Interface for Amazon Web Services |
