@@ -194,9 +194,9 @@
 | media-types | 10.1.0 | List of standard media types and their usual file extension |
 | moreutils | 0.69-1 | additional Unix utilities |
 | mount | 2.39.3-9ubuntu6.3 | tools for mounting and manipulating filesystems |
-| mysql-client | 8.0.44-0ubuntu0.24.04.1 | MySQL database client (metapackage depending on the latest version) |
-| mysql-client-8.0 | 8.0.44-0ubuntu0.24.04.1 | MySQL database client binaries |
-| mysql-client-core-8.0 | 8.0.44-0ubuntu0.24.04.1 | MySQL database core client binaries |
+| mysql-client | 8.0.44-0ubuntu0.24.04.2 | MySQL database client (metapackage depending on the latest version) |
+| mysql-client-8.0 | 8.0.44-0ubuntu0.24.04.2 | MySQL database client binaries |
+| mysql-client-core-8.0 | 8.0.44-0ubuntu0.24.04.2 | MySQL database core client binaries |
 | mysql-common | 5.8+1.1.0build1 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.8 | display a calendar and the date of Easter |
 | ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
@@ -211,10 +211,16 @@
 | perl-modules-5.38 | 5.38.2-3.2ubuntu0.2 | Core Perl modules |
 | procps | 2:4.0.4-4ubuntu3.2 | /proc file system utilities |
 | python3 | 3.12.3-0ubuntu2.1 | interactive high-level object-oriented language (default python3 version) |
+| python3-certifi | 2023.11.17-1 | root certificates for validating SSL certs and verifying TLS hosts (python3) |
+| python3-chardet | 5.2.0+dfsg-1 | Universal Character Encoding Detector (Python3) |
 | python3-dateutil | 2.8.2-3ubuntu1 | powerful extensions to the standard Python 3 datetime module |
+| python3-idna | 3.6-2ubuntu0.1 | Python IDNA2008 (RFC 5891) handling (Python 3) |
 | python3-magic | 2:0.4.27-3 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.12.3-0ubuntu2.1 | minimal subset of the Python language (default python3 version) |
+| python3-pkg-resources | 68.1.2-2ubuntu1.2 | Package Discovery and Resource Access using pkg_resources |
+| python3-requests | 2.31.0+dfsg-1ubuntu1.1 | elegant and simple HTTP library for Python3, built for human beings |
 | python3-six | 1.16.0-4 | Python 2 and 3 compatibility library |
+| python3-urllib3 | 2.0.7-1ubuntu0.2 | HTTP library with thread-safe connection pooling for Python3 |
 | python3.12 | 3.12.3-1ubuntu0.9 | Interactive high-level object-oriented language (version 3.12) |
 | python3.12-minimal | 3.12.3-1ubuntu0.9 | Minimal subset of the Python language (version 3.12) |
 | rclone | 1.60.1+dfsg-3ubuntu0.24.04.4 | rsync for commercial cloud storage |
@@ -248,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.2 | gRPC reflection and command-line tool |
 | crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.32.10 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.32.12 | Universal Command Line Interface for Amazon Web Services |
