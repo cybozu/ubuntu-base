@@ -40,6 +40,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         net-tools \
         openssh-client \
         perl-modules \
+        python3-requests \
         rclone \
         rsync \
         s3cmd \
