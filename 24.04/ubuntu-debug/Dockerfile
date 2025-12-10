@@ -3,14 +3,14 @@ ARG TAG
 FROM --platform=$BUILDPLATFORM ghcr.io/cybozu/golang:1.23-jammy AS builder
 
 WORKDIR /go/src/github.com/fullstorydev/grpcurl
-ARG GRPCURL_VERSION=1.9.2
+ARG GRPCURL_VERSION=1.9.3
 RUN curl -fsSL -o grpcurl.tar.gz "https://github.com/fullstorydev/grpcurl/archive/v${GRPCURL_VERSION}.tar.gz" \
     && tar -x -z --strip-components 1 -f grpcurl.tar.gz \
     && rm -f grpcurl.tar.gz \
     && GOARCH=${TARGETARCH} CGO_ENABLED=0 go build -ldflags "-X \"main.version=${GRPCURL_VERSION}\"" -o /go/bin/grpcurl ./cmd/grpcurl
 
 WORKDIR /go/src/github.com/google/go-containerregistry
-ARG CRANE_VERSION=0.20.2
+ARG CRANE_VERSION=0.20.7
 RUN curl -fsSL -o go-containerregistry.tar.gz "https://github.com/google/go-containerregistry/archive/refs/tags/v${CRANE_VERSION}.tar.gz" \
     && tar -x -z --strip-components 1 -f go-containerregistry.tar.gz  \
     && rm -f go-containerregistry.tar.gz \
