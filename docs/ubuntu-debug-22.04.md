@@ -212,9 +212,9 @@
 | media-types | 7.0.0 | List of standard media types and their usual file extension |
 | moreutils | 0.66-1 | additional Unix utilities |
 | mount | 2.37.2-4ubuntu3.4 | tools for mounting and manipulating filesystems |
-| mysql-client | 8.0.44-0ubuntu0.22.04.1 | MySQL database client (metapackage depending on the latest version) |
-| mysql-client-8.0 | 8.0.44-0ubuntu0.22.04.1 | MySQL database client binaries |
-| mysql-client-core-8.0 | 8.0.44-0ubuntu0.22.04.1 | MySQL database core client binaries |
+| mysql-client | 8.0.44-0ubuntu0.22.04.2 | MySQL database client (metapackage depending on the latest version) |
+| mysql-client-8.0 | 8.0.44-0ubuntu0.22.04.2 | MySQL database client binaries |
+| mysql-client-core-8.0 | 8.0.44-0ubuntu0.22.04.2 | MySQL database core client binaries |
 | mysql-common | 5.8+1.0.8 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.7+nmu3ubuntu2 | display a calendar and the date of Easter |
 | ncurses-base | 6.3-2ubuntu0.1 | basic terminal type definitions |
