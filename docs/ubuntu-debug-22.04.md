@@ -246,7 +246,7 @@
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
 | python3-s3transfer | 0.5.0-1 | Amazon S3 Transfer Manager for Python3 |
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
-| python3-urllib3 | 1.26.5-1~exp1ubuntu0.3 | HTTP library with thread-safe connection pooling for Python3 |
+| python3-urllib3 | 1.26.5-1~exp1ubuntu0.4 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
 | python3.10 | 3.10.12-1~22.04.12 | Interactive high-level object-oriented language (version 3.10) |
 | python3.10-minimal | 3.10.12-1~22.04.12 | Minimal subset of the Python language (version 3.10) |
@@ -282,5 +282,5 @@
 | xxd | 2:8.2.3995-1ubuntu2.24 | tool to make (or reverse) a hex dump |
 | xz-utils | 5.2.5-2ubuntu1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
-| grpcurl | 1.9.2 | gRPC reflection and command-line tool |
-| crane | 0.20.2 | crane is a tool for interacting with remote images and registries |
+| grpcurl | 1.9.3 | gRPC reflection and command-line tool |
+| crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
