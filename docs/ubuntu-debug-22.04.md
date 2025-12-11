@@ -15,9 +15,9 @@
 | bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.2 | Clients provided with BIND 9 |
 | bind9-host | 1:9.18.39-0ubuntu0.22.04.2 | DNS Lookup Utility |
 | bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.2 | Shared Libraries used by BIND 9 |
-| binutils | 2.38-4ubuntu2.11 | GNU assembler, linker and binary utilities |
-| binutils-common:amd64 | 2.38-4ubuntu2.11 | Common files for the GNU assembler, linker and binary utilities |
-| binutils-x86-64-linux-gnu | 2.38-4ubuntu2.11 | GNU binary utilities, for x86-64-linux-gnu target |
+| binutils | 2.38-4ubuntu2.12 | GNU assembler, linker and binary utilities |
+| binutils-common:amd64 | 2.38-4ubuntu2.12 | Common files for the GNU assembler, linker and binary utilities |
+| binutils-x86-64-linux-gnu | 2.38-4ubuntu2.12 | GNU binary utilities, for x86-64-linux-gnu target |
 | bsdextrautils | 2.37.2-4ubuntu3.4 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.7+nmu3ubuntu2 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.37.2-4ubuntu3.4 | basic utilities from 4.4BSD-Lite |
@@ -59,7 +59,7 @@
 | libaudit-common | 1:3.0.7-1build1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.0.7-1build1 | Dynamic library for security auditing |
 | libbabeltrace1:amd64 | 1.5.8-2build1 | Babeltrace conversion libraries |
-| libbinutils:amd64 | 2.38-4ubuntu2.11 | GNU binary utilities (private shared library) |
+| libbinutils:amd64 | 2.38-4ubuntu2.12 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.37.2-4ubuntu3.4 | block device ID library |
 | libboost-regex1.74.0:amd64 | 1.74.0-14ubuntu3 | regular expression library for C++ |
 | libbpf0:amd64 | 1:0.5.0-1ubuntu22.04.1 | eBPF helper library (shared library) |
@@ -74,8 +74,8 @@
 | libcbor0.8:amd64 | 0.8.0-2ubuntu1 | library for parsing and generating CBOR (RFC 7049) |
 | libcom-err2:amd64 | 1.46.5-2ubuntu1.2 | common error description library |
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
-| libctf-nobfd0:amd64 | 2.38-4ubuntu2.11 | Compact C Type Format library (runtime, no BFD dependency) |
-| libctf0:amd64 | 2.38-4ubuntu2.11 | Compact C Type Format library (runtime, BFD dependency) |
+| libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
+| libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
 | libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.21 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
 | libcurl4:amd64 | 7.81.0-1ubuntu1.21 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
