@@ -17,9 +17,9 @@
 | binutils | 2.42-4ubuntu2.8 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.42-4ubuntu2.8 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.42-4ubuntu2.8 | GNU binary utilities, for x86-64-linux-gnu target |
-| bsdextrautils | 2.39.3-9ubuntu6.3 | extra utilities from 4.4BSD-Lite |
+| bsdextrautils | 2.39.3-9ubuntu6.4 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.8 | Transitional package for more utilities from FreeBSD |
-| bsdutils | 1:2.39.3-9ubuntu6.3 | basic utilities from 4.4BSD-Lite |
+| bsdutils | 1:2.39.3-9ubuntu6.4 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20240203 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
 | coreutils | 9.4-3ubuntu6.1 | GNU core utilities |
@@ -57,7 +57,7 @@
 | libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
 | libbabeltrace1:amd64 | 1.5.11-3build3 | Babeltrace conversion libraries |
 | libbinutils:amd64 | 2.42-4ubuntu2.8 | GNU binary utilities (private shared library) |
-| libblkid1:amd64 | 2.39.3-9ubuntu6.3 | block device ID library |
+| libblkid1:amd64 | 2.39.3-9ubuntu6.4 | block device ID library |
 | libbpf1:amd64 | 1:1.3.0-2build2 | eBPF helper library (shared library) |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
@@ -121,7 +121,7 @@
 | libmaxminddb0:amd64 | 1.9.1-1build1 | IP geolocation database library |
 | libmd0:amd64 | 1.1.0-2build1.1 | message digest functions from BSD systems - shared library |
 | libmnl0:amd64 | 1.0.5-2build1 | minimalistic Netlink communication library |
-| libmount1:amd64 | 2.39.3-9ubuntu6.3 | device mounting library |
+| libmount1:amd64 | 2.39.3-9ubuntu6.4 | device mounting library |
 | libmpfr6:amd64 | 4.2.1-1build1.1 | multiple precision floating-point computation |
 | libncursesw6:amd64 | 6.4+20240113-1ubuntu2 | shared libraries for terminal handling (wide character support) |
 | libnetfilter-conntrack3:amd64 | 1.0.9-6build1 | Netfilter netlink-conntrack library |
@@ -160,7 +160,7 @@
 | libsensors5:amd64 | 1:3.6.0-9build1 | library to read temperature/voltage/fan sensors |
 | libsepol2:amd64 | 3.5-2build1 | SELinux library for manipulating binary security policies |
 | libsframe1:amd64 | 2.42-4ubuntu2.8 | Library to handle the SFrame format (runtime library) |
-| libsmartcols1:amd64 | 2.39.3-9ubuntu6.3 | smart column output alignment library |
+| libsmartcols1:amd64 | 2.39.3-9ubuntu6.4 | smart column output alignment library |
 | libsodium23:amd64 | 1.0.18-1build3 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build1 | architecture-independent files for source highlighting library |
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
@@ -169,16 +169,16 @@
 | libssh-4:amd64 | 0.10.6-2ubuntu0.2 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.6 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.11 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.12 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.1 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-2 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
-| libudev1:amd64 | 255.4-1ubuntu8.11 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.12 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libunwind8:amd64 | 1.6.2-3build1.1 | library to determine the call-chain of a program - runtime |
-| libuuid1:amd64 | 2.39.3-9ubuntu6.3 | Universally Unique ID library |
+| libuuid1:amd64 | 2.39.3-9ubuntu6.4 | Universally Unique ID library |
 | libuv1t64:amd64 | 1.48.0-1.1build1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-33 | Wietse Venema's TCP wrappers library |
 | libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.6 | GNOME XML library |
@@ -193,7 +193,7 @@
 | mawk | 1.3.4.20240123-1build1 | Pattern scanning and text processing language |
 | media-types | 10.1.0 | List of standard media types and their usual file extension |
 | moreutils | 0.69-1 | additional Unix utilities |
-| mount | 2.39.3-9ubuntu6.3 | tools for mounting and manipulating filesystems |
+| mount | 2.39.3-9ubuntu6.4 | tools for mounting and manipulating filesystems |
 | mysql-client | 8.0.44-0ubuntu0.24.04.2 | MySQL database client (metapackage depending on the latest version) |
 | mysql-client-8.0 | 8.0.44-0ubuntu0.24.04.2 | MySQL database client binaries |
 | mysql-client-core-8.0 | 8.0.44-0ubuntu0.24.04.2 | MySQL database core client binaries |
@@ -246,7 +246,7 @@
 | ucf | 3.0043+nmu1 | Update Configuration File(s): preserve user changes to config files |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | unzip | 6.0-28ubuntu4.1 | De-archiver for .zip files |
-| util-linux | 2.39.3-9ubuntu6.3 | miscellaneous system utilities |
+| util-linux | 2.39.3-9ubuntu6.4 | miscellaneous system utilities |
 | vim | 2:9.1.0016-1ubuntu7.9 | Vi IMproved - enhanced vi editor |
 | vim-common | 2:9.1.0016-1ubuntu7.9 | Vi IMproved - Common files |
 | vim-runtime | 2:9.1.0016-1ubuntu7.9 | Vi IMproved - Runtime files |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.32.15 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.32.18 | Universal Command Line Interface for Amazon Web Services |
