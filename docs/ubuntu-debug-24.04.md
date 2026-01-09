@@ -36,7 +36,7 @@
 | gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
 | gdb | 15.0.50.20240403-0ubuntu1 | GNU Debugger |
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
-| gpgv | 2.4.4-2ubuntu17.3 | GNU privacy guard - signature verification tool |
+| gpgv | 2.4.4-2ubuntu17.4 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
@@ -161,7 +161,7 @@
 | libsepol2:amd64 | 3.5-2build1 | SELinux library for manipulating binary security policies |
 | libsframe1:amd64 | 2.42-4ubuntu2.8 | Library to handle the SFrame format (runtime library) |
 | libsmartcols1:amd64 | 2.39.3-9ubuntu6.4 | smart column output alignment library |
-| libsodium23:amd64 | 1.0.18-1build3 | Network communication, cryptography and signaturing library |
+| libsodium23:amd64 | 1.0.18-1ubuntu0.24.04.1 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build1 | architecture-independent files for source highlighting library |
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
 | libsqlite3-0:amd64 | 3.45.1-1ubuntu2.5 | SQLite 3 shared library |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.32.30 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.32.31 | Universal Command Line Interface for Amazon Web Services |

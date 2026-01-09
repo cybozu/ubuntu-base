@@ -37,7 +37,7 @@
 | gettext-base | 0.21-4ubuntu4 | GNU Internationalization utilities for the base system |
 | git | 1:2.34.1-1ubuntu1.15 | fast, scalable, distributed revision control system |
 | git-man | 1:2.34.1-1ubuntu1.15 | fast, scalable, distributed revision control system (manual pages) |
-| gpgv | 2.2.27-3ubuntu2.4 | GNU privacy guard - signature verification tool |
+| gpgv | 2.2.27-3ubuntu2.5 | GNU privacy guard - signature verification tool |
 | grep | 3.7-1build1 | GNU grep, egrep and fgrep |
 | gzip | 1.10-4ubuntu4.1 | GNU compression utilities |
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |

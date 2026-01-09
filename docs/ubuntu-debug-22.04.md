@@ -39,7 +39,7 @@
 | gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04.2 | GCC, the GNU Compiler Collection (base package) |
 | gdb | 12.1-0ubuntu1~22.04.2 | GNU Debugger |
 | gettext-base | 0.21-4ubuntu4 | GNU Internationalization utilities for the base system |
-| gpgv | 2.2.27-3ubuntu2.4 | GNU privacy guard - signature verification tool |
+| gpgv | 2.2.27-3ubuntu2.5 | GNU privacy guard - signature verification tool |
 | grep | 3.7-1build1 | GNU grep, egrep and fgrep |
 | groff | 1.22.4-8build1 | GNU troff text-formatting system |
 | groff-base | 1.22.4-8build1 | GNU troff text-formatting system (base system components) |
@@ -164,7 +164,7 @@
 | libsepol2:amd64 | 3.3-1build1 | SELinux library for manipulating binary security policies |
 | libsm6:amd64 | 2:1.2.3-1build2 | X11 Session Management library |
 | libsmartcols1:amd64 | 2.37.2-4ubuntu3.4 | smart column output alignment library |
-| libsodium23:amd64 | 1.0.18-1build2 | Network communication, cryptography and signaturing library |
+| libsodium23:amd64 | 1.0.18-1ubuntu0.22.04.1 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.1build2 | architecture-independent files for source highlighting library |
 | libsource-highlight4v5 | 3.1.9-4.1build2 | source highlighting library |
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.5 | SQLite 3 shared library |
