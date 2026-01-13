@@ -152,7 +152,7 @@
 | libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.12 | systemd utility library |
-| libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.1 | Manage ASN.1 structures (runtime) |
+| libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
 | libtsan2:amd64 | 14.2.0-4ubuntu2~24.04 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
 | libubsan1:amd64 | 14.2.0-4ubuntu2~24.04 | UBSan -- undefined behaviour sanitizer (runtime) |

@@ -143,7 +143,7 @@
 | libstdc++-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.2 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.2 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.17 | systemd utility library |
-| libtasn1-6:amd64 | 4.18.0-4ubuntu0.1 | Manage ASN.1 structures (runtime) |
+| libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.3-2ubuntu0.1 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc-dev:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library - development files |

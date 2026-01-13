@@ -144,9 +144,9 @@
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.2 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |
 | libpython3-stdlib:amd64 | 3.12.3-0ubuntu2.1 | interactive high-level object-oriented language (default python3 version) |
-| libpython3.12-minimal:amd64 | 3.12.3-1ubuntu0.9 | Minimal subset of the Python language (version 3.12) |
-| libpython3.12-stdlib:amd64 | 3.12.3-1ubuntu0.9 | Interactive high-level object-oriented language (standard library, version 3.12) |
-| libpython3.12t64:amd64 | 3.12.3-1ubuntu0.9 | Shared Python runtime library (version 3.12) |
+| libpython3.12-minimal:amd64 | 3.12.3-1ubuntu0.10 | Minimal subset of the Python language (version 3.12) |
+| libpython3.12-stdlib:amd64 | 3.12.3-1ubuntu0.10 | Interactive high-level object-oriented language (standard library, version 3.12) |
+| libpython3.12t64:amd64 | 3.12.3-1ubuntu0.10 | Shared Python runtime library (version 3.12) |
 | libreadline8t64:amd64 | 8.2-4build1 | GNU readline and history libraries, run-time libraries |
 | librtmp1:amd64 | 2.4+20151223.gitfa8646d.1-2build7 | toolkit for RTMP streams (shared library) |
 | libsasl2-2:amd64 | 2.1.28+dfsg1-5ubuntu3.1 | Cyrus SASL - authentication abstraction library |
@@ -170,7 +170,7 @@
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.6 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.12 | systemd utility library |
-| libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.1 | Manage ASN.1 structures (runtime) |
+| libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-2 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
@@ -220,9 +220,9 @@
 | python3-pkg-resources | 68.1.2-2ubuntu1.2 | Package Discovery and Resource Access using pkg_resources |
 | python3-requests | 2.31.0+dfsg-1ubuntu1.1 | elegant and simple HTTP library for Python3, built for human beings |
 | python3-six | 1.16.0-4 | Python 2 and 3 compatibility library |
-| python3-urllib3 | 2.0.7-1ubuntu0.3 | HTTP library with thread-safe connection pooling for Python3 |
-| python3.12 | 3.12.3-1ubuntu0.9 | Interactive high-level object-oriented language (version 3.12) |
-| python3.12-minimal | 3.12.3-1ubuntu0.9 | Minimal subset of the Python language (version 3.12) |
+| python3-urllib3 | 2.0.7-1ubuntu0.6 | HTTP library with thread-safe connection pooling for Python3 |
+| python3.12 | 3.12.3-1ubuntu0.10 | Interactive high-level object-oriented language (version 3.12) |
+| python3.12-minimal | 3.12.3-1ubuntu0.10 | Minimal subset of the Python language (version 3.12) |
 | rclone | 1.60.1+dfsg-3ubuntu0.24.04.4 | rsync for commercial cloud storage |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-1ubuntu1.2 | fast, versatile, remote (and local) file-copying tool |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.32.31 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.32.34 | Universal Command Line Interface for Amazon Web Services |
