@@ -147,9 +147,9 @@
 | libprocps8:amd64 | 2:3.3.17-6ubuntu2.1 | library for accessing process information from /proc |
 | libpsl5:amd64 | 0.21.0-1.2build2 | Library for Public Suffix List (shared libraries) |
 | libpython3-stdlib:amd64 | 3.10.6-1~22.04.1 | interactive high-level object-oriented language (default python3 version) |
-| libpython3.10:amd64 | 3.10.12-1~22.04.12 | Shared Python runtime library (version 3.10) |
-| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.12 | Minimal subset of the Python language (version 3.10) |
-| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.12 | Interactive high-level object-oriented language (standard library, version 3.10) |
+| libpython3.10:amd64 | 3.10.12-1~22.04.13 | Shared Python runtime library (version 3.10) |
+| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.13 | Minimal subset of the Python language (version 3.10) |
+| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.13 | Interactive high-level object-oriented language (standard library, version 3.10) |
 | libreadline8:amd64 | 8.1.2-1 | GNU readline and history libraries, run-time libraries |
 | librtmp1:amd64 | 2.4+20151223.gitfa8646d.1-2build4 | toolkit for RTMP streams (shared library) |
 | libsasl2-2:amd64 | 2.1.27+dfsg2-3ubuntu1.2 | Cyrus SASL - authentication abstraction library |
@@ -173,7 +173,7 @@
 | libssl3:amd64 | 3.0.2-0ubuntu1.20 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.2 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.17 | systemd utility library |
-| libtasn1-6:amd64 | 4.18.0-4ubuntu0.1 | Manage ASN.1 structures (runtime) |
+| libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-1 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
@@ -246,10 +246,10 @@
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
 | python3-s3transfer | 0.5.0-1 | Amazon S3 Transfer Manager for Python3 |
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
-| python3-urllib3 | 1.26.5-1~exp1ubuntu0.4 | HTTP library with thread-safe connection pooling for Python3 |
+| python3-urllib3 | 1.26.5-1~exp1ubuntu0.5 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
-| python3.10 | 3.10.12-1~22.04.12 | Interactive high-level object-oriented language (version 3.10) |
-| python3.10-minimal | 3.10.12-1~22.04.12 | Minimal subset of the Python language (version 3.10) |
+| python3.10 | 3.10.12-1~22.04.13 | Interactive high-level object-oriented language (version 3.10) |
+| python3.10-minimal | 3.10.12-1~22.04.13 | Minimal subset of the Python language (version 3.10) |
 | rclone | 1.53.3-4ubuntu1.22.04.3 | rsync for commercial cloud storage |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-0ubuntu0.22.04.4 | fast, versatile, remote (and local) file-copying tool |
