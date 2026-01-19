@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.118ubuntu5 | add and remove users and groups |
-| apache2-utils | 2.4.52-1ubuntu4.16 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.52-1ubuntu4.18 | Apache HTTP Server (utility programs for web servers) |
 | apt | 2.4.14 | commandline package manager |
 | apt-transport-https | 2.4.14 | transitional package for https support |
 | apt-utils | 2.4.14 | package management related utility programs |
@@ -246,7 +246,7 @@
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
 | python3-s3transfer | 0.5.0-1 | Amazon S3 Transfer Manager for Python3 |
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
-| python3-urllib3 | 1.26.5-1~exp1ubuntu0.5 | HTTP library with thread-safe connection pooling for Python3 |
+| python3-urllib3 | 1.26.5-1~exp1ubuntu0.6 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
 | python3.10 | 3.10.12-1~22.04.13 | Interactive high-level object-oriented language (version 3.10) |
 | python3.10-minimal | 3.10.12-1~22.04.13 | Minimal subset of the Python language (version 3.10) |
