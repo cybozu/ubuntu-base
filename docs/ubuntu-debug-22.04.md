@@ -46,7 +46,7 @@
 | gzip | 1.10-4ubuntu4.1 | GNU compression utilities |
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.62 | helper tools for all init systems |
-| iperf3 | 3.9-1+deb11u1build0.22.04.1 | Internet Protocol bandwidth measuring tool |
+| iperf3 | 3.9-1+deb11u1ubuntu0.1 | Internet Protocol bandwidth measuring tool |
 | iproute2 | 5.15.0-1ubuntu2 | networking and traffic control tools |
 | iputils-ping | 3:20211215-1ubuntu0.1 | Tools to test the reachability of network hosts |
 | jq | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor |
@@ -94,7 +94,7 @@
 | libgcrypt20:amd64 | 1.9.4-3ubuntu3 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
-| libglib2.0-0:amd64 | 2.72.4-0ubuntu2.7 | GLib library of C routines |
+| libglib2.0-0:amd64 | 2.72.4-0ubuntu2.8 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.7 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
@@ -106,7 +106,7 @@
 | libidn2-0:amd64 | 2.3.2-2build1 | Internationalized domain names (IDNA2008/TR46) library |
 | libio-pty-perl | 1:1.15-2build2 | Perl module for pseudo tty IO |
 | libipc-run-perl | 20200505.0-1 | Perl module for running processes |
-| libiperf0:amd64 | 3.9-1+deb11u1build0.22.04.1 | Internet Protocol bandwidth measuring tool (runtime files) |
+| libiperf0:amd64 | 3.9-1+deb11u1ubuntu0.1 | Internet Protocol bandwidth measuring tool (runtime files) |
 | libipt2 | 2.0.5-1 | Intel Processor Trace Decoder Library |
 | libjq1:amd64 | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor - shared library |
 | libjson-c5:amd64 | 0.15-3~ubuntu1.22.04.2 | JSON manipulation library - shared library |
