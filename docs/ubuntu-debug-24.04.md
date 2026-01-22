@@ -181,7 +181,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.4 | Universally Unique ID library |
 | libuv1t64:amd64 | 1.48.0-1.1build1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-33 | Wietse Venema's TCP wrappers library |
-| libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.6 | GNOME XML library |
+| libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.7 | GNOME XML library |
 | libxtables12:amd64 | 1.8.10-3ubuntu2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.33.3 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.33.5 | Universal Command Line Interface for Amazon Web Services |
