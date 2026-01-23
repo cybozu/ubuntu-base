@@ -194,7 +194,7 @@
 | libxcb1:amd64 | 1.14-3ubuntu3 | X C Binding |
 | libxdmcp6:amd64 | 1:1.1.3-0ubuntu5 | X11 Display Manager Control Protocol library |
 | libxext6:amd64 | 2:1.3.4-1build1 | X11 miscellaneous extension library |
-| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.10 | GNOME XML library |
+| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.11 | GNOME XML library |
 | libxmu6:amd64 | 2:1.1.3-3 | X11 miscellaneous utility library |
 | libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.2 | X11 pixmap library |
 | libxt6:amd64 | 1:1.2.1-1 | X11 toolkit intrinsics library |
@@ -240,7 +240,7 @@
 | python3-magic | 2:0.4.24-2 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.10.6-1~22.04.1 | minimal subset of the Python language (default python3 version) |
 | python3-pkg-resources | 59.6.0-1.2ubuntu0.22.04.3 | Package Discovery and Resource Access using pkg_resources |
-| python3-pyasn1 | 0.4.8-1 | ASN.1 library for Python (Python 3 module) |
+| python3-pyasn1 | 0.4.8-1ubuntu0.1 | ASN.1 library for Python (Python 3 module) |
 | python3-requests | 2.25.1+dfsg-2ubuntu0.3 | elegant and simple HTTP library for Python3, built for human beings |
 | python3-roman | 3.3-1 | module for generating/analyzing Roman numerals for Python 3 |
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
