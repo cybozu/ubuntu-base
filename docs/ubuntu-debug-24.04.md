@@ -40,7 +40,7 @@
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
-| inetutils-telnet | 2:2.5-3ubuntu4 | telnet client |
+| inetutils-telnet | 2:2.5-3ubuntu4.1 | telnet client |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | iperf3 | 3.16-1build2 | Internet Protocol bandwidth measuring tool |
 | iproute2 | 6.1.0-1ubuntu6.2 | networking and traffic control tools |
@@ -194,9 +194,9 @@
 | media-types | 10.1.0 | List of standard media types and their usual file extension |
 | moreutils | 0.69-1 | additional Unix utilities |
 | mount | 2.39.3-9ubuntu6.4 | tools for mounting and manipulating filesystems |
-| mysql-client | 8.0.44-0ubuntu0.24.04.2 | MySQL database client (metapackage depending on the latest version) |
-| mysql-client-8.0 | 8.0.44-0ubuntu0.24.04.2 | MySQL database client binaries |
-| mysql-client-core-8.0 | 8.0.44-0ubuntu0.24.04.2 | MySQL database core client binaries |
+| mysql-client | 8.0.45-0ubuntu0.24.04.1 | MySQL database client (metapackage depending on the latest version) |
+| mysql-client-8.0 | 8.0.45-0ubuntu0.24.04.1 | MySQL database client binaries |
+| mysql-client-core-8.0 | 8.0.45-0ubuntu0.24.04.1 | MySQL database core client binaries |
 | mysql-common | 5.8+1.1.0build1 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.8 | display a calendar and the date of Easter |
 | ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
@@ -239,7 +239,7 @@
 | tcl-expect:amd64 | 5.45.4-3 | Automates interactive applications (Tcl package) |
 | tcl8.6 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - shell |
 | tcpdump | 4.99.4-3ubuntu4.24.04.1 | command-line network traffic analyzer |
-| telnet | 0.17+2.5-3ubuntu4 | transitional dummy package for inetutils-telnet default switch |
+| telnet | 0.17+2.5-3ubuntu4.1 | transitional dummy package for inetutils-telnet default switch |
 | traceroute | 1:2.1.5-1 | Traces the route taken by packets over an IPv4/IPv6 network |
 | tzdata | 2025b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.33.11 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.33.13 | Universal Command Line Interface for Amazon Web Services |
