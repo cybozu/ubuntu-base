@@ -62,8 +62,8 @@
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.39-0ubuntu8.6 | GNU C Library: Binaries |
-| libc6:amd64 | 2.39-0ubuntu8.6 | GNU C Library: Shared libraries |
+| libc-bin | 2.39-0ubuntu8.7 | GNU C Library: Binaries |
+| libc6:amd64 | 2.39-0ubuntu8.7 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
 | libcap2-bin | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (utilities) |
@@ -112,7 +112,7 @@
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
 | libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
 | libkrb5support0:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Support library |
-| libldap2:amd64 | 2.6.7+dfsg-1~exp1ubuntu8.2 | OpenLDAP libraries |
+| libldap2:amd64 | 2.6.10+dfsg-0ubuntu0.24.04.1 | OpenLDAP libraries |
 | liblmdb0:amd64 | 0.9.31-1build1 | Lightning Memory-Mapped Database shared library |
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
 | liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression library |
@@ -185,7 +185,7 @@
 | libxtables12:amd64 | 1.8.10-3ubuntu2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| locales | 2.39-0ubuntu8.6 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.39-0ubuntu8.7 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
 | lsb-release | 12.0-2 | Linux Standard Base version reporting utility (minimal implementation) |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.33.13 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.33.14 | Universal Command Line Interface for Amazon Web Services |
