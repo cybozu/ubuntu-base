@@ -62,10 +62,10 @@
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.39-0ubuntu8.6 | GNU C Library: Binaries |
-| libc-dev-bin | 2.39-0ubuntu8.6 | GNU C Library: Development binaries |
-| libc6:amd64 | 2.39-0ubuntu8.6 | GNU C Library: Shared libraries |
-| libc6-dev:amd64 | 2.39-0ubuntu8.6 | GNU C Library: Development Libraries and Header Files |
+| libc-bin | 2.39-0ubuntu8.7 | GNU C Library: Binaries |
+| libc-dev-bin | 2.39-0ubuntu8.7 | GNU C Library: Development binaries |
+| libc6:amd64 | 2.39-0ubuntu8.7 | GNU C Library: Shared libraries |
+| libc6-dev:amd64 | 2.39-0ubuntu8.7 | GNU C Library: Development Libraries and Header Files |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
 | libcbor0.10:amd64 | 0.10.2-1.2ubuntu2 | library for parsing and generating CBOR (RFC 7049) |
@@ -108,7 +108,7 @@
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
 | libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
 | libkrb5support0:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Support library |
-| libldap2:amd64 | 2.6.7+dfsg-1~exp1ubuntu8.2 | OpenLDAP libraries |
+| libldap2:amd64 | 2.6.10+dfsg-0ubuntu0.24.04.1 | OpenLDAP libraries |
 | liblsan0:amd64 | 14.2.0-4ubuntu2~24.04 | LeakSanitizer -- a memory leak detector (runtime) |
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
 | liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression library |
@@ -162,7 +162,7 @@
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
 | linux-libc-dev:amd64 | 6.8.0-94.96 | Linux Kernel Headers for development |
-| locales | 2.39-0ubuntu8.6 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.39-0ubuntu8.7 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
 | lto-disabled-list | 47 | list of packages not to build with LTO |
