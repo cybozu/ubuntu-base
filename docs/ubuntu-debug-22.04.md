@@ -94,7 +94,7 @@
 | libgcrypt20:amd64 | 1.9.4-3ubuntu3 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
-| libglib2.0-0:amd64 | 2.72.4-0ubuntu2.8 | GLib library of C routines |
+| libglib2.0-0:amd64 | 2.72.4-0ubuntu2.9 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.7 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
@@ -147,9 +147,9 @@
 | libprocps8:amd64 | 2:3.3.17-6ubuntu2.1 | library for accessing process information from /proc |
 | libpsl5:amd64 | 0.21.0-1.2build2 | Library for Public Suffix List (shared libraries) |
 | libpython3-stdlib:amd64 | 3.10.6-1~22.04.1 | interactive high-level object-oriented language (default python3 version) |
-| libpython3.10:amd64 | 3.10.12-1~22.04.13 | Shared Python runtime library (version 3.10) |
-| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.13 | Minimal subset of the Python language (version 3.10) |
-| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.13 | Interactive high-level object-oriented language (standard library, version 3.10) |
+| libpython3.10:amd64 | 3.10.12-1~22.04.14 | Shared Python runtime library (version 3.10) |
+| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.14 | Minimal subset of the Python language (version 3.10) |
+| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.14 | Interactive high-level object-oriented language (standard library, version 3.10) |
 | libreadline8:amd64 | 8.1.2-1 | GNU readline and history libraries, run-time libraries |
 | librtmp1:amd64 | 2.4+20151223.gitfa8646d.1-2build4 | toolkit for RTMP streams (shared library) |
 | libsasl2-2:amd64 | 2.1.27+dfsg2-3ubuntu1.2 | Cyrus SASL - authentication abstraction library |
@@ -248,8 +248,8 @@
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
 | python3-urllib3 | 1.26.5-1~exp1ubuntu0.6 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
-| python3.10 | 3.10.12-1~22.04.13 | Interactive high-level object-oriented language (version 3.10) |
-| python3.10-minimal | 3.10.12-1~22.04.13 | Minimal subset of the Python language (version 3.10) |
+| python3.10 | 3.10.12-1~22.04.14 | Interactive high-level object-oriented language (version 3.10) |
+| python3.10-minimal | 3.10.12-1~22.04.14 | Minimal subset of the Python language (version 3.10) |
 | rclone | 1.53.3-4ubuntu1.22.04.3 | rsync for commercial cloud storage |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-0ubuntu0.22.04.4 | fast, versatile, remote (and local) file-copying tool |
