@@ -38,7 +38,7 @@
 | gcc-13 | 13.3.0-6ubuntu2~24.04.1 | GNU C compiler |
 | gcc-13-base:amd64 | 13.3.0-6ubuntu2~24.04.1 | GCC, the GNU Compiler Collection (base package) |
 | gcc-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04.1 | GNU C compiler for the x86_64-linux-gnu architecture |
-| gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
+| gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC, the GNU Compiler Collection (base package) |
 | gcc-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C compiler for the amd64 architecture |
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | git | 1:2.43.0-1ubuntu7.3 | fast, scalable, distributed revision control system |
@@ -51,9 +51,9 @@
 | jq | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
-| libasan8:amd64 | 14.2.0-4ubuntu2~24.04 | AddressSanitizer -- a fast memory error detector |
+| libasan8:amd64 | 14.2.0-4ubuntu2~24.04.1 | AddressSanitizer -- a fast memory error detector |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
-| libatomic1:amd64 | 14.2.0-4ubuntu2~24.04 | support library providing __atomic built-in functions |
+| libatomic1:amd64 | 14.2.0-4ubuntu2~24.04.1 | support library providing __atomic built-in functions |
 | libattr1:amd64 | 1:2.5.2-1build1.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
@@ -69,7 +69,7 @@
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
 | libcbor0.10:amd64 | 0.10.2-1.2ubuntu2 | library for parsing and generating CBOR (RFC 7049) |
-| libcc1-0:amd64 | 14.2.0-4ubuntu2~24.04 | GCC cc1 plugin for GDB |
+| libcc1-0:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC cc1 plugin for GDB |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt-dev:amd64 | 1:4.4.36-4build1 | libcrypt development files |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
@@ -87,21 +87,21 @@
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
 | libgcc-13-dev:amd64 | 13.3.0-6ubuntu2~24.04.1 | GCC support library (development files) |
-| libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC support library |
+| libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC support library |
 | libgcrypt20:amd64 | 1.10.3-2build1 | LGPL Crypto library - runtime library |
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
 | libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.5 | GNU TLS library - main runtime library |
-| libgomp1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC OpenMP (GOMP) support library |
+| libgomp1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC OpenMP (GOMP) support library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.8 | GNU Next Generation profiler (runtime library) |
 | libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (public-key cryptos) |
-| libhwasan0:amd64 | 14.2.0-4ubuntu2~24.04 | AddressSanitizer -- a fast memory error detector |
+| libhwasan0:amd64 | 14.2.0-4ubuntu2~24.04.1 | AddressSanitizer -- a fast memory error detector |
 | libidn2-0:amd64 | 2.3.7-2build1.1 | Internationalized domain names (IDNA2008/TR46) library |
 | libisl23:amd64 | 0.26-3build1.1 | manipulating sets and relations of integer points bounded by linear constraints |
-| libitm1:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Transactional Memory Library |
+| libitm1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Transactional Memory Library |
 | libjansson4:amd64 | 2.14-2build2 | C library for encoding, decoding and manipulating JSON data |
 | libjq1:amd64 | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor - shared library |
 | libk5crypto3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Crypto Library |
@@ -109,7 +109,7 @@
 | libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
 | libkrb5support0:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Support library |
 | libldap2:amd64 | 2.6.10+dfsg-0ubuntu0.24.04.1 | OpenLDAP libraries |
-| liblsan0:amd64 | 14.2.0-4ubuntu2~24.04 | LeakSanitizer -- a memory leak detector (runtime) |
+| liblsan0:amd64 | 14.2.0-4ubuntu2~24.04.1 | LeakSanitizer -- a memory leak detector (runtime) |
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
 | liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression library |
 | libmd0:amd64 | 1.1.0-2build1.1 | message digest functions from BSD systems - shared library |
@@ -132,7 +132,7 @@
 | libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.2 | shared Perl library |
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.2 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |
-| libquadmath0:amd64 | 14.2.0-4ubuntu2~24.04 | GCC Quad-Precision Math Library |
+| libquadmath0:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC Quad-Precision Math Library |
 | libreadline-dev:amd64 | 8.2-4build1 | GNU readline and history libraries, development files |
 | libreadline8t64:amd64 | 8.2-4build1 | GNU readline and history libraries, run-time libraries |
 | librtmp1:amd64 | 2.4+20151223.gitfa8646d.1-2build7 | toolkit for RTMP streams (shared library) |
@@ -150,12 +150,12 @@
 | libssl-dev:amd64 | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - development files |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04.1 | GNU Standard C++ Library v3 (development files) |
-| libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
+| libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.12 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
-| libtsan2:amd64 | 14.2.0-4ubuntu2~24.04 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
-| libubsan1:amd64 | 14.2.0-4ubuntu2~24.04 | UBSan -- undefined behaviour sanitizer (runtime) |
+| libtsan2:amd64 | 14.2.0-4ubuntu2~24.04.1 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
+| libubsan1:amd64 | 14.2.0-4ubuntu2~24.04.1 | UBSan -- undefined behaviour sanitizer (runtime) |
 | libudev1:amd64 | 255.4-1ubuntu8.12 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.4 | Universally Unique ID library |

@@ -19,7 +19,7 @@
 | dpkg | 1.22.6ubuntu6.5 | Debian package management system |
 | e2fsprogs | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system utilities |
 | findutils | 4.9.0-5build1 | utilities for finding files--find, xargs |
-| gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
+| gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC, the GNU Compiler Collection (base package) |
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | gpgv | 2.4.4-2ubuntu17.4 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
@@ -46,7 +46,7 @@
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
-| libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC support library |
+| libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC support library |
 | libgcrypt20:amd64 | 1.10.3-2build1 | LGPL Crypto library - runtime library |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
 | libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.5 | GNU TLS library - main runtime library |
@@ -88,7 +88,7 @@
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.2 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
-| libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
+| libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.12 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
