@@ -18,8 +18,8 @@
 | ca-certificates | 20240203 | Common CA certificates |
 | coreutils | 9.4-3ubuntu6.1 | GNU core utilities |
 | cpp | 4:13.2.0-7ubuntu1 | GNU C preprocessor (cpp) |
-| cpp-13 | 13.3.0-6ubuntu2~24.04 | GNU C preprocessor |
-| cpp-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04 | GNU C preprocessor for x86_64-linux-gnu |
+| cpp-13 | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor |
+| cpp-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor for x86_64-linux-gnu |
 | cpp-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C preprocessor (cpp) for the amd64 architecture |
 | curl | 8.5.0-2ubuntu10.6 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
@@ -31,13 +31,13 @@
 | e2fsprogs | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system utilities |
 | findutils | 4.9.0-5build1 | utilities for finding files--find, xargs |
 | g++ | 4:13.2.0-7ubuntu1 | GNU C++ compiler |
-| g++-13 | 13.3.0-6ubuntu2~24.04 | GNU C++ compiler |
-| g++-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04 | GNU C++ compiler for x86_64-linux-gnu architecture |
+| g++-13 | 13.3.0-6ubuntu2~24.04.1 | GNU C++ compiler |
+| g++-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04.1 | GNU C++ compiler for x86_64-linux-gnu architecture |
 | g++-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C++ compiler for the amd64 architecture |
 | gcc | 4:13.2.0-7ubuntu1 | GNU C compiler |
-| gcc-13 | 13.3.0-6ubuntu2~24.04 | GNU C compiler |
-| gcc-13-base:amd64 | 13.3.0-6ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
-| gcc-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04 | GNU C compiler for the x86_64-linux-gnu architecture |
+| gcc-13 | 13.3.0-6ubuntu2~24.04.1 | GNU C compiler |
+| gcc-13-base:amd64 | 13.3.0-6ubuntu2~24.04.1 | GCC, the GNU Compiler Collection (base package) |
+| gcc-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04.1 | GNU C compiler for the x86_64-linux-gnu architecture |
 | gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
 | gcc-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C compiler for the amd64 architecture |
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
@@ -82,17 +82,17 @@
 | libdpkg-perl | 1.22.6ubuntu6.5 | Dpkg perl modules |
 | libedit2:amd64 | 3.1-20230828-1build1 | BSD editline and history libraries |
 | liberror-perl | 0.17029-2 | Perl module for error/exception handling in an OO-ish way |
-| libexpat1:amd64 | 2.6.1-2ubuntu0.3 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.6.1-2ubuntu0.4 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
-| libgcc-13-dev:amd64 | 13.3.0-6ubuntu2~24.04 | GCC support library (development files) |
+| libgcc-13-dev:amd64 | 13.3.0-6ubuntu2~24.04.1 | GCC support library (development files) |
 | libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC support library |
 | libgcrypt20:amd64 | 1.10.3-2build1 | LGPL Crypto library - runtime library |
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
-| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.4 | GNU TLS library - main runtime library |
+| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.5 | GNU TLS library - main runtime library |
 | libgomp1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC OpenMP (GOMP) support library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.8 | GNU Next Generation profiler (runtime library) |
@@ -149,7 +149,7 @@
 | libssh-4:amd64 | 0.10.6-2ubuntu0.2 | tiny C SSH library (OpenSSL flavor) |
 | libssl-dev:amd64 | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - development files |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
-| libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04 | GNU Standard C++ Library v3 (development files) |
+| libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04.1 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.12 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |

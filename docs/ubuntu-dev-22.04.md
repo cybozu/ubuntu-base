@@ -18,7 +18,7 @@
 | ca-certificates | 20240203~22.04.1 | Common CA certificates |
 | coreutils | 8.32-4.1ubuntu1.2 | GNU core utilities |
 | cpp | 4:11.2.0-1ubuntu1 | GNU C preprocessor (cpp) |
-| cpp-11 | 11.4.0-1ubuntu1~22.04.2 | GNU C preprocessor |
+| cpp-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C preprocessor |
 | curl | 7.81.0-1ubuntu1.21 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
@@ -29,10 +29,10 @@
 | e2fsprogs | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system utilities |
 | findutils | 4.8.0-1ubuntu3 | utilities for finding files--find, xargs |
 | g++ | 4:11.2.0-1ubuntu1 | GNU C++ compiler |
-| g++-11 | 11.4.0-1ubuntu1~22.04.2 | GNU C++ compiler |
+| g++-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C++ compiler |
 | gcc | 4:11.2.0-1ubuntu1 | GNU C compiler |
-| gcc-11 | 11.4.0-1ubuntu1~22.04.2 | GNU C compiler |
-| gcc-11-base:amd64 | 11.4.0-1ubuntu1~22.04.2 | GCC, the GNU Compiler Collection (base package) |
+| gcc-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C compiler |
+| gcc-11-base:amd64 | 11.4.0-1ubuntu1~22.04.3 | GCC, the GNU Compiler Collection (base package) |
 | gcc-12-base:amd64 | 12.3.0-1ubuntu1~22.04.2 | GCC, the GNU Compiler Collection (base package) |
 | gettext-base | 0.21-4ubuntu4 | GNU Internationalization utilities for the base system |
 | git | 1:2.34.1-1ubuntu1.15 | fast, scalable, distributed revision control system |
@@ -45,7 +45,7 @@
 | jq | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
 | libapt-pkg6.0:amd64 | 2.4.14 | package management runtime library |
-| libasan6:amd64 | 11.4.0-1ubuntu1~22.04.2 | AddressSanitizer -- a fast memory error detector |
+| libasan6:amd64 | 11.4.0-1ubuntu1~22.04.3 | AddressSanitizer -- a fast memory error detector |
 | libatomic1:amd64 | 12.3.0-1ubuntu1~22.04.2 | support library providing __atomic built-in functions |
 | libattr1:amd64 | 1:2.5.1-1build1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.0.7-1build1 | Dynamic library for security auditing - common files |
@@ -79,13 +79,13 @@
 | libext2fs2:amd64 | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.10.0-1 | library for generating and verifying FIDO 2.0 objects |
-| libgcc-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.2 | GCC support library (development files) |
+| libgcc-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.3 | GCC support library (development files) |
 | libgcc-s1:amd64 | 12.3.0-1ubuntu1~22.04.2 | GCC support library |
 | libgcrypt20:amd64 | 1.9.4-3ubuntu3 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
-| libgnutls30:amd64 | 3.7.3-4ubuntu1.7 | GNU TLS library - main runtime library |
+| libgnutls30:amd64 | 3.7.3-4ubuntu1.8 | GNU TLS library - main runtime library |
 | libgomp1:amd64 | 12.3.0-1ubuntu1~22.04.2 | GCC OpenMP (GOMP) support library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
 | libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
@@ -140,7 +140,7 @@
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.5 | tiny C SSH library (OpenSSL flavor) |
 | libssl-dev:amd64 | 3.0.2-0ubuntu1.21 | Secure Sockets Layer toolkit - development files |
 | libssl3:amd64 | 3.0.2-0ubuntu1.21 | Secure Sockets Layer toolkit - shared libraries |
-| libstdc++-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.2 | GNU Standard C++ Library v3 (development files) |
+| libstdc++-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.2 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.17 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
@@ -148,7 +148,7 @@
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc-dev:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library - development files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
-| libtsan0:amd64 | 11.4.0-1ubuntu1~22.04.2 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
+| libtsan0:amd64 | 11.4.0-1ubuntu1~22.04.3 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
 | libubsan1:amd64 | 12.3.0-1ubuntu1~22.04.2 | UBSan -- undefined behaviour sanitizer (runtime) |
 | libudev1:amd64 | 249.11-0ubuntu3.17 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |

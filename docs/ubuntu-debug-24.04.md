@@ -82,7 +82,7 @@
 | libdw1t64:amd64 | 0.190-1.1ubuntu0.1 | library that provides access to the DWARF debug information |
 | libedit2:amd64 | 3.1-20230828-1build1 | BSD editline and history libraries |
 | libelf1t64:amd64 | 0.190-1.1ubuntu0.1 | library to read and write ELF files |
-| libexpat1:amd64 | 2.6.1-2ubuntu0.3 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.6.1-2ubuntu0.4 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
@@ -92,7 +92,7 @@
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libglib2.0-0t64:amd64 | 2.80.0-6ubuntu3.8 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
-| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.4 | GNU TLS library - main runtime library |
+| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.5 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-11 | General Purpose Mouse - shared library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.8 | GNU Next Generation profiler (runtime library) |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.33.18 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.33.23 | Universal Command Line Interface for Amazon Web Services |

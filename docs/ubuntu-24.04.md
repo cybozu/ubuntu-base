@@ -49,7 +49,7 @@
 | libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC support library |
 | libgcrypt20:amd64 | 1.10.3-2build1 | LGPL Crypto library - runtime library |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
-| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.4 | GNU TLS library - main runtime library |
+| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.5 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (public-key cryptos) |
