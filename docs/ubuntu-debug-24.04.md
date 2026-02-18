@@ -33,7 +33,7 @@
 | expect | 5.45.4-3 | Automates interactive applications |
 | file | 1:5.45-3build1 | Recognize the type of data in a file using "magic" numbers |
 | findutils | 4.9.0-5build1 | utilities for finding files--find, xargs |
-| gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04 | GCC, the GNU Compiler Collection (base package) |
+| gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC, the GNU Compiler Collection (base package) |
 | gdb | 15.0.50.20240403-0ubuntu1 | GNU Debugger |
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | gpgv | 2.4.4-2ubuntu17.4 | GNU privacy guard - signature verification tool |
@@ -86,7 +86,7 @@
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
-| libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04 | GCC support library |
+| libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC support library |
 | libgcrypt20:amd64 | 1.10.3-2build1 | LGPL Crypto library - runtime library |
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
@@ -168,7 +168,7 @@
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.2 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
-| libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04 | GNU Standard C++ Library v3 |
+| libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.12 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.33.23 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.33.24 | Universal Command Line Interface for Amazon Web Services |
