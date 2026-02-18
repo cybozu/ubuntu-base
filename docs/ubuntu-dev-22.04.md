@@ -137,7 +137,7 @@
 | libsepol2:amd64 | 3.3-1build1 | SELinux library for manipulating binary security policies |
 | libsmartcols1:amd64 | 2.37.2-4ubuntu3.4 | smart column output alignment library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
-| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.5 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.6 | tiny C SSH library (OpenSSL flavor) |
 | libssl-dev:amd64 | 3.0.2-0ubuntu1.21 | Secure Sockets Layer toolkit - development files |
 | libssl3:amd64 | 3.0.2-0ubuntu1.21 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 (development files) |
