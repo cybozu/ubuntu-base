@@ -21,7 +21,7 @@
 | cpp-13 | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor |
 | cpp-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor for x86_64-linux-gnu |
 | cpp-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C preprocessor (cpp) for the amd64 architecture |
-| curl | 8.5.0-2ubuntu10.6 | command line tool for transferring data with URL syntax |
+| curl | 8.5.0-2ubuntu10.7 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
@@ -75,8 +75,8 @@
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.42-4ubuntu2.8 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.42-4ubuntu2.8 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4t64:amd64 | 8.5.0-2ubuntu10.6 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.7 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4t64:amd64 | 8.5.0-2ubuntu10.7 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
 | libdpkg-perl | 1.22.6ubuntu6.5 | Dpkg perl modules |
