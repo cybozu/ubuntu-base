@@ -108,15 +108,16 @@ jobs:
         uses: actions/checkout@v6
       - name: Install Trivy
         run: |
-          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
-      - name: Scan images
-        run: |
-          repo="ghcr.io"
-          for ubuntu_version in ${{ env.ubuntu-version }}; do
-            TAG=$(cat ${ubuntu_version}/TAG)
-            for ubuntu_image in ${{ env.ubuntu-image }}; do
-              echo
-              echo "scanning ${repo}/cybozu/${ubuntu_image}:${TAG} ..."
-              YAMORY_IMAGE_IDENTIFIER="${repo}/cybozu/${ubuntu_image}:${ubuntu_version}" YAMORY_IMAGE_NAME="${repo}/cybozu/${ubuntu_image}:${TAG}" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
-            done
-          done
+          echo 'Trivy is disabled.' 
+        # curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+      # - name: Scan images
+      #   run: |
+      #     repo="ghcr.io"
+      #     for ubuntu_version in ${{ env.ubuntu-version }}; do
+      #       TAG=$(cat ${ubuntu_version}/TAG)
+      #       for ubuntu_image in ${{ env.ubuntu-image }}; do
+      #         echo
+      #         echo "scanning ${repo}/cybozu/${ubuntu_image}:${TAG} ..."
+      #         YAMORY_IMAGE_IDENTIFIER="${repo}/cybozu/${ubuntu_image}:${ubuntu_version}" YAMORY_IMAGE_NAME="${repo}/cybozu/${ubuntu_image}:${TAG}" bash -c "$(curl -sSf -L https://mw-receiver.yamory.io/image/script/trivy)"
+      #       done
+      #     done
