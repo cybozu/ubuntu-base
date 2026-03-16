@@ -17,9 +17,9 @@
 | binutils | 2.42-4ubuntu2.8 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.42-4ubuntu2.8 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.42-4ubuntu2.8 | GNU binary utilities, for x86-64-linux-gnu target |
-| bsdextrautils | 2.39.3-9ubuntu6.4 | extra utilities from 4.4BSD-Lite |
+| bsdextrautils | 2.39.3-9ubuntu6.5 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.8 | Transitional package for more utilities from FreeBSD |
-| bsdutils | 1:2.39.3-9ubuntu6.4 | basic utilities from 4.4BSD-Lite |
+| bsdutils | 1:2.39.3-9ubuntu6.5 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20240203 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
 | coreutils | 9.4-3ubuntu6.1 | GNU core utilities |
@@ -57,7 +57,7 @@
 | libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
 | libbabeltrace1:amd64 | 1.5.11-3build3 | Babeltrace conversion libraries |
 | libbinutils:amd64 | 2.42-4ubuntu2.8 | GNU binary utilities (private shared library) |
-| libblkid1:amd64 | 2.39.3-9ubuntu6.4 | block device ID library |
+| libblkid1:amd64 | 2.39.3-9ubuntu6.5 | block device ID library |
 | libbpf1:amd64 | 1:1.3.0-2build2 | eBPF helper library (shared library) |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
@@ -121,7 +121,7 @@
 | libmaxminddb0:amd64 | 1.9.1-1build1 | IP geolocation database library |
 | libmd0:amd64 | 1.1.0-2build1.1 | message digest functions from BSD systems - shared library |
 | libmnl0:amd64 | 1.0.5-2build1 | minimalistic Netlink communication library |
-| libmount1:amd64 | 2.39.3-9ubuntu6.4 | device mounting library |
+| libmount1:amd64 | 2.39.3-9ubuntu6.5 | device mounting library |
 | libmpfr6:amd64 | 4.2.1-1build1.1 | multiple precision floating-point computation |
 | libncursesw6:amd64 | 6.4+20240113-1ubuntu2 | shared libraries for terminal handling (wide character support) |
 | libnetfilter-conntrack3:amd64 | 1.0.9-6build1 | Netfilter netlink-conntrack library |
@@ -160,7 +160,7 @@
 | libsensors5:amd64 | 1:3.6.0-9build1 | library to read temperature/voltage/fan sensors |
 | libsepol2:amd64 | 3.5-2build1 | SELinux library for manipulating binary security policies |
 | libsframe1:amd64 | 2.42-4ubuntu2.8 | Library to handle the SFrame format (runtime library) |
-| libsmartcols1:amd64 | 2.39.3-9ubuntu6.4 | smart column output alignment library |
+| libsmartcols1:amd64 | 2.39.3-9ubuntu6.5 | smart column output alignment library |
 | libsodium23:amd64 | 1.0.18-1ubuntu0.24.04.1 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build1 | architecture-independent files for source highlighting library |
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
@@ -178,7 +178,7 @@
 | libudev1:amd64 | 255.4-1ubuntu8.12 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libunwind8:amd64 | 1.6.2-3build1.1 | library to determine the call-chain of a program - runtime |
-| libuuid1:amd64 | 2.39.3-9ubuntu6.4 | Universally Unique ID library |
+| libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
 | libuv1t64:amd64 | 1.48.0-1.1build1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-33 | Wietse Venema's TCP wrappers library |
 | libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.7 | GNOME XML library |
@@ -193,7 +193,7 @@
 | mawk | 1.3.4.20240123-1build1 | Pattern scanning and text processing language |
 | media-types | 10.1.0 | List of standard media types and their usual file extension |
 | moreutils | 0.69-1 | additional Unix utilities |
-| mount | 2.39.3-9ubuntu6.4 | tools for mounting and manipulating filesystems |
+| mount | 2.39.3-9ubuntu6.5 | tools for mounting and manipulating filesystems |
 | mysql-client | 8.0.45-0ubuntu0.24.04.1 | MySQL database client (metapackage depending on the latest version) |
 | mysql-client-8.0 | 8.0.45-0ubuntu0.24.04.1 | MySQL database client binaries |
 | mysql-client-core-8.0 | 8.0.45-0ubuntu0.24.04.1 | MySQL database core client binaries |
@@ -203,7 +203,7 @@
 | ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssh-client | 1:9.6p1-3ubuntu13.14 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:9.6p1-3ubuntu13.15 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl | 5.38.2-3.2ubuntu0.2 | Larry Wall's Practical Extraction and Report Language |
@@ -246,7 +246,7 @@
 | ucf | 3.0043+nmu1 | Update Configuration File(s): preserve user changes to config files |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | unzip | 6.0-28ubuntu4.1 | De-archiver for .zip files |
-| util-linux | 2.39.3-9ubuntu6.4 | miscellaneous system utilities |
+| util-linux | 2.39.3-9ubuntu6.5 | miscellaneous system utilities |
 | vim | 2:9.1.0016-1ubuntu7.9 | Vi IMproved - enhanced vi editor |
 | vim-common | 2:9.1.0016-1ubuntu7.9 | Vi IMproved - Common files |
 | vim-runtime | 2:9.1.0016-1ubuntu7.9 | Vi IMproved - Runtime files |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.7 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.9 | Universal Command Line Interface for Amazon Web Services |
