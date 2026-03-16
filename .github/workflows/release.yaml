@@ -106,9 +106,27 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+      - uses: sigstore/cosign-installer@ba7bc0a3fef59531c69a25acd34668d6d3fe6f22 # v4.1.0
+        with:
+          cosign-release: "v3.0.5"
       - name: Install Trivy
+        env:
+          TRIVY_VERSION: "0.69.3"
+        # Installation: https://trivy.dev/docs/v0.69/getting-started/installation/#github-release-official
+        # Signature Verification: https://trivy.dev/docs/v0.69/getting-started/signature-verification/#verifying-binary
         run: |
-          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+          TRIVY_DEB_PKG_URL="https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.deb"
+
+          wget -O "/tmp/trivy.deb" "${TRIVY_DEB_PKG_URL}"
+          wget -O "/tmp/trivy.deb.sigstore.json" "${TRIVY_DEB_PKG_URL}.sigstore.json"
+
+          cosign verify-blob "/tmp/trivy.deb" \
+            --bundle "/tmp/trivy.deb.sigstore.json" \
+            --certificate-identity-regexp "https://github.com/aquasecurity/trivy/.github/workflows/reusable-release.yaml@refs/tags/v${TRIVY_VERSION}" \
+            --certificate-oidc-issuer "https://token.actions.githubusercontent.com"
+
+          sudo dpkg -i "/tmp/trivy.deb"
+          rm -f "/tmp/trivy.deb" "/tmp/trivy.deb.sigstore.json"
       - name: Scan images
         run: |
           repo="ghcr.io"
