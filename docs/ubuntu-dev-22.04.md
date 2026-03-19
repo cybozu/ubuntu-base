@@ -16,7 +16,7 @@
 | build-essential | 12.9ubuntu3 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-5build1 | high-quality block-sorting file compressor - utilities |
 | ca-certificates | 20240203~22.04.1 | Common CA certificates |
-| coreutils | 8.32-4.1ubuntu1.2 | GNU core utilities |
+| coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
 | cpp | 4:11.2.0-1ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C preprocessor |
 | curl | 7.81.0-1ubuntu1.23 | command line tool for transferring data with URL syntax |

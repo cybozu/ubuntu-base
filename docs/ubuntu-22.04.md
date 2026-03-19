@@ -11,7 +11,7 @@
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
 | bsdutils | 1:2.37.2-4ubuntu3.5 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20240203~22.04.1 | Common CA certificates |
-| coreutils | 8.32-4.1ubuntu1.2 | GNU core utilities |
+| coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
 | curl | 7.81.0-1ubuntu1.23 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
