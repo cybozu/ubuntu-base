@@ -34,7 +34,7 @@
 | file | 1:5.45-3build1 | Recognize the type of data in a file using "magic" numbers |
 | findutils | 4.9.0-5build1 | utilities for finding files--find, xargs |
 | gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC, the GNU Compiler Collection (base package) |
-| gdb | 15.0.50.20240403-0ubuntu1 | GNU Debugger |
+| gdb | 15.1-1ubuntu1~24.04.1 | GNU Debugger |
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | gpgv | 2.4.4-2ubuntu17.4 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.12 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.13 | Universal Command Line Interface for Amazon Web Services |
