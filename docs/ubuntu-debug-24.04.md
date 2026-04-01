@@ -241,7 +241,7 @@
 | tcpdump | 4.99.4-3ubuntu4.24.04.1 | command-line network traffic analyzer |
 | telnet | 0.17+2.5-3ubuntu4.1 | transitional dummy package for inetutils-telnet default switch |
 | traceroute | 1:2.1.5-1 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2025b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026a-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043+nmu1 | Update Configuration File(s): preserve user changes to config files |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
@@ -253,5 +253,5 @@
 | xz-utils | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
-| crane | 0.20.7 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.17 | Universal Command Line Interface for Amazon Web Services |
+| crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
+| awscli | 2.34.22 | Universal Command Line Interface for Amazon Web Services |
