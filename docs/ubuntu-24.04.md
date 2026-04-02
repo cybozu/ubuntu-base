@@ -114,7 +114,7 @@
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
 | tar | 1.35+dfsg-3build1 | GNU version of the tar archiving utility |
-| tzdata | 2025b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026a-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | util-linux | 2.39.3-9ubuntu6.5 | miscellaneous system utilities |
