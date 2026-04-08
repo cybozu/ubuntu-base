@@ -170,9 +170,9 @@
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.5 | SQLite 3 shared library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
-| libssl3:amd64 | 3.0.2-0ubuntu1.21 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3:amd64 | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 249.11-0ubuntu3.19 | systemd utility library |
+| libsystemd0:amd64 | 249.11-0ubuntu3.20 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-1 | module for rounded or exact English expression of durations |
@@ -181,7 +181,7 @@
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libuchardet0:amd64 | 0.0.7-1build2 | universal charset detection library - shared library |
-| libudev1:amd64 | 249.11-0ubuntu3.19 | libudev shared library |
+| libudev1:amd64 | 249.11-0ubuntu3.20 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libunwind8:amd64 | 1.3.2-2build2.1 | library to determine the call-chain of a program - runtime |
 | libuuid1:amd64 | 2.37.2-4ubuntu3.5 | Universally Unique ID library |
@@ -222,7 +222,7 @@
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.14 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.2-0ubuntu1.21 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl | 5.34.0-3ubuntu1.5 | Larry Wall's Practical Extraction and Report Language |
 | perl-base | 5.34.0-3ubuntu1.5 | minimal Perl system |
@@ -269,7 +269,7 @@
 | tcpdump | 4.99.1-3ubuntu0.2 | command-line network traffic analyzer |
 | telnet | 0.17-44build1 | basic telnet client |
 | traceroute | 1:2.1.0-2 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2025b-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026a-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
