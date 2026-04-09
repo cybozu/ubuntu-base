@@ -88,14 +88,14 @@
 | libsmartcols1:amd64 | 2.37.2-4ubuntu3.5 | smart column output alignment library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
-| libssl3:amd64 | 3.0.2-0ubuntu1.21 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3:amd64 | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 249.11-0ubuntu3.19 | systemd utility library |
+| libsystemd0:amd64 | 249.11-0ubuntu3.20 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.3-2ubuntu0.1 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
-| libudev1:amd64 | 249.11-0ubuntu3.19 | libudev shared library |
+| libudev1:amd64 | 249.11-0ubuntu3.20 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libuuid1:amd64 | 2.37.2-4ubuntu3.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
@@ -109,7 +109,7 @@
 | ncurses-base | 6.3-2ubuntu0.1 | basic terminal type definitions |
 | ncurses-bin | 6.3-2ubuntu0.1 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssl | 3.0.2-0ubuntu1.21 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl-base | 5.34.0-3ubuntu1.5 | minimal Perl system |
 | procps | 2:3.3.17-6ubuntu2.1 | /proc file system utilities |
@@ -118,7 +118,7 @@
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
 | tar | 1.34+dfsg-1ubuntu0.1.22.04.2 | GNU version of the tar archiving utility |
-| tzdata | 2025b-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026a-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |

@@ -167,15 +167,15 @@
 | libsqlite3-0:amd64 | 3.45.1-1ubuntu2.5 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.4 | tiny C SSH library (OpenSSL flavor) |
-| libssl3t64:amd64 | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3t64:amd64 | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.14 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.15 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-2 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
-| libudev1:amd64 | 255.4-1ubuntu8.14 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.15 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libunwind8:amd64 | 1.6.2-3build1.1 | library to determine the call-chain of a program - runtime |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
@@ -204,7 +204,7 @@
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
 | openssh-client | 1:9.6p1-3ubuntu13.15 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.13-0ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl | 5.38.2-3.2ubuntu0.2 | Larry Wall's Practical Extraction and Report Language |
 | perl-base | 5.38.2-3.2ubuntu0.2 | minimal Perl system |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.26 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.27 | Universal Command Line Interface for Amazon Web Services |
