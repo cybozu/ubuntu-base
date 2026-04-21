@@ -69,8 +69,8 @@
 | libc-bin | 2.35-0ubuntu3.13 | GNU C Library: Binaries |
 | libc6:amd64 | 2.35-0ubuntu3.13 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.7.9-2.2build3 | An alternate POSIX capabilities library |
-| libcap2:amd64 | 1:2.44-1ubuntu0.22.04.2 | POSIX 1003.1e capabilities (library) |
-| libcap2-bin | 1:2.44-1ubuntu0.22.04.2 | POSIX 1003.1e capabilities (utilities) |
+| libcap2:amd64 | 1:2.44-1ubuntu0.22.04.3 | POSIX 1003.1e capabilities (library) |
+| libcap2-bin | 1:2.44-1ubuntu0.22.04.3 | POSIX 1003.1e capabilities (utilities) |
 | libcbor0.8:amd64 | 0.8.0-2ubuntu1 | library for parsing and generating CBOR (RFC 7049) |
 | libcom-err2:amd64 | 1.46.5-2ubuntu1.2 | common error description library |
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |

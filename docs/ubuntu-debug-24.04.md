@@ -65,8 +65,8 @@
 | libc-bin | 2.39-0ubuntu8.7 | GNU C Library: Binaries |
 | libc6:amd64 | 2.39-0ubuntu8.7 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
-| libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
-| libcap2-bin | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (utilities) |
+| libcap2:amd64 | 1:2.66-5ubuntu2.4 | POSIX 1003.1e capabilities (library) |
+| libcap2-bin | 1:2.66-5ubuntu2.4 | POSIX 1003.1e capabilities (utilities) |
 | libcbor0.10:amd64 | 0.10.2-1.2ubuntu2 | library for parsing and generating CBOR (RFC 7049) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.30 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.34 | Universal Command Line Interface for Amazon Web Services |

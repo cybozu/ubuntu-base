@@ -38,7 +38,7 @@
 | libc-bin | 2.39-0ubuntu8.7 | GNU C Library: Binaries |
 | libc6:amd64 | 2.39-0ubuntu8.7 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
-| libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
+| libcap2:amd64 | 1:2.66-5ubuntu2.4 | POSIX 1003.1e capabilities (library) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
 | libcurl4t64:amd64 | 8.5.0-2ubuntu10.8 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
