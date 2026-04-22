@@ -7,7 +7,7 @@
 | apt | 2.4.14 | commandline package manager |
 | apt-transport-https | 2.4.14 | transitional package for https support |
 | apt-utils | 2.4.14 | package management related utility programs |
-| awscli | 1.22.34-1 | Universal Command Line Environment for AWS |
+| awscli | 2.34.45 | Universal Command Line Environment for AWS |
 | base-files | 12ubuntu4.7 | Debian base system miscellaneous files |
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |

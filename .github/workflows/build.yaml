@@ -25,20 +25,8 @@ jobs:
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           TAG=$(cat TAG)
+          TARGETS="ubuntu-minimal ubuntu ubuntu-dev ubuntu-debug"
 
           echo
-          echo "building ubuntu-minimal:$TAG_MINIMAL..."
-          docker build \
-            -t ghcr.io/cybozu/ubuntu-minimal:$TAG_MINIMAL \
-            --build-arg TAG_MINIMAL=$TAG_MINIMAL \
-            ubuntu-minimal
-
-          for image in ubuntu ubuntu-dev ubuntu-debug; do
-              echo
-              echo "building $image:$TAG..."
-              docker build \
-                -t ghcr.io/cybozu/${image}:$TAG \
-                --build-arg TAG_MINIMAL=$TAG_MINIMAL \
-                --build-arg TAG=$TAG \
-                ${image}
-          done
+          echo "building $TARGETS..."
+          TAG_MINIMAL=$TAG_MINIMAL TAG=$TAG docker buildx bake --load $TARGETS

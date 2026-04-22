@@ -42,7 +42,7 @@ jobs:
         with:
           go-version: ${{ env.go-version }}
       - name: Install container-tag-exists
-        run: go install github.com/Hsn723/container-tag-exists@latest
+        run: go install github.com/Hsn723/container-tag-exists@v1.2.4
       - name: Build and push ubuntu-minimal image if needed
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
@@ -61,11 +61,23 @@ jobs:
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Extract targets
+      - name: Check and queue ubuntu image build if needed
         run: |
           TAG=$(cat TAG)
           for repo in ghcr.io quay.io; do
-            for image in ubuntu ubuntu-dev ubuntu-debug; do
+            c="$(container-tag-exists ${repo}/cybozu/ubuntu $TAG 2>&1)"
+            if [ "$c" = "" ]; then
+              echo "build ${repo}/cybozu/ubuntu:$TAG"
+              echo ${repo}/cybozu/ubuntu >> BUILDS
+            fi
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check and queue ubuntu-dev/debug image builds if needed
+        run: |
+          TAG=$(cat TAG)
+          for repo in ghcr.io quay.io; do
+            for image in ubuntu-dev ubuntu-debug; do
               c="$(container-tag-exists ${repo}/cybozu/$image $TAG 2>&1)"
               if [ "$c" = "" ]; then
                 echo "build ${repo}/cybozu/$image:$TAG"

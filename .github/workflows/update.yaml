@@ -60,10 +60,43 @@ jobs:
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
             TAG=$(cat ./$version/TAG)
 
-            docker buildx build -t ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ./$version/ubuntu-minimal
+            echo "building ubuntu-minimal:${TAG_MINIMAL}-new"
+            docker buildx build \
+              -t ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new \
+              --load \
+              --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+              --no-cache=false \
+              ./$version/ubuntu-minimal
+
+            echo "building ubuntu:${version}-new"
+            docker buildx build \
+              --platform linux/amd64 \
+              -t ghcr.io/cybozu/ubuntu:${version}-new \
+              --load \
+              --no-cache=false \
+              --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new \
+              ./$version/ubuntu/
+
+            echo "building ubuntu-debug:${version}-new"
+            docker buildx build \
+              --platform linux/amd64 \
+              -t ghcr.io/cybozu/ubuntu-debug:${version}-new \
+              --load \
+              --no-cache=false \
+              --build-arg TAG=${version}-new \
+              ./$version/ubuntu-debug/
+
+            echo "building ubuntu-dev:${version}-new"
+            docker buildx build \
+              --platform linux/amd64 \
+              -t ghcr.io/cybozu/ubuntu-dev:${version}-new \
+              --load \
+              --no-cache=false \
+              --build-arg TAG=${version}-new \
+              ./$version/ubuntu-dev/
+
             for img in ubuntu ubuntu-debug ubuntu-dev; do
               docker pull ghcr.io/cybozu/$img:$TAG
-              docker buildx build --platform linux/amd64 -t ghcr.io/cybozu/$img:${version}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${version}-new ./$version/$img/
 
               docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
               docker run --rm ghcr.io/cybozu/$img:${version}-new dpkg -l > $img-${version}-new
