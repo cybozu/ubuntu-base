@@ -67,7 +67,7 @@
 | libc6:amd64 | 2.39-0ubuntu8.7 | GNU C Library: Shared libraries |
 | libc6-dev:amd64 | 2.39-0ubuntu8.7 | GNU C Library: Development Libraries and Header Files |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
-| libcap2:amd64 | 1:2.66-5ubuntu2.2 | POSIX 1003.1e capabilities (library) |
+| libcap2:amd64 | 1:2.66-5ubuntu2.4 | POSIX 1003.1e capabilities (library) |
 | libcbor0.10:amd64 | 0.10.2-1.2ubuntu2 | library for parsing and generating CBOR (RFC 7049) |
 | libcc1-0:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC cc1 plugin for GDB |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |

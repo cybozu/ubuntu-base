@@ -60,7 +60,7 @@
 | libc6:amd64 | 2.35-0ubuntu3.13 | GNU C Library: Shared libraries |
 | libc6-dev:amd64 | 2.35-0ubuntu3.13 | GNU C Library: Development Libraries and Header Files |
 | libcap-ng0:amd64 | 0.7.9-2.2build3 | An alternate POSIX capabilities library |
-| libcap2:amd64 | 1:2.44-1ubuntu0.22.04.2 | POSIX 1003.1e capabilities (library) |
+| libcap2:amd64 | 1:2.44-1ubuntu0.22.04.3 | POSIX 1003.1e capabilities (library) |
 | libcbor0.8:amd64 | 0.8.0-2ubuntu1 | library for parsing and generating CBOR (RFC 7049) |
 | libcc1-0:amd64 | 12.3.0-1ubuntu1~22.04.3 | GCC cc1 plugin for GDB |
 | libcom-err2:amd64 | 1.46.5-2ubuntu1.2 | common error description library |
@@ -155,7 +155,7 @@
 | libuuid1:amd64 | 2.37.2-4ubuntu3.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
 | libzstd1:amd64 | 1.4.8+dfsg-3build1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 5.15.0-174.184 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 5.15.0-176.186 | Linux Kernel Headers for development |
 | locales | 2.35-0ubuntu3.13 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.8.1-2ubuntu2.2 | system login tools |
 | logsave | 1.46.5-2ubuntu1.2 | save the output of a command in a log file |
