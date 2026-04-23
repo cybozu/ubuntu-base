@@ -48,7 +48,7 @@
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
-| jq | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor |
+| jq | 1.7.1-3ubuntu0.24.04.2 | lightweight and flexible command-line JSON processor |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
 | libasan8:amd64 | 14.2.0-4ubuntu2~24.04.1 | AddressSanitizer -- a fast memory error detector |
@@ -103,7 +103,7 @@
 | libisl23:amd64 | 0.26-3build1.1 | manipulating sets and relations of integer points bounded by linear constraints |
 | libitm1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Transactional Memory Library |
 | libjansson4:amd64 | 2.14-2build2 | C library for encoding, decoding and manipulating JSON data |
-| libjq1:amd64 | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor - shared library |
+| libjq1:amd64 | 1.7.1-3ubuntu0.24.04.2 | lightweight and flexible command-line JSON processor - shared library |
 | libk5crypto3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
 | libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
