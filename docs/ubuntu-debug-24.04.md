@@ -45,7 +45,7 @@
 | iperf3 | 3.16-1build2 | Internet Protocol bandwidth measuring tool |
 | iproute2 | 6.1.0-1ubuntu6.2 | networking and traffic control tools |
 | iputils-ping | 3:20240117-1ubuntu0.1 | Tools to test the reachability of network hosts |
-| jq | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor |
+| jq | 1.7.1-3ubuntu0.24.04.2 | lightweight and flexible command-line JSON processor |
 | less | 590-2ubuntu2.1 | pager program similar to more |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
 | libapr1t64:amd64 | 1.7.2-3.1ubuntu0.1 | Apache Portable Runtime Library |
@@ -106,7 +106,7 @@
 | libiperf0:amd64 | 3.16-1build2 | Internet Protocol bandwidth measuring tool (runtime files) |
 | libipt2 | 2.0.6-1build1 | Intel Processor Trace Decoder Library |
 | libjansson4:amd64 | 2.14-2build2 | C library for encoding, decoding and manipulating JSON data |
-| libjq1:amd64 | 1.7.1-3ubuntu0.24.04.1 | lightweight and flexible command-line JSON processor - shared library |
+| libjq1:amd64 | 1.7.1-3ubuntu0.24.04.2 | lightweight and flexible command-line JSON processor - shared library |
 | libjson-c5:amd64 | 0.17-1build1 | JSON manipulation library - shared library |
 | libk5crypto3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.35 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.36 | Universal Command Line Interface for Amazon Web Services |
