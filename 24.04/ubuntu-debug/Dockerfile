@@ -1,6 +1,7 @@
 ARG TAG
+ARG DIGEST_UBUNTU=sha256:eb1812859faf05ef7ae1320383c6e09356a44d00521d2c6204daddcb507a4231
 
-FROM ghcr.io/cybozu/ubuntu:${TAG}@sha256:eb1812859faf05ef7ae1320383c6e09356a44d00521d2c6204daddcb507a4231
+FROM ghcr.io/cybozu/ubuntu:${TAG}@${DIGEST_UBUNTU}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         apache2-utils \

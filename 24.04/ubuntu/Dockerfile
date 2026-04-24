@@ -1,8 +1,9 @@
 ARG TAG_MINIMAL
+ARG DIGEST_MINIMAL=sha256:eb18868c75bbebaa11138382cd1dad8ac008a10cdecd4476da12c777b752498c
 
 FROM registry.k8s.io/pause:3.10@sha256:ee6521f290b2168b6e0935a181d4cff9be1ac3f505666ef0e3c98fae8199917a
 
-FROM ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}@sha256:eb18868c75bbebaa11138382cd1dad8ac008a10cdecd4476da12c777b752498c
+FROM ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}@${DIGEST_MINIMAL}
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
