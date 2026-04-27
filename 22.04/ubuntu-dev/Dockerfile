@@ -19,5 +19,8 @@ RUN curl -fsL -o /tmp/gh.tgz https://github.com/cli/cli/releases/download/v${GH_
     && mkdir -p /usr/share/doc/gh \
     && cp /tmp/gh_${GH_VERSION}_linux_${TARGETARCH}/LICENSE /usr/share/doc/gh/LICENSE \
     && rm -rf /tmp/gh_${GH_VERSION}_linux_${TARGETARCH} /tmp/gh.tgz
+# Disable gh telemetry: https://cli.github.com/telemetry
+ENV GH_TELEMETRY=false
+ENV DO_NOT_TRACK=true
 
 CMD ["/bin/bash"]
