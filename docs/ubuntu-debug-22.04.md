@@ -274,12 +274,12 @@
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
-| vim | 2:8.2.3995-1ubuntu2.27 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:8.2.3995-1ubuntu2.27 | Vi IMproved - Common files |
-| vim-runtime | 2:8.2.3995-1ubuntu2.27 | Vi IMproved - Runtime files |
+| vim | 2:8.2.3995-1ubuntu2.28 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:8.2.3995-1ubuntu2.28 | Vi IMproved - Common files |
+| vim-runtime | 2:8.2.3995-1ubuntu2.28 | Vi IMproved - Runtime files |
 | x11-common | 1:7.7+23ubuntu2 | X Window System (X.Org) infrastructure |
 | xml-core | 0.18+nmu1 | XML infrastructure and XML catalog file support |
-| xxd | 2:8.2.3995-1ubuntu2.27 | tool to make (or reverse) a hex dump |
+| xxd | 2:8.2.3995-1ubuntu2.28 | tool to make (or reverse) a hex dump |
 | xz-utils | 5.2.5-2ubuntu1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
