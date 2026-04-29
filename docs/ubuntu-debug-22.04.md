@@ -47,7 +47,7 @@
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.62 | helper tools for all init systems |
 | iperf3 | 3.9-1+deb11u1ubuntu0.1 | Internet Protocol bandwidth measuring tool |
-| iproute2 | 5.15.0-1ubuntu2 | networking and traffic control tools |
+| iproute2 | 5.15.0-1ubuntu2.1 | networking and traffic control tools |
 | iputils-ping | 3:20211215-1ubuntu0.1 | Tools to test the reachability of network hosts |
 | jq | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor |
 | less | 590-1ubuntu0.22.04.3 | pager program similar to more |
@@ -221,7 +221,7 @@
 | ncurses-bin | 6.3-2ubuntu0.1 | terminal-related programs and man pages |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.14 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl | 5.34.0-3ubuntu1.5 | Larry Wall's Practical Extraction and Report Language |
