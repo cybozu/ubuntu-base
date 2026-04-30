@@ -9,6 +9,9 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.CYBOZU_NECO_PAT }}
       UBUNTU_VERSION: "22.04 24.04"
+      DIGEST_DOCKERHUB_UBUNTU: sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f5191cf0eb83fe565b63dd7
+      DIGEST_MINIMAL: sha256:81507f913e77df078ce75b14d5d3cd42a314f335f7ced90a2d4c2864f7bbbd4b
+      DIGEST_UBUNTU: sha256:dc9813c92c113a479006a10695066e5f48f485ecf68ed8cacb16317afd4b8150
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -57,10 +60,44 @@ jobs:
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
             TAG=$(cat ./$version/TAG)
 
-            docker buildx build -t ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ./$version/ubuntu-minimal
+            docker buildx build \
+              -t ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new \
+              --load \
+              --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+              --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
+              --
+
+              ./$version/ubuntu-minimal
+
+            docker buildx build \
+              --platform linux/amd64 \
+              -t ghcr.io/cybozu/ubuntu:${version}-new \
+              --load \
+              --no-cache=false \
+              --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new \
+              --build-arg TAG=${version}-new \
+              --build-arg DIGEST_MINIMAL=${DIGEST_MINIMAL} \
+              --build-arg DIGEST_UBUNTU=${DIGEST_UBUNTU} \
+              ./$version/ubuntu/
+
             for img in ubuntu ubuntu-debug ubuntu-dev; do
               docker pull ghcr.io/cybozu/$img:$TAG
-              docker buildx build --platform linux/amd64 -t ghcr.io/cybozu/$img:${version}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${version}-new ./$version/$img/
+
+              if [ "$img" = "ubuntu" ]; then
+                true
+              else
+                docker buildx build \
+                  --platform linux/amd64 \
+                  -t ghcr.io/cybozu/$img:${version}-new \
+                  --load \
+                  --no-cache=false \
+                  --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new \
+                  --build-arg TAG=${version}-new \
+                  --build-arg DIGEST_DOCKERHUB_UBUNTU=${DIGEST_DOCKERHUB_UBUNTU} \
+                  --build-arg DIGEST_UBUNTU=${DIGEST_UBUNTU} \
+                  --build-arg DIGEST_MINIMAL=${DIGEST_MINIMAL} \
+                  ./$version/$img/
+              fi
 
               docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
               docker run --rm ghcr.io/cybozu/$img:${version}-new dpkg -l > $img-${version}-new

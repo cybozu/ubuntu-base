@@ -5,6 +5,9 @@ on:
       - 'main'
 env:
   go-version: 1.26
+  DIGEST_DOCKERHUB_UBUNTU: sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f5191cf0eb83fe565b63dd7
+  DIGEST_MINIMAL: sha256:81507f913e77df078ce75b14d5d3cd42a314f335f7ced90a2d4c2864f7bbbd4b
+  DIGEST_UBUNTU: sha256:dc9813c92c113a479006a10695066e5f48f485ecf68ed8cacb16317afd4b8150
 jobs:
   release:
     name: Build and release images
@@ -39,7 +42,7 @@ jobs:
         with:
           go-version: ${{ env.go-version }}
       - name: Install container-tag-exists
-        run: go install github.com/Hsn723/container-tag-exists@latest
+        run: go install github.com/Hsn723/container-tag-exists@52f2e2928da97456775afe86dd15bdafd1f82f01 # v1.2.4
       - name: Build and push ubuntu-minimal image if needed
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
@@ -53,6 +56,7 @@ jobs:
                 --push \
                 -t ${repo}/cybozu/ubuntu-minimal:$TAG_MINIMAL \
                 --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+                --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
                 ubuntu-minimal
             fi
           done
@@ -92,5 +96,8 @@ jobs:
               -t ${d}:$BRANCH \
               --build-arg TAG_MINIMAL=$TAG_MINIMAL \
               --build-arg TAG=$TAG \
+              --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
+              --build-arg DIGEST_MINIMAL=$DIGEST_MINIMAL \
+              --build-arg DIGEST_UBUNTU=$DIGEST_UBUNTU \
               ${dir}
           done

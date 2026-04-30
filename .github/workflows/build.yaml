@@ -3,6 +3,9 @@ on:
   pull_request:
 env:
   go-version: 1.26
+  DIGEST_DOCKERHUB_UBUNTU: sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f5191cf0eb83fe565b63dd7
+  DIGEST_MINIMAL: sha256:81507f913e77df078ce75b14d5d3cd42a314f335f7ced90a2d4c2864f7bbbd4b
+  DIGEST_UBUNTU: sha256:dc9813c92c113a479006a10695066e5f48f485ecf68ed8cacb16317afd4b8150
 jobs:
   build:
     name: Build images
@@ -29,14 +32,24 @@ jobs:
           docker build \
             -t ghcr.io/cybozu/ubuntu-minimal:$TAG_MINIMAL \
             --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+            --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
             ubuntu-minimal
 
-          for image in ubuntu ubuntu-dev ubuntu-debug; do
-              echo
-              echo "building $image:$TAG..."
-              docker build \
-                -t ghcr.io/cybozu/${image}:$TAG \
-                --build-arg TAG_MINIMAL=$TAG_MINIMAL \
-                --build-arg TAG=$TAG \
-                ${image}
+          echo
+          echo "building ubuntu:$TAG..."
+          docker build \
+            -t ghcr.io/cybozu/ubuntu:$TAG \
+            --build-arg TAG=$TAG \
+            --build-arg DIGEST_MINIMAL=$DIGEST_MINIMAL \
+            ubuntu
+
+
+          for image in ubuntu-dev ubuntu-debug; do
+            echo
+            echo "building $image:$TAG..."
+            docker build \
+              -t ghcr.io/cybozu/${image}:$TAG \
+              --build-arg TAG=$TAG \
+              --build-arg DIGEST_UBUNTU=$DIGEST_UBUNTU \
+              ${image}
           done
