@@ -42,7 +42,7 @@
 | gzip | 1.10-4ubuntu4.1 | GNU compression utilities |
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.62 | helper tools for all init systems |
-| jq | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor |
+| jq | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
 | libapt-pkg6.0:amd64 | 2.4.14 | package management runtime library |
 | libasan6:amd64 | 11.4.0-1ubuntu1~22.04.3 | AddressSanitizer -- a fast memory error detector |
@@ -93,7 +93,7 @@
 | libidn2-0:amd64 | 2.3.2-2build1 | Internationalized domain names (IDNA2008/TR46) library |
 | libisl23:amd64 | 0.24-2build1 | manipulating sets and relations of integer points bounded by linear constraints |
 | libitm1:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Transactional Memory Library |
-| libjq1:amd64 | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor - shared library |
+| libjq1:amd64 | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor - shared library |
 | libk5crypto3:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.1-2ubuntu3 | Linux Key Management Utilities (library) |
 | libkrb5-3:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries |
@@ -167,7 +167,7 @@
 | ncurses-base | 6.3-2ubuntu0.1 | basic terminal type definitions |
 | ncurses-bin | 6.3-2ubuntu0.1 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.14 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | patch | 2.7.6-7build2 | Apply a diff file to an original |

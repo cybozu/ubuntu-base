@@ -47,9 +47,9 @@
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.62 | helper tools for all init systems |
 | iperf3 | 3.9-1+deb11u1ubuntu0.1 | Internet Protocol bandwidth measuring tool |
-| iproute2 | 5.15.0-1ubuntu2 | networking and traffic control tools |
+| iproute2 | 5.15.0-1ubuntu2.1 | networking and traffic control tools |
 | iputils-ping | 3:20211215-1ubuntu0.1 | Tools to test the reachability of network hosts |
-| jq | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor |
+| jq | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor |
 | less | 590-1ubuntu0.22.04.3 | pager program similar to more |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
 | libapr1:amd64 | 1.7.0-8ubuntu0.22.04.2 | Apache Portable Runtime Library |
@@ -108,7 +108,7 @@
 | libipc-run-perl | 20200505.0-1 | Perl module for running processes |
 | libiperf0:amd64 | 3.9-1+deb11u1ubuntu0.1 | Internet Protocol bandwidth measuring tool (runtime files) |
 | libipt2 | 2.0.5-1 | Intel Processor Trace Decoder Library |
-| libjq1:amd64 | 1.6-2.1ubuntu3.1 | lightweight and flexible command-line JSON processor - shared library |
+| libjq1:amd64 | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor - shared library |
 | libjson-c5:amd64 | 0.15-3~ubuntu1.22.04.2 | JSON manipulation library - shared library |
 | libk5crypto3:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.1-2ubuntu3 | Linux Key Management Utilities (library) |
@@ -221,7 +221,7 @@
 | ncurses-bin | 6.3-2ubuntu0.1 | terminal-related programs and man pages |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.14 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl | 5.34.0-3ubuntu1.5 | Larry Wall's Practical Extraction and Report Language |
@@ -274,12 +274,12 @@
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
-| vim | 2:8.2.3995-1ubuntu2.27 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:8.2.3995-1ubuntu2.27 | Vi IMproved - Common files |
-| vim-runtime | 2:8.2.3995-1ubuntu2.27 | Vi IMproved - Runtime files |
+| vim | 2:8.2.3995-1ubuntu2.28 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:8.2.3995-1ubuntu2.28 | Vi IMproved - Common files |
+| vim-runtime | 2:8.2.3995-1ubuntu2.28 | Vi IMproved - Runtime files |
 | x11-common | 1:7.7+23ubuntu2 | X Window System (X.Org) infrastructure |
 | xml-core | 0.18+nmu1 | XML infrastructure and XML catalog file support |
-| xxd | 2:8.2.3995-1ubuntu2.27 | tool to make (or reverse) a hex dump |
+| xxd | 2:8.2.3995-1ubuntu2.28 | tool to make (or reverse) a hex dump |
 | xz-utils | 5.2.5-2ubuntu1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |

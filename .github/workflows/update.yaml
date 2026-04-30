@@ -6,6 +6,9 @@ on:
 jobs:
   update:
     name: Update images
+    permissions:
+      contents: write
+      pull-requests: write
     env:
       GH_TOKEN: ${{ secrets.CYBOZU_NECO_PAT }}
       UBUNTU_VERSION: "22.04 24.04"
