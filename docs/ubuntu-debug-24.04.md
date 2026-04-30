@@ -43,7 +43,7 @@
 | inetutils-telnet | 2:2.5-3ubuntu4.1 | telnet client |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | iperf3 | 3.16-1build2 | Internet Protocol bandwidth measuring tool |
-| iproute2 | 6.1.0-1ubuntu6.2 | networking and traffic control tools |
+| iproute2 | 6.1.0-1ubuntu6.3 | networking and traffic control tools |
 | iputils-ping | 3:20240117-1ubuntu0.1 | Tools to test the reachability of network hosts |
 | jq | 1.7.1-3ubuntu0.24.04.2 | lightweight and flexible command-line JSON processor |
 | less | 590-2ubuntu2.1 | pager program similar to more |
@@ -203,7 +203,7 @@
 | ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssh-client | 1:9.6p1-3ubuntu13.15 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:9.6p1-3ubuntu13.16 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl | 5.38.2-3.2ubuntu0.2 | Larry Wall's Practical Extraction and Report Language |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.38 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.39 | Universal Command Line Interface for Amazon Web Services |
