@@ -6,16 +6,35 @@ on:
 env:
   go-version: 1.26
 jobs:
+  prepare-matrix:
+    name: Prepare digest matrix
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    outputs:
+      matrix: ${{ steps.load.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Load digest matrix
+        id: load
+        run: |
+          MATRIX_JSON=$(jq -c . .github/workflows/digest-matrix.json)
+          echo "matrix=$MATRIX_JSON" >> "$GITHUB_OUTPUT"
+
   release:
     name: Build and release images
+    needs: prepare-matrix
     strategy:
       fail-fast: false
-      matrix:
-        ubuntu-version: ["22.04", "24.04"]
+      matrix: ${{ fromJSON(needs.prepare-matrix.outputs.matrix) }}
     runs-on: ubuntu-24.04
     permissions:
       contents: read
       packages: write
+    env:
+      DIGEST_DOCKERHUB_UBUNTU: ${{ matrix.digest-dockerhub-ubuntu }}
+      DIGEST_MINIMAL: ${{ matrix.digest-minimal }}
+      DIGEST_UBUNTU: ${{ matrix.digest-ubuntu }}
     defaults:
       run:
         working-directory: ${{ matrix.ubuntu-version }}
@@ -42,7 +61,7 @@ jobs:
         with:
           go-version: ${{ env.go-version }}
       - name: Install container-tag-exists
-        run: go install github.com/Hsn723/container-tag-exists@latest
+        run: go install github.com/Hsn723/container-tag-exists@v1.2.4
       - name: Build and push ubuntu-minimal image if needed
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
@@ -56,6 +75,7 @@ jobs:
                 --push \
                 -t ${repo}/cybozu/ubuntu-minimal:$TAG_MINIMAL \
                 --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+                --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
                 ubuntu-minimal
             fi
           done
@@ -95,5 +115,8 @@ jobs:
               -t ${d}:$BRANCH \
               --build-arg TAG_MINIMAL=$TAG_MINIMAL \
               --build-arg TAG=$TAG \
+              --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
+              --build-arg DIGEST_MINIMAL=$DIGEST_MINIMAL \
+              --build-arg DIGEST_UBUNTU=$DIGEST_UBUNTU \
               ${dir}
           done
