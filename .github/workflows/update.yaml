@@ -11,7 +11,6 @@ jobs:
       pull-requests: write
     env:
       GH_TOKEN: ${{ secrets.CYBOZU_NECO_PAT }}
-      UBUNTU_VERSION: "22.04 24.04"
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -25,7 +24,7 @@ jobs:
           TOKEN=$(curl -sSf "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io"| jq -r .token)
           updated_versions=()
 
-          for version in ${{ env.UBUNTU_VERSION }}; do
+          for version in $(jq -r '.include[]."ubuntu-version"' .github/workflows/digest-matrix.json); do
             if [ "${version}" = "22.04" ]; then
               codename=jammy
             elif [ "${version}" = "24.04" ]; then
@@ -56,20 +55,18 @@ jobs:
           docker buildx use default
           updated_versions=(${{ env.UPDATED_VERSIONS }})
 
-          for version in ${{ env.UBUNTU_VERSION }}; do
+          for version in $(jq -r '.include[]."ubuntu-version"' .github/workflows/digest-matrix.json); do
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
             TAG=$(cat ./$version/TAG)
 
-            if [ "${version}" = "22.04" ]; then
-              DIGEST_DOCKERHUB_UBUNTU=sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f5191cf0eb83fe565b63dd7
-              DIGEST_MINIMAL=sha256:81507f913e77df078ce75b14d5d3cd42a314f335f7ced90a2d4c2864f7bbbd4b
-              DIGEST_UBUNTU=sha256:fa38c1f1a65e0a98dc29b0c527454fde447e66b7617364a190c366a5e5d27560
-            elif [ "${version}" = "24.04" ]; then
-              DIGEST_DOCKERHUB_UBUNTU=sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b
-              DIGEST_MINIMAL=sha256:eb18868c75bbebaa11138382cd1dad8ac008a10cdecd4476da12c777b752498c
-              DIGEST_UBUNTU=sha256:73fdd894bc00d9f1b8b65ae6eeaae25d600d3c54464898eed194d31ad8a7f50e
-            else
-              echo "Unknown Ubuntu version: ${version}"
+            DIGEST_DOCKERHUB_UBUNTU=$(jq -r --arg version "${version}" '.include[] | select(."ubuntu-version" == $version) | ."digest-dockerhub-ubuntu"' .github/workflows/digest-matrix.json)
+            DIGEST_MINIMAL=$(jq -r --arg version "${version}" '.include[] | select(."ubuntu-version" == $version) | ."digest-minimal"' .github/workflows/digest-matrix.json)
+            DIGEST_UBUNTU=$(jq -r --arg version "${version}" '.include[] | select(."ubuntu-version" == $version) | ."digest-ubuntu"' .github/workflows/digest-matrix.json)
+
+            if [ -z "${DIGEST_DOCKERHUB_UBUNTU}" ] || [ "${DIGEST_DOCKERHUB_UBUNTU}" = "null" ] || \
+               [ -z "${DIGEST_MINIMAL}" ] || [ "${DIGEST_MINIMAL}" = "null" ] || \
+               [ -z "${DIGEST_UBUNTU}" ] || [ "${DIGEST_UBUNTU}" = "null" ]; then
+              echo "Failed to load digests for Ubuntu version: ${version}"
               exit 1
             fi
 
