@@ -11,7 +11,7 @@
 | bsdutils | 1:2.39.3-9ubuntu6.5 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20240203 | Common CA certificates |
 | coreutils | 9.4-3ubuntu6.2 | GNU core utilities |
-| curl | 8.5.0-2ubuntu10.8 | command line tool for transferring data with URL syntax |
+| curl | 8.5.0-2ubuntu10.9 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
@@ -41,7 +41,7 @@
 | libcap2:amd64 | 1:2.66-5ubuntu2.4 | POSIX 1003.1e capabilities (library) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
-| libcurl4t64:amd64 | 8.5.0-2ubuntu10.8 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl4t64:amd64 | 8.5.0-2ubuntu10.9 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
@@ -110,7 +110,7 @@
 | perl-base | 5.38.2-3.2ubuntu0.2 | minimal Perl system |
 | procps | 2:4.0.4-4ubuntu3.2 | /proc file system utilities |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
-| sed | 4.9-2build1 | GNU stream editor for filtering/transforming text |
+| sed | 4.9-2ubuntu0.24.04.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
 | tar | 1.35+dfsg-3build1 | GNU version of the tar archiving utility |

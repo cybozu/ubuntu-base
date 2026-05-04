@@ -19,7 +19,7 @@
 | coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
 | cpp | 4:11.2.0-1ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C preprocessor |
-| curl | 7.81.0-1ubuntu1.23 | command line tool for transferring data with URL syntax |
+| curl | 7.81.0-1ubuntu1.24 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
@@ -68,8 +68,8 @@
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.23 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4:amd64 | 7.81.0-1ubuntu1.23 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.24 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4:amd64 | 7.81.0-1ubuntu1.24 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
 | libdpkg-perl | 1.21.1ubuntu2.6 | Dpkg perl modules |
@@ -177,7 +177,7 @@
 | procps | 2:3.3.17-6ubuntu2.1 | /proc file system utilities |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rpcsvc-proto | 1.4.2-0ubuntu6 | RPC protocol compiler and definitions |
-| sed | 4.8-1ubuntu2 | GNU stream editor for filtering/transforming text |
+| sed | 4.8-1ubuntu2.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
 | tar | 1.34+dfsg-1ubuntu0.1.22.04.2 | GNU version of the tar archiving utility |

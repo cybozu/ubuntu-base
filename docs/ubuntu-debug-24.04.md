@@ -23,7 +23,7 @@
 | ca-certificates | 20240203 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
 | coreutils | 9.4-3ubuntu6.2 | GNU core utilities |
-| curl | 8.5.0-2ubuntu10.8 | command line tool for transferring data with URL syntax |
+| curl | 8.5.0-2ubuntu10.9 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
@@ -72,8 +72,8 @@
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.42-4ubuntu2.10 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.42-4ubuntu2.10 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.8 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4t64:amd64 | 8.5.0-2ubuntu10.8 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.9 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4t64:amd64 | 8.5.0-2ubuntu10.9 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdbus-1-3:amd64 | 1.14.10-4ubuntu4.1 | simple interprocess messaging system (library) |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
@@ -227,7 +227,7 @@
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-1ubuntu1.2 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.4.0-2 | command-line Amazon S3 client |
-| sed | 4.9-2build1 | GNU stream editor for filtering/transforming text |
+| sed | 4.9-2ubuntu0.24.04.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | smartmontools | 7.4-2build1 | control and monitor storage systems using S.M.A.R.T. |
 | socat | 1.8.0.0-4build3 | multipurpose relay for bidirectional data transfer |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.40 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.42 | Universal Command Line Interface for Amazon Web Services |
