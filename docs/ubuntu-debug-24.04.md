@@ -28,7 +28,7 @@
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
 | diffutils | 1:3.10-1build1 | File comparison utilities |
-| dpkg | 1.22.6ubuntu6.5 | Debian package management system |
+| dpkg | 1.22.6ubuntu6.6 | Debian package management system |
 | e2fsprogs | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system utilities |
 | expect | 5.45.4-3 | Automates interactive applications |
 | file | 1:5.45-3build1 | Recognize the type of data in a file using "magic" numbers |
@@ -247,11 +247,11 @@
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | unzip | 6.0-28ubuntu4.1 | De-archiver for .zip files |
 | util-linux | 2.39.3-9ubuntu6.5 | miscellaneous system utilities |
-| vim | 2:9.1.0016-1ubuntu7.12 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:9.1.0016-1ubuntu7.12 | Vi IMproved - Common files |
-| vim-runtime | 2:9.1.0016-1ubuntu7.12 | Vi IMproved - Runtime files |
+| vim | 2:9.1.0016-1ubuntu7.13 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:9.1.0016-1ubuntu7.13 | Vi IMproved - Common files |
+| vim-runtime | 2:9.1.0016-1ubuntu7.13 | Vi IMproved - Runtime files |
 | xz-utils | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.44 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.45 | Universal Command Line Interface for Amazon Web Services |
