@@ -1,6 +1,7 @@
+ARG TAG
 ARG DIGEST_UBUNTU
 
-FROM ghcr.io/cybozu/ubuntu@${DIGEST_UBUNTU}
+FROM ghcr.io/cybozu/ubuntu:${TAG}@${DIGEST_UBUNTU}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \

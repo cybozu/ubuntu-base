@@ -2,15 +2,11 @@
   "include": [
     {
       "ubuntu-version": "22.04",
-      "digest-dockerhub-ubuntu": "sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f5191cf0eb83fe565b63dd7",
-      "digest-minimal": "sha256:81507f913e77df078ce75b14d5d3cd42a314f335f7ced90a2d4c2864f7bbbd4b",
-      "digest-ubuntu": "sha256:fa38c1f1a65e0a98dc29b0c527454fde447e66b7617364a190c366a5e5d27560"
+      "digest-dockerhub-ubuntu": "sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f5191cf0eb83fe565b63dd7"
     },
     {
       "ubuntu-version": "24.04",
-      "digest-dockerhub-ubuntu": "sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b",
-      "digest-minimal": "sha256:eb18868c75bbebaa11138382cd1dad8ac008a10cdecd4476da12c777b752498c",
-      "digest-ubuntu": "sha256:73fdd894bc00d9f1b8b65ae6eeaae25d600d3c54464898eed194d31ad8a7f50e"
+      "digest-dockerhub-ubuntu": "sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b"
     }
   ]
 }

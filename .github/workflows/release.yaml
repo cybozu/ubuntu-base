@@ -33,8 +33,6 @@ jobs:
       packages: write
     env:
       DIGEST_DOCKERHUB_UBUNTU: ${{ matrix.digest-dockerhub-ubuntu }}
-      DIGEST_MINIMAL: ${{ matrix.digest-minimal }}
-      DIGEST_UBUNTU: ${{ matrix.digest-ubuntu }}
     defaults:
       run:
         working-directory: ${{ matrix.ubuntu-version }}
@@ -81,14 +79,33 @@ jobs:
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Extract targets
+      - name: Check and queue ubuntu image build if needed
+
+        run: |
+          TAG_MINIMAL=$(cat TAG_MINIMAL)
+          DIGEST_MINIMAL=$(docker buildx imagetools inspect ghcr.io/cybozu/ubuntu-minimal:$TAG_MINIMAL | grep '^Digest:' | awk '{print $2}')
+          for repo in ghcr.io quay.io; do
+            c="$(container-tag-exists ${repo}/cybozu/ubuntu $TAG_MINIMAL 2>&1)"
+            if [ "$c" = "" ]; then
+                TAG_MINIMAL=$TAG_MINIMAL \
+                DIGEST_MINIMAL=$DIGEST_MINIMAL \
+                echo "build ${repo}/cybozu/ubuntu:$TAG_MINIMAL@$DIGEST_MINIMAL"
+                echo ${repo}/cybozu/ubuntu >> BUILDS
+            fi
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check and queue ubuntu-dev/debug image builds if needed
         run: |
           TAG=$(cat TAG)
+          DIGEST_UBUNTU=$(docker buildx imagetools inspect ghcr.io/cybozu/ubuntu:$TAG | grep '^Digest:' | awk '{print $2}')
           for repo in ghcr.io quay.io; do
-            for image in ubuntu ubuntu-dev ubuntu-debug; do
+            for image in ubuntu-dev ubuntu-debug; do
               c="$(container-tag-exists ${repo}/cybozu/$image $TAG 2>&1)"
               if [ "$c" = "" ]; then
-                echo "build ${repo}/cybozu/$image:$TAG"
+                TAG=$TAG \
+                DIGEST_UBUNTU=$DIGEST_UBUNTU \
+                echo "build ${repo}/cybozu/$image:$TAG@$DIGEST_UBUNTU"
                 echo ${repo}/cybozu/$image >> BUILDS
               fi
             done
@@ -115,7 +132,6 @@ jobs:
               -t ${d}:$BRANCH \
               --build-arg TAG_MINIMAL=$TAG_MINIMAL \
               --build-arg TAG=$TAG \
-              --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
               --build-arg DIGEST_MINIMAL=$DIGEST_MINIMAL \
               --build-arg DIGEST_UBUNTU=$DIGEST_UBUNTU \
               ${dir}

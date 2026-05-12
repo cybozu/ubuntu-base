@@ -18,19 +18,16 @@ jobs:
         run: |
           MATRIX_JSON=$(jq -c . .github/workflows/digest-matrix.json)
           echo "matrix=$MATRIX_JSON" >> "$GITHUB_OUTPUT"
-
   build:
     name: Build images
     needs: prepare-matrix
     strategy:
-      matrix: ${{ fromJSON(needs.prepare-matrix.outputs.matrix) }}
+        matrix: ${{ fromJSON(needs.prepare-matrix.outputs.matrix) }}
     runs-on: ubuntu-24.04
     permissions:
       contents: read
     env:
       DIGEST_DOCKERHUB_UBUNTU: ${{ matrix.digest-dockerhub-ubuntu }}
-      DIGEST_MINIMAL: ${{ matrix.digest-minimal }}
-      DIGEST_UBUNTU: ${{ matrix.digest-ubuntu }}
     defaults:
       run:
         working-directory: ${{ matrix.ubuntu-version }}
@@ -44,11 +41,6 @@ jobs:
         run: |
           TAG_MINIMAL=$(cat TAG_MINIMAL)
           TAG=$(cat TAG)
-          echo "TAG_MINIMAL=$TAG_MINIMAL"
-          echo "TAG=$TAG"
-          echo "DIGEST_MINIMAL=$DIGEST_MINIMAL"
-          echo "DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU"
-          echo "DIGEST_UBUNTU=$DIGEST_UBUNTU"
 
           echo
           echo "building ubuntu-minimal:$TAG_MINIMAL..."
@@ -57,22 +49,25 @@ jobs:
             --build-arg TAG_MINIMAL=$TAG_MINIMAL \
             --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
             ubuntu-minimal
+          
+          DIGEST_MINIMAL=$(docker buildx imagetools inspect ghcr.io/cybozu/ubuntu-minimal:$TAG_MINIMAL | grep '^Digest:' | awk '{print $2}')
 
           echo
-          echo "building ubuntu:$TAG..."
+          echo "building ubuntu:$TAG_MINIMAL..."
           docker build \
-            -t ghcr.io/cybozu/ubuntu:$TAG \
-            --build-arg TAG=$TAG \
+            -t ghcr.io/cybozu/ubuntu:$TAG_MINIMAL \
+            --build-arg TAG_MINIMAL=$TAG_MINIMAL \
             --build-arg DIGEST_MINIMAL=$DIGEST_MINIMAL \
             ubuntu
 
+          DIGEST_UBUNTU=$(docker buildx imagetools inspect ghcr.io/cybozu/ubuntu:$TAG | grep '^Digest:' | awk '{print $2}')
 
           for image in ubuntu-dev ubuntu-debug; do
-            echo
-            echo "building $image:$TAG..."
-            docker build \
-              -t ghcr.io/cybozu/${image}:$TAG \
-              --build-arg TAG=$TAG \
-              --build-arg DIGEST_UBUNTU=$DIGEST_UBUNTU \
-              ${image}
+              echo
+              echo "building $image:$TAG..."
+              docker build \
+                -t ghcr.io/cybozu/${image}:$TAG \
+                --build-arg TAG=$TAG \
+                --build-arg DIGEST_UBUNTU=$DIGEST_UBUNTU \
+                ${image}
           done

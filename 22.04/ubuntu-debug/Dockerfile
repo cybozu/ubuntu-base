@@ -1,10 +1,10 @@
+ARG TAG
 ARG DIGEST_UBUNTU
 
-FROM ghcr.io/cybozu/ubuntu@${DIGEST_UBUNTU}
+FROM ghcr.io/cybozu/ubuntu:${TAG}@${DIGEST_UBUNTU}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         apache2-utils \
-        awscli \
         bash-completion \
         bind9-dnsutils \
         binutils \
@@ -36,8 +36,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         tcpdump \
         telnet \
         traceroute \
+        unzip \
         vim \
     && rm -rf /var/lib/apt/lists/*
+
+ARG TARGETARCH
+ARG AWSCLI_VERSION=2.34.45
+RUN set -eux; \
+    case "${TARGETARCH}" in \
+        amd64) aws_arch="x86_64"; aws_checksum="2b382fd5c1e8d73f6aaca18e5850758fb9f70a20af9c17deb3078df0dd4af095" ;; \
+        arm64) aws_arch="aarch64"; aws_checksum="bf29e06a06fb9bac2a3803931e6618a9f7c9f4c6632ec3b587184850b8f03433" ;; \
+        *) echo "unsupported TARGETARCH: ${TARGETARCH}"; exit 1 ;; \
+    esac; \
+    curl -fsSL -o /tmp/awscliv2.zip "https://awscli.amazonaws.com/awscli-exe-linux-${aws_arch}-${AWSCLI_VERSION}.zip"; \
+    echo "${aws_checksum}  /tmp/awscliv2.zip" | sha256sum -c -; \
+    unzip -q /tmp/awscliv2.zip -d /tmp; \
+    /tmp/aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update; \
+    rm -rf /tmp/aws /tmp/awscliv2.zip
 
 RUN setcap -r /usr/bin/ping
 
