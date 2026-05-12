@@ -1,0 +1,12 @@
+{
+  "include": [
+    {
+      "ubuntu-version": "22.04",
+      "digest-dockerhub-ubuntu": "sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f5191cf0eb83fe565b63dd7"
+    },
+    {
+      "ubuntu-version": "24.04",
+      "digest-dockerhub-ubuntu": "sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b"
+    }
+  ]
+}

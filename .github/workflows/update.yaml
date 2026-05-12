@@ -11,7 +11,6 @@ jobs:
       pull-requests: write
     env:
       GH_TOKEN: ${{ secrets.CYBOZU_NECO_PAT }}
-      UBUNTU_VERSION: "22.04 24.04"
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -25,7 +24,7 @@ jobs:
           TOKEN=$(curl -sSf "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io"| jq -r .token)
           updated_versions=()
 
-          for version in ${{ env.UBUNTU_VERSION }}; do
+          for version in $(jq -r '.include[]."ubuntu-version"' .github/workflows/digest-matrix.json); do
             if [ "${version}" = "22.04" ]; then
               codename=jammy
             elif [ "${version}" = "24.04" ]; then
@@ -56,14 +55,62 @@ jobs:
           docker buildx use default
           updated_versions=(${{ env.UPDATED_VERSIONS }})
 
-          for version in ${{ env.UBUNTU_VERSION }}; do
+          for version in $(jq -r '.include[]."ubuntu-version"' .github/workflows/digest-matrix.json); do
             TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
             TAG=$(cat ./$version/TAG)
 
-            docker buildx build -t ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new --load --build-arg TAG_MINIMAL=$TAG_MINIMAL ./$version/ubuntu-minimal
+            DIGEST_DOCKERHUB_UBUNTU=$(jq -r --arg version "${version}" '.include[] | select(."ubuntu-version" == $version) | ."digest-dockerhub-ubuntu"' .github/workflows/digest-matrix.json)
+            DIGEST_MINIMAL=$(jq -r --arg version "${version}" '.include[] | select(."ubuntu-version" == $version) | ."digest-minimal"' .github/workflows/digest-matrix.json)
+            DIGEST_UBUNTU=$(jq -r --arg version "${version}" '.include[] | select(."ubuntu-version" == $version) | ."digest-ubuntu"' .github/workflows/digest-matrix.json)
+
+            if [ -z "${DIGEST_DOCKERHUB_UBUNTU}" ] || [ "${DIGEST_DOCKERHUB_UBUNTU}" = "null" ] || \
+               [ -z "${DIGEST_MINIMAL}" ] || [ "${DIGEST_MINIMAL}" = "null" ] || \
+               [ -z "${DIGEST_UBUNTU}" ] || [ "${DIGEST_UBUNTU}" = "null" ]; then
+              echo "Failed to load digests for Ubuntu version: ${version}"
+              exit 1
+            fi
+
+            echo "building ubuntu-minimal:${TAG_MINIMAL}-new"
+            docker buildx build \
+              -t ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new \
+              --load \
+              --build-arg TAG_MINIMAL=$TAG_MINIMAL \
+              --build-arg DIGEST_DOCKERHUB_UBUNTU=$DIGEST_DOCKERHUB_UBUNTU \
+              --no-cache=false \
+              ./$version/ubuntu-minimal
+
+            echo "building ubuntu:${version}-new"
+            docker buildx build \
+              --platform linux/amd64 \
+              -t ghcr.io/cybozu/ubuntu:${version}-new \
+              --load \
+              --no-cache=false \
+              --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new \
+              --build-arg TAG=${version}-new \
+              --build-arg DIGEST_MINIMAL=${DIGEST_MINIMAL} \
+              --build-arg DIGEST_UBUNTU=${DIGEST_UBUNTU} \
+              ./$version/ubuntu/
+
+            echo "building ubuntu-debug:${version}-new"
+            docker buildx build \
+              --platform linux/amd64 \
+              -t ghcr.io/cybozu/ubuntu-debug:${version}-new \
+              --load \
+              --no-cache=false \
+              --build-arg DIGEST_UBUNTU=${DIGEST_UBUNTU} \
+              ./$version/ubuntu-debug/
+
+            echo "building ubuntu-dev:${version}-new"
+            docker buildx build \
+              --platform linux/amd64 \
+              -t ghcr.io/cybozu/ubuntu-dev:${version}-new \
+              --load \
+              --no-cache=false \
+              --build-arg DIGEST_UBUNTU=${DIGEST_UBUNTU} \
+              ./$version/ubuntu-dev/
+
             for img in ubuntu ubuntu-debug ubuntu-dev; do
               docker pull ghcr.io/cybozu/$img:$TAG
-              docker buildx build --platform linux/amd64 -t ghcr.io/cybozu/$img:${version}-new --load --no-cache=false --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new --build-arg TAG=${version}-new ./$version/$img/
 
               docker run --rm ghcr.io/cybozu/$img:$TAG dpkg -l > $img-$TAG
               docker run --rm ghcr.io/cybozu/$img:${version}-new dpkg -l > $img-${version}-new
