@@ -92,7 +92,7 @@
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libglib2.0-0t64:amd64 | 2.80.0-6ubuntu3.8 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
-| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.5 | GNU TLS library - main runtime library |
+| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.6 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-11 | General Purpose Mouse - shared library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.10 | GNU Next Generation profiler (runtime library) |
@@ -225,7 +225,7 @@
 | python3.12-minimal | 3.12.3-1ubuntu0.13 | Minimal subset of the Python language (version 3.12) |
 | rclone | 1.60.1+dfsg-3ubuntu0.24.04.4 | rsync for commercial cloud storage |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
-| rsync | 3.2.7-1ubuntu1.2 | fast, versatile, remote (and local) file-copying tool |
+| rsync | 3.2.7-1ubuntu1.4 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.4.0-2 | command-line Amazon S3 client |
 | sed | 4.9-2ubuntu0.24.04.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.47 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.51 | Universal Command Line Interface for Amazon Web Services |
