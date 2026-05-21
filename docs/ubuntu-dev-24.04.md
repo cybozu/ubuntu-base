@@ -92,7 +92,7 @@
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
-| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.5 | GNU TLS library - main runtime library |
+| libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.6 | GNU TLS library - main runtime library |
 | libgomp1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC OpenMP (GOMP) support library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.10 | GNU Next Generation profiler (runtime library) |

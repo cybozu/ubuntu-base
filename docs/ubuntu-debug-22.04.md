@@ -96,7 +96,7 @@
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
 | libglib2.0-0:amd64 | 2.72.4-0ubuntu2.9 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
-| libgnutls30:amd64 | 3.7.3-4ubuntu1.8 | GNU TLS library - main runtime library |
+| libgnutls30:amd64 | 3.7.3-4ubuntu1.9 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-10build1 | General Purpose Mouse - shared library |
 | libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
@@ -252,7 +252,7 @@
 | python3.10-minimal | 3.10.12-1~22.04.15 | Minimal subset of the Python language (version 3.10) |
 | rclone | 1.53.3-4ubuntu1.22.04.3 | rsync for commercial cloud storage |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
-| rsync | 3.2.7-0ubuntu0.22.04.4 | fast, versatile, remote (and local) file-copying tool |
+| rsync | 3.2.7-0ubuntu0.22.04.6 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.2.0-1 | command-line Amazon S3 client |
 | sed | 4.8-1ubuntu2.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
