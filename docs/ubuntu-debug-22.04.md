@@ -250,7 +250,7 @@
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
 | python3.10 | 3.10.12-1~22.04.15 | Interactive high-level object-oriented language (version 3.10) |
 | python3.10-minimal | 3.10.12-1~22.04.15 | Minimal subset of the Python language (version 3.10) |
-| rclone | 1.53.3-4ubuntu1.22.04.3 | rsync for commercial cloud storage |
+| rclone | 1.53.3-4ubuntu1.22.04.4 | rsync for commercial cloud storage |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-0ubuntu0.22.04.6 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.2.0-1 | command-line Amazon S3 client |
@@ -274,12 +274,12 @@
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
-| vim | 2:8.2.3995-1ubuntu2.29 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:8.2.3995-1ubuntu2.29 | Vi IMproved - Common files |
-| vim-runtime | 2:8.2.3995-1ubuntu2.29 | Vi IMproved - Runtime files |
+| vim | 2:8.2.3995-1ubuntu2.30 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:8.2.3995-1ubuntu2.30 | Vi IMproved - Common files |
+| vim-runtime | 2:8.2.3995-1ubuntu2.30 | Vi IMproved - Runtime files |
 | x11-common | 1:7.7+23ubuntu2 | X Window System (X.Org) infrastructure |
 | xml-core | 0.18+nmu1 | XML infrastructure and XML catalog file support |
-| xxd | 2:8.2.3995-1ubuntu2.29 | tool to make (or reverse) a hex dump |
+| xxd | 2:8.2.3995-1ubuntu2.30 | tool to make (or reverse) a hex dump |
 | xz-utils | 5.2.5-2ubuntu1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
