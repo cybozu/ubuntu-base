@@ -88,7 +88,7 @@
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
 | libgcc-13-dev:amd64 | 13.3.0-6ubuntu2~24.04.1 | GCC support library (development files) |
 | libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC support library |
-| libgcrypt20:amd64 | 1.10.3-2build1 | LGPL Crypto library - runtime library |
+| libgcrypt20:amd64 | 1.10.3-2ubuntu0.1 | LGPL Crypto library - runtime library |
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |

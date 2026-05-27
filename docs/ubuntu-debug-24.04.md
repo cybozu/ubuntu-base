@@ -87,7 +87,7 @@
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
 | libgcc-s1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC support library |
-| libgcrypt20:amd64 | 1.10.3-2build1 | LGPL Crypto library - runtime library |
+| libgcrypt20:amd64 | 1.10.3-2ubuntu0.1 | LGPL Crypto library - runtime library |
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
 | libglib2.0-0t64:amd64 | 2.80.0-6ubuntu3.8 | GLib library of C routines |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.53 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.55 | Universal Command Line Interface for Amazon Web Services |

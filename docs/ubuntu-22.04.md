@@ -47,7 +47,7 @@
 | libext2fs2:amd64 | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
 | libgcc-s1:amd64 | 12.3.0-1ubuntu1~22.04.3 | GCC support library |
-| libgcrypt20:amd64 | 1.9.4-3ubuntu3 | LGPL Crypto library - runtime library |
+| libgcrypt20:amd64 | 1.9.4-3ubuntu3.2 | LGPL Crypto library - runtime library |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.9 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |

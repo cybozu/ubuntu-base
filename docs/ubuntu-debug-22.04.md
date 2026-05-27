@@ -91,7 +91,7 @@
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.10.0-1 | library for generating and verifying FIDO 2.0 objects |
 | libgcc-s1:amd64 | 12.3.0-1ubuntu1~22.04.3 | GCC support library |
-| libgcrypt20:amd64 | 1.9.4-3ubuntu3 | LGPL Crypto library - runtime library |
+| libgcrypt20:amd64 | 1.9.4-3ubuntu3.2 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
 | libglib2.0-0:amd64 | 2.72.4-0ubuntu2.9 | GLib library of C routines |
