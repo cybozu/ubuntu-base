@@ -60,7 +60,7 @@
 | libkrb5support0:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Support library |
 | libldap2:amd64 | 2.6.10+dfsg-0ubuntu0.24.04.1 | OpenLDAP libraries |
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
-| liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression library |
+| liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression library |
 | libmd0:amd64 | 1.1.0-2build1.1 | message digest functions from BSD systems - shared library |
 | libmount1:amd64 | 2.39.3-9ubuntu6.5 | device mounting library |
 | libncursesw6:amd64 | 6.4+20240113-1ubuntu2 | shared libraries for terminal handling (wide character support) |
