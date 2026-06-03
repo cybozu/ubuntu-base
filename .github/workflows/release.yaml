@@ -16,9 +16,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-    defaults:
-      run:
-        working-directory: ${{ matrix.ubuntu-version }}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Set up QEMU
@@ -27,8 +24,6 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd # v4.0.0
-        with:
-          version: v0.32.1
       - name: Login to container registry
         run: echo ${{ secrets.QUAY_PASSWORD }} | docker login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
       - name: Login to GitHub Container Registry
@@ -43,69 +38,50 @@ jobs:
           go-version: ${{ env.go-version }}
       - name: Install container-tag-exists
         run: go install github.com/Hsn723/container-tag-exists@v1.2.4
-      - name: Build and push ubuntu-minimal image if needed
+      - name: Resolve build variables
         run: |
-          TAG_MINIMAL=$(cat TAG_MINIMAL)
-          for repo in ghcr.io quay.io; do
-            c="$(container-tag-exists ${repo}/cybozu/ubuntu-minimal $TAG_MINIMAL 2>&1)"
-            if [ "$c" = "" ]; then
-              echo
-              echo "building ubuntu-minimal ..."
-              docker buildx build \
-                --platform linux/amd64,linux/arm64/v8 \
-                --push \
-                -t ${repo}/cybozu/ubuntu-minimal:$TAG_MINIMAL \
-                --build-arg TAG_MINIMAL=$TAG_MINIMAL \
-                ubuntu-minimal
+          echo "UBUNTU_VERSION=${{ matrix.ubuntu-version }}" >> $GITHUB_ENV
+          echo "TAG_MINIMAL=$(cat ${{ matrix.ubuntu-version }}/TAG_MINIMAL)" >> $GITHUB_ENV
+          echo "TAG=$(cat ${{ matrix.ubuntu-version }}/TAG)" >> $GITHUB_ENV
+          echo "DIGEST_DOCKERHUB_UBUNTU=$(cat ${{ matrix.ubuntu-version }}/DIGEST_DOCKERHUB_UBUNTU)" >> $GITHUB_ENV
+      - name: Check if images need to be pushed
+        id: check-push
+        run: |
+          TARGETS=()
+
+          for image_name in ubuntu-minimal ubuntu ubuntu-dev ubuntu-debug; do
+            if [[ "$image_name" == "ubuntu-minimal" ]]; then
+              tag_name="$TAG_MINIMAL"
+            else
+              tag_name="$TAG"
             fi
-          done
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Check and queue ubuntu image build if needed
-        run: |
-          TAG=$(cat TAG)
-          for repo in ghcr.io quay.io; do
-            c="$(container-tag-exists ${repo}/cybozu/ubuntu $TAG 2>&1)"
-            if [ "$c" = "" ]; then
-              echo "build ${repo}/cybozu/ubuntu:$TAG"
-              echo ${repo}/cybozu/ubuntu >> BUILDS
-            fi
-          done
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Check and queue ubuntu-dev/debug image builds if needed
-        run: |
-          TAG=$(cat TAG)
-          for repo in ghcr.io quay.io; do
-            for image in ubuntu-dev ubuntu-debug; do
-              c="$(container-tag-exists ${repo}/cybozu/$image $TAG 2>&1)"
-              if [ "$c" = "" ]; then
-                echo "build ${repo}/cybozu/$image:$TAG"
-                echo ${repo}/cybozu/$image >> BUILDS
+
+            NEED_PUSH=false
+            for repo in ghcr.io quay.io; do
+              if ! container-tag-exists "${repo}/cybozu/${image_name}" "${tag_name}" >/dev/null 2>&1; then
+                NEED_PUSH=true
+                break
               fi
             done
+
+            if [[ "$NEED_PUSH" == "true" ]]; then
+              TARGETS+=("${image_name}")
+            fi
           done
+
+          if [[ ${#TARGETS[@]} -eq 0 ]]; then
+            echo "needs-push=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "needs-push=true" >> "$GITHUB_OUTPUT"
+            echo "targets=${TARGETS[*]}" >> "$GITHUB_OUTPUT"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push images
+      - name: Build and push images with bake
+        if: steps.check-push.outputs.needs-push == 'true'
+        env:
+          TARGETS: ${{ steps.check-push.outputs.targets }}
         run: |
-          if [ ! -f BUILDS ]; then
-            echo "nothing to build."
-            exit 0
-          fi
-          TAG_MINIMAL=$(cat TAG_MINIMAL)
-          TAG=$(cat TAG)
-          BRANCH=$(cat BRANCH)
-          for d in $(cat BUILDS); do
-            echo
-            echo "building $d ..."
-            dir=$(echo ${d} | awk -F'/' '{print $3}')
-            docker buildx build \
-              --platform linux/amd64,linux/arm64/v8 \
-              --push \
-              -t ${d}:$TAG \
-              -t ${d}:$BRANCH \
-              --build-arg TAG_MINIMAL=$TAG_MINIMAL \
-              --build-arg TAG=$TAG \
-              ${dir}
-          done
+          docker buildx bake -f docker-bake.hcl \
+            --push \
+            $TARGETS

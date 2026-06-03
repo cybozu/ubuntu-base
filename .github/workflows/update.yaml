@@ -17,8 +17,6 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd # v4.0.0
-        with:
-          version: v0.32.1
       - name: Check minimal image updates
         shell: bash -xe {0}
         run: |
@@ -40,12 +38,25 @@ jobs:
               exit 1
             fi
 
-            TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
+            LATEST_DIGEST=$(curl -sSI \
+              -H "Authorization: Bearer $TOKEN" \
+              -H "Accept: application/vnd.oci.image.index.v1+json, application/vnd.docker.distribution.manifest.list.v2+json" \
+              "https://registry-1.docker.io/v2/library/ubuntu/manifests/${LATEST_TAG}" \
+              | awk -F': ' '/[Dd]ocker-[Cc]ontent-[Dd]igest/ {gsub("\r", "", $2); print $2; exit}')
+            if [ -z "$LATEST_DIGEST" ]; then
+              echo "Failed to get the digest for $LATEST_TAG"
+              exit 1
+            fi
 
-            if [[ "$TAG_MINIMAL" != "$LATEST_TAG" ]]; then
+            TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
+            DIGEST_DOCKERHUB_UBUNTU=$(cat ./$version/DIGEST_DOCKERHUB_UBUNTU)
+
+            if [[ "$TAG_MINIMAL" != "$LATEST_TAG" || "$DIGEST_DOCKERHUB_UBUNTU" != "$LATEST_DIGEST" ]]; then
               echo $LATEST_TAG > ./$version/TAG_MINIMAL
+              echo $LATEST_DIGEST > ./$version/DIGEST_DOCKERHUB_UBUNTU
               updated_versions+=($version)
               echo "- Update $version minimal image from $TAG_MINIMAL to $LATEST_TAG" >> ./BODY
+              echo "  - digest: $DIGEST_DOCKERHUB_UBUNTU -> $LATEST_DIGEST" >> ./BODY
             fi
           done
 
@@ -57,43 +68,19 @@ jobs:
           updated_versions=(${{ env.UPDATED_VERSIONS }})
 
           for version in ${{ env.UBUNTU_VERSION }}; do
-            TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
-            TAG=$(cat ./$version/TAG)
+            export UBUNTU_VERSION=$version
+            export TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
+            export TAG=$(cat ./$version/TAG)
+            export DIGEST_DOCKERHUB_UBUNTU=$(cat ./$version/DIGEST_DOCKERHUB_UBUNTU)
 
-            echo "building ubuntu-minimal:${TAG_MINIMAL}-new"
-            docker buildx build \
-              -t ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new \
+            echo "building ${version} test images with bake"
+            docker buildx bake -f docker-bake.hcl \
               --load \
-              --build-arg TAG_MINIMAL=$TAG_MINIMAL \
-              --no-cache=false \
-              ./$version/ubuntu-minimal
-
-            echo "building ubuntu:${version}-new"
-            docker buildx build \
-              --platform linux/amd64 \
-              -t ghcr.io/cybozu/ubuntu:${version}-new \
-              --load \
-              --no-cache=false \
-              --build-arg TAG_MINIMAL=${TAG_MINIMAL}-new \
-              ./$version/ubuntu/
-
-            echo "building ubuntu-debug:${version}-new"
-            docker buildx build \
-              --platform linux/amd64 \
-              -t ghcr.io/cybozu/ubuntu-debug:${version}-new \
-              --load \
-              --no-cache=false \
-              --build-arg TAG=${version}-new \
-              ./$version/ubuntu-debug/
-
-            echo "building ubuntu-dev:${version}-new"
-            docker buildx build \
-              --platform linux/amd64 \
-              -t ghcr.io/cybozu/ubuntu-dev:${version}-new \
-              --load \
-              --no-cache=false \
-              --build-arg TAG=${version}-new \
-              ./$version/ubuntu-dev/
+              --set *.platform=linux/amd64 \
+              --set ubuntu-minimal.tags=ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new \
+              --set ubuntu.tags=ghcr.io/cybozu/ubuntu:${version}-new \
+              --set ubuntu-debug.tags=ghcr.io/cybozu/ubuntu-debug:${version}-new \
+              --set ubuntu-dev.tags=ghcr.io/cybozu/ubuntu-dev:${version}-new
 
             for img in ubuntu ubuntu-debug ubuntu-dev; do
               docker pull ghcr.io/cybozu/$img:$TAG

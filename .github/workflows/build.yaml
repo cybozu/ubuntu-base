@@ -12,21 +12,39 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: read
-    defaults:
-      run:
-        working-directory: ${{ matrix.ubuntu-version }}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@ce360397dd3f832beb865e1373c09c0e9f86d70a # v4.0.0
+        with:
+          platforms: linux/amd64,linux/arm64/v8
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd # v4.0.0
       - name: Setup golang
         uses: actions/setup-go@4b73464bb391d4059bd26b0524d20df3927bd417 # v6.3.0
         with:
           go-version: ${{ env.go-version }}
+      - name: Resolve build variables
+        run: |
+          UBUNTU_VERSION=${{ matrix.ubuntu-version }}
+          TAG_MINIMAL=$(cat ${UBUNTU_VERSION}/TAG_MINIMAL)
+          TAG=$(cat ${UBUNTU_VERSION}/TAG)
+          DIGEST_DOCKERHUB_UBUNTU=$(cat ${UBUNTU_VERSION}/DIGEST_DOCKERHUB_UBUNTU)
+
+          for required in UBUNTU_VERSION TAG_MINIMAL TAG DIGEST_DOCKERHUB_UBUNTU; do
+            if [[ -z "${!required}" ]]; then
+              echo "required variable is empty: ${required}"
+              exit 1
+            fi
+          done
+
+          echo "UBUNTU_VERSION=${UBUNTU_VERSION}" >> $GITHUB_ENV
+          echo "TAG_MINIMAL=${TAG_MINIMAL}" >> $GITHUB_ENV
+          echo "TAG=${TAG}" >> $GITHUB_ENV
+          echo "DIGEST_DOCKERHUB_UBUNTU=${DIGEST_DOCKERHUB_UBUNTU}" >> $GITHUB_ENV
+
       - name: Build images
         run: |
-          TAG_MINIMAL=$(cat TAG_MINIMAL)
-          TAG=$(cat TAG)
-          TARGETS="ubuntu-minimal ubuntu ubuntu-dev ubuntu-debug"
-
           echo
-          echo "building $TARGETS..."
-          TAG_MINIMAL=$TAG_MINIMAL TAG=$TAG docker buildx bake --load $TARGETS
+          echo "building ${UBUNTU_VERSION}: default group..."
+          docker buildx bake -f docker-bake.hcl
