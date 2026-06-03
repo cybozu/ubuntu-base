@@ -117,7 +117,7 @@
 | libldap-2.5-0:amd64 | 2.5.20+dfsg-0ubuntu0.22.04.1 | OpenLDAP libraries |
 | liblmdb0:amd64 | 0.9.24-1build2 | Lightning Memory-Mapped Database shared library |
 | liblz4-1:amd64 | 1.9.3-2build2 | Fast LZ compression algorithm library - runtime |
-| liblzma5:amd64 | 5.2.5-2ubuntu1 | XZ-format compression library |
+| liblzma5:amd64 | 5.2.5-2ubuntu1.1 | XZ-format compression library |
 | libmagic-mgc | 1:5.41-3ubuntu0.1 | File type determination library using "magic" numbers (compiled magic file) |
 | libmagic1:amd64 | 1:5.41-3ubuntu0.1 | Recognize the type of data in a file using "magic" numbers - library |
 | libmaxminddb0:amd64 | 1.5.2-1build2 | IP geolocation database library |
@@ -212,9 +212,9 @@
 | media-types | 7.0.0 | List of standard media types and their usual file extension |
 | moreutils | 0.66-1 | additional Unix utilities |
 | mount | 2.37.2-4ubuntu3.5 | tools for mounting and manipulating filesystems |
-| mysql-client | 8.0.45-0ubuntu0.22.04.1 | MySQL database client (metapackage depending on the latest version) |
-| mysql-client-8.0 | 8.0.45-0ubuntu0.22.04.1 | MySQL database client binaries |
-| mysql-client-core-8.0 | 8.0.45-0ubuntu0.22.04.1 | MySQL database core client binaries |
+| mysql-client | 8.0.46-0ubuntu0.22.04.2 | MySQL database client (metapackage depending on the latest version) |
+| mysql-client-8.0 | 8.0.46-0ubuntu0.22.04.2 | MySQL database client binaries |
+| mysql-client-core-8.0 | 8.0.46-0ubuntu0.22.04.2 | MySQL database core client binaries |
 | mysql-common | 5.8+1.0.8 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.7+nmu3ubuntu2 | display a calendar and the date of Easter |
 | ncurses-base | 6.3-2ubuntu0.1 | basic terminal type definitions |
@@ -280,7 +280,7 @@
 | x11-common | 1:7.7+23ubuntu2 | X Window System (X.Org) infrastructure |
 | xml-core | 0.18+nmu1 | XML infrastructure and XML catalog file support |
 | xxd | 2:8.2.3995-1ubuntu2.30 | tool to make (or reverse) a hex dump |
-| xz-utils | 5.2.5-2ubuntu1 | XZ-format compression utilities |
+| xz-utils | 5.2.5-2ubuntu1.1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |

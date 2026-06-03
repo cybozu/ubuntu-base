@@ -111,7 +111,7 @@
 | libldap2:amd64 | 2.6.10+dfsg-0ubuntu0.24.04.1 | OpenLDAP libraries |
 | liblsan0:amd64 | 14.2.0-4ubuntu2~24.04.1 | LeakSanitizer -- a memory leak detector (runtime) |
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
-| liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression library |
+| liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression library |
 | libmd0:amd64 | 1.1.0-2build1.1 | message digest functions from BSD systems - shared library |
 | libmount1:amd64 | 2.39.3-9ubuntu6.5 | device mounting library |
 | libmpc3:amd64 | 1.3.1-1build1.1 | multiple precision complex floating-point library |
@@ -190,6 +190,6 @@
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | util-linux | 2.39.3-9ubuntu6.5 | miscellaneous system utilities |
-| xz-utils | 5.6.1+really5.4.5-1ubuntu0.2 | XZ-format compression utilities |
+| xz-utils | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | gh | 2.89.0 | Work seamlessly with GitHub from the command line |
