@@ -246,7 +246,7 @@
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
 | python3-s3transfer | 0.5.0-1 | Amazon S3 Transfer Manager for Python3 |
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
-| python3-urllib3 | 1.26.5-1~exp1ubuntu0.6 | HTTP library with thread-safe connection pooling for Python3 |
+| python3-urllib3 | 1.26.5-1~exp1ubuntu0.7 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
 | python3.10 | 3.10.12-1~22.04.15 | Interactive high-level object-oriented language (version 3.10) |
 | python3.10-minimal | 3.10.12-1~22.04.15 | Minimal subset of the Python language (version 3.10) |
