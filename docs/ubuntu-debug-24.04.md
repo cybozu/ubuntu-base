@@ -220,7 +220,7 @@
 | python3-pkg-resources | 68.1.2-2ubuntu1.2 | Package Discovery and Resource Access using pkg_resources |
 | python3-requests | 2.31.0+dfsg-1ubuntu1.1 | elegant and simple HTTP library for Python3, built for human beings |
 | python3-six | 1.16.0-4 | Python 2 and 3 compatibility library |
-| python3-urllib3 | 2.0.7-1ubuntu0.6 | HTTP library with thread-safe connection pooling for Python3 |
+| python3-urllib3 | 2.0.7-1ubuntu0.7 | HTTP library with thread-safe connection pooling for Python3 |
 | python3.12 | 3.12.3-1ubuntu0.13 | Interactive high-level object-oriented language (version 3.12) |
 | python3.12-minimal | 3.12.3-1ubuntu0.13 | Minimal subset of the Python language (version 3.12) |
 | rclone | 1.60.1+dfsg-3ubuntu0.24.04.5 | rsync for commercial cloud storage |
@@ -254,4 +254,4 @@
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.59 | Universal Command Line Interface for Amazon Web Services |
+| awscli | 2.34.61 | Universal Command Line Interface for Amazon Web Services |
