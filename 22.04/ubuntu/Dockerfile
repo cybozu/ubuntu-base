@@ -1,6 +1,6 @@
 ARG TAG_MINIMAL
 
-FROM registry.k8s.io/pause:3.10
+FROM registry.k8s.io/pause:3.10@sha256:ee6521f290b2168b6e0935a181d4cff9be1ac3f505666ef0e3c98fae8199917a
 
 FROM ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}
 
