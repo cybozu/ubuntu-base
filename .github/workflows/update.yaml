@@ -120,20 +120,20 @@ jobs:
               rm -f /tmp/${img}-${version}-packages.txt
 
               if [ "$img" = "ubuntu-debug" ]; then
-                GRPCURL_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new grpcurl --version 2>&1 | head -1 | sed 's/grpcurl \([0-9.]*\).*/\1/' || echo "unknown")
-                echo "| grpcurl | $GRPCURL_VERSION | gRPC reflection and command-line tool |" >>  ./docs/${img}-${version}.md
-                CRANE_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new crane version 2>/dev/null | head -1 | sed 's/.*version \([0-9.]*\).*/\1/' || echo "unknown")
-                echo "| crane | $CRANE_VERSION | crane is a tool for interacting with remote images and registries |" >> ./docs/${img}-${version}.md
+                GRPCURL_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new grpcurl --version 2>&1 | head -1 | sed -nE 's/grpcurl v?([0-9.]+).*/\1/p')
+                echo "| grpcurl | ${GRPCURL_VERSION:-unknown} | gRPC reflection and command-line tool |" >> ./docs/${img}-${version}.md
+                CRANE_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new crane version 2>/dev/null | head -1 | sed -nE 's/^([0-9]+(\.[0-9]+)*).*/\1/p')
+                echo "| crane | ${CRANE_VERSION:-unknown} | crane is a tool for interacting with remote images and registries |" >> ./docs/${img}-${version}.md
 
                 if [ "$version" = "24.04" ]; then
-                  AWSCLI_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new aws --version 2>/dev/null | head -1 | sed 's/aws-cli\/\([0-9.]*\).*/\1/' || echo "unknown")
-                  echo "| awscli | $AWSCLI_VERSION | Universal Command Line Interface for Amazon Web Services |" >> ./docs/${img}-${version}.md
+                  AWSCLI_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new aws --version 2>/dev/null | head -1 | sed -nE 's/aws-cli\/([0-9.]+).*/\1/p')
+                  echo "| awscli | ${AWSCLI_VERSION:-unknown} | Universal Command Line Interface for Amazon Web Services |" >> ./docs/${img}-${version}.md
                 fi
               fi
 
               if [ "$img" = "ubuntu-dev" ]; then
-                GH_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new gh --version 2>/dev/null | head -1 | sed 's/gh version \([0-9.]*\).*/\1/' || echo "unknown")
-                echo "| gh | $GH_VERSION | Work seamlessly with GitHub from the command line |" >> ./docs/${img}-${version}.md
+                GH_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new gh --version 2>/dev/null | head -1 | sed -nE 's/gh version ([0-9.]+).*/\1/p')
+                echo "| gh | ${GH_VERSION:-unknown} | Work seamlessly with GitHub from the command line |" >> ./docs/${img}-${version}.md
               fi
             done
           done
