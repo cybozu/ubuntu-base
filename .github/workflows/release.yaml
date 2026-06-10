@@ -58,7 +58,8 @@ jobs:
 
             NEED_PUSH=false
             for repo in ghcr.io quay.io; do
-              if ! container-tag-exists "${repo}/cybozu/${image_name}" "${tag_name}" >/dev/null 2>&1; then
+              c=$(container-tag-exists "${repo}/cybozu/${image_name}" "${tag_name}" 2>&1)
+              if [ "$c" = "" ]; then
                 NEED_PUSH=true
                 break
               fi
