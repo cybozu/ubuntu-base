@@ -1,0 +1,22 @@
+name: Pinact
+on:
+  pull_request:
+    paths:
+      - '.github/**/*.yaml'
+      - '.github/**/*.yml'
+jobs:
+  verify-pinact:
+    name: Verify pinned GitHub Actions comments
+    runs-on: ubuntu-slim
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: aquaproj/aqua-installer@11dd79b4e498d471a9385aa9fb7f62bb5f52a73c # v4.0.4
+        with:
+          aqua_version: v2.60.0
+      - name: Verify SHAs and tag comments are consistent
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pinact run --check --verify-comment
