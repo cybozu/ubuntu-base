@@ -30,9 +30,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - uses: aquaproj/aqua-installer@11dd79b4e498d471a9385aa9fb7f62bb5f52a73c # v4.0.4
-        with:
-          aqua_version: v2.60.0
       - name: Resolve build variables
         run: |
           echo "UBUNTU_VERSION=${{ matrix.ubuntu-version }}" >> $GITHUB_ENV
@@ -41,38 +38,9 @@ jobs:
           echo "DIGEST_DOCKERHUB_UBUNTU=$(cat ${{ matrix.ubuntu-version }}/DIGEST_DOCKERHUB_UBUNTU)" >> $GITHUB_ENV
       - name: Check if images need to be pushed
         id: check-push
-        run: |
-          TARGETS=()
-
-          for image_name in ubuntu-minimal ubuntu ubuntu-dev ubuntu-debug; do
-            if [[ "$image_name" == "ubuntu-minimal" ]]; then
-              tag_name="$TAG_MINIMAL"
-            else
-              tag_name="$TAG"
-            fi
-
-            NEED_PUSH=false
-            for repo in ghcr.io quay.io; do
-              FOUND=$(./scripts/tag_exists "${repo}/cybozu/${image_name}" "${tag_name}")
-              if [[ "$FOUND" == "false" ]]; then
-                NEED_PUSH=true
-                break
-              fi
-            done
-
-            if [[ "$NEED_PUSH" == "true" ]]; then
-              TARGETS+=("${image_name}")
-            fi
-          done
-
-          if [[ ${#TARGETS[@]} -eq 0 ]]; then
-            echo "needs-push=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "needs-push=true" >> "$GITHUB_OUTPUT"
-            echo "targets=${TARGETS[*]}" >> "$GITHUB_OUTPUT"
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: ./.github/actions/check-push
+        with:
+          ubuntu_version: ${{ matrix.ubuntu-version }}
       - name: Build and push images with bake
         if: steps.check-push.outputs.needs-push == 'true'
         env:

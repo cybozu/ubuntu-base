@@ -1,0 +1,60 @@
+name: "Check if images need to be pushed"
+description: "Check whether release images are missing from container registries."
+inputs:
+  ubuntu_version:
+    description: Ubuntu version to check.
+    required: true
+outputs:
+  needs-push:
+    description: Whether any image needs to be pushed.
+    value: ${{ steps.check-push.outputs.needs-push }}
+  targets:
+    description: Space-separated bake targets that need to be pushed.
+    value: ${{ steps.check-push.outputs.targets }}
+runs:
+  using: composite
+  steps:
+    - name: Check if images need to be pushed
+      id: check-push
+      shell: bash
+      run: |
+        TARGETS=()
+        tag_minimal=$(cat "${{ inputs.ubuntu_version }}/TAG_MINIMAL")
+        tag=$(cat "${{ inputs.ubuntu_version }}/TAG")
+
+        for image_name in ubuntu-minimal ubuntu ubuntu-dev ubuntu-debug; do
+          if [[ "$image_name" == "ubuntu-minimal" ]]; then
+            tag_name="$tag_minimal"
+          else
+            tag_name="$tag"
+          fi
+
+          NEED_PUSH=false
+
+          for repo in ghcr.io quay.io; do
+            FOUND=$(./scripts/tag_exists "${repo}/cybozu/${image_name}" "${tag_name}")
+            case "$FOUND" in
+            true | false)
+              ;;
+            *)
+              echo "Error: unexpected tag_exists output for ${repo}/cybozu/${image_name}:${tag_name}: ${FOUND}" >&2
+              exit 1
+              ;;
+            esac
+
+            if [[ "$FOUND" == "false" ]]; then
+              NEED_PUSH=true
+            fi
+          done
+
+          if [[ "$NEED_PUSH" == "true" ]]; then
+            TARGETS+=("${image_name}")
+          fi
+        done
+
+        echo "targets=${TARGETS[*]}" >> "$GITHUB_OUTPUT"
+        if [[ ${#TARGETS[@]} -eq 0 ]]; then
+          echo "needs-push=false" >> "$GITHUB_OUTPUT"
+        else
+          echo "needs-push=true" >> "$GITHUB_OUTPUT"
+        fi
