@@ -21,7 +21,7 @@
 | bsdextrautils | 2.37.2-4ubuntu3.5 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.7+nmu3ubuntu2 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.37.2-4ubuntu3.5 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20240203~22.04.1 | Common CA certificates |
+| ca-certificates | 20260601~22.04.1 | Common CA certificates |
 | conntrack | 1:1.4.6-2build2 | Program to modify the conntrack tables |
 | coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
 | curl | 7.81.0-1ubuntu1.24 | command line tool for transferring data with URL syntax |
@@ -170,9 +170,9 @@
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.5 | SQLite 3 shared library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
-| libssl3:amd64 | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3:amd64 | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 249.11-0ubuntu3.20 | systemd utility library |
+| libsystemd0:amd64 | 249.11-0ubuntu3.21 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-1 | module for rounded or exact English expression of durations |
@@ -181,7 +181,7 @@
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libuchardet0:amd64 | 0.0.7-1build2 | universal charset detection library - shared library |
-| libudev1:amd64 | 249.11-0ubuntu3.20 | libudev shared library |
+| libudev1:amd64 | 249.11-0ubuntu3.21 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libunwind8:amd64 | 1.3.2-2build2.1 | library to determine the call-chain of a program - runtime |
 | libuuid1:amd64 | 2.37.2-4ubuntu3.5 | Universally Unique ID library |
@@ -222,7 +222,7 @@
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl | 5.34.0-3ubuntu1.5 | Larry Wall's Practical Extraction and Report Language |
 | perl-base | 5.34.0-3ubuntu1.5 | minimal Perl system |
@@ -252,7 +252,7 @@
 | python3.10-minimal | 3.10.12-1~22.04.15 | Minimal subset of the Python language (version 3.10) |
 | rclone | 1.53.3-4ubuntu1.22.04.4 | rsync for commercial cloud storage |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
-| rsync | 3.2.7-0ubuntu0.22.04.6 | fast, versatile, remote (and local) file-copying tool |
+| rsync | 3.2.7-0ubuntu0.22.04.7 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.2.0-1 | command-line Amazon S3 client |
 | sed | 4.8-1ubuntu2.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
@@ -274,13 +274,13 @@
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
-| vim | 2:8.2.3995-1ubuntu2.30 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:8.2.3995-1ubuntu2.30 | Vi IMproved - Common files |
-| vim-runtime | 2:8.2.3995-1ubuntu2.30 | Vi IMproved - Runtime files |
+| vim | 2:8.2.3995-1ubuntu2.31 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:8.2.3995-1ubuntu2.31 | Vi IMproved - Common files |
+| vim-runtime | 2:8.2.3995-1ubuntu2.31 | Vi IMproved - Runtime files |
 | x11-common | 1:7.7+23ubuntu2 | X Window System (X.Org) infrastructure |
 | xml-core | 0.18+nmu1 | XML infrastructure and XML catalog file support |
-| xxd | 2:8.2.3995-1ubuntu2.30 | tool to make (or reverse) a hex dump |
+| xxd | 2:8.2.3995-1ubuntu2.31 | tool to make (or reverse) a hex dump |
 | xz-utils | 5.2.5-2ubuntu1.1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
-| grpcurl |  | gRPC reflection and command-line tool |
+| grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |

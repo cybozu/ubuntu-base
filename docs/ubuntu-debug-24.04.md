@@ -20,7 +20,7 @@
 | bsdextrautils | 2.39.3-9ubuntu6.5 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.8 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.39.3-9ubuntu6.5 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20240203 | Common CA certificates |
+| ca-certificates | 20260601~24.04.1 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
 | coreutils | 9.4-3ubuntu6.2 | GNU core utilities |
 | curl | 8.5.0-2ubuntu10.9 | command line tool for transferring data with URL syntax |
@@ -40,7 +40,7 @@
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
-| inetutils-telnet | 2:2.5-3ubuntu4.1 | telnet client |
+| inetutils-telnet | 2:2.5-3ubuntu4.2 | telnet client |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | iperf3 | 3.16-1build2 | Internet Protocol bandwidth measuring tool |
 | iproute2 | 6.1.0-1ubuntu6.3 | networking and traffic control tools |
@@ -167,15 +167,15 @@
 | libsqlite3-0:amd64 | 3.45.1-1ubuntu2.5 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.4 | tiny C SSH library (OpenSSL flavor) |
-| libssl3t64:amd64 | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3t64:amd64 | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.15 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.16 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-2 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
-| libudev1:amd64 | 255.4-1ubuntu8.15 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.16 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libunwind8:amd64 | 1.6.2-3build1.1 | library to determine the call-chain of a program - runtime |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
@@ -204,7 +204,7 @@
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
 | openssh-client | 1:9.6p1-3ubuntu13.16 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl | 5.38.2-3.2ubuntu0.2 | Larry Wall's Practical Extraction and Report Language |
 | perl-base | 5.38.2-3.2ubuntu0.2 | minimal Perl system |
@@ -225,7 +225,7 @@
 | python3.12-minimal | 3.12.3-1ubuntu0.13 | Minimal subset of the Python language (version 3.12) |
 | rclone | 1.60.1+dfsg-3ubuntu0.24.04.5 | rsync for commercial cloud storage |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
-| rsync | 3.2.7-1ubuntu1.4 | fast, versatile, remote (and local) file-copying tool |
+| rsync | 3.2.7-1ubuntu1.5 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.4.0-2 | command-line Amazon S3 client |
 | sed | 4.9-2ubuntu0.24.04.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
@@ -239,7 +239,7 @@
 | tcl-expect:amd64 | 5.45.4-3 | Automates interactive applications (Tcl package) |
 | tcl8.6 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - shell |
 | tcpdump | 4.99.4-3ubuntu4.24.04.1 | command-line network traffic analyzer |
-| telnet | 0.17+2.5-3ubuntu4.1 | transitional dummy package for inetutils-telnet default switch |
+| telnet | 0.17+2.5-3ubuntu4.2 | transitional dummy package for inetutils-telnet default switch |
 | traceroute | 1:2.1.5-1 | Traces the route taken by packets over an IPv4/IPv6 network |
 | tzdata | 2026a-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
@@ -247,11 +247,11 @@
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | unzip | 6.0-28ubuntu4.1 | De-archiver for .zip files |
 | util-linux | 2.39.3-9ubuntu6.5 | miscellaneous system utilities |
-| vim | 2:9.1.0016-1ubuntu7.14 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:9.1.0016-1ubuntu7.14 | Vi IMproved - Common files |
-| vim-runtime | 2:9.1.0016-1ubuntu7.14 | Vi IMproved - Runtime files |
+| vim | 2:9.1.0016-1ubuntu7.15 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:9.1.0016-1ubuntu7.15 | Vi IMproved - Common files |
+| vim-runtime | 2:9.1.0016-1ubuntu7.15 | Vi IMproved - Runtime files |
 | xz-utils | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
-| grpcurl |  | gRPC reflection and command-line tool |
+| grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
 | awscli | 2.34.45 | Universal Command Line Interface for Amazon Web Services |
