@@ -37,6 +37,11 @@ jobs:
           echo "TAG=${TAG}" >> $GITHUB_ENV
           echo "DIGEST_DOCKERHUB_UBUNTU=${DIGEST_DOCKERHUB_UBUNTU}" >> $GITHUB_ENV
 
+      - name: Check if images need to be pushed
+        uses: ./.github/actions/check-push
+        with:
+          ubuntu_version: ${{ matrix.ubuntu-version }}
+
       - name: Build images
         run: |
           echo
