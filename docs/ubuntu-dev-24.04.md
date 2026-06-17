@@ -15,7 +15,7 @@
 | bsdutils | 1:2.39.3-9ubuntu6.5 | basic utilities from 4.4BSD-Lite |
 | build-essential | 12.10ubuntu1 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor - utilities |
-| ca-certificates | 20240203 | Common CA certificates |
+| ca-certificates | 20260601~24.04.1 | Common CA certificates |
 | coreutils | 9.4-3ubuntu6.2 | GNU core utilities |
 | cpp | 4:13.2.0-7ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-13 | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor |
@@ -147,16 +147,16 @@
 | libsmartcols1:amd64 | 2.39.3-9ubuntu6.5 | smart column output alignment library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.4 | tiny C SSH library (OpenSSL flavor) |
-| libssl-dev:amd64 | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - development files |
-| libssl3t64:amd64 | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - shared libraries |
+| libssl-dev:amd64 | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - development files |
+| libssl3t64:amd64 | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04.1 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.15 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.16 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
 | libtsan2:amd64 | 14.2.0-4ubuntu2~24.04.1 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
 | libubsan1:amd64 | 14.2.0-4ubuntu2~24.04.1 | UBSan -- undefined behaviour sanitizer (runtime) |
-| libudev1:amd64 | 255.4-1ubuntu8.15 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.16 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
@@ -173,7 +173,7 @@
 | ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
 | openssh-client | 1:9.6p1-3ubuntu13.16 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | patch | 2.7.6-7build3 | Apply a diff file to an original |
 | perl | 5.38.2-3.2ubuntu0.2 | Larry Wall's Practical Extraction and Report Language |

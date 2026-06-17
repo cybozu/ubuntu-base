@@ -10,7 +10,7 @@
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
 | bsdutils | 1:2.37.2-4ubuntu3.5 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20240203~22.04.1 | Common CA certificates |
+| ca-certificates | 20260601~22.04.1 | Common CA certificates |
 | coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
 | curl | 7.81.0-1ubuntu1.24 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
@@ -88,14 +88,14 @@
 | libsmartcols1:amd64 | 2.37.2-4ubuntu3.5 | smart column output alignment library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
-| libssl3:amd64 | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3:amd64 | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 249.11-0ubuntu3.20 | systemd utility library |
+| libsystemd0:amd64 | 249.11-0ubuntu3.21 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.3-2ubuntu0.1 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
-| libudev1:amd64 | 249.11-0ubuntu3.20 | libudev shared library |
+| libudev1:amd64 | 249.11-0ubuntu3.21 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libuuid1:amd64 | 2.37.2-4ubuntu3.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
@@ -109,7 +109,7 @@
 | ncurses-base | 6.3-2ubuntu0.1 | basic terminal type definitions |
 | ncurses-bin | 6.3-2ubuntu0.1 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssl | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl-base | 5.34.0-3ubuntu1.5 | minimal Perl system |
 | procps | 2:3.3.17-6ubuntu2.1 | /proc file system utilities |

@@ -9,7 +9,7 @@
 | base-passwd | 3.6.3build1 | Debian base system master password and group files |
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
 | bsdutils | 1:2.39.3-9ubuntu6.5 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20240203 | Common CA certificates |
+| ca-certificates | 20260601~24.04.1 | Common CA certificates |
 | coreutils | 9.4-3ubuntu6.2 | GNU core utilities |
 | curl | 8.5.0-2ubuntu10.9 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
@@ -87,12 +87,12 @@
 | libsmartcols1:amd64 | 2.39.3-9ubuntu6.5 | smart column output alignment library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.4 | tiny C SSH library (OpenSSL flavor) |
-| libssl3t64:amd64 | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3t64:amd64 | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.15 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.16 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
-| libudev1:amd64 | 255.4-1ubuntu8.15 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.16 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
@@ -105,7 +105,7 @@
 | ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
 | ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssl | 3.0.13-0ubuntu3.9 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl-base | 5.38.2-3.2ubuntu0.2 | minimal Perl system |
 | procps | 2:4.0.4-4ubuntu3.2 | /proc file system utilities |

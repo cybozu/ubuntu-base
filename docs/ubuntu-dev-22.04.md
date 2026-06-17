@@ -15,7 +15,7 @@
 | bsdutils | 1:2.37.2-4ubuntu3.5 | basic utilities from 4.4BSD-Lite |
 | build-essential | 12.9ubuntu3 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-5build1 | high-quality block-sorting file compressor - utilities |
-| ca-certificates | 20240203~22.04.1 | Common CA certificates |
+| ca-certificates | 20260601~22.04.1 | Common CA certificates |
 | coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
 | cpp | 4:11.2.0-1ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C preprocessor |
@@ -138,11 +138,11 @@
 | libsmartcols1:amd64 | 2.37.2-4ubuntu3.5 | smart column output alignment library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
-| libssl-dev:amd64 | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - development files |
-| libssl3:amd64 | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - shared libraries |
+| libssl-dev:amd64 | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - development files |
+| libssl3:amd64 | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 249.11-0ubuntu3.20 | systemd utility library |
+| libsystemd0:amd64 | 249.11-0ubuntu3.21 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.3-2ubuntu0.1 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
@@ -150,7 +150,7 @@
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libtsan0:amd64 | 11.4.0-1ubuntu1~22.04.3 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
 | libubsan1:amd64 | 12.3.0-1ubuntu1~22.04.3 | UBSan -- undefined behaviour sanitizer (runtime) |
-| libudev1:amd64 | 249.11-0ubuntu3.20 | libudev shared library |
+| libudev1:amd64 | 249.11-0ubuntu3.21 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libuuid1:amd64 | 2.37.2-4ubuntu3.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
@@ -168,7 +168,7 @@
 | ncurses-bin | 6.3-2ubuntu0.1 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.2-0ubuntu1.23 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | patch | 2.7.6-7build2 | Apply a diff file to an original |
 | perl | 5.34.0-3ubuntu1.5 | Larry Wall's Practical Extraction and Report Language |
