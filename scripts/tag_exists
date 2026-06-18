@@ -1,0 +1,59 @@
+#!/bin/sh -e
+# tag_exists <REGISTRY>/<ORG>/<PACKAGE> <TAG>
+
+if [ $# -ne 2 ]; then
+    echo "Error: tag_exists needs two arguments" >&2
+    exit 1
+fi
+
+IMAGE="$1"
+TAG="$2"
+
+REGISTRY=$(echo "${IMAGE}" | cut -d/ -f1)
+ORG=$(echo "${IMAGE}" | cut -d/ -f2)
+PACKAGE=$(echo "${IMAGE}" | cut -d/ -f3-)
+
+if [ -z "${REGISTRY}" ] || [ -z "${ORG}" ] || [ -z "${PACKAGE}" ]; then
+    echo "Error: invalid image format (expected: <registry>/<org>/<package>)" >&2
+    exit 1
+fi
+
+TAG_ENC=$(echo "${TAG}" | jq -Rr '@uri')
+
+ACCEPT="application/vnd.oci.image.index.v1+json, application/vnd.oci.image.manifest.v1+json, application/vnd.docker.distribution.manifest.list.v2+json, application/vnd.docker.distribution.manifest.v2+json"
+
+manifest_exists() {
+    STATUS=$(curl -sSI -o /dev/null -w '%{http_code}' "$@" || true)
+    case "${STATUS}" in
+    200)
+        echo true
+        ;;
+    401 | 403 | 404)
+        echo false
+        ;;
+    *)
+        echo "Error: failed to check tag existence (HTTP ${STATUS})" >&2
+        exit 1
+        ;;
+    esac
+}
+
+case "${REGISTRY}" in
+ghcr.io)
+    SCOPE_ENC=$(echo "repository:${ORG}/${PACKAGE}:pull" | jq -Rr '@uri')
+    TOKEN=$(curl -fsSL "https://ghcr.io/token?service=ghcr.io&scope=${SCOPE_ENC}" | jq -r .token)
+    manifest_exists \
+        -H "Authorization: Bearer ${TOKEN}" \
+        -H "Accept: ${ACCEPT}" \
+        "https://ghcr.io/v2/${ORG}/${PACKAGE}/manifests/${TAG_ENC}"
+    ;;
+quay.io)
+    manifest_exists \
+        -H "Accept: ${ACCEPT}" \
+        "https://quay.io/v2/${ORG}/${PACKAGE}/manifests/${TAG_ENC}"
+    ;;
+*)
+    echo "Error: unsupported registry '${REGISTRY}'" >&2
+    exit 1
+    ;;
+esac
