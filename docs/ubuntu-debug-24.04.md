@@ -181,7 +181,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
 | libuv1t64:amd64 | 1.48.0-1.1build1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-33 | Wietse Venema's TCP wrappers library |
-| libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.7 | GNOME XML library |
+| libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.8 | GNOME XML library |
 | libxtables12:amd64 | 1.8.10-3ubuntu2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
@@ -194,9 +194,9 @@
 | media-types | 10.1.0 | List of standard media types and their usual file extension |
 | moreutils | 0.69-1 | additional Unix utilities |
 | mount | 2.39.3-9ubuntu6.5 | tools for mounting and manipulating filesystems |
-| mysql-client | 8.0.46-0ubuntu0.24.04.2 | MySQL database client (metapackage depending on the latest version) |
-| mysql-client-8.0 | 8.0.46-0ubuntu0.24.04.2 | MySQL database client binaries |
-| mysql-client-core-8.0 | 8.0.46-0ubuntu0.24.04.2 | MySQL database core client binaries |
+| mysql-client | 8.0.46-0ubuntu0.24.04.3 | MySQL database client (metapackage depending on the latest version) |
+| mysql-client-8.0 | 8.0.46-0ubuntu0.24.04.3 | MySQL database client binaries |
+| mysql-client-core-8.0 | 8.0.46-0ubuntu0.24.04.3 | MySQL database core client binaries |
 | mysql-common | 5.8+1.1.0build1 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.8 | display a calendar and the date of Easter |
 | ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
