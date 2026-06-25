@@ -180,7 +180,7 @@
 | sed | 4.8-1ubuntu2.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
-| tar | 1.34+dfsg-1ubuntu0.1.22.04.2 | GNU version of the tar archiving utility |
+| tar | 1.34+dfsg-1ubuntu0.1.22.04.3 | GNU version of the tar archiving utility |
 | tzdata | 2026a-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
