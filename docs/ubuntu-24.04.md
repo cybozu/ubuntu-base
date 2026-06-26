@@ -113,7 +113,7 @@
 | sed | 4.9-2ubuntu0.24.04.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
-| tar | 1.35+dfsg-3build1 | GNU version of the tar archiving utility |
+| tar | 1.35+dfsg-3ubuntu0.1 | GNU version of the tar archiving utility |
 | tzdata | 2026a-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |

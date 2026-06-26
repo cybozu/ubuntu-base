@@ -235,7 +235,7 @@
 | strace | 6.8-0ubuntu2 | System call tracer |
 | sysstat | 12.6.1-2 | system performance tools for Linux |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
-| tar | 1.35+dfsg-3build1 | GNU version of the tar archiving utility |
+| tar | 1.35+dfsg-3ubuntu0.1 | GNU version of the tar archiving utility |
 | tcl-expect:amd64 | 5.45.4-3 | Automates interactive applications (Tcl package) |
 | tcl8.6 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - shell |
 | tcpdump | 4.99.4-3ubuntu4.24.04.1 | command-line network traffic analyzer |
