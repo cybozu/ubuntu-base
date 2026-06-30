@@ -164,7 +164,7 @@
 | libsodium23:amd64 | 1.0.18-1ubuntu0.24.04.1 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build1 | architecture-independent files for source highlighting library |
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
-| libsqlite3-0:amd64 | 3.45.1-1ubuntu2.5 | SQLite 3 shared library |
+| libsqlite3-0:amd64 | 3.45.1-1ubuntu2.6 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.4 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - shared libraries |
@@ -231,7 +231,7 @@
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | smartmontools | 7.4-2build1 | control and monitor storage systems using S.M.A.R.T. |
 | socat | 1.8.0.0-4build3 | multipurpose relay for bidirectional data transfer |
-| sqlite3 | 3.45.1-1ubuntu2.5 | Command line interface for SQLite 3 |
+| sqlite3 | 3.45.1-1ubuntu2.6 | Command line interface for SQLite 3 |
 | strace | 6.8-0ubuntu2 | System call tracer |
 | sysstat | 12.6.1-2 | system performance tools for Linux |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
