@@ -21,7 +21,7 @@
 | cpp-13 | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor |
 | cpp-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor for x86_64-linux-gnu |
 | cpp-x86-64-linux-gnu | 4:13.2.0-7ubuntu1 | GNU C preprocessor (cpp) for the amd64 architecture |
-| curl | 8.5.0-2ubuntu10.9 | command line tool for transferring data with URL syntax |
+| curl | 8.5.0-2ubuntu10.10 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
@@ -75,8 +75,8 @@
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.42-4ubuntu2.10 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.42-4ubuntu2.10 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.9 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4t64:amd64 | 8.5.0-2ubuntu10.9 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.10 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4t64:amd64 | 8.5.0-2ubuntu10.10 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
 | libdpkg-perl | 1.22.6ubuntu6.6 | Dpkg perl modules |
@@ -161,7 +161,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 6.8.0-124.124 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 6.8.0-134.134 | Linux Kernel Headers for development |
 | locales | 2.39-0ubuntu8.7 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |

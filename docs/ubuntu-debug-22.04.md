@@ -24,7 +24,7 @@
 | ca-certificates | 20260601~22.04.1 | Common CA certificates |
 | conntrack | 1:1.4.6-2build2 | Program to modify the conntrack tables |
 | coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
-| curl | 7.81.0-1ubuntu1.24 | command line tool for transferring data with URL syntax |
+| curl | 7.81.0-1ubuntu1.25 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
@@ -47,7 +47,7 @@
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.62 | helper tools for all init systems |
 | iperf3 | 3.9-1+deb11u1ubuntu0.1 | Internet Protocol bandwidth measuring tool |
-| iproute2 | 5.15.0-1ubuntu2.1 | networking and traffic control tools |
+| iproute2 | 5.15.0-1ubuntu2.2 | networking and traffic control tools |
 | iputils-ping | 3:20211215-1ubuntu0.1 | Tools to test the reachability of network hosts |
 | jq | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor |
 | less | 590-1ubuntu0.22.04.3 | pager program similar to more |
@@ -76,8 +76,8 @@
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.24 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4:amd64 | 7.81.0-1ubuntu1.24 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.25 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4:amd64 | 7.81.0-1ubuntu1.25 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdbus-1-3:amd64 | 1.12.20-2ubuntu4.1 | simple interprocess messaging system (library) |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
