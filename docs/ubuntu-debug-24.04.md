@@ -123,11 +123,11 @@
 | libmnl0:amd64 | 1.0.5-2build1 | minimalistic Netlink communication library |
 | libmount1:amd64 | 2.39.3-9ubuntu6.5 | device mounting library |
 | libmpfr6:amd64 | 4.2.1-1build1.1 | multiple precision floating-point computation |
-| libncursesw6:amd64 | 6.4+20240113-1ubuntu2 | shared libraries for terminal handling (wide character support) |
+| libncursesw6:amd64 | 6.4+20240113-1ubuntu2.1 | shared libraries for terminal handling (wide character support) |
 | libnetfilter-conntrack3:amd64 | 1.0.9-6build1 | Netfilter netlink-conntrack library |
 | libnettle8t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (symmetric and one-way cryptos) |
 | libnfnetlink0:amd64 | 1.0.2-2build1 | Netfilter netlink library |
-| libnghttp2-14:amd64 | 1.59.0-1ubuntu0.3 | library implementing HTTP/2 protocol (shared library) |
+| libnghttp2-14:amd64 | 1.59.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnl-3-200:amd64 | 3.7.0-0.3build1.1 | library for dealing with netlink sockets |
 | libnl-route-3-200:amd64 | 3.7.0-0.3build1.1 | library for dealing with netlink sockets - route interface |
 | libnpth0t64:amd64 | 1.6-3.1build1 | replacement for GNU Pth using system threads |
@@ -174,7 +174,7 @@
 | libtcl8.6:amd64 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-2 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
-| libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
+| libtinfo6:amd64 | 6.4+20240113-1ubuntu2.1 | shared low-level terminfo library for terminal handling |
 | libudev1:amd64 | 255.4-1ubuntu8.16 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libunwind8:amd64 | 1.6.2-3build1.1 | library to determine the call-chain of a program - runtime |
@@ -199,8 +199,8 @@
 | mysql-client-core-8.0 | 8.0.46-0ubuntu0.24.04.3 | MySQL database core client binaries |
 | mysql-common | 5.8+1.1.0build1 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.8 | display a calendar and the date of Easter |
-| ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
-| ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
+| ncurses-base | 6.4+20240113-1ubuntu2.1 | basic terminal type definitions |
+| ncurses-bin | 6.4+20240113-1ubuntu2.1 | terminal-related programs and man pages |
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
 | openssh-client | 1:9.6p1-3ubuntu13.16 | secure shell (SSH) client, for secure access to remote machines |
@@ -247,9 +247,9 @@
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | unzip | 6.0-28ubuntu4.1 | De-archiver for .zip files |
 | util-linux | 2.39.3-9ubuntu6.5 | miscellaneous system utilities |
-| vim | 2:9.1.0016-1ubuntu7.16 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:9.1.0016-1ubuntu7.16 | Vi IMproved - Common files |
-| vim-runtime | 2:9.1.0016-1ubuntu7.16 | Vi IMproved - Runtime files |
+| vim | 2:9.1.0016-1ubuntu7.17 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:9.1.0016-1ubuntu7.17 | Vi IMproved - Common files |
+| vim-runtime | 2:9.1.0016-1ubuntu7.17 | Vi IMproved - Runtime files |
 | xz-utils | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |

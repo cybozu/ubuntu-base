@@ -63,9 +63,9 @@
 | liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression library |
 | libmd0:amd64 | 1.1.0-2build1.1 | message digest functions from BSD systems - shared library |
 | libmount1:amd64 | 2.39.3-9ubuntu6.5 | device mounting library |
-| libncursesw6:amd64 | 6.4+20240113-1ubuntu2 | shared libraries for terminal handling (wide character support) |
+| libncursesw6:amd64 | 6.4+20240113-1ubuntu2.1 | shared libraries for terminal handling (wide character support) |
 | libnettle8t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (symmetric and one-way cryptos) |
-| libnghttp2-14:amd64 | 1.59.0-1ubuntu0.3 | library implementing HTTP/2 protocol (shared library) |
+| libnghttp2-14:amd64 | 1.59.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnpth0t64:amd64 | 1.6-3.1build1 | replacement for GNU Pth using system threads |
 | libp11-kit0:amd64 | 0.25.3-4ubuntu2.1 | library for loading and coordinating access to PKCS#11 modules - runtime |
 | libpam-modules:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM |
@@ -91,7 +91,7 @@
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.16 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
-| libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
+| libtinfo6:amd64 | 6.4+20240113-1ubuntu2.1 | shared low-level terminfo library for terminal handling |
 | libudev1:amd64 | 255.4-1ubuntu8.16 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
@@ -102,8 +102,8 @@
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
 | mawk | 1.3.4.20240123-1build1 | Pattern scanning and text processing language |
 | mount | 2.39.3-9ubuntu6.5 | tools for mounting and manipulating filesystems |
-| ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
-| ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
+| ncurses-base | 6.4+20240113-1ubuntu2.1 | basic terminal type definitions |
+| ncurses-bin | 6.4+20240113-1ubuntu2.1 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
 | openssl | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |

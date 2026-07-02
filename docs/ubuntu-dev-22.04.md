@@ -106,11 +106,11 @@
 | libmount1:amd64 | 2.37.2-4ubuntu3.5 | device mounting library |
 | libmpc3:amd64 | 1.2.1-2build1 | multiple precision complex floating-point library |
 | libmpfr6:amd64 | 4.1.0-3build3 | multiple precision floating-point computation |
-| libncurses-dev:amd64 | 6.3-2ubuntu0.1 | developer's libraries for ncurses |
-| libncurses6:amd64 | 6.3-2ubuntu0.1 | shared libraries for terminal handling |
-| libncursesw6:amd64 | 6.3-2ubuntu0.1 | shared libraries for terminal handling (wide character support) |
+| libncurses-dev:amd64 | 6.3-2ubuntu0.2 | developer's libraries for ncurses |
+| libncurses6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling |
+| libncursesw6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling (wide character support) |
 | libnettle8:amd64 | 3.7.3-1build2 | low level cryptographic library (symmetric and one-way cryptos) |
-| libnghttp2-14:amd64 | 1.43.0-1ubuntu0.3 | library implementing HTTP/2 protocol (shared library) |
+| libnghttp2-14:amd64 | 1.43.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnsl-dev:amd64 | 1.3.0-2build2 | libnsl development files |
 | libnsl2:amd64 | 1.3.0-2build2 | Public client interface for NIS(YP) and NIS+ |
 | libonig5:amd64 | 6.9.7.1-2build1 | regular expressions library |
@@ -144,7 +144,7 @@
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.21 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
-| libtinfo6:amd64 | 6.3-2ubuntu0.1 | shared low-level terminfo library for terminal handling |
+| libtinfo6:amd64 | 6.3-2ubuntu0.2 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc-dev:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library - development files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
@@ -164,8 +164,8 @@
 | make | 4.3-4.1build1 | utility for directing compilation |
 | mawk | 1.3.4.20200120-3 | Pattern scanning and text processing language |
 | mount | 2.37.2-4ubuntu3.5 | tools for mounting and manipulating filesystems |
-| ncurses-base | 6.3-2ubuntu0.1 | basic terminal type definitions |
-| ncurses-bin | 6.3-2ubuntu0.1 | terminal-related programs and man pages |
+| ncurses-base | 6.3-2ubuntu0.2 | basic terminal type definitions |
+| ncurses-bin | 6.3-2ubuntu0.2 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - cryptographic utility |

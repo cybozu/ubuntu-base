@@ -116,11 +116,11 @@
 | libmount1:amd64 | 2.39.3-9ubuntu6.5 | device mounting library |
 | libmpc3:amd64 | 1.3.1-1build1.1 | multiple precision complex floating-point library |
 | libmpfr6:amd64 | 4.2.1-1build1.1 | multiple precision floating-point computation |
-| libncurses-dev:amd64 | 6.4+20240113-1ubuntu2 | developer's libraries for ncurses |
-| libncurses6:amd64 | 6.4+20240113-1ubuntu2 | shared libraries for terminal handling |
-| libncursesw6:amd64 | 6.4+20240113-1ubuntu2 | shared libraries for terminal handling (wide character support) |
+| libncurses-dev:amd64 | 6.4+20240113-1ubuntu2.1 | developer's libraries for ncurses |
+| libncurses6:amd64 | 6.4+20240113-1ubuntu2.1 | shared libraries for terminal handling |
+| libncursesw6:amd64 | 6.4+20240113-1ubuntu2.1 | shared libraries for terminal handling (wide character support) |
 | libnettle8t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (symmetric and one-way cryptos) |
-| libnghttp2-14:amd64 | 1.59.0-1ubuntu0.3 | library implementing HTTP/2 protocol (shared library) |
+| libnghttp2-14:amd64 | 1.59.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnpth0t64:amd64 | 1.6-3.1build1 | replacement for GNU Pth using system threads |
 | libonig5:amd64 | 6.9.9-1build1 | regular expressions library |
 | libp11-kit0:amd64 | 0.25.3-4ubuntu2.1 | library for loading and coordinating access to PKCS#11 modules - runtime |
@@ -153,7 +153,7 @@
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.16 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
-| libtinfo6:amd64 | 6.4+20240113-1ubuntu2 | shared low-level terminfo library for terminal handling |
+| libtinfo6:amd64 | 6.4+20240113-1ubuntu2.1 | shared low-level terminfo library for terminal handling |
 | libtsan2:amd64 | 14.2.0-4ubuntu2~24.04.1 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
 | libubsan1:amd64 | 14.2.0-4ubuntu2~24.04.1 | UBSan -- undefined behaviour sanitizer (runtime) |
 | libudev1:amd64 | 255.4-1ubuntu8.16 | libudev shared library |
@@ -169,8 +169,8 @@
 | make | 4.3-4.1build2 | utility for directing compilation |
 | mawk | 1.3.4.20240123-1build1 | Pattern scanning and text processing language |
 | mount | 2.39.3-9ubuntu6.5 | tools for mounting and manipulating filesystems |
-| ncurses-base | 6.4+20240113-1ubuntu2 | basic terminal type definitions |
-| ncurses-bin | 6.4+20240113-1ubuntu2 | terminal-related programs and man pages |
+| ncurses-base | 6.4+20240113-1ubuntu2.1 | basic terminal type definitions |
+| ncurses-bin | 6.4+20240113-1ubuntu2.1 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
 | openssh-client | 1:9.6p1-3ubuntu13.16 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - cryptographic utility |
