@@ -126,12 +126,12 @@
 | libmount1:amd64 | 2.37.2-4ubuntu3.5 | device mounting library |
 | libmpdec3:amd64 | 2.5.1-2build2 | library for decimal floating point arithmetic (runtime library) |
 | libmpfr6:amd64 | 4.1.0-3build3 | multiple precision floating-point computation |
-| libncurses6:amd64 | 6.3-2ubuntu0.1 | shared libraries for terminal handling |
-| libncursesw6:amd64 | 6.3-2ubuntu0.1 | shared libraries for terminal handling (wide character support) |
+| libncurses6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling |
+| libncursesw6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling (wide character support) |
 | libnetfilter-conntrack3:amd64 | 1.0.9-1 | Netfilter netlink-conntrack library |
 | libnettle8:amd64 | 3.7.3-1build2 | low level cryptographic library (symmetric and one-way cryptos) |
 | libnfnetlink0:amd64 | 1.0.1-3build3 | Netfilter netlink library |
-| libnghttp2-14:amd64 | 1.43.0-1ubuntu0.3 | library implementing HTTP/2 protocol (shared library) |
+| libnghttp2-14:amd64 | 1.43.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnsl2:amd64 | 1.3.0-2build2 | Public client interface for NIS(YP) and NIS+ |
 | libonig5:amd64 | 6.9.7.1-2build1 | regular expressions library |
 | libp11-kit0:amd64 | 0.24.0-6build1 | library for loading and coordinating access to PKCS#11 modules - runtime |
@@ -177,7 +177,7 @@
 | libtcl8.6:amd64 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-1 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
-| libtinfo6:amd64 | 6.3-2ubuntu0.1 | shared low-level terminfo library for terminal handling |
+| libtinfo6:amd64 | 6.3-2ubuntu0.2 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libuchardet0:amd64 | 0.0.7-1build2 | universal charset detection library - shared library |
@@ -217,8 +217,8 @@
 | mysql-client-core-8.0 | 8.0.46-0ubuntu0.22.04.3 | MySQL database core client binaries |
 | mysql-common | 5.8+1.0.8 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.7+nmu3ubuntu2 | display a calendar and the date of Easter |
-| ncurses-base | 6.3-2ubuntu0.1 | basic terminal type definitions |
-| ncurses-bin | 6.3-2ubuntu0.1 | terminal-related programs and man pages |
+| ncurses-base | 6.3-2ubuntu0.2 | basic terminal type definitions |
+| ncurses-bin | 6.3-2ubuntu0.2 | terminal-related programs and man pages |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
@@ -274,12 +274,12 @@
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
-| vim | 2:8.2.3995-1ubuntu2.32 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:8.2.3995-1ubuntu2.32 | Vi IMproved - Common files |
-| vim-runtime | 2:8.2.3995-1ubuntu2.32 | Vi IMproved - Runtime files |
+| vim | 2:8.2.3995-1ubuntu2.33 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:8.2.3995-1ubuntu2.33 | Vi IMproved - Common files |
+| vim-runtime | 2:8.2.3995-1ubuntu2.33 | Vi IMproved - Runtime files |
 | x11-common | 1:7.7+23ubuntu2 | X Window System (X.Org) infrastructure |
 | xml-core | 0.18+nmu1 | XML infrastructure and XML catalog file support |
-| xxd | 2:8.2.3995-1ubuntu2.32 | tool to make (or reverse) a hex dump |
+| xxd | 2:8.2.3995-1ubuntu2.33 | tool to make (or reverse) a hex dump |
 | xz-utils | 5.2.5-2ubuntu1.1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
