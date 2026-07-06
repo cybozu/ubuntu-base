@@ -23,7 +23,7 @@
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | gpgv | 2.4.4-2ubuntu17.4 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
-| gzip | 1.12-1ubuntu3.1 | GNU compression utilities |
+| gzip | 1.12-1ubuntu3.2 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
@@ -113,7 +113,7 @@
 | sed | 4.9-2ubuntu0.24.04.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
-| tar | 1.35+dfsg-3ubuntu0.1 | GNU version of the tar archiving utility |
+| tar | 1.35+dfsg-3ubuntu0.2 | GNU version of the tar archiving utility |
 | tzdata | 2026a-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |

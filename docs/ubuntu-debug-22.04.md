@@ -43,7 +43,7 @@
 | grep | 3.7-1build1 | GNU grep, egrep and fgrep |
 | groff | 1.22.4-8build1 | GNU troff text-formatting system |
 | groff-base | 1.22.4-8build1 | GNU troff text-formatting system (base system components) |
-| gzip | 1.10-4ubuntu4.1 | GNU compression utilities |
+| gzip | 1.10-4ubuntu4.2 | GNU compression utilities |
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.62 | helper tools for all init systems |
 | iperf3 | 3.9-1+deb11u1ubuntu0.1 | Internet Protocol bandwidth measuring tool |
@@ -147,9 +147,9 @@
 | libprocps8:amd64 | 2:3.3.17-6ubuntu2.1 | library for accessing process information from /proc |
 | libpsl5:amd64 | 0.21.0-1.2build2 | Library for Public Suffix List (shared libraries) |
 | libpython3-stdlib:amd64 | 3.10.6-1~22.04.1 | interactive high-level object-oriented language (default python3 version) |
-| libpython3.10:amd64 | 3.10.12-1~22.04.15 | Shared Python runtime library (version 3.10) |
-| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.15 | Minimal subset of the Python language (version 3.10) |
-| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.15 | Interactive high-level object-oriented language (standard library, version 3.10) |
+| libpython3.10:amd64 | 3.10.12-1~22.04.16 | Shared Python runtime library (version 3.10) |
+| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.16 | Minimal subset of the Python language (version 3.10) |
+| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.16 | Interactive high-level object-oriented language (standard library, version 3.10) |
 | libreadline8:amd64 | 8.1.2-1 | GNU readline and history libraries, run-time libraries |
 | librtmp1:amd64 | 2.4+20151223.gitfa8646d.1-2build4 | toolkit for RTMP streams (shared library) |
 | libsasl2-2:amd64 | 2.1.27+dfsg2-3ubuntu1.2 | Cyrus SASL - authentication abstraction library |
@@ -248,8 +248,8 @@
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
 | python3-urllib3 | 1.26.5-1~exp1ubuntu0.7 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
-| python3.10 | 3.10.12-1~22.04.15 | Interactive high-level object-oriented language (version 3.10) |
-| python3.10-minimal | 3.10.12-1~22.04.15 | Minimal subset of the Python language (version 3.10) |
+| python3.10 | 3.10.12-1~22.04.16 | Interactive high-level object-oriented language (version 3.10) |
+| python3.10-minimal | 3.10.12-1~22.04.16 | Minimal subset of the Python language (version 3.10) |
 | rclone | 1.53.3-4ubuntu1.22.04.4 | rsync for commercial cloud storage |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-0ubuntu0.22.04.7 | fast, versatile, remote (and local) file-copying tool |
@@ -263,7 +263,7 @@
 | strace | 5.16-0ubuntu3 | System call tracer |
 | sysstat | 12.5.2-2ubuntu0.2 | system performance tools for Linux |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
-| tar | 1.34+dfsg-1ubuntu0.1.22.04.3 | GNU version of the tar archiving utility |
+| tar | 1.34+dfsg-1ubuntu0.1.22.04.4 | GNU version of the tar archiving utility |
 | tcl-expect:amd64 | 5.45.4-2build1 | Automates interactive applications (Tcl package) |
 | tcl8.6 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - shell |
 | tcpdump | 4.99.1-3ubuntu0.2 | command-line network traffic analyzer |

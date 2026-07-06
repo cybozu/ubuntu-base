@@ -24,7 +24,7 @@
 | gettext-base | 0.21-4ubuntu4 | GNU Internationalization utilities for the base system |
 | gpgv | 2.2.27-3ubuntu2.5 | GNU privacy guard - signature verification tool |
 | grep | 3.7-1build1 | GNU grep, egrep and fgrep |
-| gzip | 1.10-4ubuntu4.1 | GNU compression utilities |
+| gzip | 1.10-4ubuntu4.2 | GNU compression utilities |
 | hostname | 3.23ubuntu2 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.62 | helper tools for all init systems |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
@@ -117,7 +117,7 @@
 | sed | 4.8-1ubuntu2.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
-| tar | 1.34+dfsg-1ubuntu0.1.22.04.3 | GNU version of the tar archiving utility |
+| tar | 1.34+dfsg-1ubuntu0.1.22.04.4 | GNU version of the tar archiving utility |
 | tzdata | 2026a-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
