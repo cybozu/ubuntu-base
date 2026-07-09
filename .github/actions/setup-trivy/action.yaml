@@ -58,6 +58,7 @@ runs:
         echo "::group::Install trivy"
         tar -xzf "${ARTIFACT}" -C /tmp
         chmod +x /tmp/trivy
+        # Install the Trivy binary where the Yamory scan script looks for it.
         mv /tmp/trivy /usr/local/bin/
         rm -f "${ARTIFACT}" "${ARTIFACT}.sigstore.json" bundle.json
         trivy --version
