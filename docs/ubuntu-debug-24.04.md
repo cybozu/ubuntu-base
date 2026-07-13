@@ -203,7 +203,7 @@
 | ncurses-bin | 6.4+20240113-1ubuntu2.1 | terminal-related programs and man pages |
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssh-client | 1:9.6p1-3ubuntu13.16 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:9.6p1-3ubuntu13.18 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl | 5.38.2-3.2ubuntu0.3 | Larry Wall's Practical Extraction and Report Language |
