@@ -221,7 +221,7 @@
 | ncurses-bin | 6.3-2ubuntu0.2 | terminal-related programs and man pages |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.16 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl | 5.34.0-3ubuntu1.7 | Larry Wall's Practical Extraction and Report Language |
@@ -269,7 +269,7 @@
 | tcpdump | 4.99.1-3ubuntu0.2 | command-line network traffic analyzer |
 | telnet | 0.17-44build1 | basic telnet client |
 | traceroute | 1:2.1.0-2 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2026a-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026b-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |

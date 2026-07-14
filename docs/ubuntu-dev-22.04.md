@@ -167,7 +167,7 @@
 | ncurses-base | 6.3-2ubuntu0.2 | basic terminal type definitions |
 | ncurses-bin | 6.3-2ubuntu0.2 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.15 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.16 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.25 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | patch | 2.7.6-7build2 | Apply a diff file to an original |
@@ -181,7 +181,7 @@
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
 | tar | 1.34+dfsg-1ubuntu0.1.22.04.4 | GNU version of the tar archiving utility |
-| tzdata | 2026a-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026b-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
