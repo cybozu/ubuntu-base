@@ -46,10 +46,7 @@ target "ubuntu-minimal" {
     TAG_MINIMAL             = "${TAG_MINIMAL}"
     DIGEST_DOCKERHUB_UBUNTU = "${DIGEST_DOCKERHUB_UBUNTU}"
   }
-  tags = [
-    "ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}",
-    "quay.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}",
-  ]
+  tags = ["ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}"]
 }
 
 target "ubuntu" {
@@ -65,8 +62,6 @@ target "ubuntu" {
   tags = [
     "ghcr.io/cybozu/ubuntu:${TAG}",
     "ghcr.io/cybozu/ubuntu:${UBUNTU_VERSION}",
-    "quay.io/cybozu/ubuntu:${TAG}",
-    "quay.io/cybozu/ubuntu:${UBUNTU_VERSION}",
   ]
 }
 
@@ -83,8 +78,6 @@ target "ubuntu-dev" {
   tags = [
     "ghcr.io/cybozu/ubuntu-dev:${TAG}",
     "ghcr.io/cybozu/ubuntu-dev:${UBUNTU_VERSION}",
-    "quay.io/cybozu/ubuntu-dev:${TAG}",
-    "quay.io/cybozu/ubuntu-dev:${UBUNTU_VERSION}",
   ]
 }
 
@@ -101,7 +94,5 @@ target "ubuntu-debug" {
   tags = [
     "ghcr.io/cybozu/ubuntu-debug:${TAG}",
     "ghcr.io/cybozu/ubuntu-debug:${UBUNTU_VERSION}",
-    "quay.io/cybozu/ubuntu-debug:${TAG}",
-    "quay.io/cybozu/ubuntu-debug:${UBUNTU_VERSION}",
   ]
 }

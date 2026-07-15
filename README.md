@@ -14,9 +14,8 @@ Simply copies the upstream Ubuntu image without any modifications.
 
 A standard Ubuntu base image with common utilities and tools.
 
-**Registry URLs:**
+**Registry URL:**
 - <https://github.com/cybozu/ubuntu-base/pkgs/container/ubuntu>
-- <https://quay.io/repository/cybozu/ubuntu>
 
 **Package Documentation:**
 - [ubuntu:22.04 Packages](docs/ubuntu-22.04.md)
@@ -26,9 +25,8 @@ A standard Ubuntu base image with common utilities and tools.
 
 A development-focused Ubuntu image that includes build tools, compilers, and development libraries.
 
-**Registry URLs:**
+**Registry URL:**
 - <https://github.com/cybozu/ubuntu-base/pkgs/container/ubuntu-dev>
-- <https://quay.io/repository/cybozu/ubuntu-dev>
 
 **Package Documentation:**
 - [ubuntu-dev:22.04 Packages](docs/ubuntu-dev-22.04.md)
@@ -38,9 +36,8 @@ A development-focused Ubuntu image that includes build tools, compilers, and dev
 
 A comprehensive debugging and troubleshooting Ubuntu image with extensive debugging tools, network utilities, and diagnostic software.
 
-**Registry URLs:**
+**Registry URL:**
 - <https://github.com/cybozu/ubuntu-base/pkgs/container/ubuntu-debug>
-- <https://quay.io/repository/cybozu/ubuntu-debug>
 
 **Package Documentation:**
 - [ubuntu-debug:22.04 Packages](docs/ubuntu-debug-22.04.md)
