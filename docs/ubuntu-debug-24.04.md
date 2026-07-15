@@ -214,7 +214,7 @@
 | python3-certifi | 2023.11.17-1 | root certificates for validating SSL certs and verifying TLS hosts (python3) |
 | python3-chardet | 5.2.0+dfsg-1 | Universal Character Encoding Detector (Python3) |
 | python3-dateutil | 2.8.2-3ubuntu1 | powerful extensions to the standard Python 3 datetime module |
-| python3-idna | 3.6-2ubuntu0.1 | Python IDNA2008 (RFC 5891) handling (Python 3) |
+| python3-idna | 3.6-2ubuntu0.2 | Python IDNA2008 (RFC 5891) handling (Python 3) |
 | python3-magic | 2:0.4.27-3 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.12.3-0ubuntu2.1 | minimal subset of the Python language (default python3 version) |
 | python3-pkg-resources | 68.1.2-2ubuntu1.2 | Package Discovery and Resource Access using pkg_resources |
