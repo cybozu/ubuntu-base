@@ -31,21 +31,19 @@ runs:
 
           NEED_PUSH=false
 
-          for repo in ghcr.io quay.io; do
-            FOUND=$(./scripts/tag_exists "${repo}/cybozu/${image_name}" "${tag_name}")
-            case "$FOUND" in
-            true | false)
-              ;;
-            *)
-              echo "Error: unexpected tag_exists output for ${repo}/cybozu/${image_name}:${tag_name}: ${FOUND}" >&2
-              exit 1
-              ;;
-            esac
+          FOUND=$(./scripts/tag_exists "ghcr.io/cybozu/${image_name}" "${tag_name}")
+          case "$FOUND" in
+          true | false)
+            ;;
+          *)
+            echo "Error: unexpected tag_exists output for ghcr.io/cybozu/${image_name}:${tag_name}: ${FOUND}" >&2
+            exit 1
+            ;;
+          esac
 
-            if [[ "$FOUND" == "false" ]]; then
-              NEED_PUSH=true
-            fi
-          done
+          if [[ "$FOUND" == "false" ]]; then
+            NEED_PUSH=true
+          fi
 
           if [[ "$NEED_PUSH" == "true" ]]; then
             TARGETS+=("${image_name}")

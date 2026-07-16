@@ -47,11 +47,6 @@ ghcr.io)
         -H "Accept: ${ACCEPT}" \
         "https://ghcr.io/v2/${ORG}/${PACKAGE}/manifests/${TAG_ENC}"
     ;;
-quay.io)
-    manifest_exists \
-        -H "Accept: ${ACCEPT}" \
-        "https://quay.io/v2/${ORG}/${PACKAGE}/manifests/${TAG_ENC}"
-    ;;
 *)
     echo "Error: unsupported registry '${REGISTRY}'" >&2
     exit 1
