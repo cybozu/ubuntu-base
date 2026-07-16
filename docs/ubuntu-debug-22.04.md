@@ -235,7 +235,7 @@
 | python3-colorama | 0.4.4-1 | Cross-platform colored terminal text in Python - Python 3.x |
 | python3-dateutil | 2.8.1-6 | powerful extensions to the standard Python 3 datetime module |
 | python3-docutils | 0.17.1+dfsg-2 | text processing system for reStructuredText (implemented in Python 3) |
-| python3-idna | 3.3-1ubuntu0.1 | Python IDNA2008 (RFC 5891) handling (Python 3) |
+| python3-idna | 3.3-1ubuntu0.2 | Python IDNA2008 (RFC 5891) handling (Python 3) |
 | python3-jmespath | 0.10.0-1 | JSON Matching Expressions (Python 3) |
 | python3-magic | 2:0.4.24-2 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.10.6-1~22.04.1 | minimal subset of the Python language (default python3 version) |
