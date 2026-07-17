@@ -161,7 +161,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 6.8.0-134.134 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 6.8.0-136.136 | Linux Kernel Headers for development |
 | locales | 2.39-0ubuntu8.7 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
@@ -185,7 +185,7 @@
 | sed | 4.9-2ubuntu0.24.04.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
-| tar | 1.35+dfsg-3ubuntu0.2 | GNU version of the tar archiving utility |
+| tar | 1.35+dfsg-3ubuntu0.3 | GNU version of the tar archiving utility |
 | tzdata | 2026b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
