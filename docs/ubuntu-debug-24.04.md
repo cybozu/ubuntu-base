@@ -96,7 +96,7 @@
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-11 | General Purpose Mouse - shared library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.10 | GNU Next Generation profiler (runtime library) |
-| libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
+| libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (public-key cryptos) |
 | libibverbs1:amd64 | 50.0-2ubuntu0.2 | Library for direct userspace use of RDMA (InfiniBand/iWARP) |
 | libicu74:amd64 | 74.2-1ubuntu3.1 | International Components for Unicode |
@@ -108,10 +108,10 @@
 | libjansson4:amd64 | 2.14-2build2 | C library for encoding, decoding and manipulating JSON data |
 | libjq1:amd64 | 1.7.1-3ubuntu0.24.04.2 | lightweight and flexible command-line JSON processor - shared library |
 | libjson-c5:amd64 | 0.17-1build1 | JSON manipulation library - shared library |
-| libk5crypto3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Crypto Library |
+| libk5crypto3:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
-| libkrb5-3:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries |
-| libkrb5support0:amd64 | 1.20.1-6ubuntu2.6 | MIT Kerberos runtime libraries - Support library |
+| libkrb5-3:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries |
+| libkrb5support0:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - Support library |
 | libldap2:amd64 | 2.6.10+dfsg-0ubuntu0.24.04.1 | OpenLDAP libraries |
 | liblmdb0:amd64 | 0.9.31-1build1 | Lightning Memory-Mapped Database shared library |
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
@@ -235,7 +235,7 @@
 | strace | 6.8-0ubuntu2 | System call tracer |
 | sysstat | 12.6.1-2 | system performance tools for Linux |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
-| tar | 1.35+dfsg-3ubuntu0.3 | GNU version of the tar archiving utility |
+| tar | 1.35+dfsg-3ubuntu0.4 | GNU version of the tar archiving utility |
 | tcl-expect:amd64 | 5.45.4-3 | Automates interactive applications (Tcl package) |
 | tcl8.6 | 8.6.14+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - shell |
 | tcpdump | 4.99.4-3ubuntu4.24.04.1 | command-line network traffic analyzer |

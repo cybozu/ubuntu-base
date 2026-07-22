@@ -99,7 +99,7 @@
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.9 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-10build1 | General Purpose Mouse - shared library |
-| libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
+| libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.8 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6:amd64 | 3.7.3-1build2 | low level cryptographic library (public-key cryptos) |
 | libice6:amd64 | 2:1.0.10-1build2 | X11 Inter-Client Exchange library |
 | libicu70:amd64 | 70.1-2 | International Components for Unicode |
@@ -110,10 +110,10 @@
 | libipt2 | 2.0.5-1 | Intel Processor Trace Decoder Library |
 | libjq1:amd64 | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor - shared library |
 | libjson-c5:amd64 | 0.15-3~ubuntu1.22.04.2 | JSON manipulation library - shared library |
-| libk5crypto3:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - Crypto Library |
+| libk5crypto3:amd64 | 1.19.2-2ubuntu0.8 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.1-2ubuntu3 | Linux Key Management Utilities (library) |
-| libkrb5-3:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries |
-| libkrb5support0:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - Support library |
+| libkrb5-3:amd64 | 1.19.2-2ubuntu0.8 | MIT Kerberos runtime libraries |
+| libkrb5support0:amd64 | 1.19.2-2ubuntu0.8 | MIT Kerberos runtime libraries - Support library |
 | libldap-2.5-0:amd64 | 2.5.20+dfsg-0ubuntu0.22.04.1 | OpenLDAP libraries |
 | liblmdb0:amd64 | 0.9.24-1build2 | Lightning Memory-Mapped Database shared library |
 | liblz4-1:amd64 | 1.9.3-2build2 | Fast LZ compression algorithm library - runtime |
@@ -263,7 +263,7 @@
 | strace | 5.16-0ubuntu3 | System call tracer |
 | sysstat | 12.5.2-2ubuntu0.2 | system performance tools for Linux |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
-| tar | 1.34+dfsg-1ubuntu0.1.22.04.5 | GNU version of the tar archiving utility |
+| tar | 1.34+dfsg-1ubuntu0.1.22.04.6 | GNU version of the tar archiving utility |
 | tcl-expect:amd64 | 5.45.4-2build1 | Automates interactive applications (Tcl package) |
 | tcl8.6 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - shell |
 | tcpdump | 4.99.1-3ubuntu0.2 | command-line network traffic analyzer |
