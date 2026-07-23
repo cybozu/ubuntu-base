@@ -68,10 +68,10 @@
 | libnghttp2-14:amd64 | 1.59.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnpth0t64:amd64 | 1.6-3.1build1 | replacement for GNU Pth using system threads |
 | libp11-kit0:amd64 | 0.25.3-4ubuntu2.1 | library for loading and coordinating access to PKCS#11 modules - runtime |
-| libpam-modules:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM |
-| libpam-modules-bin | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM - helper binaries |
-| libpam-runtime | 1.5.3-5ubuntu5.5 | Runtime support for the PAM library |
-| libpam0g:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules library |
+| libpam-modules:amd64 | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules for PAM |
+| libpam-modules-bin | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules for PAM - helper binaries |
+| libpam-runtime | 1.5.3-5ubuntu5.6 | Runtime support for the PAM library |
+| libpam0g:amd64 | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules library |
 | libpcre2-8-0:amd64 | 10.42-4ubuntu2.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.2 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |

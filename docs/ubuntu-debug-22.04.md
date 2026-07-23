@@ -135,10 +135,10 @@
 | libnsl2:amd64 | 1.3.0-2build2 | Public client interface for NIS(YP) and NIS+ |
 | libonig5:amd64 | 6.9.7.1-2build1 | regular expressions library |
 | libp11-kit0:amd64 | 0.24.0-6build1 | library for loading and coordinating access to PKCS#11 modules - runtime |
-| libpam-modules:amd64 | 1.4.0-11ubuntu2.6 | Pluggable Authentication Modules for PAM |
-| libpam-modules-bin | 1.4.0-11ubuntu2.6 | Pluggable Authentication Modules for PAM - helper binaries |
-| libpam-runtime | 1.4.0-11ubuntu2.6 | Runtime support for the PAM library |
-| libpam0g:amd64 | 1.4.0-11ubuntu2.6 | Pluggable Authentication Modules library |
+| libpam-modules:amd64 | 1.4.0-11ubuntu2.7 | Pluggable Authentication Modules for PAM |
+| libpam-modules-bin | 1.4.0-11ubuntu2.7 | Pluggable Authentication Modules for PAM - helper binaries |
+| libpam-runtime | 1.4.0-11ubuntu2.7 | Runtime support for the PAM library |
+| libpam0g:amd64 | 1.4.0-11ubuntu2.7 | Pluggable Authentication Modules library |
 | libpcap0.8:amd64 | 1.10.1-4ubuntu1.22.04.1 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.39-3ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libpcre3:amd64 | 2:8.39-13ubuntu0.22.04.1 | Old Perl 5 Compatible Regular Expression Library - runtime files |
@@ -196,7 +196,7 @@
 | libxext6:amd64 | 2:1.3.4-1build1 | X11 miscellaneous extension library |
 | libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.12 | GNOME XML library |
 | libxmu6:amd64 | 2:1.1.3-3 | X11 miscellaneous utility library |
-| libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.2 | X11 pixmap library |
+| libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.3 | X11 pixmap library |
 | libxt6:amd64 | 1:1.2.1-1 | X11 toolkit intrinsics library |
 | libxtables12:amd64 | 1.8.7-1ubuntu5.2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
