@@ -51,13 +51,13 @@
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.9 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
-| libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
+| libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.8 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6:amd64 | 3.7.3-1build2 | low level cryptographic library (public-key cryptos) |
 | libidn2-0:amd64 | 2.3.2-2build1 | Internationalized domain names (IDNA2008/TR46) library |
-| libk5crypto3:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - Crypto Library |
+| libk5crypto3:amd64 | 1.19.2-2ubuntu0.8 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.1-2ubuntu3 | Linux Key Management Utilities (library) |
-| libkrb5-3:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries |
-| libkrb5support0:amd64 | 1.19.2-2ubuntu0.7 | MIT Kerberos runtime libraries - Support library |
+| libkrb5-3:amd64 | 1.19.2-2ubuntu0.8 | MIT Kerberos runtime libraries |
+| libkrb5support0:amd64 | 1.19.2-2ubuntu0.8 | MIT Kerberos runtime libraries - Support library |
 | libldap-2.5-0:amd64 | 2.5.20+dfsg-0ubuntu0.22.04.1 | OpenLDAP libraries |
 | liblz4-1:amd64 | 1.9.3-2build2 | Fast LZ compression algorithm library - runtime |
 | liblzma5:amd64 | 5.2.5-2ubuntu1.1 | XZ-format compression library |
@@ -117,7 +117,7 @@
 | sed | 4.8-1ubuntu2.1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
-| tar | 1.34+dfsg-1ubuntu0.1.22.04.5 | GNU version of the tar archiving utility |
+| tar | 1.34+dfsg-1ubuntu0.1.22.04.6 | GNU version of the tar archiving utility |
 | tzdata | 2026b-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
