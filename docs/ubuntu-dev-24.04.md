@@ -124,10 +124,10 @@
 | libnpth0t64:amd64 | 1.6-3.1build1 | replacement for GNU Pth using system threads |
 | libonig5:amd64 | 6.9.9-1build1 | regular expressions library |
 | libp11-kit0:amd64 | 0.25.3-4ubuntu2.1 | library for loading and coordinating access to PKCS#11 modules - runtime |
-| libpam-modules:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM |
-| libpam-modules-bin | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules for PAM - helper binaries |
-| libpam-runtime | 1.5.3-5ubuntu5.5 | Runtime support for the PAM library |
-| libpam0g:amd64 | 1.5.3-5ubuntu5.5 | Pluggable Authentication Modules library |
+| libpam-modules:amd64 | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules for PAM |
+| libpam-modules-bin | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules for PAM - helper binaries |
+| libpam-runtime | 1.5.3-5ubuntu5.6 | Runtime support for the PAM library |
+| libpam0g:amd64 | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules library |
 | libpcre2-8-0:amd64 | 10.42-4ubuntu2.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.3 | shared Perl library |
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.2 | library for accessing process information from /proc |
