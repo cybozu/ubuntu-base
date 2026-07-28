@@ -35,8 +35,8 @@
 | libblkid1:amd64 | 2.39.3-9ubuntu6.5 | block device ID library |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.39-0ubuntu8.7 | GNU C Library: Binaries |
-| libc6:amd64 | 2.39-0ubuntu8.7 | GNU C Library: Shared libraries |
+| libc-bin | 2.39-0ubuntu8.8 | GNU C Library: Binaries |
+| libc6:amd64 | 2.39-0ubuntu8.8 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.8.4-2build2 | alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.66-5ubuntu2.4 | POSIX 1003.1e capabilities (library) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
@@ -97,7 +97,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| locales | 2.39-0ubuntu8.7 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.39-0ubuntu8.8 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
 | mawk | 1.3.4.20240123-1build1 | Pattern scanning and text processing language |
