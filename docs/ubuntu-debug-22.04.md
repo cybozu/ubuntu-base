@@ -29,7 +29,7 @@
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
 | diffutils | 1:3.8-0ubuntu2 | File comparison utilities |
-| distro-info-data | 0.52ubuntu0.12 | information about the distributions' releases (data files) |
+| distro-info-data | 0.72-0ubuntu0.22.04.1 | information about the distributions' releases (data files) |
 | docutils-common | 0.17.1+dfsg-2 | text processing system for reStructuredText - common data |
 | dpkg | 1.21.1ubuntu2.6 | Debian package management system |
 | e2fsprogs | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system utilities |
@@ -269,7 +269,7 @@
 | tcpdump | 4.99.1-3ubuntu0.2 | command-line network traffic analyzer |
 | telnet | 0.17-44build1 | basic telnet client |
 | traceroute | 1:2.1.0-2 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2026b-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026c-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |

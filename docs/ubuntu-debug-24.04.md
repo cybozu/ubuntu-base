@@ -241,7 +241,7 @@
 | tcpdump | 4.99.4-3ubuntu4.24.04.1 | command-line network traffic analyzer |
 | telnet | 0.17+2.5-3ubuntu4.2 | transitional dummy package for inetutils-telnet default switch |
 | traceroute | 1:2.1.5-1 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2026b-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026c-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043+nmu1 | Update Configuration File(s): preserve user changes to config files |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
