@@ -167,7 +167,7 @@
 | libsqlite3-0:amd64 | 3.45.1-1ubuntu2.7 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.4 | tiny C SSH library (OpenSSL flavor) |
-| libssl3t64:amd64 | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3t64:amd64 | 3.0.13-0ubuntu3.12 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.16 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
@@ -204,7 +204,7 @@
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
 | openssh-client | 1:9.6p1-3ubuntu13.18 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.13-0ubuntu3.11 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.13-0ubuntu3.12 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl | 5.38.2-3.2ubuntu0.3 | Larry Wall's Practical Extraction and Report Language |
 | perl-base | 5.38.2-3.2ubuntu0.3 | minimal Perl system |
@@ -223,7 +223,7 @@
 | python3-urllib3 | 2.0.7-1ubuntu0.7 | HTTP library with thread-safe connection pooling for Python3 |
 | python3.12 | 3.12.3-1ubuntu0.15 | Interactive high-level object-oriented language (version 3.12) |
 | python3.12-minimal | 3.12.3-1ubuntu0.15 | Minimal subset of the Python language (version 3.12) |
-| rclone | 1.60.1+dfsg-3ubuntu0.24.04.5 | rsync for commercial cloud storage |
+| rclone | 1.60.1+dfsg-3ubuntu0.24.04.6 | rsync for commercial cloud storage |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-1ubuntu1.5 | fast, versatile, remote (and local) file-copying tool |
 | s3cmd | 2.4.0-2 | command-line Amazon S3 client |
