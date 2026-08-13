@@ -51,13 +51,13 @@
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
 | libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.6 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
-| libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
+| libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.8 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (public-key cryptos) |
 | libidn2-0:amd64 | 2.3.7-2build1.1 | Internationalized domain names (IDNA2008/TR46) library |
-| libk5crypto3:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - Crypto Library |
+| libk5crypto3:amd64 | 1.20.1-6ubuntu2.8 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
-| libkrb5-3:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries |
-| libkrb5support0:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - Support library |
+| libkrb5-3:amd64 | 1.20.1-6ubuntu2.8 | MIT Kerberos runtime libraries |
+| libkrb5support0:amd64 | 1.20.1-6ubuntu2.8 | MIT Kerberos runtime libraries - Support library |
 | libldap2:amd64 | 2.6.10+dfsg-0ubuntu0.24.04.1 | OpenLDAP libraries |
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
 | liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression library |
