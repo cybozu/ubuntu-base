@@ -96,7 +96,7 @@
 | libgomp1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC OpenMP (GOMP) support library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
 | libgprofng0:amd64 | 2.42-4ubuntu2.10 | GNU Next Generation profiler (runtime library) |
-| libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
+| libgssapi-krb5-2:amd64 | 1.20.1-6ubuntu2.8 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.9.1-2.2build1.1 | low level cryptographic library (public-key cryptos) |
 | libhwasan0:amd64 | 14.2.0-4ubuntu2~24.04.1 | AddressSanitizer -- a fast memory error detector |
 | libidn2-0:amd64 | 2.3.7-2build1.1 | Internationalized domain names (IDNA2008/TR46) library |
@@ -104,10 +104,10 @@
 | libitm1:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Transactional Memory Library |
 | libjansson4:amd64 | 2.14-2build2 | C library for encoding, decoding and manipulating JSON data |
 | libjq1:amd64 | 1.7.1-3ubuntu0.24.04.2 | lightweight and flexible command-line JSON processor - shared library |
-| libk5crypto3:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - Crypto Library |
+| libk5crypto3:amd64 | 1.20.1-6ubuntu2.8 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-3build1 | Linux Key Management Utilities (library) |
-| libkrb5-3:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries |
-| libkrb5support0:amd64 | 1.20.1-6ubuntu2.7 | MIT Kerberos runtime libraries - Support library |
+| libkrb5-3:amd64 | 1.20.1-6ubuntu2.8 | MIT Kerberos runtime libraries |
+| libkrb5support0:amd64 | 1.20.1-6ubuntu2.8 | MIT Kerberos runtime libraries - Support library |
 | libldap2:amd64 | 2.6.10+dfsg-0ubuntu0.24.04.1 | OpenLDAP libraries |
 | liblsan0:amd64 | 14.2.0-4ubuntu2~24.04.1 | LeakSanitizer -- a memory leak detector (runtime) |
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
