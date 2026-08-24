@@ -23,7 +23,7 @@
 | ca-certificates | 20260601~24.04.1 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
 | coreutils | 9.4-3ubuntu6.2 | GNU core utilities |
-| curl | 8.5.0-2ubuntu10.12 | command line tool for transferring data with URL syntax |
+| curl | 8.5.0-2ubuntu10.13 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
@@ -72,8 +72,8 @@
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.42-4ubuntu2.10 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.42-4ubuntu2.10 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.12 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4t64:amd64 | 8.5.0-2ubuntu10.12 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.13 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4t64:amd64 | 8.5.0-2ubuntu10.13 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdbus-1-3:amd64 | 1.14.10-4ubuntu4.1 | simple interprocess messaging system (library) |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
