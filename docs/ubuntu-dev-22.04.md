@@ -19,7 +19,7 @@
 | coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
 | cpp | 4:11.2.0-1ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C preprocessor |
-| curl | 7.81.0-1ubuntu1.26 | command line tool for transferring data with URL syntax |
+| curl | 7.81.0-1ubuntu1.27 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
@@ -68,8 +68,8 @@
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.26 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4:amd64 | 7.81.0-1ubuntu1.26 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.27 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4:amd64 | 7.81.0-1ubuntu1.27 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
 | libdpkg-perl | 1.21.1ubuntu2.6 | Dpkg perl modules |
@@ -121,7 +121,7 @@
 | libpam0g:amd64 | 1.4.0-11ubuntu2.7 | Pluggable Authentication Modules library |
 | libpcre2-8-0:amd64 | 10.39-3ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libpcre3:amd64 | 2:8.39-13ubuntu0.22.04.1 | Old Perl 5 Compatible Regular Expression Library - runtime files |
-| libperl5.34:amd64 | 5.34.0-3ubuntu1.7 | shared Perl library |
+| libperl5.34:amd64 | 5.34.0-3ubuntu1.8 | shared Perl library |
 | libprocps8:amd64 | 2:3.3.17-6ubuntu2.1 | library for accessing process information from /proc |
 | libpsl5:amd64 | 0.21.0-1.2build2 | Library for Public Suffix List (shared libraries) |
 | libquadmath0:amd64 | 12.3.0-1ubuntu1~22.04.3 | GCC Quad-Precision Math Library |
@@ -138,8 +138,8 @@
 | libsmartcols1:amd64 | 2.37.2-4ubuntu3.5 | smart column output alignment library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
-| libssl-dev:amd64 | 3.0.2-0ubuntu1.26 | Secure Sockets Layer toolkit - development files |
-| libssl3:amd64 | 3.0.2-0ubuntu1.26 | Secure Sockets Layer toolkit - shared libraries |
+| libssl-dev:amd64 | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - development files |
+| libssl3:amd64 | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.22 | systemd utility library |
@@ -168,12 +168,12 @@
 | ncurses-bin | 6.3-2ubuntu0.2 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.16 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.2-0ubuntu1.26 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | patch | 2.7.6-7build2 | Apply a diff file to an original |
-| perl | 5.34.0-3ubuntu1.7 | Larry Wall's Practical Extraction and Report Language |
-| perl-base | 5.34.0-3ubuntu1.7 | minimal Perl system |
-| perl-modules-5.34 | 5.34.0-3ubuntu1.7 | Core Perl modules |
+| perl | 5.34.0-3ubuntu1.8 | Larry Wall's Practical Extraction and Report Language |
+| perl-base | 5.34.0-3ubuntu1.8 | minimal Perl system |
+| perl-modules-5.34 | 5.34.0-3ubuntu1.8 | Core Perl modules |
 | procps | 2:3.3.17-6ubuntu2.1 | /proc file system utilities |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rpcsvc-proto | 1.4.2-0ubuntu6 | RPC protocol compiler and definitions |
