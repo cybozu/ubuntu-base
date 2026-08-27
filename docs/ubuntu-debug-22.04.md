@@ -24,7 +24,7 @@
 | ca-certificates | 20260601~22.04.1 | Common CA certificates |
 | conntrack | 1:1.4.6-2build2 | Program to modify the conntrack tables |
 | coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
-| curl | 7.81.0-1ubuntu1.26 | command line tool for transferring data with URL syntax |
+| curl | 7.81.0-1ubuntu1.27 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
@@ -76,8 +76,8 @@
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.26 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4:amd64 | 7.81.0-1ubuntu1.26 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.27 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4:amd64 | 7.81.0-1ubuntu1.27 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdbus-1-3:amd64 | 1.12.20-2ubuntu4.1 | simple interprocess messaging system (library) |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
@@ -142,14 +142,14 @@
 | libpcap0.8:amd64 | 1.10.1-4ubuntu1.22.04.1 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.39-3ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libpcre3:amd64 | 2:8.39-13ubuntu0.22.04.1 | Old Perl 5 Compatible Regular Expression Library - runtime files |
-| libperl5.34:amd64 | 5.34.0-3ubuntu1.7 | shared Perl library |
+| libperl5.34:amd64 | 5.34.0-3ubuntu1.8 | shared Perl library |
 | libpopt0:amd64 | 1.18-3build1 | lib for parsing cmdline parameters |
 | libprocps8:amd64 | 2:3.3.17-6ubuntu2.1 | library for accessing process information from /proc |
 | libpsl5:amd64 | 0.21.0-1.2build2 | Library for Public Suffix List (shared libraries) |
 | libpython3-stdlib:amd64 | 3.10.6-1~22.04.1 | interactive high-level object-oriented language (default python3 version) |
-| libpython3.10:amd64 | 3.10.12-1~22.04.16 | Shared Python runtime library (version 3.10) |
-| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.16 | Minimal subset of the Python language (version 3.10) |
-| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.16 | Interactive high-level object-oriented language (standard library, version 3.10) |
+| libpython3.10:amd64 | 3.10.12-1~22.04.17 | Shared Python runtime library (version 3.10) |
+| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.17 | Minimal subset of the Python language (version 3.10) |
+| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.17 | Interactive high-level object-oriented language (standard library, version 3.10) |
 | libreadline8:amd64 | 8.1.2-1 | GNU readline and history libraries, run-time libraries |
 | librtmp1:amd64 | 2.4+20151223.gitfa8646d.1-2build4 | toolkit for RTMP streams (shared library) |
 | libsasl2-2:amd64 | 2.1.27+dfsg2-3ubuntu1.2 | Cyrus SASL - authentication abstraction library |
@@ -170,7 +170,7 @@
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.7 | SQLite 3 shared library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
-| libssl3:amd64 | 3.0.2-0ubuntu1.26 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3:amd64 | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.22 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
@@ -222,11 +222,11 @@
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.16 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.2-0ubuntu1.26 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
-| perl | 5.34.0-3ubuntu1.7 | Larry Wall's Practical Extraction and Report Language |
-| perl-base | 5.34.0-3ubuntu1.7 | minimal Perl system |
-| perl-modules-5.34 | 5.34.0-3ubuntu1.7 | Core Perl modules |
+| perl | 5.34.0-3ubuntu1.8 | Larry Wall's Practical Extraction and Report Language |
+| perl-base | 5.34.0-3ubuntu1.8 | minimal Perl system |
+| perl-modules-5.34 | 5.34.0-3ubuntu1.8 | Core Perl modules |
 | procps | 2:3.3.17-6ubuntu2.1 | /proc file system utilities |
 | python3 | 3.10.6-1~22.04.1 | interactive high-level object-oriented language (default python3 version) |
 | python3-botocore | 1.23.34+repack-1 | Low-level, data-driven core of boto 3 (Python 3) |
@@ -248,8 +248,8 @@
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
 | python3-urllib3 | 1.26.5-1~exp1ubuntu0.7 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
-| python3.10 | 3.10.12-1~22.04.16 | Interactive high-level object-oriented language (version 3.10) |
-| python3.10-minimal | 3.10.12-1~22.04.16 | Minimal subset of the Python language (version 3.10) |
+| python3.10 | 3.10.12-1~22.04.17 | Interactive high-level object-oriented language (version 3.10) |
+| python3.10-minimal | 3.10.12-1~22.04.17 | Minimal subset of the Python language (version 3.10) |
 | rclone | 1.53.3-4ubuntu1.22.04.5 | rsync for commercial cloud storage |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-0ubuntu0.22.04.7 | fast, versatile, remote (and local) file-copying tool |
@@ -274,12 +274,12 @@
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
-| vim | 2:8.2.3995-1ubuntu2.35 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:8.2.3995-1ubuntu2.35 | Vi IMproved - Common files |
-| vim-runtime | 2:8.2.3995-1ubuntu2.35 | Vi IMproved - Runtime files |
+| vim | 2:8.2.3995-1ubuntu2.36 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:8.2.3995-1ubuntu2.36 | Vi IMproved - Common files |
+| vim-runtime | 2:8.2.3995-1ubuntu2.36 | Vi IMproved - Runtime files |
 | x11-common | 1:7.7+23ubuntu2 | X Window System (X.Org) infrastructure |
 | xml-core | 0.18+nmu1 | XML infrastructure and XML catalog file support |
-| xxd | 2:8.2.3995-1ubuntu2.35 | tool to make (or reverse) a hex dump |
+| xxd | 2:8.2.3995-1ubuntu2.36 | tool to make (or reverse) a hex dump |
 | xz-utils | 5.2.5-2ubuntu1.1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
