@@ -134,11 +134,11 @@
 | libnghttp2-14:amd64 | 1.43.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnsl2:amd64 | 1.3.0-2build2 | Public client interface for NIS(YP) and NIS+ |
 | libonig5:amd64 | 6.9.7.1-2build1 | regular expressions library |
-| libp11-kit0:amd64 | 0.24.0-6build1 | library for loading and coordinating access to PKCS#11 modules - runtime |
-| libpam-modules:amd64 | 1.4.0-11ubuntu2.7 | Pluggable Authentication Modules for PAM |
-| libpam-modules-bin | 1.4.0-11ubuntu2.7 | Pluggable Authentication Modules for PAM - helper binaries |
-| libpam-runtime | 1.4.0-11ubuntu2.7 | Runtime support for the PAM library |
-| libpam0g:amd64 | 1.4.0-11ubuntu2.7 | Pluggable Authentication Modules library |
+| libp11-kit0:amd64 | 0.24.0-6ubuntu0.1 | library for loading and coordinating access to PKCS#11 modules - runtime |
+| libpam-modules:amd64 | 1.4.0-11ubuntu2.8 | Pluggable Authentication Modules for PAM |
+| libpam-modules-bin | 1.4.0-11ubuntu2.8 | Pluggable Authentication Modules for PAM - helper binaries |
+| libpam-runtime | 1.4.0-11ubuntu2.8 | Runtime support for the PAM library |
+| libpam0g:amd64 | 1.4.0-11ubuntu2.8 | Pluggable Authentication Modules library |
 | libpcap0.8:amd64 | 1.10.1-4ubuntu1.22.04.1 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.39-3ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libpcre3:amd64 | 2:8.39-13ubuntu0.22.04.1 | Old Perl 5 Compatible Regular Expression Library - runtime files |
