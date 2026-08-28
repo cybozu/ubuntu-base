@@ -123,13 +123,13 @@
 | libnghttp2-14:amd64 | 1.59.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnpth0t64:amd64 | 1.6-3.1build1 | replacement for GNU Pth using system threads |
 | libonig5:amd64 | 6.9.9-1build1 | regular expressions library |
-| libp11-kit0:amd64 | 0.25.3-4ubuntu2.1 | library for loading and coordinating access to PKCS#11 modules - runtime |
-| libpam-modules:amd64 | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules for PAM |
-| libpam-modules-bin | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules for PAM - helper binaries |
-| libpam-runtime | 1.5.3-5ubuntu5.6 | Runtime support for the PAM library |
-| libpam0g:amd64 | 1.5.3-5ubuntu5.6 | Pluggable Authentication Modules library |
+| libp11-kit0:amd64 | 0.25.3-4ubuntu2.2 | library for loading and coordinating access to PKCS#11 modules - runtime |
+| libpam-modules:amd64 | 1.5.3-5ubuntu5.7 | Pluggable Authentication Modules for PAM |
+| libpam-modules-bin | 1.5.3-5ubuntu5.7 | Pluggable Authentication Modules for PAM - helper binaries |
+| libpam-runtime | 1.5.3-5ubuntu5.7 | Runtime support for the PAM library |
+| libpam0g:amd64 | 1.5.3-5ubuntu5.7 | Pluggable Authentication Modules library |
 | libpcre2-8-0:amd64 | 10.42-4ubuntu2.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
-| libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.3 | shared Perl library |
+| libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.4 | shared Perl library |
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.3 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |
 | libquadmath0:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC Quad-Precision Math Library |
@@ -176,9 +176,9 @@
 | openssl | 3.0.13-0ubuntu3.15 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | patch | 2.7.6-7build3 | Apply a diff file to an original |
-| perl | 5.38.2-3.2ubuntu0.3 | Larry Wall's Practical Extraction and Report Language |
-| perl-base | 5.38.2-3.2ubuntu0.3 | minimal Perl system |
-| perl-modules-5.38 | 5.38.2-3.2ubuntu0.3 | Core Perl modules |
+| perl | 5.38.2-3.2ubuntu0.4 | Larry Wall's Practical Extraction and Report Language |
+| perl-base | 5.38.2-3.2ubuntu0.4 | minimal Perl system |
+| perl-modules-5.38 | 5.38.2-3.2ubuntu0.4 | Core Perl modules |
 | procps | 2:4.0.4-4ubuntu3.3 | /proc file system utilities |
 | readline-common | 8.2-4build1 | GNU readline and history libraries, common files |
 | rpcsvc-proto | 1.4.2-0ubuntu7 | RPC protocol compiler and definitions |
