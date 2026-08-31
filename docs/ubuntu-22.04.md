@@ -9,14 +9,14 @@
 | base-files | 12ubuntu4.7 | Debian base system miscellaneous files |
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
-| bsdutils | 1:2.37.2-4ubuntu3.5 | basic utilities from 4.4BSD-Lite |
+| bsdutils | 1:2.37.2-4ubuntu3.6 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20260601~22.04.1 | Common CA certificates |
-| coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
+| coreutils | 8.32-4.1ubuntu1.4 | GNU core utilities |
 | curl | 7.81.0-1ubuntu1.27 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
-| diffutils | 1:3.8-0ubuntu2 | File comparison utilities |
+| diffutils | 1:3.8-0ubuntu2.1 | File comparison utilities |
 | dpkg | 1.21.1ubuntu2.6 | Debian package management system |
 | e2fsprogs | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system utilities |
 | findutils | 4.8.0-1ubuntu3 | utilities for finding files--find, xargs |
@@ -29,12 +29,12 @@
 | init-system-helpers | 1.62 | helper tools for all init systems |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
 | libapt-pkg6.0:amd64 | 2.4.14 | package management runtime library |
-| libattr1:amd64 | 1:2.5.1-1build1 | extended attribute handling - shared library |
+| libattr1:amd64 | 1:2.5.1-1ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.0.7-1build1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.0.7-1build1 | Dynamic library for security auditing |
-| libblkid1:amd64 | 2.37.2-4ubuntu3.5 | block device ID library |
+| libblkid1:amd64 | 2.37.2-4ubuntu3.6 | block device ID library |
 | libbrotli1:amd64 | 1.0.9-2build6 | library implementing brotli encoder and decoder (shared libraries) |
-| libbz2-1.0:amd64 | 1.0.8-5build1 | high-quality block-sorting file compressor library - runtime |
+| libbz2-1.0:amd64 | 1.0.8-5ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
 | libc-bin | 2.35-0ubuntu3.14 | GNU C Library: Binaries |
 | libc6:amd64 | 2.35-0ubuntu3.14 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.7.9-2.2build3 | An alternate POSIX capabilities library |
@@ -61,7 +61,7 @@
 | libldap-2.5-0:amd64 | 2.5.20+dfsg-0ubuntu0.22.04.1 | OpenLDAP libraries |
 | liblz4-1:amd64 | 1.9.3-2build2 | Fast LZ compression algorithm library - runtime |
 | liblzma5:amd64 | 5.2.5-2ubuntu1.1 | XZ-format compression library |
-| libmount1:amd64 | 2.37.2-4ubuntu3.5 | device mounting library |
+| libmount1:amd64 | 2.37.2-4ubuntu3.6 | device mounting library |
 | libncurses6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling |
 | libncursesw6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling (wide character support) |
 | libnettle8:amd64 | 3.7.3-1build2 | low level cryptographic library (symmetric and one-way cryptos) |
@@ -85,9 +85,9 @@
 | libsemanage-common | 3.3-1build2 | Common files for SELinux policy management libraries |
 | libsemanage2:amd64 | 3.3-1build2 | SELinux policy management library |
 | libsepol2:amd64 | 3.3-1build1 | SELinux library for manipulating binary security policies |
-| libsmartcols1:amd64 | 2.37.2-4ubuntu3.5 | smart column output alignment library |
+| libsmartcols1:amd64 | 2.37.2-4ubuntu3.6 | smart column output alignment library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
-| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.8 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.22 | systemd utility library |
@@ -97,7 +97,7 @@
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libudev1:amd64 | 249.11-0ubuntu3.22 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
-| libuuid1:amd64 | 2.37.2-4ubuntu3.5 | Universally Unique ID library |
+| libuuid1:amd64 | 2.37.2-4ubuntu3.6 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
 | libzstd1:amd64 | 1.4.8+dfsg-3build1 | fast lossless compression algorithm |
 | locales | 2.35-0ubuntu3.14 | GNU C Library: National Language (locale) data [support] |
@@ -105,7 +105,7 @@
 | logsave | 1.46.5-2ubuntu1.2 | save the output of a command in a log file |
 | lsb-base | 11.1.0ubuntu4 | Linux Standard Base init script functionality |
 | mawk | 1.3.4.20200120-3 | Pattern scanning and text processing language |
-| mount | 2.37.2-4ubuntu3.5 | tools for mounting and manipulating filesystems |
+| mount | 2.37.2-4ubuntu3.6 | tools for mounting and manipulating filesystems |
 | ncurses-base | 6.3-2ubuntu0.2 | basic terminal type definitions |
 | ncurses-bin | 6.3-2ubuntu0.2 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
@@ -121,5 +121,5 @@
 | tzdata | 2026c-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
-| util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
+| util-linux | 2.37.2-4ubuntu3.6 | miscellaneous system utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
