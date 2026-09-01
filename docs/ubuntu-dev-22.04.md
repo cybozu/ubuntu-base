@@ -81,7 +81,7 @@
 | libfido2-1:amd64 | 1.10.0-1 | library for generating and verifying FIDO 2.0 objects |
 | libgcc-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.3 | GCC support library (development files) |
 | libgcc-s1:amd64 | 12.3.0-1ubuntu1~22.04.3 | GCC support library |
-| libgcrypt20:amd64 | 1.9.4-3ubuntu3.2 | LGPL Crypto library - runtime library |
+| libgcrypt20:amd64 | 1.9.4-3ubuntu3.3 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
@@ -106,9 +106,9 @@
 | libmount1:amd64 | 2.37.2-4ubuntu3.6 | device mounting library |
 | libmpc3:amd64 | 1.2.1-2build1 | multiple precision complex floating-point library |
 | libmpfr6:amd64 | 4.1.0-3build3 | multiple precision floating-point computation |
-| libncurses-dev:amd64 | 6.3-2ubuntu0.2 | developer's libraries for ncurses |
-| libncurses6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling |
-| libncursesw6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling (wide character support) |
+| libncurses-dev:amd64 | 6.3-2ubuntu0.3 | developer's libraries for ncurses |
+| libncurses6:amd64 | 6.3-2ubuntu0.3 | shared libraries for terminal handling |
+| libncursesw6:amd64 | 6.3-2ubuntu0.3 | shared libraries for terminal handling (wide character support) |
 | libnettle8:amd64 | 3.7.3-1build2 | low level cryptographic library (symmetric and one-way cryptos) |
 | libnghttp2-14:amd64 | 1.43.0-1ubuntu0.4 | library implementing HTTP/2 protocol (shared library) |
 | libnsl-dev:amd64 | 1.3.0-2build2 | libnsl development files |
@@ -144,7 +144,7 @@
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.22 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
-| libtinfo6:amd64 | 6.3-2ubuntu0.2 | shared low-level terminfo library for terminal handling |
+| libtinfo6:amd64 | 6.3-2ubuntu0.3 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc-dev:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library - development files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
@@ -164,8 +164,8 @@
 | make | 4.3-4.1build1 | utility for directing compilation |
 | mawk | 1.3.4.20200120-3 | Pattern scanning and text processing language |
 | mount | 2.37.2-4ubuntu3.6 | tools for mounting and manipulating filesystems |
-| ncurses-base | 6.3-2ubuntu0.2 | basic terminal type definitions |
-| ncurses-bin | 6.3-2ubuntu0.2 | terminal-related programs and man pages |
+| ncurses-base | 6.3-2ubuntu0.3 | basic terminal type definitions |
+| ncurses-bin | 6.3-2ubuntu0.3 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.16 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - cryptographic utility |
