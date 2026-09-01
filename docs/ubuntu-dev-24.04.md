@@ -12,11 +12,11 @@
 | binutils | 2.42-4ubuntu2.10 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.42-4ubuntu2.10 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.42-4ubuntu2.10 | GNU binary utilities, for x86-64-linux-gnu target |
-| bsdutils | 1:2.39.3-9ubuntu6.5 | basic utilities from 4.4BSD-Lite |
+| bsdutils | 1:2.39.3-9ubuntu6.6 | basic utilities from 4.4BSD-Lite |
 | build-essential | 12.10ubuntu1 | Informational list of build-essential packages |
-| bzip2 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor - utilities |
+| bzip2 | 1.0.8-5.1ubuntu0.1 | high-quality block-sorting file compressor - utilities |
 | ca-certificates | 20260601~24.04.1 | Common CA certificates |
-| coreutils | 9.4-3ubuntu6.2 | GNU core utilities |
+| coreutils | 9.4-3ubuntu6.3 | GNU core utilities |
 | cpp | 4:13.2.0-7ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-13 | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor |
 | cpp-13-x86-64-linux-gnu | 13.3.0-6ubuntu2~24.04.1 | GNU C preprocessor for x86_64-linux-gnu |
@@ -25,7 +25,7 @@
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
-| diffutils | 1:3.10-1build1 | File comparison utilities |
+| diffutils | 1:3.10-1ubuntu0.1 | File comparison utilities |
 | dpkg | 1.22.6ubuntu6.6 | Debian package management system |
 | dpkg-dev | 1.22.6ubuntu6.6 | Debian package development tools |
 | e2fsprogs | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system utilities |
@@ -54,14 +54,14 @@
 | libasan8:amd64 | 14.2.0-4ubuntu2~24.04.1 | AddressSanitizer -- a fast memory error detector |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libatomic1:amd64 | 14.2.0-4ubuntu2~24.04.1 | support library providing __atomic built-in functions |
-| libattr1:amd64 | 1:2.5.2-1build1.1 | extended attribute handling - shared library |
+| libattr1:amd64 | 1:2.5.2-1ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
 | libbinutils:amd64 | 2.42-4ubuntu2.10 | GNU binary utilities (private shared library) |
-| libblkid1:amd64 | 2.39.3-9ubuntu6.5 | block device ID library |
+| libblkid1:amd64 | 2.39.3-9ubuntu6.6 | block device ID library |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.1-1build1.1 | utility functions from BSD systems - shared library |
-| libbz2-1.0:amd64 | 1.0.8-5.1build0.1 | high-quality block-sorting file compressor library - runtime |
+| libbz2-1.0:amd64 | 1.0.8-5.1ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
 | libc-bin | 2.39-0ubuntu8.8 | GNU C Library: Binaries |
 | libc-dev-bin | 2.39-0ubuntu8.8 | GNU C Library: Development binaries |
 | libc6:amd64 | 2.39-0ubuntu8.8 | GNU C Library: Shared libraries |
@@ -113,7 +113,7 @@
 | liblz4-1:amd64 | 1.9.4-1build1.1 | Fast LZ compression algorithm library - runtime |
 | liblzma5:amd64 | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression library |
 | libmd0:amd64 | 1.1.0-2build1.1 | message digest functions from BSD systems - shared library |
-| libmount1:amd64 | 2.39.3-9ubuntu6.5 | device mounting library |
+| libmount1:amd64 | 2.39.3-9ubuntu6.6 | device mounting library |
 | libmpc3:amd64 | 1.3.1-1build1.1 | multiple precision complex floating-point library |
 | libmpfr6:amd64 | 4.2.1-1build1.1 | multiple precision floating-point computation |
 | libncurses-dev:amd64 | 6.4+20240113-1ubuntu2.1 | developer's libraries for ncurses |
@@ -144,9 +144,9 @@
 | libsemanage2:amd64 | 3.5-1build5 | SELinux policy management library |
 | libsepol2:amd64 | 3.5-2build1 | SELinux library for manipulating binary security policies |
 | libsframe1:amd64 | 2.42-4ubuntu2.10 | Library to handle the SFrame format (runtime library) |
-| libsmartcols1:amd64 | 2.39.3-9ubuntu6.5 | smart column output alignment library |
+| libsmartcols1:amd64 | 2.39.3-9ubuntu6.6 | smart column output alignment library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
-| libssh-4:amd64 | 0.10.6-2ubuntu0.4 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.10.6-2ubuntu0.5 | tiny C SSH library (OpenSSL flavor) |
 | libssl-dev:amd64 | 3.0.13-0ubuntu3.15 | Secure Sockets Layer toolkit - development files |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.15 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04.1 | GNU Standard C++ Library v3 (development files) |
@@ -158,7 +158,7 @@
 | libubsan1:amd64 | 14.2.0-4ubuntu2~24.04.1 | UBSan -- undefined behaviour sanitizer (runtime) |
 | libudev1:amd64 | 255.4-1ubuntu8.17 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
-| libuuid1:amd64 | 2.39.3-9ubuntu6.5 | Universally Unique ID library |
+| libuuid1:amd64 | 2.39.3-9ubuntu6.6 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
 | linux-libc-dev:amd64 | 6.8.0-138.138 | Linux Kernel Headers for development |
@@ -168,7 +168,7 @@
 | lto-disabled-list | 47 | list of packages not to build with LTO |
 | make | 4.3-4.1build2 | utility for directing compilation |
 | mawk | 1.3.4.20240123-1build1 | Pattern scanning and text processing language |
-| mount | 2.39.3-9ubuntu6.5 | tools for mounting and manipulating filesystems |
+| mount | 2.39.3-9ubuntu6.6 | tools for mounting and manipulating filesystems |
 | ncurses-base | 6.4+20240113-1ubuntu2.1 | basic terminal type definitions |
 | ncurses-bin | 6.4+20240113-1ubuntu2.1 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
@@ -189,7 +189,7 @@
 | tzdata | 2026c-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
-| util-linux | 2.39.3-9ubuntu6.5 | miscellaneous system utilities |
+| util-linux | 2.39.3-9ubuntu6.6 | miscellaneous system utilities |
 | xz-utils | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression utilities |
-| zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.1 | compression library - runtime |
+| zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.2 | compression library - runtime |
 | gh | 2.89.0 | Work seamlessly with GitHub from the command line |

@@ -12,23 +12,23 @@
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
 | bash-completion | 1:2.11-5ubuntu1 | programmable completion for the bash shell |
-| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.5 | Clients provided with BIND 9 |
-| bind9-host | 1:9.18.39-0ubuntu0.22.04.5 | DNS Lookup Utility |
-| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.5 | Shared Libraries used by BIND 9 |
+| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.6 | Clients provided with BIND 9 |
+| bind9-host | 1:9.18.39-0ubuntu0.22.04.6 | DNS Lookup Utility |
+| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.6 | Shared Libraries used by BIND 9 |
 | binutils | 2.38-4ubuntu2.12 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.38-4ubuntu2.12 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.38-4ubuntu2.12 | GNU binary utilities, for x86-64-linux-gnu target |
-| bsdextrautils | 2.37.2-4ubuntu3.5 | extra utilities from 4.4BSD-Lite |
+| bsdextrautils | 2.37.2-4ubuntu3.6 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.7+nmu3ubuntu2 | Transitional package for more utilities from FreeBSD |
-| bsdutils | 1:2.37.2-4ubuntu3.5 | basic utilities from 4.4BSD-Lite |
+| bsdutils | 1:2.37.2-4ubuntu3.6 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20260601~22.04.1 | Common CA certificates |
 | conntrack | 1:1.4.6-2build2 | Program to modify the conntrack tables |
-| coreutils | 8.32-4.1ubuntu1.3 | GNU core utilities |
+| coreutils | 8.32-4.1ubuntu1.4 | GNU core utilities |
 | curl | 7.81.0-1ubuntu1.27 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
-| diffutils | 1:3.8-0ubuntu2 | File comparison utilities |
+| diffutils | 1:3.8-0ubuntu2.1 | File comparison utilities |
 | distro-info-data | 0.72-0ubuntu0.22.04.1 | information about the distributions' releases (data files) |
 | docutils-common | 0.17.1+dfsg-2 | text processing system for reStructuredText - common data |
 | dpkg | 1.21.1ubuntu2.6 | Debian package management system |
@@ -55,17 +55,17 @@
 | libapr1:amd64 | 1.7.0-8ubuntu0.22.04.2 | Apache Portable Runtime Library |
 | libaprutil1:amd64 | 1.6.1-5ubuntu4.22.04.2 | Apache Portable Runtime Utility Library |
 | libapt-pkg6.0:amd64 | 2.4.14 | package management runtime library |
-| libattr1:amd64 | 1:2.5.1-1build1 | extended attribute handling - shared library |
+| libattr1:amd64 | 1:2.5.1-1ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.0.7-1build1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.0.7-1build1 | Dynamic library for security auditing |
 | libbabeltrace1:amd64 | 1.5.8-2build1 | Babeltrace conversion libraries |
 | libbinutils:amd64 | 2.38-4ubuntu2.12 | GNU binary utilities (private shared library) |
-| libblkid1:amd64 | 2.37.2-4ubuntu3.5 | block device ID library |
+| libblkid1:amd64 | 2.37.2-4ubuntu3.6 | block device ID library |
 | libboost-regex1.74.0:amd64 | 1.74.0-14ubuntu3 | regular expression library for C++ |
 | libbpf0:amd64 | 1:0.5.0-1ubuntu22.04.1 | eBPF helper library (shared library) |
 | libbrotli1:amd64 | 1.0.9-2build6 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.11.5-1 | utility functions from BSD systems - shared library |
-| libbz2-1.0:amd64 | 1.0.8-5build1 | high-quality block-sorting file compressor library - runtime |
+| libbz2-1.0:amd64 | 1.0.8-5ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
 | libc-bin | 2.35-0ubuntu3.14 | GNU C Library: Binaries |
 | libc6:amd64 | 2.35-0ubuntu3.14 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.7.9-2.2build3 | An alternate POSIX capabilities library |
@@ -123,7 +123,7 @@
 | libmaxminddb0:amd64 | 1.5.2-1build2 | IP geolocation database library |
 | libmd0:amd64 | 1.0.4-1build1 | message digest functions from BSD systems - shared library |
 | libmnl0:amd64 | 1.0.4-3build2 | minimalistic Netlink communication library |
-| libmount1:amd64 | 2.37.2-4ubuntu3.5 | device mounting library |
+| libmount1:amd64 | 2.37.2-4ubuntu3.6 | device mounting library |
 | libmpdec3:amd64 | 2.5.1-2build2 | library for decimal floating point arithmetic (runtime library) |
 | libmpfr6:amd64 | 4.1.0-3build3 | multiple precision floating-point computation |
 | libncurses6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling |
@@ -163,13 +163,13 @@
 | libsensors5:amd64 | 1:3.6.0-7ubuntu1 | library to read temperature/voltage/fan sensors |
 | libsepol2:amd64 | 3.3-1build1 | SELinux library for manipulating binary security policies |
 | libsm6:amd64 | 2:1.2.3-1build2 | X11 Session Management library |
-| libsmartcols1:amd64 | 2.37.2-4ubuntu3.5 | smart column output alignment library |
+| libsmartcols1:amd64 | 2.37.2-4ubuntu3.6 | smart column output alignment library |
 | libsodium23:amd64 | 1.0.18-1ubuntu0.22.04.1 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.1build2 | architecture-independent files for source highlighting library |
 | libsource-highlight4v5 | 3.1.9-4.1build2 | source highlighting library |
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.7 | SQLite 3 shared library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
-| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.7 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.8 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.22 | systemd utility library |
@@ -184,7 +184,7 @@
 | libudev1:amd64 | 249.11-0ubuntu3.22 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libunwind8:amd64 | 1.3.2-2build2.1 | library to determine the call-chain of a program - runtime |
-| libuuid1:amd64 | 2.37.2-4ubuntu3.5 | Universally Unique ID library |
+| libuuid1:amd64 | 2.37.2-4ubuntu3.6 | Universally Unique ID library |
 | libuv1:amd64 | 1.43.0-1ubuntu0.1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-31build2 | Wietse Venema's TCP wrappers library |
 | libx11-6:amd64 | 2:1.7.5-1ubuntu0.3 | X11 client-side library |
@@ -211,10 +211,10 @@
 | mawk | 1.3.4.20200120-3 | Pattern scanning and text processing language |
 | media-types | 7.0.0 | List of standard media types and their usual file extension |
 | moreutils | 0.66-1 | additional Unix utilities |
-| mount | 2.37.2-4ubuntu3.5 | tools for mounting and manipulating filesystems |
-| mysql-client | 8.0.46-0ubuntu0.22.04.3 | MySQL database client (metapackage depending on the latest version) |
-| mysql-client-8.0 | 8.0.46-0ubuntu0.22.04.3 | MySQL database client binaries |
-| mysql-client-core-8.0 | 8.0.46-0ubuntu0.22.04.3 | MySQL database core client binaries |
+| mount | 2.37.2-4ubuntu3.6 | tools for mounting and manipulating filesystems |
+| mysql-client | 8.0.46-0ubuntu0.22.04.4 | MySQL database client (metapackage depending on the latest version) |
+| mysql-client-8.0 | 8.0.46-0ubuntu0.22.04.4 | MySQL database client binaries |
+| mysql-client-core-8.0 | 8.0.46-0ubuntu0.22.04.4 | MySQL database core client binaries |
 | mysql-common | 5.8+1.0.8 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.7+nmu3ubuntu2 | display a calendar and the date of Easter |
 | ncurses-base | 6.3-2ubuntu0.2 | basic terminal type definitions |
@@ -273,7 +273,7 @@
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
-| util-linux | 2.37.2-4ubuntu3.5 | miscellaneous system utilities |
+| util-linux | 2.37.2-4ubuntu3.6 | miscellaneous system utilities |
 | vim | 2:8.2.3995-1ubuntu2.36 | Vi IMproved - enhanced vi editor |
 | vim-common | 2:8.2.3995-1ubuntu2.36 | Vi IMproved - Common files |
 | vim-runtime | 2:8.2.3995-1ubuntu2.36 | Vi IMproved - Runtime files |
