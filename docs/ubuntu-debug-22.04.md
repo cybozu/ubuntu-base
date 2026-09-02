@@ -91,7 +91,7 @@
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.10.0-1 | library for generating and verifying FIDO 2.0 objects |
 | libgcc-s1:amd64 | 12.3.0-1ubuntu1~22.04.3 | GCC support library |
-| libgcrypt20:amd64 | 1.9.4-3ubuntu3.2 | LGPL Crypto library - runtime library |
+| libgcrypt20:amd64 | 1.9.4-3ubuntu3.3 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
 | libglib2.0-0:amd64 | 2.72.4-0ubuntu2.9 | GLib library of C routines |
@@ -126,8 +126,8 @@
 | libmount1:amd64 | 2.37.2-4ubuntu3.6 | device mounting library |
 | libmpdec3:amd64 | 2.5.1-2build2 | library for decimal floating point arithmetic (runtime library) |
 | libmpfr6:amd64 | 4.1.0-3build3 | multiple precision floating-point computation |
-| libncurses6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling |
-| libncursesw6:amd64 | 6.3-2ubuntu0.2 | shared libraries for terminal handling (wide character support) |
+| libncurses6:amd64 | 6.3-2ubuntu0.3 | shared libraries for terminal handling |
+| libncursesw6:amd64 | 6.3-2ubuntu0.3 | shared libraries for terminal handling (wide character support) |
 | libnetfilter-conntrack3:amd64 | 1.0.9-1 | Netfilter netlink-conntrack library |
 | libnettle8:amd64 | 3.7.3-1build2 | low level cryptographic library (symmetric and one-way cryptos) |
 | libnfnetlink0:amd64 | 1.0.1-3build3 | Netfilter netlink library |
@@ -177,7 +177,7 @@
 | libtcl8.6:amd64 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-1 | module for rounded or exact English expression of durations |
 | libtimedate-perl | 2.3300-2 | collection of modules to manipulate date/time information |
-| libtinfo6:amd64 | 6.3-2ubuntu0.2 | shared low-level terminfo library for terminal handling |
+| libtinfo6:amd64 | 6.3-2ubuntu0.3 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libuchardet0:amd64 | 0.0.7-1build2 | universal charset detection library - shared library |
@@ -217,8 +217,8 @@
 | mysql-client-core-8.0 | 8.0.46-0ubuntu0.22.04.4 | MySQL database core client binaries |
 | mysql-common | 5.8+1.0.8 | MySQL database common files, e.g. /etc/mysql/my.cnf |
 | ncal | 12.1.7+nmu3ubuntu2 | display a calendar and the date of Easter |
-| ncurses-base | 6.3-2ubuntu0.2 | basic terminal type definitions |
-| ncurses-bin | 6.3-2ubuntu0.2 | terminal-related programs and man pages |
+| ncurses-base | 6.3-2ubuntu0.3 | basic terminal type definitions |
+| ncurses-bin | 6.3-2ubuntu0.3 | terminal-related programs and man pages |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.16 | secure shell (SSH) client, for secure access to remote machines |
@@ -240,7 +240,7 @@
 | python3-magic | 2:0.4.24-2 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.10.6-1~22.04.1 | minimal subset of the Python language (default python3 version) |
 | python3-pkg-resources | 59.6.0-1.2ubuntu0.22.04.3 | Package Discovery and Resource Access using pkg_resources |
-| python3-pyasn1 | 0.4.8-1ubuntu0.2 | ASN.1 library for Python (Python 3 module) |
+| python3-pyasn1 | 0.4.8-1ubuntu0.3 | ASN.1 library for Python (Python 3 module) |
 | python3-requests | 2.25.1+dfsg-2ubuntu0.3 | elegant and simple HTTP library for Python3, built for human beings |
 | python3-roman | 3.3-1 | module for generating/analyzing Roman numerals for Python 3 |
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
