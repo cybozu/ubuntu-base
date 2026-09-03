@@ -53,7 +53,7 @@
 | less | 590-1ubuntu0.22.04.3 | pager program similar to more |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
 | libapr1:amd64 | 1.7.0-8ubuntu0.22.04.2 | Apache Portable Runtime Library |
-| libaprutil1:amd64 | 1.6.1-5ubuntu4.22.04.2 | Apache Portable Runtime Utility Library |
+| libaprutil1:amd64 | 1.6.1-5ubuntu4.22.04.3 | Apache Portable Runtime Utility Library |
 | libapt-pkg6.0:amd64 | 2.4.14 | package management runtime library |
 | libattr1:amd64 | 1:2.5.1-1ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.0.7-1build1 | Dynamic library for security auditing - common files |
@@ -221,7 +221,7 @@
 | ncurses-bin | 6.3-2ubuntu0.3 | terminal-related programs and man pages |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.16 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.17 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl | 5.34.0-3ubuntu1.8 | Larry Wall's Practical Extraction and Report Language |
