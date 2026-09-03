@@ -7,28 +7,12 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Install s2d, snappy compatible unarchiver
-      env:
-        S2_VERSION: "v1.20.0"
-        S2_CHECKSUM: "94c4fd2ca9e4d478b3dd69d30cd0a8cd48bffe461772af3579c8e17cfa3fd1d3"
+    - name: Install snappy compatible unarchiver
       shell: bash
       run: |
         set -x
-        S2_RELEASE_URL="https://github.com/klauspost/compress/releases/download/${S2_VERSION}"
-        S2_DEB="s2_package__linux_amd64.deb"
-        ARTIFACT="/tmp/${S2_DEB}"
-
-        echo "::group::Download artifacts"
-        wget -O "${ARTIFACT}" "${S2_RELEASE_URL}/${S2_DEB}"
-        echo "::endgroup::"
-
-        echo "::group::Check checksum"
-        echo "${S2_CHECKSUM}  ${ARTIFACT}" | sha256sum -c -
-        echo "::endgroup::"
-
         echo "::group::Install s2"
-        sudo apt-get install -y "${ARTIFACT}"
-        rm -f "${ARTIFACT}"
+        sudo apt-get install -y snappy-tools
         s2d -help
         echo "::endgroup::"
 
