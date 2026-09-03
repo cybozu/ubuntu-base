@@ -41,11 +41,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 ARG TARGETARCH
-ARG AWSCLI_VERSION=2.34.45
+ARG AWSCLI_VERSION=2.36.29
 RUN set -eux; \
     case "${TARGETARCH}" in \
-        amd64) aws_arch="x86_64"; aws_checksum="2b382fd5c1e8d73f6aaca18e5850758fb9f70a20af9c17deb3078df0dd4af095" ;; \
-        arm64) aws_arch="aarch64"; aws_checksum="bf29e06a06fb9bac2a3803931e6618a9f7c9f4c6632ec3b587184850b8f03433" ;; \
+        amd64) aws_arch="x86_64"; aws_checksum="cf000f7405c94742e2b3534e5436c8189e48752ccf548477ebaa1b6b8665cdb5" ;; \
+        arm64) aws_arch="aarch64"; aws_checksum="d08073ff20ad0b4a5bdcee344b35052caf7aa51383caa66865708eca407125d0" ;; \
         *) echo "unsupported TARGETARCH: ${TARGETARCH}"; exit 1 ;; \
     esac; \
     curl -fsSL -o /tmp/awscliv2.zip "https://awscli.amazonaws.com/awscli-exe-linux-${aws_arch}-${AWSCLI_VERSION}.zip"; \
@@ -74,11 +74,11 @@ RUN set -eux; \
     install -m 0644 /tmp/LICENSE /usr/local/grpcurl/LICENSE; \
     rm -f /tmp/grpcurl /tmp/LICENSE /tmp/grpcurl.tgz
 
-ARG CRANE_VERSION=0.21.3
+ARG CRANE_VERSION=0.21.9
 RUN set -eux; \
     case "${TARGETARCH}" in \
-        amd64) crane_arch="x86_64"; checksum="46dbf12d943efa5673ab654186c5d7c1503580544de0df9325537083436fe5d0" ;; \
-        arm64) crane_arch="arm64"; checksum="dabcf2aee76ca72da63b5da5137c910a6852ccff13e35628e8f0a9dd8b73f4f3" ;; \
+        amd64) crane_arch="x86_64"; checksum="5c16d8ddb971cb1d5e6ed8b1e743da8224414eeba2c2762d8f1a61b2f095699e" ;; \
+        arm64) crane_arch="arm64"; checksum="1f4c647b7bb260ab5435661df5b526cf59950ebf95201790db7183ac189cbcbd" ;; \
         *) echo "unsupported TARGETARCH: ${TARGETARCH}"; exit 1 ;; \
     esac; \
     base_url="https://github.com/google/go-containerregistry/releases/download/v${CRANE_VERSION}"; \

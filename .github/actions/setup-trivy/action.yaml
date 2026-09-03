@@ -2,15 +2,15 @@ name: Setup Trivy
 description: Setup Trivy for scanning container images
 inputs:
   trivy-version:
-    default: "0.70.0"
+    default: "0.74.0"
 
 runs:
   using: composite
   steps:
     - name: Install s2d, snappy compatible unarchiver
       env:
-        S2_VERSION: "v1.19.0"
-        S2_CHECKSUM: "60ea3520edd8be159f03624cbfa2ecf3d4c8f01c5597175102ef783560174444"
+        S2_VERSION: "v1.20.0"
+        S2_CHECKSUM: "94c4fd2ca9e4d478b3dd69d30cd0a8cd48bffe461772af3579c8e17cfa3fd1d3"
       shell: bash
       run: |
         set -x

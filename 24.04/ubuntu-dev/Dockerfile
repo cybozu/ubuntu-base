@@ -12,14 +12,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 ARG TARGETARCH
-ARG GH_VERSION=2.89.0
+ARG GH_VERSION=2.98.0
 
 RUN set -eux; \
     archive="gh_${GH_VERSION}_linux_${TARGETARCH}.tar.gz"; \
     base_url="https://github.com/cli/cli/releases/download/v${GH_VERSION}"; \
     case "${TARGETARCH}" in \
-        amd64) checksum="d0422caade520530e76c1c558da47daebaa8e1203d6b7ff10ad7d6faba3490d8" ;; \
-        arm64) checksum="9e64a623dfc242990aa5d9b3f507111149c4282f66b68eaad1dc79eeb13b9ce5" ;; \
+        amd64) checksum="3b8ac6b30336802fc1a858d7c084e11cdf24ac1a761ca90b68022d7d729208de" ;; \
+        arm64) checksum="cf689084f3a3618f7eae4a2420d335d74626d65f5e594b9828d125d69f800d86" ;; \
         *) echo "unsupported TARGETARCH: ${TARGETARCH}"; exit 1 ;; \
     esac; \
     curl -fsSL -o /tmp/gh.tgz "${base_url}/${archive}"; \
