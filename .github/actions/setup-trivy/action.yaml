@@ -2,7 +2,7 @@ name: Setup Trivy
 description: Setup Trivy for scanning container images
 inputs:
   trivy-version:
-    default: "0.74.0"
+    default: "0.71.2"
 
 runs:
   using: composite
