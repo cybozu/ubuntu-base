@@ -7,15 +7,13 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Install snappy compatible unarchiver
+    - name: Install snappy-tools
       shell: bash
       run: |
-        set -x
-        echo "::group::Install s2"
+        echo "::group::Install snappy-tools"
+        sudo apt-get update
         sudo apt-get install -y snappy-tools
-        s2d -help
         echo "::endgroup::"
-
     - env:
         TRIVY_VERSION: "${{ inputs.trivy-version }}"
       run: |
@@ -44,7 +42,8 @@ runs:
 
         BUNDLE_URL=$(curl -L "https://api.github.com/repos/aquasecurity/trivy/attestations/sha256:$DIGEST" | \
           jq -r '.attestations[] | select(.initiator == "user") | .bundle_url')
-        s2d -o bundle.json -block "${BUNDLE_URL}"
+        curl -fsS -o bundle.sz "${BUNDLE_URL}"
+        snappy -d bundle.sz > bundle.json
 
         cosign verify-blob-attestation \
           --bundle bundle.json \
@@ -74,7 +73,7 @@ runs:
         chmod +x /tmp/trivy
         # Install the Trivy binary where the Yamory scan script looks for it.
         mv /tmp/trivy /usr/local/bin/
-        rm -f "${ARTIFACT}" "${ARTIFACT}.sigstore.json" bundle.json
+        rm -f "${ARTIFACT}" "${ARTIFACT}.sigstore.json" bundle.sz bundle.json
         trivy --version
         echo "::endgroup::"
       shell: bash
