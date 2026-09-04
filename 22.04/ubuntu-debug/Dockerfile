@@ -59,11 +59,11 @@ RUN set -eux; \
     install -m 0644 /tmp/LICENSE /usr/local/grpcurl/LICENSE; \
     rm -f /tmp/grpcurl /tmp/LICENSE /tmp/grpcurl.tgz
 
-ARG CRANE_VERSION=0.21.3
+ARG CRANE_VERSION=0.21.9
 RUN set -eux; \
     case "${TARGETARCH}" in \
-        amd64) crane_arch="x86_64"; checksum="46dbf12d943efa5673ab654186c5d7c1503580544de0df9325537083436fe5d0" ;; \
-        arm64) crane_arch="arm64"; checksum="dabcf2aee76ca72da63b5da5137c910a6852ccff13e35628e8f0a9dd8b73f4f3" ;; \
+        amd64) crane_arch="x86_64"; checksum="5c16d8ddb971cb1d5e6ed8b1e743da8224414eeba2c2762d8f1a61b2f095699e" ;; \
+        arm64) crane_arch="arm64"; checksum="1f4c647b7bb260ab5435661df5b526cf59950ebf95201790db7183ac189cbcbd" ;; \
         *) echo "unsupported TARGETARCH: ${TARGETARCH}"; exit 1 ;; \
     esac; \
     base_url="https://github.com/google/go-containerregistry/releases/download/v${CRANE_VERSION}"; \

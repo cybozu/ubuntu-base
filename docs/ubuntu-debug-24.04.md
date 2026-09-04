@@ -253,5 +253,5 @@
 | xz-utils | 5.6.1+really5.4.5-1ubuntu0.3 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
-| crane | 0.21.3 | crane is a tool for interacting with remote images and registries |
-| awscli | 2.34.45 | Universal Command Line Interface for Amazon Web Services |
+| crane | 0.21.9 | crane is a tool for interacting with remote images and registries |
+| awscli | 2.36.29 | Universal Command Line Interface for Amazon Web Services |
