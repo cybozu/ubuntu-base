@@ -43,7 +43,7 @@
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
 | git | 1:2.43.0-1ubuntu7.3 | fast, scalable, distributed revision control system |
 | git-man | 1:2.43.0-1ubuntu7.3 | fast, scalable, distributed revision control system (manual pages) |
-| gpgv | 2.4.4-2ubuntu17.4 | GNU privacy guard - signature verification tool |
+| gpgv | 2.4.4-2ubuntu17.6 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.2 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
@@ -161,7 +161,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.6 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 6.8.0-138.138 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 6.8.0-139.139 | Linux Kernel Headers for development |
 | locales | 2.39-0ubuntu8.8 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
@@ -172,7 +172,7 @@
 | ncurses-base | 6.4+20240113-1ubuntu2.2 | basic terminal type definitions |
 | ncurses-bin | 6.4+20240113-1ubuntu2.2 | terminal-related programs and man pages |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssh-client | 1:9.6p1-3ubuntu13.18 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:9.6p1-3ubuntu13.19 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.15 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | patch | 2.7.6-7build3 | Apply a diff file to an original |

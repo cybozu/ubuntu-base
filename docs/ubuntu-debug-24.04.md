@@ -36,7 +36,7 @@
 | gcc-14-base:amd64 | 14.2.0-4ubuntu2~24.04.1 | GCC, the GNU Compiler Collection (base package) |
 | gdb | 15.1-1ubuntu1~24.04.1 | GNU Debugger |
 | gettext-base | 0.21-14ubuntu2 | GNU Internationalization utilities for the base system |
-| gpgv | 2.4.4-2ubuntu17.4 | GNU privacy guard - signature verification tool |
+| gpgv | 2.4.4-2ubuntu17.6 | GNU privacy guard - signature verification tool |
 | grep | 3.11-4build1 | GNU grep, egrep and fgrep |
 | gzip | 1.12-1ubuntu3.2 | GNU compression utilities |
 | hostname | 3.23+nmu2ubuntu2 | utility to set/show the host name or domain name |
@@ -49,7 +49,7 @@
 | less | 590-2ubuntu2.1 | pager program similar to more |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
 | libapr1t64:amd64 | 1.7.2-3.1ubuntu0.1 | Apache Portable Runtime Library |
-| libaprutil1t64:amd64 | 1.6.3-1.1ubuntu7 | Apache Portable Runtime Utility Library |
+| libaprutil1t64:amd64 | 1.6.3-1.1ubuntu7.1 | Apache Portable Runtime Utility Library |
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libattr1:amd64 | 1:2.5.2-1ubuntu0.1 | extended attribute handling - shared library |
@@ -203,7 +203,7 @@
 | ncurses-bin | 6.4+20240113-1ubuntu2.2 | terminal-related programs and man pages |
 | net-tools | 2.10-0.1ubuntu4.4 | NET-3 networking toolkit |
 | netbase | 6.4 | Basic TCP/IP networking system |
-| openssh-client | 1:9.6p1-3ubuntu13.18 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:9.6p1-3ubuntu13.19 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.15 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
 | perl | 5.38.2-3.2ubuntu0.4 | Larry Wall's Practical Extraction and Report Language |

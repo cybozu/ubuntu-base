@@ -155,7 +155,7 @@
 | libuuid1:amd64 | 2.37.2-4ubuntu3.6 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
 | libzstd1:amd64 | 1.4.8+dfsg-3build1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 5.15.0-190.200 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 5.15.0-191.201 | Linux Kernel Headers for development |
 | locales | 2.35-0ubuntu3.14 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.8.1-2ubuntu2.2 | system login tools |
 | logsave | 1.46.5-2ubuntu1.2 | save the output of a command in a log file |
@@ -167,7 +167,7 @@
 | ncurses-base | 6.3-2ubuntu0.3 | basic terminal type definitions |
 | ncurses-bin | 6.3-2ubuntu0.3 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.16 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.17 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | patch | 2.7.6-7build2 | Apply a diff file to an original |
