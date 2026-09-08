@@ -7,7 +7,7 @@
 | apt | 2.8.3 | commandline package manager |
 | apt-transport-https | 2.8.3 | transitional package for https support |
 | apt-utils | 2.8.3 | package management related utility programs |
-| base-files | 13ubuntu10.4 | Debian base system miscellaneous files |
+| base-files | 13ubuntu10.5 | Debian base system miscellaneous files |
 | base-passwd | 3.6.3build1 | Debian base system master password and group files |
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
 | bash-completion | 1:2.11-8 | programmable completion for the bash shell |
