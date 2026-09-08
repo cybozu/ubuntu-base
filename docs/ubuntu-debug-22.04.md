@@ -66,8 +66,8 @@
 | libbrotli1:amd64 | 1.0.9-2build6 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.11.5-1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.35-0ubuntu3.14 | GNU C Library: Binaries |
-| libc6:amd64 | 2.35-0ubuntu3.14 | GNU C Library: Shared libraries |
+| libc-bin | 2.35-0ubuntu3.15 | GNU C Library: Binaries |
+| libc6:amd64 | 2.35-0ubuntu3.15 | GNU C Library: Shared libraries |
 | libcap-ng0:amd64 | 0.7.9-2.2build3 | An alternate POSIX capabilities library |
 | libcap2:amd64 | 1:2.44-1ubuntu0.22.04.3 | POSIX 1003.1e capabilities (library) |
 | libcap2-bin | 1:2.44-1ubuntu0.22.04.3 | POSIX 1003.1e capabilities (utilities) |
@@ -142,14 +142,14 @@
 | libpcap0.8:amd64 | 1.10.1-4ubuntu1.22.04.1 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.39-3ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libpcre3:amd64 | 2:8.39-13ubuntu0.22.04.1 | Old Perl 5 Compatible Regular Expression Library - runtime files |
-| libperl5.34:amd64 | 5.34.0-3ubuntu1.8 | shared Perl library |
+| libperl5.34:amd64 | 5.34.0-3ubuntu1.9 | shared Perl library |
 | libpopt0:amd64 | 1.18-3build1 | lib for parsing cmdline parameters |
 | libprocps8:amd64 | 2:3.3.17-6ubuntu2.1 | library for accessing process information from /proc |
 | libpsl5:amd64 | 0.21.0-1.2build2 | Library for Public Suffix List (shared libraries) |
 | libpython3-stdlib:amd64 | 3.10.6-1~22.04.1 | interactive high-level object-oriented language (default python3 version) |
-| libpython3.10:amd64 | 3.10.12-1~22.04.17 | Shared Python runtime library (version 3.10) |
-| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.17 | Minimal subset of the Python language (version 3.10) |
-| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.17 | Interactive high-level object-oriented language (standard library, version 3.10) |
+| libpython3.10:amd64 | 3.10.12-1~22.04.18 | Shared Python runtime library (version 3.10) |
+| libpython3.10-minimal:amd64 | 3.10.12-1~22.04.18 | Minimal subset of the Python language (version 3.10) |
+| libpython3.10-stdlib:amd64 | 3.10.12-1~22.04.18 | Interactive high-level object-oriented language (standard library, version 3.10) |
 | libreadline8:amd64 | 8.1.2-1 | GNU readline and history libraries, run-time libraries |
 | librtmp1:amd64 | 2.4+20151223.gitfa8646d.1-2build4 | toolkit for RTMP streams (shared library) |
 | libsasl2-2:amd64 | 2.1.27+dfsg2-3ubuntu1.2 | Cyrus SASL - authentication abstraction library |
@@ -202,7 +202,7 @@
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
 | libyaml-0-2:amd64 | 0.2.2-1build2 | Fast YAML 1.1 parser and emitter library |
 | libzstd1:amd64 | 1.4.8+dfsg-3build1 | fast lossless compression algorithm |
-| locales | 2.35-0ubuntu3.14 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.35-0ubuntu3.15 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.8.1-2ubuntu2.2 | system login tools |
 | logsave | 1.46.5-2ubuntu1.2 | save the output of a command in a log file |
 | lsb-base | 11.1.0ubuntu4 | Linux Standard Base init script functionality |
@@ -224,9 +224,9 @@
 | openssh-client | 1:8.9p1-3ubuntu0.17 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
-| perl | 5.34.0-3ubuntu1.8 | Larry Wall's Practical Extraction and Report Language |
-| perl-base | 5.34.0-3ubuntu1.8 | minimal Perl system |
-| perl-modules-5.34 | 5.34.0-3ubuntu1.8 | Core Perl modules |
+| perl | 5.34.0-3ubuntu1.9 | Larry Wall's Practical Extraction and Report Language |
+| perl-base | 5.34.0-3ubuntu1.9 | minimal Perl system |
+| perl-modules-5.34 | 5.34.0-3ubuntu1.9 | Core Perl modules |
 | procps | 2:3.3.17-6ubuntu2.1 | /proc file system utilities |
 | python3 | 3.10.6-1~22.04.1 | interactive high-level object-oriented language (default python3 version) |
 | python3-botocore | 1.23.34+repack-1 | Low-level, data-driven core of boto 3 (Python 3) |
@@ -248,8 +248,8 @@
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
 | python3-urllib3 | 1.26.5-1~exp1ubuntu0.7 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
-| python3.10 | 3.10.12-1~22.04.17 | Interactive high-level object-oriented language (version 3.10) |
-| python3.10-minimal | 3.10.12-1~22.04.17 | Minimal subset of the Python language (version 3.10) |
+| python3.10 | 3.10.12-1~22.04.18 | Interactive high-level object-oriented language (version 3.10) |
+| python3.10-minimal | 3.10.12-1~22.04.18 | Minimal subset of the Python language (version 3.10) |
 | rclone | 1.53.3-4ubuntu1.22.04.5 | rsync for commercial cloud storage |
 | readline-common | 8.1.2-1 | GNU readline and history libraries, common files |
 | rsync | 3.2.7-0ubuntu0.22.04.7 | fast, versatile, remote (and local) file-copying tool |
