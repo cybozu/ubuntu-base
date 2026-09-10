@@ -11,7 +11,7 @@ jobs:
       pull-requests: write
     env:
       GH_TOKEN: ${{ secrets.CYBOZU_NECO_PAT }}
-      UBUNTU_VERSION: "22.04 24.04"
+      UBUNTU_VERSION: "22.04 24.04 26.04"
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -28,6 +28,8 @@ jobs:
               codename=jammy
             elif [ "${version}" = "24.04" ]; then
               codename=noble
+            elif [ "${version}" = "26.04" ]; then
+              codename=resolute
             else
               echo "Unknown Ubuntu version: ${version}"
               exit 1
