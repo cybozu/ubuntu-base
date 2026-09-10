@@ -2,36 +2,18 @@ name: Setup Trivy
 description: Setup Trivy for scanning container images
 inputs:
   trivy-version:
-    default: "0.70.0"
+    default: "0.71.2"
 
 runs:
   using: composite
   steps:
-    - name: Install s2d, snappy compatible unarchiver
-      env:
-        S2_VERSION: "v1.19.0"
-        S2_CHECKSUM: "60ea3520edd8be159f03624cbfa2ecf3d4c8f01c5597175102ef783560174444"
+    - name: Install snappy-tools
       shell: bash
       run: |
-        set -x
-        S2_RELEASE_URL="https://github.com/klauspost/compress/releases/download/${S2_VERSION}"
-        S2_DEB="s2_package__linux_amd64.deb"
-        ARTIFACT="/tmp/${S2_DEB}"
-
-        echo "::group::Download artifacts"
-        wget -O "${ARTIFACT}" "${S2_RELEASE_URL}/${S2_DEB}"
+        echo "::group::Install snappy-tools"
+        sudo apt-get update
+        sudo apt-get install -y snappy-tools
         echo "::endgroup::"
-
-        echo "::group::Check checksum"
-        echo "${S2_CHECKSUM}  ${ARTIFACT}" | sha256sum -c -
-        echo "::endgroup::"
-
-        echo "::group::Install s2"
-        sudo apt-get install -y "${ARTIFACT}"
-        rm -f "${ARTIFACT}"
-        s2d -help
-        echo "::endgroup::"
-
     - env:
         TRIVY_VERSION: "${{ inputs.trivy-version }}"
       run: |
@@ -60,7 +42,8 @@ runs:
 
         BUNDLE_URL=$(curl -L "https://api.github.com/repos/aquasecurity/trivy/attestations/sha256:$DIGEST" | \
           jq -r '.attestations[] | select(.initiator == "user") | .bundle_url')
-        s2d -o bundle.json -block "${BUNDLE_URL}"
+        curl -fsS -o bundle.sz "${BUNDLE_URL}"
+        snappy -d bundle.sz > bundle.json
 
         cosign verify-blob-attestation \
           --bundle bundle.json \
@@ -90,7 +73,7 @@ runs:
         chmod +x /tmp/trivy
         # Install the Trivy binary where the Yamory scan script looks for it.
         mv /tmp/trivy /usr/local/bin/
-        rm -f "${ARTIFACT}" "${ARTIFACT}.sigstore.json" bundle.json
+        rm -f "${ARTIFACT}" "${ARTIFACT}.sigstore.json" bundle.sz bundle.json
         trivy --version
         echo "::endgroup::"
       shell: bash
