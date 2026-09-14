@@ -127,7 +127,7 @@ jobs:
                 CRANE_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new crane version 2>/dev/null | head -1 | sed -nE 's/^([0-9]+(\.[0-9]+)*).*/\1/p')
                 echo "| crane | ${CRANE_VERSION:-unknown} | crane is a tool for interacting with remote images and registries |" >> ./docs/${img}-${version}.md
 
-                if [ "$version" = "24.04" ]; then
+                if [ "$version" = "24.04" ] || [ "$version" = "26.04" ]; then
                   AWSCLI_VERSION=$(docker run --rm ghcr.io/cybozu/$img:${version}-new aws --version 2>/dev/null | head -1 | sed -nE 's/aws-cli\/([0-9.]+).*/\1/p')
                   echo "| awscli | ${AWSCLI_VERSION:-unknown} | Universal Command Line Interface for Amazon Web Services |" >> ./docs/${img}-${version}.md
                 fi

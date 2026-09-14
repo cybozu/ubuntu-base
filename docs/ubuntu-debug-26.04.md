@@ -263,3 +263,6 @@
 | vim-runtime | 2:9.1.2141-1ubuntu4.9 | Vi IMproved - Runtime files |
 | xz-utils | 5.8.3-1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg+really1.3.1-1ubuntu3.1 | compression library - runtime |
+| grpcurl | 1.9.3 | gRPC reflection and command-line tool |
+| crane | 0.21.9 | crane is a tool for interacting with remote images and registries |
+| awscli | 2.36.29 | Universal Command Line Interface for Amazon Web Services |
