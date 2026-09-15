@@ -20,6 +20,7 @@ A standard Ubuntu base image with common utilities and tools.
 **Package Documentation:**
 - [ubuntu:22.04 Packages](docs/ubuntu-22.04.md)
 - [ubuntu:24.04 Packages](docs/ubuntu-24.04.md)
+- [ubuntu:26.04 Packages](docs/ubuntu-26.04.md)
 
 ### ubuntu-dev
 
@@ -31,6 +32,7 @@ A development-focused Ubuntu image that includes build tools, compilers, and dev
 **Package Documentation:**
 - [ubuntu-dev:22.04 Packages](docs/ubuntu-dev-22.04.md)
 - [ubuntu-dev:24.04 Packages](docs/ubuntu-dev-24.04.md)
+- [ubuntu-dev:26.04 Packages](docs/ubuntu-dev-26.04.md)
 
 ### ubuntu-debug
 
@@ -42,3 +44,4 @@ A comprehensive debugging and troubleshooting Ubuntu image with extensive debugg
 **Package Documentation:**
 - [ubuntu-debug:22.04 Packages](docs/ubuntu-debug-22.04.md)
 - [ubuntu-debug:24.04 Packages](docs/ubuntu-debug-24.04.md)
+- [ubuntu-debug:26.04 Packages](docs/ubuntu-debug-26.04.md)
