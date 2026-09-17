@@ -139,7 +139,7 @@
 | libpam0g:amd64 | 1.5.3-5ubuntu5.7 | Pluggable Authentication Modules library |
 | libpcap0.8t64:amd64 | 1.10.4-4.1ubuntu3 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.42-4ubuntu2.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
-| libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.4 | shared Perl library |
+| libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.6 | shared Perl library |
 | libpopt0:amd64 | 1.19+dfsg-1build1 | lib for parsing cmdline parameters |
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.3 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |
@@ -164,7 +164,7 @@
 | libsodium23:amd64 | 1.0.18-1ubuntu0.24.04.1 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build1 | architecture-independent files for source highlighting library |
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
-| libsqlite3-0:amd64 | 3.45.1-1ubuntu2.7 | SQLite 3 shared library |
+| libsqlite3-0:amd64 | 3.45.1-1ubuntu2.8 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.5 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.15 | Secure Sockets Layer toolkit - shared libraries |
@@ -206,9 +206,9 @@
 | openssh-client | 1:9.6p1-3ubuntu13.19 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.13-0ubuntu3.15 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.13+dfsg1-4ubuntu3.2 | change and administer password and group data |
-| perl | 5.38.2-3.2ubuntu0.4 | Larry Wall's Practical Extraction and Report Language |
-| perl-base | 5.38.2-3.2ubuntu0.4 | minimal Perl system |
-| perl-modules-5.38 | 5.38.2-3.2ubuntu0.4 | Core Perl modules |
+| perl | 5.38.2-3.2ubuntu0.6 | Larry Wall's Practical Extraction and Report Language |
+| perl-base | 5.38.2-3.2ubuntu0.6 | minimal Perl system |
+| perl-modules-5.38 | 5.38.2-3.2ubuntu0.6 | Core Perl modules |
 | procps | 2:4.0.4-4ubuntu3.3 | /proc file system utilities |
 | python3 | 3.12.3-0ubuntu2.1 | interactive high-level object-oriented language (default python3 version) |
 | python3-certifi | 2023.11.17-1 | root certificates for validating SSL certs and verifying TLS hosts (python3) |
@@ -231,7 +231,7 @@
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | smartmontools | 7.4-2build1 | control and monitor storage systems using S.M.A.R.T. |
 | socat | 1.8.0.0-4ubuntu0.1 | multipurpose relay for bidirectional data transfer |
-| sqlite3 | 3.45.1-1ubuntu2.7 | Command line interface for SQLite 3 |
+| sqlite3 | 3.45.1-1ubuntu2.8 | Command line interface for SQLite 3 |
 | strace | 6.8-0ubuntu2 | System call tracer |
 | sysstat | 12.6.1-2 | system performance tools for Linux |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
