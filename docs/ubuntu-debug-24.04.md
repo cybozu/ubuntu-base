@@ -82,7 +82,7 @@
 | libdw1t64:amd64 | 0.190-1.1ubuntu0.1 | library that provides access to the DWARF debug information |
 | libedit2:amd64 | 3.1-20230828-1build1 | BSD editline and history libraries |
 | libelf1t64:amd64 | 0.190-1.1ubuntu0.1 | library to read and write ELF files |
-| libexpat1:amd64 | 2.6.1-2ubuntu0.4 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.6.1-2ubuntu0.5 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |
@@ -90,7 +90,7 @@
 | libgcrypt20:amd64 | 1.10.3-2ubuntu0.2 | LGPL Crypto library - runtime library |
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
-| libglib2.0-0t64:amd64 | 2.80.0-6ubuntu3.8 | GLib library of C routines |
+| libglib2.0-0t64:amd64 | 2.80.0-6ubuntu3.9 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
 | libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.6 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
@@ -181,7 +181,7 @@
 | libuuid1:amd64 | 2.39.3-9ubuntu6.6 | Universally Unique ID library |
 | libuv1t64:amd64 | 1.48.0-1.1build1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-33 | Wietse Venema's TCP wrappers library |
-| libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.8 | GNOME XML library |
+| libxml2:amd64 | 2.9.14+dfsg-1.3ubuntu3.9 | GNOME XML library |
 | libxtables12:amd64 | 1.8.10-3ubuntu2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |

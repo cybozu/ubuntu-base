@@ -85,7 +85,7 @@
 | libdw1t64:amd64 | 0.194-4 | library that provides access to the DWARF debug information |
 | libedit2:amd64 | 3.1-20251016-1 | BSD editline and history libraries |
 | libelf1t64:amd64 | 0.194-4 | library to read and write ELF files |
-| libexpat1:amd64 | 2.7.4-1 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.7.4-1ubuntu0.1 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.2-3ubuntu4 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.5.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.16.0-2build1 | library for generating and verifying FIDO 2.0 objects |
@@ -93,7 +93,7 @@
 | libgcrypt20:amd64 | 1.12.0-2ubuntu1.1 | LGPL Crypto library - runtime library |
 | libgdbm-compat4t64:amd64 | 1.26-1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.26-1build1 | GNU dbm database routines (runtime version)  |
-| libglib2.0-0t64:amd64 | 2.88.0-1 | GLib library of C routines |
+| libglib2.0-0t64:amd64 | 2.88.0-1ubuntu0.1 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.3.0+dfsg-5ubuntu2 | Multiprecision arithmetic library |
 | libgnutls30t64:amd64 | 3.8.12-2ubuntu1.1 | GNU TLS library - main runtime library |
 | libgoogle-perftools4t64:amd64 | 2.18.1-1 | libraries for CPU and heap analysis, plus an efficient thread-caching malloc |
@@ -192,7 +192,7 @@
 | libuuid1:amd64 | 2.41.3-3ubuntu2.2 | Universally Unique ID library |
 | libuv1t64:amd64 | 1.51.0-2ubuntu1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-36build2 | Wietse Venema's TCP wrappers library |
-| libxml2-16:amd64 | 2.15.2+dfsg-0.1ubuntu0.1 | GNOME XML library |
+| libxml2-16:amd64 | 2.15.2+dfsg-0.1ubuntu0.2 | GNOME XML library |
 | libxtables12:amd64 | 1.8.11-2ubuntu3 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.3-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.7+dfsg-3 | fast lossless compression algorithm |
@@ -236,7 +236,7 @@
 | rclone | 1.60.1+dfsg-4ubuntu3.2 | rsync for commercial cloud storage |
 | readline-common | 8.3-4 | GNU readline and history libraries, common files |
 | rsync | 3.4.1+ds1-7ubuntu0.3 | fast, versatile, remote (and local) file-copying tool |
-| rust-coreutils | 0.8.0-0ubuntu3 | Universal coreutils utils, written in Rust |
+| rust-coreutils | 0.10.0-1ubuntu2~26.04.1 | Universal coreutils utils, written in Rust |
 | s3cmd | 2.4.0-3 | command-line Amazon S3 client |
 | sed | 4.9-2ubuntu1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.26build1 | Utilities for sensible alternative selection |
