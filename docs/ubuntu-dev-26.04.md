@@ -83,7 +83,7 @@
 | libdpkg-perl | 1.23.7ubuntu1 | Dpkg perl modules |
 | libedit2:amd64 | 3.1-20251016-1 | BSD editline and history libraries |
 | liberror-perl | 0.17030-1 | Perl module for error/exception handling in an OO-ish way |
-| libexpat1:amd64 | 2.7.4-1 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.7.4-1ubuntu0.1 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.2-3ubuntu4 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.5.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.16.0-2build1 | library for generating and verifying FIDO 2.0 objects |
@@ -162,7 +162,7 @@
 | libuuid1:amd64 | 2.41.3-3ubuntu2.2 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.3-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.7+dfsg-3 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 7.0.0-31.31 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 7.0.0-34.34 | Linux Kernel Headers for development |
 | locales | 2.43-2ubuntu2.4 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.16.0-2+really2.41.3-3ubuntu2.2 | system login tools |
 | login.defs | 1:4.17.4-2ubuntu3 | system user management configuration |
@@ -185,7 +185,7 @@
 | procps | 2:4.0.4-9ubuntu1 | /proc file system utilities |
 | readline-common | 8.3-4 | GNU readline and history libraries, common files |
 | rpcsvc-proto | 1.4.3-1build1 | RPC protocol compiler and definitions |
-| rust-coreutils | 0.8.0-0ubuntu3 | Universal coreutils utils, written in Rust |
+| rust-coreutils | 0.10.0-1ubuntu2~26.04.1 | Universal coreutils utils, written in Rust |
 | sed | 4.9-2ubuntu1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.26build1 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.15-5ubuntu1 | System-V-like utilities |

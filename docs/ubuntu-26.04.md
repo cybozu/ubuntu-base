@@ -114,7 +114,7 @@
 | perl-base | 5.40.1-7ubuntu0.3 | minimal Perl system |
 | procps | 2:4.0.4-9ubuntu1 | /proc file system utilities |
 | readline-common | 8.3-4 | GNU readline and history libraries, common files |
-| rust-coreutils | 0.8.0-0ubuntu3 | Universal coreutils utils, written in Rust |
+| rust-coreutils | 0.10.0-1ubuntu2~26.04.1 | Universal coreutils utils, written in Rust |
 | sed | 4.9-2ubuntu1 | GNU stream editor for filtering/transforming text |
 | sensible-utils | 0.0.26build1 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.15-5ubuntu1 | System-V-like utilities |

@@ -86,7 +86,7 @@
 | libdw1:amd64 | 0.186-1ubuntu0.1 | library that provides access to the DWARF debug information |
 | libedit2:amd64 | 3.1-20210910-1build1 | BSD editline and history libraries |
 | libelf1:amd64 | 0.186-1ubuntu0.1 | library to read and write ELF files |
-| libexpat1:amd64 | 2.4.7-1ubuntu0.7 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.4.7-1ubuntu0.8 | XML parsing C library - runtime library |
 | libext2fs2:amd64 | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.10.0-1 | library for generating and verifying FIDO 2.0 objects |
@@ -94,7 +94,7 @@
 | libgcrypt20:amd64 | 1.9.4-3ubuntu3.3 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
-| libglib2.0-0:amd64 | 2.72.4-0ubuntu2.9 | GLib library of C routines |
+| libglib2.0-0:amd64 | 2.72.4-0ubuntu2.10 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.9 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
@@ -194,7 +194,7 @@
 | libxcb1:amd64 | 1.14-3ubuntu3 | X C Binding |
 | libxdmcp6:amd64 | 1:1.1.3-0ubuntu5 | X11 Display Manager Control Protocol library |
 | libxext6:amd64 | 2:1.3.4-1build1 | X11 miscellaneous extension library |
-| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.12 | GNOME XML library |
+| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.13 | GNOME XML library |
 | libxmu6:amd64 | 2:1.1.3-3 | X11 miscellaneous utility library |
 | libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.3 | X11 pixmap library |
 | libxt6:amd64 | 1:1.2.1-1 | X11 toolkit intrinsics library |
