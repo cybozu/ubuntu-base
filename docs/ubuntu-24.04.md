@@ -30,8 +30,8 @@
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libattr1:amd64 | 1:2.5.2-1ubuntu0.1 | extended attribute handling - shared library |
-| libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
-| libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
+| libaudit-common | 1:3.1.2-2.1ubuntu0.1 | Dynamic library for security auditing - common files |
+| libaudit1:amd64 | 1:3.1.2-2.1ubuntu0.1 | Dynamic library for security auditing |
 | libblkid1:amd64 | 2.39.3-9ubuntu6.6 | block device ID library |
 | libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
 | libbz2-1.0:amd64 | 1.0.8-5.1ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
