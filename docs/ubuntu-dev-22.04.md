@@ -75,7 +75,7 @@
 | libdpkg-perl | 1.21.1ubuntu2.6 | Dpkg perl modules |
 | libedit2:amd64 | 3.1-20210910-1build1 | BSD editline and history libraries |
 | liberror-perl | 0.17029-1 | Perl module for error/exception handling in an OO-ish way |
-| libexpat1:amd64 | 2.4.7-1ubuntu0.7 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.4.7-1ubuntu0.8 | XML parsing C library - runtime library |
 | libext2fs2:amd64 | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.10.0-1 | library for generating and verifying FIDO 2.0 objects |
@@ -155,7 +155,7 @@
 | libuuid1:amd64 | 2.37.2-4ubuntu3.6 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
 | libzstd1:amd64 | 1.4.8+dfsg-3build1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 5.15.0-191.201 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 5.15.0-194.204 | Linux Kernel Headers for development |
 | locales | 2.35-0ubuntu3.15 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.8.1-2ubuntu2.2 | system login tools |
 | logsave | 1.46.5-2ubuntu1.2 | save the output of a command in a log file |
