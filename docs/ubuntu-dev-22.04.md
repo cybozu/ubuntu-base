@@ -19,7 +19,7 @@
 | coreutils | 8.32-4.1ubuntu1.4 | GNU core utilities |
 | cpp | 4:11.2.0-1ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C preprocessor |
-| curl | 7.81.0-1ubuntu1.27 | command line tool for transferring data with URL syntax |
+| curl | 7.81.0-1ubuntu1.29 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
@@ -48,8 +48,8 @@
 | libasan6:amd64 | 11.4.0-1ubuntu1~22.04.3 | AddressSanitizer -- a fast memory error detector |
 | libatomic1:amd64 | 12.3.0-1ubuntu1~22.04.3 | support library providing __atomic built-in functions |
 | libattr1:amd64 | 1:2.5.1-1ubuntu0.1 | extended attribute handling - shared library |
-| libaudit-common | 1:3.0.7-1build1 | Dynamic library for security auditing - common files |
-| libaudit1:amd64 | 1:3.0.7-1build1 | Dynamic library for security auditing |
+| libaudit-common | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing - common files |
+| libaudit1:amd64 | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing |
 | libbinutils:amd64 | 2.38-4ubuntu2.12 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.37.2-4ubuntu3.6 | block device ID library |
 | libbrotli1:amd64 | 1.0.9-2build6 | library implementing brotli encoder and decoder (shared libraries) |
@@ -68,14 +68,14 @@
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.27 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4:amd64 | 7.81.0-1ubuntu1.27 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.29 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4:amd64 | 7.81.0-1ubuntu1.29 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
 | libdpkg-perl | 1.21.1ubuntu2.6 | Dpkg perl modules |
 | libedit2:amd64 | 3.1-20210910-1build1 | BSD editline and history libraries |
 | liberror-perl | 0.17029-1 | Perl module for error/exception handling in an OO-ish way |
-| libexpat1:amd64 | 2.4.7-1ubuntu0.8 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.4.7-1ubuntu0.9 | XML parsing C library - runtime library |
 | libext2fs2:amd64 | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.10.0-1 | library for generating and verifying FIDO 2.0 objects |

@@ -23,7 +23,7 @@
 | ca-certificates | 20260601~24.04.1 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
 | coreutils | 9.4-3ubuntu6.3 | GNU core utilities |
-| curl | 8.5.0-2ubuntu10.13 | command line tool for transferring data with URL syntax |
+| curl | 8.5.0-2ubuntu10.15 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
@@ -53,8 +53,8 @@
 | libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libattr1:amd64 | 1:2.5.2-1ubuntu0.1 | extended attribute handling - shared library |
-| libaudit-common | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing - common files |
-| libaudit1:amd64 | 1:3.1.2-2.1build1.1 | Dynamic library for security auditing |
+| libaudit-common | 1:3.1.2-2.1ubuntu0.1 | Dynamic library for security auditing - common files |
+| libaudit1:amd64 | 1:3.1.2-2.1ubuntu0.1 | Dynamic library for security auditing |
 | libbabeltrace1:amd64 | 1.5.11-3build3 | Babeltrace conversion libraries |
 | libbinutils:amd64 | 2.42-4ubuntu2.10 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.39.3-9ubuntu6.6 | block device ID library |
@@ -72,8 +72,8 @@
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.42-4ubuntu2.10 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.42-4ubuntu2.10 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.13 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4t64:amd64 | 8.5.0-2ubuntu10.13 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3t64-gnutls:amd64 | 8.5.0-2ubuntu10.15 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4t64:amd64 | 8.5.0-2ubuntu10.15 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdbus-1-3:amd64 | 1.14.10-4ubuntu4.1 | simple interprocess messaging system (library) |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
@@ -82,7 +82,7 @@
 | libdw1t64:amd64 | 0.190-1.1ubuntu0.1 | library that provides access to the DWARF debug information |
 | libedit2:amd64 | 3.1-20230828-1build1 | BSD editline and history libraries |
 | libelf1t64:amd64 | 0.190-1.1ubuntu0.1 | library to read and write ELF files |
-| libexpat1:amd64 | 2.6.1-2ubuntu0.5 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.6.1-2ubuntu0.6 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.6-1build1 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.14.0-1build3 | library for generating and verifying FIDO 2.0 objects |

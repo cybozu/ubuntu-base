@@ -12,7 +12,7 @@
 | ca-certificates | 20260601~26.04.1 | Common CA certificates |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
-| curl | 8.18.0-1ubuntu2.5 | command line tool for transferring data with URL syntax |
+| curl | 8.18.0-1ubuntu2.7 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-12ubuntu3 | POSIX-compliant shell |
 | debconf | 1.5.92 | Debian configuration management system |
 | debianutils | 5.23.2build1 | Miscellaneous utilities specific to Debian |
@@ -43,7 +43,7 @@
 | libcap-ng0:amd64 | 0.8.5-4build5 | alternate POSIX capabilities library |
 | libcom-err2:amd64 | 1.47.2-3ubuntu4 | common error description library |
 | libcrypt1:amd64 | 1:4.5.1-1 | libcrypt shared library |
-| libcurl4t64:amd64 | 8.18.0-1ubuntu2.5 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl4t64:amd64 | 8.18.0-1ubuntu2.7 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-10ubuntu1 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.280ubuntu1 | Debian Configuration Management System (C-implementation library) |
 | libext2fs2t64:amd64 | 1.47.2-3ubuntu4 | ext2/ext3/ext4 file system libraries |
