@@ -141,7 +141,7 @@
 | libpam-modules-bin | 1.7.0-5ubuntu3.2 | Pluggable Authentication Modules for PAM - helper binaries |
 | libpam-runtime | 1.7.0-5ubuntu3.2 | Runtime support for the PAM library |
 | libpam0g:amd64 | 1.7.0-5ubuntu3.2 | Pluggable Authentication Modules library |
-| libpcap0.8t64:amd64 | 1.10.6-1ubuntu1 | system interface for user-level packet capture |
+| libpcap0.8t64:amd64 | 1.10.6-1ubuntu1.1 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.46-1build1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libperl5.40:amd64 | 5.40.1-7ubuntu0.3 | shared Perl library |
 | libpopt0:amd64 | 1.19+dfsg-2build1 | lib for parsing cmdline parameters |
