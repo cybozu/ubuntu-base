@@ -170,7 +170,7 @@
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.8 | SQLite 3 shared library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.8 | tiny C SSH library (OpenSSL flavor) |
-| libssl3:amd64 | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3:amd64 | 3.0.2-0ubuntu1.30 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.22 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
@@ -222,7 +222,7 @@
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
 | openssh-client | 1:8.9p1-3ubuntu0.17 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.0.2-0ubuntu1.29 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.0.2-0ubuntu1.30 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl | 5.34.0-3ubuntu1.9 | Larry Wall's Practical Extraction and Report Language |
 | perl-base | 5.34.0-3ubuntu1.9 | minimal Perl system |
@@ -241,7 +241,7 @@
 | python3-minimal | 3.10.6-1~22.04.1 | minimal subset of the Python language (default python3 version) |
 | python3-pkg-resources | 59.6.0-1.2ubuntu0.22.04.3 | Package Discovery and Resource Access using pkg_resources |
 | python3-pyasn1 | 0.4.8-1ubuntu0.3 | ASN.1 library for Python (Python 3 module) |
-| python3-requests | 2.25.1+dfsg-2ubuntu0.3 | elegant and simple HTTP library for Python3, built for human beings |
+| python3-requests | 2.25.1+dfsg-2ubuntu0.4 | elegant and simple HTTP library for Python3, built for human beings |
 | python3-roman | 3.3-1 | module for generating/analyzing Roman numerals for Python 3 |
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
 | python3-s3transfer | 0.5.0-1 | Amazon S3 Transfer Manager for Python3 |

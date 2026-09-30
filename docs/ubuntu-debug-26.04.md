@@ -171,7 +171,7 @@
 | libsqlite3-0:amd64 | 3.46.1-9ubuntu0.3 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.2-3ubuntu4 | command-line interface parsing library |
 | libssh2-1t64:amd64 | 1.11.1-1ubuntu0.26.04.4 | SSH2 client-side library |
-| libssl3t64:amd64 | 3.5.5-1ubuntu3.5 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3t64:amd64 | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 16-20260322-1ubuntu1 | GNU Standard C++ Library v3 |
 | libsystemd-shared:amd64 | 259.5-0ubuntu3.4 | systemd shared private library |
 | libsystemd0:amd64 | 259.5-0ubuntu3.4 | systemd utility library |
@@ -215,8 +215,8 @@
 | net-tools | 2.10-2ubuntu1 | NET-3 networking toolkit |
 | netbase | 6.5build1 | Basic TCP/IP networking system |
 | openssh-client | 1:10.2p1-2ubuntu3.6 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.5.5-1ubuntu3.5 | Secure Sockets Layer toolkit - cryptographic utility |
-| openssl-provider-legacy | 3.5.5-1ubuntu3.5 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl-provider-legacy | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.17.4-2ubuntu3 | change and administer password and group data |
 | perl | 5.40.1-7ubuntu0.3 | Larry Wall's Practical Extraction and Report Language |
 | perl-base | 5.40.1-7ubuntu0.3 | minimal Perl system |
@@ -229,7 +229,7 @@
 | python3-idna | 3.11-1ubuntu0.1 | Python IDNA2008 (RFC 5891) handling (Python 3) |
 | python3-magic | 2:0.4.27-3build1 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.14.3-0ubuntu2 | minimal subset of the Python language (default python3 version) |
-| python3-requests | 2.32.5+dfsg-1ubuntu1 | elegant and simple HTTP library for Python3, built for human beings |
+| python3-requests | 2.32.5+dfsg-1ubuntu1.1 | elegant and simple HTTP library for Python3, built for human beings |
 | python3-urllib3 | 2.6.3-1ubuntu1.1 | HTTP library with thread-safe connection pooling for Python3 |
 | python3.14 | 3.14.4-1ubuntu0.2 | Interactive high-level object-oriented language (version 3.14) |
 | python3.14-minimal | 3.14.4-1ubuntu0.2 | Minimal subset of the Python language (version 3.14) |
