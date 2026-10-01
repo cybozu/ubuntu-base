@@ -171,7 +171,7 @@
 | libsqlite3-0:amd64 | 3.46.1-9ubuntu0.3 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.2-3ubuntu4 | command-line interface parsing library |
 | libssh2-1t64:amd64 | 1.11.1-1ubuntu0.26.04.4 | SSH2 client-side library |
-| libssl3t64:amd64 | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - shared libraries |
+| libssl3t64:amd64 | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 16-20260322-1ubuntu1 | GNU Standard C++ Library v3 |
 | libsystemd-shared:amd64 | 259.5-0ubuntu3.4 | systemd shared private library |
 | libsystemd0:amd64 | 259.5-0ubuntu3.4 | systemd utility library |
@@ -215,8 +215,8 @@
 | net-tools | 2.10-2ubuntu1 | NET-3 networking toolkit |
 | netbase | 6.5build1 | Basic TCP/IP networking system |
 | openssh-client | 1:10.2p1-2ubuntu3.6 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - cryptographic utility |
-| openssl-provider-legacy | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl-provider-legacy | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.17.4-2ubuntu3 | change and administer password and group data |
 | perl | 5.40.1-7ubuntu0.3 | Larry Wall's Practical Extraction and Report Language |
 | perl-base | 5.40.1-7ubuntu0.3 | minimal Perl system |

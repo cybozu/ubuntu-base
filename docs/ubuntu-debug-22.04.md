@@ -196,7 +196,7 @@
 | libxext6:amd64 | 2:1.3.4-1build1 | X11 miscellaneous extension library |
 | libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.13 | GNOME XML library |
 | libxmu6:amd64 | 2:1.1.3-3 | X11 miscellaneous utility library |
-| libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.3 | X11 pixmap library |
+| libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.4 | X11 pixmap library |
 | libxt6:amd64 | 1:1.2.1-1 | X11 toolkit intrinsics library |
 | libxtables12:amd64 | 1.8.7-1ubuntu5.2 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
