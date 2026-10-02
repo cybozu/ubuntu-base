@@ -148,8 +148,8 @@
 | libsmartcols1:amd64 | 2.41.3-3ubuntu2.2 | smart column output alignment library |
 | libss2:amd64 | 1.47.2-3ubuntu4 | command-line interface parsing library |
 | libssh2-1t64:amd64 | 1.11.1-1ubuntu0.26.04.4 | SSH2 client-side library |
-| libssl-dev:amd64 | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - development files |
-| libssl3t64:amd64 | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - shared libraries |
+| libssl-dev:amd64 | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - development files |
+| libssl3t64:amd64 | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-15-dev:amd64 | 15.2.0-16ubuntu1 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 16-20260322-1ubuntu1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 259.5-0ubuntu3.4 | systemd utility library |
@@ -162,7 +162,7 @@
 | libuuid1:amd64 | 2.41.3-3ubuntu2.2 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.3-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.7+dfsg-3 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 7.0.0-34.34 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 7.0.0-38.38 | Linux Kernel Headers for development |
 | locales | 2.43-2ubuntu2.4 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.16.0-2+really2.41.3-3ubuntu2.2 | system login tools |
 | login.defs | 1:4.17.4-2ubuntu3 | system user management configuration |
@@ -175,8 +175,8 @@
 | ncurses-bin | 6.6+20251231-1 | terminal-related programs and man pages |
 | netbase | 6.5build1 | Basic TCP/IP networking system |
 | openssh-client | 1:10.2p1-2ubuntu3.6 | secure shell (SSH) client, for secure access to remote machines |
-| openssl | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - cryptographic utility |
-| openssl-provider-legacy | 3.5.5-1ubuntu3.6 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
+| openssl-provider-legacy | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.17.4-2ubuntu3 | change and administer password and group data |
 | patch | 2.8-2build1 | Apply a diff file to an original |
 | perl | 5.40.1-7ubuntu0.3 | Larry Wall's Practical Extraction and Report Language |
