@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.118ubuntu5 | add and remove users and groups |
-| apache2-utils | 2.4.52-1ubuntu4.23 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.52-1ubuntu4.24 | Apache HTTP Server (utility programs for web servers) |
 | apt | 2.4.14 | commandline package manager |
 | apt-transport-https | 2.4.14 | transitional package for https support |
 | apt-utils | 2.4.14 | package management related utility programs |
@@ -194,7 +194,7 @@
 | libxcb1:amd64 | 1.14-3ubuntu3 | X C Binding |
 | libxdmcp6:amd64 | 1:1.1.3-0ubuntu5 | X11 Display Manager Control Protocol library |
 | libxext6:amd64 | 2:1.3.4-1build1 | X11 miscellaneous extension library |
-| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.13 | GNOME XML library |
+| libxml2:amd64 | 2.9.13+dfsg-1ubuntu0.14 | GNOME XML library |
 | libxmu6:amd64 | 2:1.1.3-3 | X11 miscellaneous utility library |
 | libxpm4:amd64 | 1:3.5.12-1ubuntu0.22.04.4 | X11 pixmap library |
 | libxt6:amd64 | 1:1.2.1-1 | X11 toolkit intrinsics library |

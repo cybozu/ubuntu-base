@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.153ubuntu1 | add and remove users and groups |
-| apache2-utils | 2.4.66-2ubuntu2.4 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.66-2ubuntu2.5 | Apache HTTP Server (utility programs for web servers) |
 | apt | 3.2.0 | commandline package manager |
 | apt-transport-https | 3.2.0 | transitional package for https support |
 | apt-utils | 3.2.0 | package management related utility programs |
@@ -192,7 +192,7 @@
 | libuuid1:amd64 | 2.41.3-3ubuntu2.2 | Universally Unique ID library |
 | libuv1t64:amd64 | 1.51.0-2ubuntu1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-36build2 | Wietse Venema's TCP wrappers library |
-| libxml2-16:amd64 | 2.15.2+dfsg-0.1ubuntu0.2 | GNOME XML library |
+| libxml2-16:amd64 | 2.15.2+dfsg-0.1ubuntu0.3 | GNOME XML library |
 | libxtables12:amd64 | 1.8.11-2ubuntu3 | netfilter xtables library |
 | libxxhash0:amd64 | 0.8.3-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.7+dfsg-3 | fast lossless compression algorithm |
