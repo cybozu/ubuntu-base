@@ -187,8 +187,8 @@
 | libuuid1:amd64 | 2.37.2-4ubuntu3.6 | Universally Unique ID library |
 | libuv1:amd64 | 1.43.0-1ubuntu0.1 | asynchronous event notification library - runtime library |
 | libwrap0:amd64 | 7.6.q-31build2 | Wietse Venema's TCP wrappers library |
-| libx11-6:amd64 | 2:1.7.5-1ubuntu0.3 | X11 client-side library |
-| libx11-data | 2:1.7.5-1ubuntu0.3 | X11 client-side library |
+| libx11-6:amd64 | 2:1.7.5-1ubuntu0.4 | X11 client-side library |
+| libx11-data | 2:1.7.5-1ubuntu0.4 | X11 client-side library |
 | libxau6:amd64 | 1:1.0.9-1build5 | X11 authorisation library |
 | libxaw7:amd64 | 2:1.0.14-1 | X11 Athena Widget library |
 | libxcb1:amd64 | 1.14-3ubuntu3 | X C Binding |
