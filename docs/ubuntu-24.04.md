@@ -11,7 +11,7 @@
 | bsdutils | 1:2.39.3-9ubuntu6.6 | basic utilities from 4.4BSD-Lite |
 | ca-certificates | 20260601~24.04.1 | Common CA certificates |
 | coreutils | 9.4-3ubuntu6.3 | GNU core utilities |
-| curl | 8.5.0-2ubuntu10.15 | command line tool for transferring data with URL syntax |
+| curl | 8.5.0-2ubuntu10.16 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
 | debconf | 1.5.86ubuntu1 | Debian configuration management system |
 | debianutils | 5.17build1 | Miscellaneous utilities specific to Debian |
@@ -41,7 +41,7 @@
 | libcap2:amd64 | 1:2.66-5ubuntu2.4 | POSIX 1003.1e capabilities (library) |
 | libcom-err2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | common error description library |
 | libcrypt1:amd64 | 1:4.4.36-4build1 | libcrypt shared library |
-| libcurl4t64:amd64 | 8.5.0-2ubuntu10.15 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl4t64:amd64 | 8.5.0-2ubuntu10.16 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-7 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.271ubuntu3 | Debian Configuration Management System (C-implementation library) |
 | libext2fs2t64:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | ext2/ext3/ext4 file system libraries |
@@ -89,10 +89,10 @@
 | libssh-4:amd64 | 0.10.6-2ubuntu0.5 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.16 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.17 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.18 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2.2 | shared low-level terminfo library for terminal handling |
-| libudev1:amd64 | 255.4-1ubuntu8.17 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.18 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.6 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
@@ -114,7 +114,7 @@
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
 | tar | 1.35+dfsg-3ubuntu0.4 | GNU version of the tar archiving utility |
-| tzdata | 2026c-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026e-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | util-linux | 2.39.3-9ubuntu6.6 | miscellaneous system utilities |

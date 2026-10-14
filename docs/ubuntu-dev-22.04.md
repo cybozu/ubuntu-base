@@ -19,7 +19,7 @@
 | coreutils | 8.32-4.1ubuntu1.4 | GNU core utilities |
 | cpp | 4:11.2.0-1ubuntu1 | GNU C preprocessor (cpp) |
 | cpp-11 | 11.4.0-1ubuntu1~22.04.3 | GNU C preprocessor |
-| curl | 7.81.0-1ubuntu1.29 | command line tool for transferring data with URL syntax |
+| curl | 7.81.0-1ubuntu1.30 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
@@ -68,8 +68,8 @@
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.29 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4:amd64 | 7.81.0-1ubuntu1.29 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.30 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4:amd64 | 7.81.0-1ubuntu1.30 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
 | libdpkg-perl | 1.21.1ubuntu2.6 | Dpkg perl modules |
@@ -142,7 +142,7 @@
 | libssl3:amd64 | 3.0.2-0ubuntu1.30 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-11-dev:amd64 | 11.4.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 249.11-0ubuntu3.22 | systemd utility library |
+| libsystemd0:amd64 | 249.11-0ubuntu3.23 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.3-2ubuntu0.3 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
@@ -150,7 +150,7 @@
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libtsan0:amd64 | 11.4.0-1ubuntu1~22.04.3 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
 | libubsan1:amd64 | 12.3.0-1ubuntu1~22.04.3 | UBSan -- undefined behaviour sanitizer (runtime) |
-| libudev1:amd64 | 249.11-0ubuntu3.22 | libudev shared library |
+| libudev1:amd64 | 249.11-0ubuntu3.23 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libuuid1:amd64 | 2.37.2-4ubuntu3.6 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.1-1 | shared library for xxhash |
@@ -167,7 +167,7 @@
 | ncurses-base | 6.3-2ubuntu0.3 | basic terminal type definitions |
 | ncurses-bin | 6.3-2ubuntu0.3 | terminal-related programs and man pages |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.17 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.18 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.30 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | patch | 2.7.6-7build2 | Apply a diff file to an original |
@@ -181,7 +181,7 @@
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
 | tar | 1.34+dfsg-1ubuntu0.1.22.04.6 | GNU version of the tar archiving utility |
-| tzdata | 2026c-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026e-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.6 | miscellaneous system utilities |
