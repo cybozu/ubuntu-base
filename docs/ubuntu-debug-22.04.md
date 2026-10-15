@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.118ubuntu5 | add and remove users and groups |
-| apache2-utils | 2.4.52-1ubuntu4.24 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.52-1ubuntu4.25 | Apache HTTP Server (utility programs for web servers) |
 | apt | 2.4.14 | commandline package manager |
 | apt-transport-https | 2.4.14 | transitional package for https support |
 | apt-utils | 2.4.14 | package management related utility programs |
@@ -12,9 +12,9 @@
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
 | bash-completion | 1:2.11-5ubuntu1 | programmable completion for the bash shell |
-| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.6 | Clients provided with BIND 9 |
-| bind9-host | 1:9.18.39-0ubuntu0.22.04.6 | DNS Lookup Utility |
-| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.6 | Shared Libraries used by BIND 9 |
+| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.7 | Clients provided with BIND 9 |
+| bind9-host | 1:9.18.39-0ubuntu0.22.04.7 | DNS Lookup Utility |
+| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.7 | Shared Libraries used by BIND 9 |
 | binutils | 2.38-4ubuntu2.12 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.38-4ubuntu2.12 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.38-4ubuntu2.12 | GNU binary utilities, for x86-64-linux-gnu target |
@@ -24,7 +24,7 @@
 | ca-certificates | 20260601~22.04.1 | Common CA certificates |
 | conntrack | 1:1.4.6-2build2 | Program to modify the conntrack tables |
 | coreutils | 8.32-4.1ubuntu1.4 | GNU core utilities |
-| curl | 7.81.0-1ubuntu1.29 | command line tool for transferring data with URL syntax |
+| curl | 7.81.0-1ubuntu1.30 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
@@ -76,8 +76,8 @@
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.29 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4:amd64 | 7.81.0-1ubuntu1.29 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.30 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4:amd64 | 7.81.0-1ubuntu1.30 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdbus-1-3:amd64 | 1.12.20-2ubuntu4.1 | simple interprocess messaging system (library) |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
@@ -172,7 +172,7 @@
 | libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.8 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.30 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 249.11-0ubuntu3.22 | systemd utility library |
+| libsystemd0:amd64 | 249.11-0ubuntu3.23 | systemd utility library |
 | libtasn1-6:amd64 | 4.18.0-4ubuntu0.2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.12+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtime-duration-perl | 1.21-1 | module for rounded or exact English expression of durations |
@@ -181,7 +181,7 @@
 | libtirpc-common | 1.3.2-2ubuntu0.1 | transport-independent RPC library - common files |
 | libtirpc3:amd64 | 1.3.2-2ubuntu0.1 | transport-independent RPC library |
 | libuchardet0:amd64 | 0.0.7-1build2 | universal charset detection library - shared library |
-| libudev1:amd64 | 249.11-0ubuntu3.22 | libudev shared library |
+| libudev1:amd64 | 249.11-0ubuntu3.23 | libudev shared library |
 | libunistring2:amd64 | 1.0-1 | Unicode string library for C |
 | libunwind8:amd64 | 1.3.2-2build2.1 | library to determine the call-chain of a program - runtime |
 | libuuid1:amd64 | 2.37.2-4ubuntu3.6 | Universally Unique ID library |
@@ -221,7 +221,7 @@
 | ncurses-bin | 6.3-2ubuntu0.3 | terminal-related programs and man pages |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5.4 | NET-3 networking toolkit |
 | netbase | 6.3 | Basic TCP/IP networking system |
-| openssh-client | 1:8.9p1-3ubuntu0.17 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:8.9p1-3ubuntu0.18 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.0.2-0ubuntu1.30 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.8.1-2ubuntu2.2 | change and administer password and group data |
 | perl | 5.34.0-3ubuntu1.9 | Larry Wall's Practical Extraction and Report Language |
@@ -246,7 +246,7 @@
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
 | python3-s3transfer | 0.5.0-1 | Amazon S3 Transfer Manager for Python3 |
 | python3-six | 1.16.0-3ubuntu1 | Python 2 and 3 compatibility library (Python 3 interface) |
-| python3-urllib3 | 1.26.5-1~exp1ubuntu0.7 | HTTP library with thread-safe connection pooling for Python3 |
+| python3-urllib3 | 1.26.5-1~exp1ubuntu0.8 | HTTP library with thread-safe connection pooling for Python3 |
 | python3-yaml | 5.4.1-1ubuntu1 | YAML parser and emitter for Python3 |
 | python3.10 | 3.10.12-1~22.04.18 | Interactive high-level object-oriented language (version 3.10) |
 | python3.10-minimal | 3.10.12-1~22.04.18 | Minimal subset of the Python language (version 3.10) |
@@ -269,7 +269,7 @@
 | tcpdump | 4.99.1-3ubuntu0.2 | command-line network traffic analyzer |
 | telnet | 0.17-44build1 | basic telnet client |
 | traceroute | 1:2.1.0-2 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2026c-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026e-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |

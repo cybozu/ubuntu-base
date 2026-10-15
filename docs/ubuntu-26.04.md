@@ -12,7 +12,7 @@
 | ca-certificates | 20260601~26.04.1 | Common CA certificates |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
-| curl | 8.18.0-1ubuntu2.7 | command line tool for transferring data with URL syntax |
+| curl | 8.18.0-1ubuntu2.8 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-12ubuntu3 | POSIX-compliant shell |
 | debconf | 1.5.92 | Debian configuration management system |
 | debianutils | 5.23.2build1 | Miscellaneous utilities specific to Debian |
@@ -43,7 +43,7 @@
 | libcap-ng0:amd64 | 0.8.5-4build5 | alternate POSIX capabilities library |
 | libcom-err2:amd64 | 1.47.2-3ubuntu4 | common error description library |
 | libcrypt1:amd64 | 1:4.5.1-1 | libcrypt shared library |
-| libcurl4t64:amd64 | 8.18.0-1ubuntu2.7 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl4t64:amd64 | 8.18.0-1ubuntu2.8 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-10ubuntu1 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.280ubuntu1 | Debian Configuration Management System (C-implementation library) |
 | libext2fs2t64:amd64 | 1.47.2-3ubuntu4 | ext2/ext3/ext4 file system libraries |
@@ -119,7 +119,7 @@
 | sensible-utils | 0.0.26build1 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.15-5ubuntu1 | System-V-like utilities |
 | tar | 1.35+dfsg-4ubuntu0.4 | GNU version of the tar archiving utility |
-| tzdata | 2026c-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026e-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1build1 | GnuPG keys of the Ubuntu archive |
 | util-linux | 2.41.3-3ubuntu2.2 | miscellaneous system utilities |
 | zlib1g:amd64 | 1:1.3.dfsg+really1.3.1-1ubuntu3.1 | compression library - runtime |

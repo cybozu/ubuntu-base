@@ -22,7 +22,7 @@
 | cpp-15 | 15.2.0-16ubuntu1 | GNU C preprocessor |
 | cpp-15-x86-64-linux-gnu | 15.2.0-16ubuntu1 | GNU C preprocessor for x86_64-linux-gnu |
 | cpp-x86-64-linux-gnu | 4:15.2.0-5ubuntu1 | GNU C preprocessor (cpp) for the amd64 architecture |
-| curl | 8.18.0-1ubuntu2.7 | command line tool for transferring data with URL syntax |
+| curl | 8.18.0-1ubuntu2.8 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-12ubuntu3 | POSIX-compliant shell |
 | debconf | 1.5.92 | Debian configuration management system |
 | debianutils | 5.23.2build1 | Miscellaneous utilities specific to Debian |
@@ -76,8 +76,8 @@
 | libcrypt1:amd64 | 1:4.5.1-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.46-3ubuntu2 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.46-3ubuntu2 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3t64-gnutls:amd64 | 8.18.0-1ubuntu2.7 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4t64:amd64 | 8.18.0-1ubuntu2.7 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3t64-gnutls:amd64 | 8.18.0-1ubuntu2.8 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4t64:amd64 | 8.18.0-1ubuntu2.8 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-10ubuntu1 | Berkeley v5.3 Database Libraries [runtime] |
 | libdebconfclient0:amd64 | 0.280ubuntu1 | Debian Configuration Management System (C-implementation library) |
 | libdpkg-perl | 1.23.7ubuntu1 | Dpkg perl modules |
@@ -174,7 +174,7 @@
 | ncurses-base | 6.6+20251231-1 | basic terminal type definitions |
 | ncurses-bin | 6.6+20251231-1 | terminal-related programs and man pages |
 | netbase | 6.5build1 | Basic TCP/IP networking system |
-| openssh-client | 1:10.2p1-2ubuntu3.7 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:10.2p1-2ubuntu3.8 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | openssl-provider-legacy | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.17.4-2ubuntu3 | change and administer password and group data |
@@ -190,7 +190,7 @@
 | sensible-utils | 0.0.26build1 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.15-5ubuntu1 | System-V-like utilities |
 | tar | 1.35+dfsg-4ubuntu0.4 | GNU version of the tar archiving utility |
-| tzdata | 2026c-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026e-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1build1 | GnuPG keys of the Ubuntu archive |
 | util-linux | 2.41.3-3ubuntu2.2 | miscellaneous system utilities |
 | xz-utils | 5.8.3-1 | XZ-format compression utilities |

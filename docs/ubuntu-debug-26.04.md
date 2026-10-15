@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.153ubuntu1 | add and remove users and groups |
-| apache2-utils | 2.4.66-2ubuntu2.5 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.66-2ubuntu2.6 | Apache HTTP Server (utility programs for web servers) |
 | apt | 3.2.0 | commandline package manager |
 | apt-transport-https | 3.2.0 | transitional package for https support |
 | apt-utils | 3.2.0 | package management related utility programs |
@@ -11,9 +11,9 @@
 | base-passwd | 3.6.8 | Debian base system master password and group files |
 | bash | 5.3-2ubuntu1 | GNU Bourne Again SHell |
 | bash-completion | 1:2.16.0-8build1 | programmable completion for the bash shell |
-| bind9-dnsutils | 1:9.20.24-1ubuntu0.3 | Clients provided with BIND 9 |
-| bind9-host | 1:9.20.24-1ubuntu0.3 | DNS Lookup Utility |
-| bind9-libs:amd64 | 1:9.20.24-1ubuntu0.3 | Shared Libraries used by BIND 9 |
+| bind9-dnsutils | 1:9.20.24-1ubuntu0.4 | Clients provided with BIND 9 |
+| bind9-host | 1:9.20.24-1ubuntu0.4 | DNS Lookup Utility |
+| bind9-libs:amd64 | 1:9.20.24-1ubuntu0.4 | Shared Libraries used by BIND 9 |
 | binutils | 2.46-3ubuntu2 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.46-3ubuntu2 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.46-3ubuntu2 | GNU binary utilities, for x86-64-linux-gnu target |
@@ -24,7 +24,7 @@
 | conntrack | 1:1.4.9-1 | Program to modify the conntrack tables |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
-| curl | 8.18.0-1ubuntu2.7 | command line tool for transferring data with URL syntax |
+| curl | 8.18.0-1ubuntu2.8 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-12ubuntu3 | POSIX-compliant shell |
 | debconf | 1.5.92 | Debian configuration management system |
 | debianutils | 5.23.2build1 | Miscellaneous utilities specific to Debian |
@@ -75,8 +75,8 @@
 | libcrypt1:amd64 | 1:4.5.1-1 | libcrypt shared library |
 | libctf-nobfd0:amd64 | 2.46-3ubuntu2 | Compact C Type Format library (runtime, no BFD dependency) |
 | libctf0:amd64 | 2.46-3ubuntu2 | Compact C Type Format library (runtime, BFD dependency) |
-| libcurl3t64-gnutls:amd64 | 8.18.0-1ubuntu2.7 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
-| libcurl4t64:amd64 | 8.18.0-1ubuntu2.7 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
+| libcurl3t64-gnutls:amd64 | 8.18.0-1ubuntu2.8 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
+| libcurl4t64:amd64 | 8.18.0-1ubuntu2.8 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-10ubuntu1 | Berkeley v5.3 Database Libraries [runtime] |
 | libdbus-1-3:amd64 | 1.16.2-2ubuntu4 | simple interprocess messaging system (library) |
 | libdebconfclient0:amd64 | 0.280ubuntu1 | Debian Configuration Management System (C-implementation library) |
@@ -214,7 +214,7 @@
 | ncurses-bin | 6.6+20251231-1 | terminal-related programs and man pages |
 | net-tools | 2.10-2ubuntu1 | NET-3 networking toolkit |
 | netbase | 6.5build1 | Basic TCP/IP networking system |
-| openssh-client | 1:10.2p1-2ubuntu3.7 | secure shell (SSH) client, for secure access to remote machines |
+| openssh-client | 1:10.2p1-2ubuntu3.8 | secure shell (SSH) client, for secure access to remote machines |
 | openssl | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | openssl-provider-legacy | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.17.4-2ubuntu3 | change and administer password and group data |
@@ -230,7 +230,7 @@
 | python3-magic | 2:0.4.27-3build1 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.14.3-0ubuntu2 | minimal subset of the Python language (default python3 version) |
 | python3-requests | 2.32.5+dfsg-1ubuntu1.1 | elegant and simple HTTP library for Python3, built for human beings |
-| python3-urllib3 | 2.6.3-1ubuntu1.1 | HTTP library with thread-safe connection pooling for Python3 |
+| python3-urllib3 | 2.6.3-1ubuntu1.2 | HTTP library with thread-safe connection pooling for Python3 |
 | python3.14 | 3.14.4-1ubuntu0.2 | Interactive high-level object-oriented language (version 3.14) |
 | python3.14-minimal | 3.14.4-1ubuntu0.2 | Minimal subset of the Python language (version 3.14) |
 | rclone | 1.60.1+dfsg-4ubuntu3.2 | rsync for commercial cloud storage |
@@ -253,7 +253,7 @@
 | tcpdump | 4.99.6-1 | command-line network traffic analyzer |
 | telnet | 0.17+2.7-2ubuntu1.1 | transitional dummy package for inetutils-telnet default switch |
 | traceroute | 1:2.1.6-1build1 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2026c-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026e-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1build1 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0052ubuntu1 | Update Configuration File(s): preserve user changes to config files |
 | unzip | 6.0-29ubuntu1 | De-archiver for .zip files |
