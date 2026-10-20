@@ -42,8 +42,8 @@
 | gcc-16-base:amd64 | 16-20260322-1ubuntu1 | GCC, the GNU Compiler Collection (base package) |
 | gcc-x86-64-linux-gnu | 4:15.2.0-5ubuntu1 | GNU C compiler for the amd64 architecture |
 | gettext-base | 0.23.2-1 | GNU Internationalization utilities for the base system |
-| git | 1:2.53.0-1ubuntu1 | fast, scalable, distributed revision control system |
-| git-man | 1:2.53.0-1ubuntu1 | fast, scalable, distributed revision control system (manual pages) |
+| git | 1:2.53.0-1ubuntu1.1 | fast, scalable, distributed revision control system |
+| git-man | 1:2.53.0-1ubuntu1.1 | fast, scalable, distributed revision control system (manual pages) |
 | gnu-coreutils | 9.7-3ubuntu2.1 | GNU core utilities |
 | gpgv | 2.4.8-4ubuntu3.1 | GNU privacy guard - signature verification tool |
 | grep | 3.12-1 | GNU grep, egrep and fgrep |
@@ -152,12 +152,12 @@
 | libssl3t64:amd64 | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-15-dev:amd64 | 15.2.0-16ubuntu1 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 16-20260322-1ubuntu1 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 259.5-0ubuntu3.4 | systemd utility library |
+| libsystemd0:amd64 | 259.9-0ubuntu0.1 | systemd utility library |
 | libtasn1-6:amd64 | 4.21.0-2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.6+20251231-1 | shared low-level terminfo library for terminal handling |
 | libtsan2:amd64 | 16-20260322-1ubuntu1 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
 | libubsan1:amd64 | 16-20260322-1ubuntu1 | UBSan -- undefined behaviour sanitizer (runtime) |
-| libudev1:amd64 | 259.5-0ubuntu3.4 | libudev shared library |
+| libudev1:amd64 | 259.9-0ubuntu0.1 | libudev shared library |
 | libunistring5:amd64 | 1.3-2build1 | Unicode string library for C |
 | libuuid1:amd64 | 2.41.3-3ubuntu2.2 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.3-2build1 | shared library for xxhash |

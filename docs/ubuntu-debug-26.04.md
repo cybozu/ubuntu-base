@@ -173,8 +173,8 @@
 | libssh2-1t64:amd64 | 1.11.1-1ubuntu0.26.04.4 | SSH2 client-side library |
 | libssl3t64:amd64 | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 16-20260322-1ubuntu1 | GNU Standard C++ Library v3 |
-| libsystemd-shared:amd64 | 259.5-0ubuntu3.4 | systemd shared private library |
-| libsystemd0:amd64 | 259.5-0ubuntu3.4 | systemd utility library |
+| libsystemd-shared:amd64 | 259.9-0ubuntu0.1 | systemd shared private library |
+| libsystemd0:amd64 | 259.9-0ubuntu0.1 | systemd utility library |
 | libtasn1-6:amd64 | 4.21.0-2 | Manage ASN.1 structures (runtime) |
 | libtcl8.6:amd64 | 8.6.17+dfsg-1build1 | Tcl (the Tool Command Language) v8.6 - run-time library files |
 | libtcmalloc-minimal4t64:amd64 | 2.18.1-1 | efficient thread-caching malloc |
@@ -185,7 +185,7 @@
 | libtinfo6:amd64 | 6.6+20251231-1 | shared low-level terminfo library for terminal handling |
 | libtirpc-common | 1.3.7-0.1 | transport-independent RPC library - common files |
 | libtirpc3t64:amd64 | 1.3.7-0.1 | transport-independent RPC library |
-| libudev1:amd64 | 259.5-0ubuntu3.4 | libudev shared library |
+| libudev1:amd64 | 259.9-0ubuntu0.1 | libudev shared library |
 | libunistring5:amd64 | 1.3-2build1 | Unicode string library for C |
 | libunwind8:amd64 | 1.8.3-0ubuntu1 | library to determine the call-chain of a program - runtime |
 | liburcu8t64:amd64 | 0.15.6-1 | userspace RCU (read-copy-update) library |
@@ -245,7 +245,7 @@
 | sqlite3 | 3.46.1-9ubuntu0.3 | Command line interface for SQLite 3 |
 | strace | 6.19+ds-0ubuntu5 | System call tracer |
 | sysstat | 12.7.7-0ubuntu2 | system performance tools for Linux |
-| systemd | 259.5-0ubuntu3.4 | system and service manager |
+| systemd | 259.9-0ubuntu0.1 | system and service manager |
 | sysvinit-utils | 3.15-5ubuntu1 | System-V-like utilities |
 | tar | 1.35+dfsg-4ubuntu0.4 | GNU version of the tar archiving utility |
 | tcl-expect:amd64 | 5.45.4-4build1 | Automates interactive applications (Tcl package) |
