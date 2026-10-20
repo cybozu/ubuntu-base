@@ -20,7 +20,7 @@
 | bsdextrautils | 2.41.3-3ubuntu2.2 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.8build1 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.41.3-3ubuntu2.2 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20260601~26.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.26.04.1 | Common CA certificates |
 | conntrack | 1:1.4.9-1 | Program to modify the conntrack tables |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
@@ -120,7 +120,7 @@
 | libldap2:amd64 | 2.6.10+dfsg-1ubuntu5 | OpenLDAP libraries |
 | liblmdb0:amd64 | 0.9.31-1build2 | Lightning Memory-Mapped Database shared library |
 | liblz4-1:amd64 | 1.10.0-8 | Fast LZ compression algorithm library - runtime |
-| liblzma5:amd64 | 5.8.3-1 | XZ-format compression library |
+| liblzma5:amd64 | 5.8.3-1ubuntu0.1 | XZ-format compression library |
 | libmagic-mgc | 1:5.46-5build2 | File type determination library using "magic" numbers (compiled magic file) |
 | libmagic1t64:amd64 | 1:5.46-5build2 | Recognize the type of data in a file using "magic" numbers - library |
 | libmaxminddb0:amd64 | 1.12.2-1build2 | IP geolocation database library |
@@ -261,7 +261,7 @@
 | vim | 2:9.1.2141-1ubuntu4.9 | Vi IMproved - enhanced vi editor |
 | vim-common | 2:9.1.2141-1ubuntu4.9 | Vi IMproved - Common files |
 | vim-runtime | 2:9.1.2141-1ubuntu4.9 | Vi IMproved - Runtime files |
-| xz-utils | 5.8.3-1 | XZ-format compression utilities |
+| xz-utils | 5.8.3-1ubuntu0.1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg+really1.3.1-1ubuntu3.1 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.9 | crane is a tool for interacting with remote images and registries |

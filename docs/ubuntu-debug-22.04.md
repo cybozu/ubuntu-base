@@ -21,7 +21,7 @@
 | bsdextrautils | 2.37.2-4ubuntu3.6 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.7+nmu3ubuntu2 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.37.2-4ubuntu3.6 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20260601~22.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.22.04.1 | Common CA certificates |
 | conntrack | 1:1.4.6-2build2 | Program to modify the conntrack tables |
 | coreutils | 8.32-4.1ubuntu1.4 | GNU core utilities |
 | curl | 7.81.0-1ubuntu1.30 | command line tool for transferring data with URL syntax |
@@ -117,7 +117,7 @@
 | libldap-2.5-0:amd64 | 2.5.20+dfsg-0ubuntu0.22.04.1 | OpenLDAP libraries |
 | liblmdb0:amd64 | 0.9.24-1build2 | Lightning Memory-Mapped Database shared library |
 | liblz4-1:amd64 | 1.9.3-2build2 | Fast LZ compression algorithm library - runtime |
-| liblzma5:amd64 | 5.2.5-2ubuntu1.1 | XZ-format compression library |
+| liblzma5:amd64 | 5.2.5-2ubuntu1.2 | XZ-format compression library |
 | libmagic-mgc | 1:5.41-3ubuntu0.1 | File type determination library using "magic" numbers (compiled magic file) |
 | libmagic1:amd64 | 1:5.41-3ubuntu0.1 | Recognize the type of data in a file using "magic" numbers - library |
 | libmaxminddb0:amd64 | 1.5.2-1build2 | IP geolocation database library |
@@ -280,7 +280,7 @@
 | x11-common | 1:7.7+23ubuntu2 | X Window System (X.Org) infrastructure |
 | xml-core | 0.18+nmu1 | XML infrastructure and XML catalog file support |
 | xxd | 2:8.2.3995-1ubuntu2.36 | tool to make (or reverse) a hex dump |
-| xz-utils | 5.2.5-2ubuntu1.1 | XZ-format compression utilities |
+| xz-utils | 5.2.5-2ubuntu1.2 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.2.11.dfsg-2ubuntu9.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |
 | crane | 0.21.9 | crane is a tool for interacting with remote images and registries |

@@ -10,7 +10,7 @@
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
 | bsdutils | 1:2.37.2-4ubuntu3.6 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20260601~22.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.22.04.1 | Common CA certificates |
 | coreutils | 8.32-4.1ubuntu1.4 | GNU core utilities |
 | curl | 7.81.0-1ubuntu1.30 | command line tool for transferring data with URL syntax |
 | dash | 0.5.11+git20210903+057cd650a4ed-3build1 | POSIX-compliant shell |
@@ -60,7 +60,7 @@
 | libkrb5support0:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries - Support library |
 | libldap-2.5-0:amd64 | 2.5.20+dfsg-0ubuntu0.22.04.1 | OpenLDAP libraries |
 | liblz4-1:amd64 | 1.9.3-2build2 | Fast LZ compression algorithm library - runtime |
-| liblzma5:amd64 | 5.2.5-2ubuntu1.1 | XZ-format compression library |
+| liblzma5:amd64 | 5.2.5-2ubuntu1.2 | XZ-format compression library |
 | libmount1:amd64 | 2.37.2-4ubuntu3.6 | device mounting library |
 | libncurses6:amd64 | 6.3-2ubuntu0.3 | shared libraries for terminal handling |
 | libncursesw6:amd64 | 6.3-2ubuntu0.3 | shared libraries for terminal handling (wide character support) |

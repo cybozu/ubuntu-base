@@ -9,7 +9,7 @@
 | base-passwd | 3.6.8 | Debian base system master password and group files |
 | bash | 5.3-2ubuntu1 | GNU Bourne Again SHell |
 | bsdutils | 1:2.41.3-3ubuntu2.2 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20260601~26.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.26.04.1 | Common CA certificates |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
 | curl | 8.18.0-1ubuntu2.8 | command line tool for transferring data with URL syntax |
@@ -63,7 +63,7 @@
 | libldap-common | 2.6.10+dfsg-1ubuntu5 | OpenLDAP common files for libraries |
 | libldap2:amd64 | 2.6.10+dfsg-1ubuntu5 | OpenLDAP libraries |
 | liblz4-1:amd64 | 1.10.0-8 | Fast LZ compression algorithm library - runtime |
-| liblzma5:amd64 | 5.8.3-1 | XZ-format compression library |
+| liblzma5:amd64 | 5.8.3-1ubuntu0.1 | XZ-format compression library |
 | libmd0:amd64 | 1.1.0-2build4 | message digest functions from BSD systems - shared library |
 | libmount1:amd64 | 2.41.3-3ubuntu2.2 | device mounting library |
 | libncursesw6:amd64 | 6.6+20251231-1 | shared libraries for terminal handling (wide character support) |
