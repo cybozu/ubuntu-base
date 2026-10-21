@@ -15,7 +15,7 @@
 | bsdutils | 1:2.41.3-3ubuntu2.2 | basic utilities from 4.4BSD-Lite |
 | build-essential | 12.12ubuntu2.26.04.2 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-6ubuntu0.1 | high-quality block-sorting file compressor - utilities |
-| ca-certificates | 20260601~26.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.26.04.1 | Common CA certificates |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
 | cpp | 4:15.2.0-5ubuntu1 | GNU C preprocessor (cpp) |
@@ -113,7 +113,7 @@
 | libldap2:amd64 | 2.6.10+dfsg-1ubuntu5 | OpenLDAP libraries |
 | liblsan0:amd64 | 16-20260322-1ubuntu1 | LeakSanitizer -- a memory leak detector (runtime) |
 | liblz4-1:amd64 | 1.10.0-8 | Fast LZ compression algorithm library - runtime |
-| liblzma5:amd64 | 5.8.3-1 | XZ-format compression library |
+| liblzma5:amd64 | 5.8.3-1ubuntu0.1 | XZ-format compression library |
 | libmd0:amd64 | 1.1.0-2build4 | message digest functions from BSD systems - shared library |
 | libmount1:amd64 | 2.41.3-3ubuntu2.2 | device mounting library |
 | libmpc3:amd64 | 1.3.1-3 | multiple precision complex floating-point library |
@@ -193,6 +193,6 @@
 | tzdata | 2026e-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1build1 | GnuPG keys of the Ubuntu archive |
 | util-linux | 2.41.3-3ubuntu2.2 | miscellaneous system utilities |
-| xz-utils | 5.8.3-1 | XZ-format compression utilities |
+| xz-utils | 5.8.3-1ubuntu0.1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg+really1.3.1-1ubuntu3.1 | compression library - runtime |
 | gh | 2.98.0 | Work seamlessly with GitHub from the command line |
