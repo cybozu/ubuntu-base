@@ -90,7 +90,7 @@
 | libgcrypt20:amd64 | 1.10.3-2ubuntu0.2 | LGPL Crypto library - runtime library |
 | libgdbm-compat4t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6t64:amd64 | 1.23-5.1build1 | GNU dbm database routines (runtime version)  |
-| libglib2.0-0t64:amd64 | 2.80.0-6ubuntu3.9 | GLib library of C routines |
+| libglib2.0-0t64:amd64 | 2.80.0-6ubuntu3.10 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.3.0+dfsg-2ubuntu6.1 | Multiprecision arithmetic library |
 | libgnutls30t64:amd64 | 3.8.3-1.1ubuntu3.6 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.47-3build2.1 | GnuPG development runtime library |
