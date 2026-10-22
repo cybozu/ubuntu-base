@@ -118,4 +118,4 @@
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | util-linux | 2.39.3-9ubuntu6.6 | miscellaneous system utilities |
-| zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.2 | compression library - runtime |
+| zlib1g:amd64 | 1:1.3.dfsg-3.1ubuntu2.3 | compression library - runtime |
