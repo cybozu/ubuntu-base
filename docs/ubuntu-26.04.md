@@ -122,4 +122,4 @@
 | tzdata | 2026e-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1build1 | GnuPG keys of the Ubuntu archive |
 | util-linux | 2.41.3-3ubuntu2.2 | miscellaneous system utilities |
-| zlib1g:amd64 | 1:1.3.dfsg+really1.3.1-1ubuntu3.1 | compression library - runtime |
+| zlib1g:amd64 | 1:1.3.dfsg+really1.3.1-1ubuntu3.2 | compression library - runtime |
