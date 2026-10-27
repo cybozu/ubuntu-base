@@ -61,7 +61,7 @@
 | libbinutils:amd64 | 2.46-3ubuntu2 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.41.3-3ubuntu2.2 | block device ID library |
 | libbpf1:amd64 | 1:1.6.3-1ubuntu1 | eBPF helper library (shared library) |
-| libbrotli1:amd64 | 1.2.0-3build1 | library implementing brotli encoder and decoder (shared libraries) |
+| libbrotli1:amd64 | 1.2.0-3ubuntu0.1 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.2-2build2 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-6ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
 | libc-bin | 2.43-2ubuntu2.4 | GNU C Library: Binaries |

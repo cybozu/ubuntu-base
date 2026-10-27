@@ -52,7 +52,7 @@
 | libaudit1:amd64 | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing |
 | libbinutils:amd64 | 2.38-4ubuntu2.12 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.37.2-4ubuntu3.6 | block device ID library |
-| libbrotli1:amd64 | 1.0.9-2build6 | library implementing brotli encoder and decoder (shared libraries) |
+| libbrotli1:amd64 | 1.0.9-2ubuntu0.1 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.11.5-1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
 | libc-bin | 2.35-0ubuntu3.15 | GNU C Library: Binaries |

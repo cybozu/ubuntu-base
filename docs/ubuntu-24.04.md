@@ -33,7 +33,7 @@
 | libaudit-common | 1:3.1.2-2.1ubuntu0.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.1.2-2.1ubuntu0.1 | Dynamic library for security auditing |
 | libblkid1:amd64 | 2.39.3-9ubuntu6.6 | block device ID library |
-| libbrotli1:amd64 | 1.1.0-2build2 | library implementing brotli encoder and decoder (shared libraries) |
+| libbrotli1:amd64 | 1.1.0-2ubuntu0.1 | library implementing brotli encoder and decoder (shared libraries) |
 | libbz2-1.0:amd64 | 1.0.8-5.1ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
 | libc-bin | 2.39-0ubuntu8.9 | GNU C Library: Binaries |
 | libc6:amd64 | 2.39-0ubuntu8.9 | GNU C Library: Shared libraries |
