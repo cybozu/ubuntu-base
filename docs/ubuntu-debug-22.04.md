@@ -29,7 +29,7 @@
 | debconf | 1.5.79ubuntu1 | Debian configuration management system |
 | debianutils | 5.5-1ubuntu2 | Miscellaneous utilities specific to Debian |
 | diffutils | 1:3.8-0ubuntu2.1 | File comparison utilities |
-| distro-info-data | 0.72-0ubuntu0.22.04.1 | information about the distributions' releases (data files) |
+| distro-info-data | 2026.10.12-0ubuntu0.22.04.1 | information about the distributions' releases (data files) |
 | docutils-common | 0.17.1+dfsg-2 | text processing system for reStructuredText - common data |
 | dpkg | 1.21.1ubuntu2.6 | Debian package management system |
 | e2fsprogs | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system utilities |
@@ -63,7 +63,7 @@
 | libblkid1:amd64 | 2.37.2-4ubuntu3.6 | block device ID library |
 | libboost-regex1.74.0:amd64 | 1.74.0-14ubuntu3 | regular expression library for C++ |
 | libbpf0:amd64 | 1:0.5.0-1ubuntu22.04.1 | eBPF helper library (shared library) |
-| libbrotli1:amd64 | 1.0.9-2build6 | library implementing brotli encoder and decoder (shared libraries) |
+| libbrotli1:amd64 | 1.0.9-2ubuntu0.1 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.11.5-1 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-5ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
 | libc-bin | 2.35-0ubuntu3.15 | GNU C Library: Binaries |
