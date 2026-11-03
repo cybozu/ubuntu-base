@@ -12,9 +12,9 @@
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
 | bash-completion | 1:2.11-5ubuntu1 | programmable completion for the bash shell |
-| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.7 | Clients provided with BIND 9 |
-| bind9-host | 1:9.18.39-0ubuntu0.22.04.7 | DNS Lookup Utility |
-| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.7 | Shared Libraries used by BIND 9 |
+| bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.8 | Clients provided with BIND 9 |
+| bind9-host | 1:9.18.39-0ubuntu0.22.04.8 | DNS Lookup Utility |
+| bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.8 | Shared Libraries used by BIND 9 |
 | binutils | 2.38-4ubuntu2.12 | GNU assembler, linker and binary utilities |
 | binutils-common:amd64 | 2.38-4ubuntu2.12 | Common files for the GNU assembler, linker and binary utilities |
 | binutils-x86-64-linux-gnu | 2.38-4ubuntu2.12 | GNU binary utilities, for x86-64-linux-gnu target |
@@ -140,7 +140,7 @@
 | libpam-runtime | 1.4.0-11ubuntu2.8 | Runtime support for the PAM library |
 | libpam0g:amd64 | 1.4.0-11ubuntu2.8 | Pluggable Authentication Modules library |
 | libpcap0.8:amd64 | 1.10.1-4ubuntu1.22.04.2 | system interface for user-level packet capture |
-| libpcre2-8-0:amd64 | 10.39-3ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
+| libpcre2-8-0:amd64 | 10.39-3ubuntu0.2 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libpcre3:amd64 | 2:8.39-13ubuntu0.22.04.1 | Old Perl 5 Compatible Regular Expression Library - runtime files |
 | libperl5.34:amd64 | 5.34.0-3ubuntu1.9 | shared Perl library |
 | libpopt0:amd64 | 1.18-3build1 | lib for parsing cmdline parameters |
