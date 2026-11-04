@@ -128,7 +128,7 @@
 | libpam-modules-bin | 1.5.3-5ubuntu5.7 | Pluggable Authentication Modules for PAM - helper binaries |
 | libpam-runtime | 1.5.3-5ubuntu5.7 | Runtime support for the PAM library |
 | libpam0g:amd64 | 1.5.3-5ubuntu5.7 | Pluggable Authentication Modules library |
-| libpcre2-8-0:amd64 | 10.42-4ubuntu2.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
+| libpcre2-8-0:amd64 | 10.42-4ubuntu2.2 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libperl5.38t64:amd64 | 5.38.2-3.2ubuntu0.6 | shared Perl library |
 | libproc2-0:amd64 | 2:4.0.4-4ubuntu3.3 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build1 | Library for Public Suffix List (shared libraries) |
