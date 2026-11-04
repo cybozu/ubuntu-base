@@ -4,9 +4,9 @@
 |------|---------|-------------|
 | adduser | 3.137ubuntu1 | add and remove users and groups |
 | apache2-utils | 2.4.58-1ubuntu8.17 | Apache HTTP Server (utility programs for web servers) |
-| apt | 2.8.3 | commandline package manager |
-| apt-transport-https | 2.8.3 | transitional package for https support |
-| apt-utils | 2.8.3 | package management related utility programs |
+| apt | 2.8.4ubuntu0.1 | commandline package manager |
+| apt-transport-https | 2.8.4ubuntu0.1 | transitional package for https support |
+| apt-utils | 2.8.4ubuntu0.1 | package management related utility programs |
 | base-files | 13ubuntu10.5 | Debian base system miscellaneous files |
 | base-passwd | 3.6.3build1 | Debian base system master password and group files |
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
@@ -50,7 +50,7 @@
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
 | libapr1t64:amd64 | 1.7.2-3.1ubuntu0.1 | Apache Portable Runtime Library |
 | libaprutil1t64:amd64 | 1.6.3-1.1ubuntu7.1 | Apache Portable Runtime Utility Library |
-| libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
+| libapt-pkg6.0t64:amd64 | 2.8.4ubuntu0.1 | package management runtime library |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libattr1:amd64 | 1:2.5.2-1ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.1.2-2.1ubuntu0.1 | Dynamic library for security auditing - common files |
@@ -164,7 +164,7 @@
 | libsodium23:amd64 | 1.0.18-1ubuntu0.24.04.1 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build1 | architecture-independent files for source highlighting library |
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
-| libsqlite3-0:amd64 | 3.45.1-1ubuntu2.8 | SQLite 3 shared library |
+| libsqlite3-0:amd64 | 3.45.1-1ubuntu2.9 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
 | libssh-4:amd64 | 0.10.6-2ubuntu0.5 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.16 | Secure Sockets Layer toolkit - shared libraries |
@@ -231,7 +231,7 @@
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | smartmontools | 7.4-2build1 | control and monitor storage systems using S.M.A.R.T. |
 | socat | 1.8.0.0-4ubuntu0.1 | multipurpose relay for bidirectional data transfer |
-| sqlite3 | 3.45.1-1ubuntu2.8 | Command line interface for SQLite 3 |
+| sqlite3 | 3.45.1-1ubuntu2.9 | Command line interface for SQLite 3 |
 | strace | 6.8-0ubuntu2 | System call tracer |
 | sysstat | 12.6.1-2 | system performance tools for Linux |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |

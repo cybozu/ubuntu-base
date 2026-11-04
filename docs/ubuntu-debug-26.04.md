@@ -4,10 +4,10 @@
 |------|---------|-------------|
 | adduser | 3.153ubuntu1 | add and remove users and groups |
 | apache2-utils | 2.4.66-2ubuntu2.6 | Apache HTTP Server (utility programs for web servers) |
-| apt | 3.2.0 | commandline package manager |
-| apt-transport-https | 3.2.0 | transitional package for https support |
-| apt-utils | 3.2.0 | package management related utility programs |
-| base-files | 14ubuntu6.2 | Debian base system miscellaneous files |
+| apt | 3.2.1ubuntu0.1 | commandline package manager |
+| apt-transport-https | 3.2.1ubuntu0.1 | transitional package for https support |
+| apt-utils | 3.2.1ubuntu0.1 | package management related utility programs |
+| base-files | 14ubuntu6.3 | Debian base system miscellaneous files |
 | base-passwd | 3.6.8 | Debian base system master password and group files |
 | bash | 5.3-2ubuntu1 | GNU Bourne Again SHell |
 | bash-completion | 1:2.16.0-8build1 | programmable completion for the bash shell |
@@ -52,7 +52,7 @@
 | libacl1:amd64 | 2.3.2-2 | access control list - shared library |
 | libapr1t64:amd64 | 1.7.6-3 | Apache Portable Runtime Library |
 | libaprutil1t64:amd64 | 1.6.3-3ubuntu3.1 | Apache Portable Runtime Utility Library |
-| libapt-pkg7.0:amd64 | 3.2.0 | package management runtime library |
+| libapt-pkg7.0:amd64 | 3.2.1ubuntu0.1 | package management runtime library |
 | libatomic1:amd64 | 16-20260322-1ubuntu1 | support library providing __atomic built-in functions |
 | libattr1:amd64 | 1:2.5.2-4ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:4.1.2-1ubuntu0.1 | Dynamic library for security auditing - common files |
@@ -258,9 +258,9 @@
 | ucf | 3.0052ubuntu1 | Update Configuration File(s): preserve user changes to config files |
 | unzip | 6.0-29ubuntu1 | De-archiver for .zip files |
 | util-linux | 2.41.3-3ubuntu2.2 | miscellaneous system utilities |
-| vim | 2:9.1.2141-1ubuntu4.9 | Vi IMproved - enhanced vi editor |
-| vim-common | 2:9.1.2141-1ubuntu4.9 | Vi IMproved - Common files |
-| vim-runtime | 2:9.1.2141-1ubuntu4.9 | Vi IMproved - Runtime files |
+| vim | 2:9.1.2141-1ubuntu4.10 | Vi IMproved - enhanced vi editor |
+| vim-common | 2:9.1.2141-1ubuntu4.10 | Vi IMproved - Common files |
+| vim-runtime | 2:9.1.2141-1ubuntu4.10 | Vi IMproved - Runtime files |
 | xz-utils | 5.8.3-1ubuntu0.1 | XZ-format compression utilities |
 | zlib1g:amd64 | 1:1.3.dfsg+really1.3.1-1ubuntu3.2 | compression library - runtime |
 | grpcurl | 1.9.3 | gRPC reflection and command-line tool |

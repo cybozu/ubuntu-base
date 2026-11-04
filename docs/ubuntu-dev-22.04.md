@@ -3,9 +3,9 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.118ubuntu5 | add and remove users and groups |
-| apt | 2.4.14 | commandline package manager |
-| apt-transport-https | 2.4.14 | transitional package for https support |
-| apt-utils | 2.4.14 | package management related utility programs |
+| apt | 2.4.15ubuntu0.1 | commandline package manager |
+| apt-transport-https | 2.4.15ubuntu0.1 | transitional package for https support |
+| apt-utils | 2.4.15ubuntu0.1 | package management related utility programs |
 | base-files | 12ubuntu4.7 | Debian base system miscellaneous files |
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
@@ -44,7 +44,7 @@
 | init-system-helpers | 1.62 | helper tools for all init systems |
 | jq | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor |
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
-| libapt-pkg6.0:amd64 | 2.4.14 | package management runtime library |
+| libapt-pkg6.0:amd64 | 2.4.15ubuntu0.1 | package management runtime library |
 | libasan6:amd64 | 11.4.0-1ubuntu1~22.04.3 | AddressSanitizer -- a fast memory error detector |
 | libatomic1:amd64 | 12.3.0-1ubuntu1~22.04.3 | support library providing __atomic built-in functions |
 | libattr1:amd64 | 1:2.5.1-1ubuntu0.1 | extended attribute handling - shared library |
