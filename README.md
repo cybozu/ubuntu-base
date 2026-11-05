@@ -6,9 +6,21 @@ Basic Ubuntu container images for Cybozu products.
 
 ## Container Images
 
+All images are tagged in the same format:
+
+- `<ubuntu version>.<YYYYMMDD>` (e.g. `22.04.20260605`): the release tag managed in `<ubuntu version>/TAG`
+- `<ubuntu version>` (e.g. `22.04`): points to the latest release
+
+The upstream Ubuntu image used as the base is pinned by `<ubuntu version>/UPSTREAM_UBUNTU_TAG` and `<ubuntu version>/DIGEST_DOCKERHUB_UBUNTU`.
+
 ### ubuntu-minimal
 
 Simply copies the upstream Ubuntu image without any modifications.
+
+**Registry URL:**
+- <https://github.com/cybozu/ubuntu-base/pkgs/container/ubuntu-minimal>
+
+Images released before the tag format was unified are tagged with the upstream Ubuntu tag (e.g. `jammy-20260509`, `noble-20260509.1`). These tags are kept but no longer updated.
 
 ### ubuntu
 

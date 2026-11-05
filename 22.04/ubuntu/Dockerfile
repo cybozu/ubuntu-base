@@ -1,8 +1,8 @@
-ARG TAG_MINIMAL
+ARG TAG
 
 FROM registry.k8s.io/pause:3.10.2@sha256:f548e0e8e3dc1896ca956272154dde3314e8cc4fde0a57577ee9fa1c63f5baf4
 
-FROM ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}
+FROM ghcr.io/cybozu/ubuntu-minimal:${TAG}
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \

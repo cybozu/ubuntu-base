@@ -31,7 +31,7 @@ jobs:
       - name: Resolve build variables
         run: |
           echo "UBUNTU_VERSION=${{ matrix.ubuntu-version }}" >> $GITHUB_ENV
-          echo "TAG_MINIMAL=$(cat ${{ matrix.ubuntu-version }}/TAG_MINIMAL)" >> $GITHUB_ENV
+          echo "UPSTREAM_UBUNTU_TAG=$(cat ${{ matrix.ubuntu-version }}/UPSTREAM_UBUNTU_TAG)" >> $GITHUB_ENV
           echo "TAG=$(cat ${{ matrix.ubuntu-version }}/TAG)" >> $GITHUB_ENV
           echo "DIGEST_DOCKERHUB_UBUNTU=$(cat ${{ matrix.ubuntu-version }}/DIGEST_DOCKERHUB_UBUNTU)" >> $GITHUB_ENV
       - name: Check if images need to be pushed
@@ -92,12 +92,8 @@ jobs:
             exit 0
           fi
 
+          TAG=$(cat "${UBUNTU_VERSION}/TAG")
           while read -r image; do
-            if [[ "$image" == "ubuntu-minimal" ]]; then
-              TAG=$(cat "${UBUNTU_VERSION}/TAG_MINIMAL")
-            else
-              TAG=$(cat "${UBUNTU_VERSION}/TAG")
-            fi
             export YAMORY_IMAGE_NAME="ghcr.io/cybozu/$image:$TAG"
             export YAMORY_IMAGE_IDENTIFIER="ghcr.io/cybozu/$image:${UBUNTU_VERSION}"
             yamory-image-scan
