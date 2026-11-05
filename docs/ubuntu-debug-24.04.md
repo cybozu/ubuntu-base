@@ -20,7 +20,7 @@
 | bsdextrautils | 2.39.3-9ubuntu6.6 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.8 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.39.3-9ubuntu6.6 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20260816ubuntu0.24.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.24.04.2 | Common CA certificates |
 | conntrack | 1:1.4.8-1ubuntu1 | Program to modify the conntrack tables |
 | coreutils | 9.4-3ubuntu6.3 | GNU core utilities |
 | curl | 8.5.0-2ubuntu10.16 | command line tool for transferring data with URL syntax |

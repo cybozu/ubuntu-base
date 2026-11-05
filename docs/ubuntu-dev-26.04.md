@@ -15,7 +15,7 @@
 | bsdutils | 1:2.41.3-3ubuntu2.2 | basic utilities from 4.4BSD-Lite |
 | build-essential | 12.12ubuntu2.26.04.2 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-6ubuntu0.1 | high-quality block-sorting file compressor - utilities |
-| ca-certificates | 20260816ubuntu0.26.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.26.04.2 | Common CA certificates |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
 | cpp | 4:15.2.0-5ubuntu1 | GNU C preprocessor (cpp) |

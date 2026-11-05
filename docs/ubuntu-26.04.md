@@ -9,7 +9,7 @@
 | base-passwd | 3.6.8 | Debian base system master password and group files |
 | bash | 5.3-2ubuntu1 | GNU Bourne Again SHell |
 | bsdutils | 1:2.41.3-3ubuntu2.2 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20260816ubuntu0.26.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.26.04.2 | Common CA certificates |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
 | curl | 8.18.0-1ubuntu2.8 | command line tool for transferring data with URL syntax |

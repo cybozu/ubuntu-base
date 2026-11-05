@@ -9,7 +9,7 @@
 | base-passwd | 3.6.3build1 | Debian base system master password and group files |
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
 | bsdutils | 1:2.39.3-9ubuntu6.6 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20260816ubuntu0.24.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.24.04.2 | Common CA certificates |
 | coreutils | 9.4-3ubuntu6.3 | GNU core utilities |
 | curl | 8.5.0-2ubuntu10.16 | command line tool for transferring data with URL syntax |
 | dash | 0.5.12-6ubuntu5 | POSIX-compliant shell |
