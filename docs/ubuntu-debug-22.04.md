@@ -4,9 +4,9 @@
 |------|---------|-------------|
 | adduser | 3.118ubuntu5 | add and remove users and groups |
 | apache2-utils | 2.4.52-1ubuntu4.25 | Apache HTTP Server (utility programs for web servers) |
-| apt | 2.4.14 | commandline package manager |
-| apt-transport-https | 2.4.14 | transitional package for https support |
-| apt-utils | 2.4.14 | package management related utility programs |
+| apt | 2.4.15ubuntu0.1 | commandline package manager |
+| apt-transport-https | 2.4.15ubuntu0.1 | transitional package for https support |
+| apt-utils | 2.4.15ubuntu0.1 | package management related utility programs |
 | awscli | 1.22.34-1 | Universal Command Line Environment for AWS |
 | base-files | 12ubuntu4.7 | Debian base system miscellaneous files |
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
@@ -54,7 +54,7 @@
 | libacl1:amd64 | 2.3.1-1 | access control list - shared library |
 | libapr1:amd64 | 1.7.0-8ubuntu0.22.04.2 | Apache Portable Runtime Library |
 | libaprutil1:amd64 | 1.6.1-5ubuntu4.22.04.3 | Apache Portable Runtime Utility Library |
-| libapt-pkg6.0:amd64 | 2.4.14 | package management runtime library |
+| libapt-pkg6.0:amd64 | 2.4.15ubuntu0.1 | package management runtime library |
 | libattr1:amd64 | 1:2.5.1-1ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing |
@@ -94,7 +94,7 @@
 | libgcrypt20:amd64 | 1.9.4-3ubuntu3.3 | LGPL Crypto library - runtime library |
 | libgdbm-compat4:amd64 | 1.23-1 | GNU dbm database routines (legacy support runtime version)  |
 | libgdbm6:amd64 | 1.23-1 | GNU dbm database routines (runtime version)  |
-| libglib2.0-0:amd64 | 2.72.4-0ubuntu2.10 | GLib library of C routines |
+| libglib2.0-0:amd64 | 2.72.4-0ubuntu2.11 | GLib library of C routines |
 | libgmp10:amd64 | 2:6.2.1+dfsg-3ubuntu1 | Multiprecision arithmetic library |
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.9 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |

@@ -2,10 +2,10 @@
 
 | Name | Version | Description |
 |------|---------|-------------|
-| apt | 3.2.0 | commandline package manager |
-| apt-transport-https | 3.2.0 | transitional package for https support |
-| apt-utils | 3.2.0 | package management related utility programs |
-| base-files | 14ubuntu6.2 | Debian base system miscellaneous files |
+| apt | 3.2.1ubuntu0.1 | commandline package manager |
+| apt-transport-https | 3.2.1ubuntu0.1 | transitional package for https support |
+| apt-utils | 3.2.1ubuntu0.1 | package management related utility programs |
+| base-files | 14ubuntu6.3 | Debian base system miscellaneous files |
 | base-passwd | 3.6.8 | Debian base system master password and group files |
 | bash | 5.3-2ubuntu1 | GNU Bourne Again SHell |
 | bsdutils | 1:2.41.3-3ubuntu2.2 | basic utilities from 4.4BSD-Lite |
@@ -29,7 +29,7 @@
 | hostname | 3.25build1 | utility to set/show the host name or domain name |
 | init-system-helpers | 1.69 | helper tools for all init systems |
 | libacl1:amd64 | 2.3.2-2 | access control list - shared library |
-| libapt-pkg7.0:amd64 | 3.2.0 | package management runtime library |
+| libapt-pkg7.0:amd64 | 3.2.1ubuntu0.1 | package management runtime library |
 | libattr1:amd64 | 1:2.5.2-4ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:4.1.2-1ubuntu0.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:4.1.2-1ubuntu0.1 | Dynamic library for security auditing |

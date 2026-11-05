@@ -3,9 +3,9 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.137ubuntu1 | add and remove users and groups |
-| apt | 2.8.3 | commandline package manager |
-| apt-transport-https | 2.8.3 | transitional package for https support |
-| apt-utils | 2.8.3 | package management related utility programs |
+| apt | 2.8.4ubuntu0.1 | commandline package manager |
+| apt-transport-https | 2.8.4ubuntu0.1 | transitional package for https support |
+| apt-utils | 2.8.4ubuntu0.1 | package management related utility programs |
 | base-files | 13ubuntu10.5 | Debian base system miscellaneous files |
 | base-passwd | 3.6.3build1 | Debian base system master password and group files |
 | bash | 5.2.21-2ubuntu4 | GNU Bourne Again SHell |
@@ -50,7 +50,7 @@
 | init-system-helpers | 1.66ubuntu1 | helper tools for all init systems |
 | jq | 1.7.1-3ubuntu0.24.04.2 | lightweight and flexible command-line JSON processor |
 | libacl1:amd64 | 2.3.2-1build1.1 | access control list - shared library |
-| libapt-pkg6.0t64:amd64 | 2.8.3 | package management runtime library |
+| libapt-pkg6.0t64:amd64 | 2.8.4ubuntu0.1 | package management runtime library |
 | libasan8:amd64 | 14.2.0-4ubuntu2~24.04.1 | AddressSanitizer -- a fast memory error detector |
 | libassuan0:amd64 | 2.5.6-1build1 | IPC library for the GnuPG components |
 | libatomic1:amd64 | 14.2.0-4ubuntu2~24.04.1 | support library providing __atomic built-in functions |
