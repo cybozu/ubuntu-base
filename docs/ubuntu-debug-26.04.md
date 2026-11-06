@@ -20,7 +20,7 @@
 | bsdextrautils | 2.41.3-3ubuntu2.2 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.8build1 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.41.3-3ubuntu2.2 | basic utilities from 4.4BSD-Lite |
-| ca-certificates | 20260816ubuntu0.26.04.1 | Common CA certificates |
+| ca-certificates | 20260816ubuntu0.26.04.2 | Common CA certificates |
 | conntrack | 1:1.4.9-1 | Program to modify the conntrack tables |
 | coreutils | 9.5-1ubuntu2+0.0.0~ubuntu25 | coreutils meta package |
 | coreutils-from-uutils | 0.0.0~ubuntu25 | coreutils from the uutils project |
