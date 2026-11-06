@@ -21,11 +21,11 @@ jobs:
       - name: Resolve build variables
         run: |
           UBUNTU_VERSION=${{ matrix.ubuntu-version }}
-          TAG_MINIMAL=$(cat ${UBUNTU_VERSION}/TAG_MINIMAL)
+          UPSTREAM_UBUNTU_TAG=$(cat ${UBUNTU_VERSION}/UPSTREAM_UBUNTU_TAG)
           TAG=$(cat ${UBUNTU_VERSION}/TAG)
           DIGEST_DOCKERHUB_UBUNTU=$(cat ${UBUNTU_VERSION}/DIGEST_DOCKERHUB_UBUNTU)
 
-          for required in UBUNTU_VERSION TAG_MINIMAL TAG DIGEST_DOCKERHUB_UBUNTU; do
+          for required in UBUNTU_VERSION UPSTREAM_UBUNTU_TAG TAG DIGEST_DOCKERHUB_UBUNTU; do
             if [[ -z "${!required}" ]]; then
               echo "required variable is empty: ${required}"
               exit 1
@@ -33,7 +33,7 @@ jobs:
           done
 
           echo "UBUNTU_VERSION=${UBUNTU_VERSION}" >> $GITHUB_ENV
-          echo "TAG_MINIMAL=${TAG_MINIMAL}" >> $GITHUB_ENV
+          echo "UPSTREAM_UBUNTU_TAG=${UPSTREAM_UBUNTU_TAG}" >> $GITHUB_ENV
           echo "TAG=${TAG}" >> $GITHUB_ENV
           echo "DIGEST_DOCKERHUB_UBUNTU=${DIGEST_DOCKERHUB_UBUNTU}" >> $GITHUB_ENV
 

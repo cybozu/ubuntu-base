@@ -7,12 +7,12 @@ variable "UBUNTU_VERSION" {
   }
 }
 
-variable "TAG_MINIMAL" {
+variable "UPSTREAM_UBUNTU_TAG" {
   type        = string
-  description = "Upstream ubuntu tag used by ubuntu-minimal base (e.g. jammy-20260514)."
+  description = "Upstream ubuntu tag in Docker Hub used by ubuntu-minimal base (e.g. jammy-20260514)."
   validation {
-    condition     = TAG_MINIMAL != ""
-    error_message = "TAG_MINIMAL must not be empty"
+    condition     = UPSTREAM_UBUNTU_TAG != ""
+    error_message = "UPSTREAM_UBUNTU_TAG must not be empty"
   }
 }
 
@@ -27,7 +27,7 @@ variable "DIGEST_DOCKERHUB_UBUNTU" {
 
 variable "TAG" {
   type        = string
-  description = "Release tag for ubuntu/ubuntu-dev/ubuntu-debug images (e.g. 22.04.20260603)."
+  description = "Release tag for all images (e.g. 22.04.20260603)."
   validation {
     condition     = TAG != ""
     error_message = "TAG must not be empty"
@@ -43,10 +43,13 @@ target "ubuntu-minimal" {
   dockerfile = "Dockerfile"
   platforms = ["linux/amd64", "linux/arm64/v8"]
   args = {
-    TAG_MINIMAL             = "${TAG_MINIMAL}"
+    UPSTREAM_UBUNTU_TAG     = "${UPSTREAM_UBUNTU_TAG}"
     DIGEST_DOCKERHUB_UBUNTU = "${DIGEST_DOCKERHUB_UBUNTU}"
   }
-  tags = ["ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}"]
+  tags = [
+    "ghcr.io/cybozu/ubuntu-minimal:${TAG}",
+    "ghcr.io/cybozu/ubuntu-minimal:${UBUNTU_VERSION}",
+  ]
 }
 
 target "ubuntu" {
@@ -54,10 +57,10 @@ target "ubuntu" {
   dockerfile = "Dockerfile"
   platforms = ["linux/amd64", "linux/arm64/v8"]
   contexts = {
-    "ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}" = "target:ubuntu-minimal"
+    "ghcr.io/cybozu/ubuntu-minimal:${TAG}" = "target:ubuntu-minimal"
   }
   args = {
-    TAG_MINIMAL = "${TAG_MINIMAL}"
+    TAG = "${TAG}"
   }
   tags = [
     "ghcr.io/cybozu/ubuntu:${TAG}",

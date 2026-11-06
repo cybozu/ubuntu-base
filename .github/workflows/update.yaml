@@ -50,14 +50,14 @@ jobs:
               exit 1
             fi
 
-            TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
+            UPSTREAM_UBUNTU_TAG=$(cat ./$version/UPSTREAM_UBUNTU_TAG)
             DIGEST_DOCKERHUB_UBUNTU=$(cat ./$version/DIGEST_DOCKERHUB_UBUNTU)
 
-            if [[ "$TAG_MINIMAL" != "$LATEST_TAG" || "$DIGEST_DOCKERHUB_UBUNTU" != "$LATEST_DIGEST" ]]; then
-              echo $LATEST_TAG > ./$version/TAG_MINIMAL
+            if [[ "$UPSTREAM_UBUNTU_TAG" != "$LATEST_TAG" || "$DIGEST_DOCKERHUB_UBUNTU" != "$LATEST_DIGEST" ]]; then
+              echo $LATEST_TAG > ./$version/UPSTREAM_UBUNTU_TAG
               echo $LATEST_DIGEST > ./$version/DIGEST_DOCKERHUB_UBUNTU
               updated_versions+=($version)
-              echo "- Update $version minimal image from $TAG_MINIMAL to $LATEST_TAG" >> ./BODY
+              echo "- Update $version upstream ubuntu image from $UPSTREAM_UBUNTU_TAG to $LATEST_TAG" >> ./BODY
               echo "  - digest: $DIGEST_DOCKERHUB_UBUNTU -> $LATEST_DIGEST" >> ./BODY
             fi
           done
@@ -71,7 +71,7 @@ jobs:
 
           for version in ${{ env.UBUNTU_VERSION }}; do
             export UBUNTU_VERSION=$version
-            export TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
+            export UPSTREAM_UBUNTU_TAG=$(cat ./$version/UPSTREAM_UBUNTU_TAG)
             export TAG=$(cat ./$version/TAG)
             export DIGEST_DOCKERHUB_UBUNTU=$(cat ./$version/DIGEST_DOCKERHUB_UBUNTU)
 
@@ -79,7 +79,7 @@ jobs:
             docker buildx bake -f docker-bake.hcl \
               --load \
               --set *.platform=linux/amd64 \
-              --set ubuntu-minimal.tags=ghcr.io/cybozu/ubuntu-minimal:${TAG_MINIMAL}-new \
+              --set ubuntu-minimal.tags=ghcr.io/cybozu/ubuntu-minimal:${version}-new \
               --set ubuntu.tags=ghcr.io/cybozu/ubuntu:${version}-new \
               --set ubuntu-debug.tags=ghcr.io/cybozu/ubuntu-debug:${version}-new \
               --set ubuntu-dev.tags=ghcr.io/cybozu/ubuntu-dev:${version}-new
@@ -104,8 +104,6 @@ jobs:
         shell: bash -xe {0}
         run: |
           for version in ${UPDATED_VERSIONS}; do
-            TAG_MINIMAL=$(cat ./$version/TAG_MINIMAL)
-
             for img in ubuntu ubuntu-debug ubuntu-dev; do
               docker run --rm ghcr.io/cybozu/$img:${version}-new dpkg -l | awk 'NR>5 {print $2 "\t" $3 "\t" $4 "\t" substr($0, match($0, /[[:space:]]+[^[:space:]]+[[:space:]]+[^[:space:]]+[[:space:]]+[^[:space:]]+[[:space:]]+/) + RLENGTH)}' > /tmp/${img}-${version}-packages.txt
 

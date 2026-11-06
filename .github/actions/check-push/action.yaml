@@ -19,24 +19,17 @@ runs:
       shell: bash
       run: |
         TARGETS=()
-        tag_minimal=$(cat "${{ inputs.ubuntu_version }}/TAG_MINIMAL")
         tag=$(cat "${{ inputs.ubuntu_version }}/TAG")
 
         for image_name in ubuntu-minimal ubuntu ubuntu-dev ubuntu-debug; do
-          if [[ "$image_name" == "ubuntu-minimal" ]]; then
-            tag_name="$tag_minimal"
-          else
-            tag_name="$tag"
-          fi
-
           NEED_PUSH=false
 
-          FOUND=$(./scripts/tag_exists "ghcr.io/cybozu/${image_name}" "${tag_name}")
+          FOUND=$(./scripts/tag_exists "ghcr.io/cybozu/${image_name}" "${tag}")
           case "$FOUND" in
           true | false)
             ;;
           *)
-            echo "Error: unexpected tag_exists output for ghcr.io/cybozu/${image_name}:${tag_name}: ${FOUND}" >&2
+            echo "Error: unexpected tag_exists output for ghcr.io/cybozu/${image_name}:${tag}: ${FOUND}" >&2
             exit 1
             ;;
           esac
