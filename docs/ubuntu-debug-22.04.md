@@ -240,7 +240,7 @@
 | python3-magic | 2:0.4.24-2 | python3 interface to the libmagic file type identification library |
 | python3-minimal | 3.10.6-1~22.04.1 | minimal subset of the Python language (default python3 version) |
 | python3-pkg-resources | 59.6.0-1.2ubuntu0.22.04.3 | Package Discovery and Resource Access using pkg_resources |
-| python3-pyasn1 | 0.4.8-1ubuntu0.3 | ASN.1 library for Python (Python 3 module) |
+| python3-pyasn1 | 0.4.8-1ubuntu0.4 | ASN.1 library for Python (Python 3 module) |
 | python3-requests | 2.25.1+dfsg-2ubuntu0.4 | elegant and simple HTTP library for Python3, built for human beings |
 | python3-roman | 3.3-1 | module for generating/analyzing Roman numerals for Python 3 |
 | python3-rsa | 4.8-1 | Pure-Python RSA implementation (Python 3) |
