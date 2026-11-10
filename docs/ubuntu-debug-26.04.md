@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.153ubuntu1 | add and remove users and groups |
-| apache2-utils | 2.4.66-2ubuntu2.6 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.66-2ubuntu2.7 | Apache HTTP Server (utility programs for web servers) |
 | apt | 3.2.1ubuntu0.1 | commandline package manager |
 | apt-transport-https | 3.2.1ubuntu0.1 | transitional package for https support |
 | apt-utils | 3.2.1ubuntu0.1 | package management related utility programs |
@@ -143,7 +143,7 @@
 | libpam0g:amd64 | 1.7.0-5ubuntu3.2 | Pluggable Authentication Modules library |
 | libpcap0.8t64:amd64 | 1.10.6-1ubuntu1.1 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.46-1ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
-| libperl5.40:amd64 | 5.40.1-7ubuntu0.3 | shared Perl library |
+| libperl5.40:amd64 | 5.40.1-7ubuntu0.4 | shared Perl library |
 | libpopt0:amd64 | 1.19+dfsg-2build1 | lib for parsing cmdline parameters |
 | libproc2-0:amd64 | 2:4.0.4-9ubuntu1 | library for accessing process information from /proc |
 | libpsl5t64:amd64 | 0.21.2-1.1build2 | Library for Public Suffix List (shared libraries) |
@@ -218,9 +218,9 @@
 | openssl | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | openssl-provider-legacy | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.17.4-2ubuntu3 | change and administer password and group data |
-| perl | 5.40.1-7ubuntu0.3 | Larry Wall's Practical Extraction and Report Language |
-| perl-base | 5.40.1-7ubuntu0.3 | minimal Perl system |
-| perl-modules-5.40 | 5.40.1-7ubuntu0.3 | Core Perl modules |
+| perl | 5.40.1-7ubuntu0.4 | Larry Wall's Practical Extraction and Report Language |
+| perl-base | 5.40.1-7ubuntu0.4 | minimal Perl system |
+| perl-modules-5.40 | 5.40.1-7ubuntu0.4 | Core Perl modules |
 | procps | 2:4.0.4-9ubuntu1 | /proc file system utilities |
 | python3 | 3.14.3-0ubuntu2 | interactive high-level object-oriented language (default python3 version) |
 | python3-certifi | 2026.1.4+ds-1 | root certificates for validating SSL certs and verifying TLS hosts (python3) |

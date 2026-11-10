@@ -111,7 +111,7 @@
 | openssl | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | openssl-provider-legacy | 3.5.5-1ubuntu3.7 | Secure Sockets Layer toolkit - cryptographic utility |
 | passwd | 1:4.17.4-2ubuntu3 | change and administer password and group data |
-| perl-base | 5.40.1-7ubuntu0.3 | minimal Perl system |
+| perl-base | 5.40.1-7ubuntu0.4 | minimal Perl system |
 | procps | 2:4.0.4-9ubuntu1 | /proc file system utilities |
 | readline-common | 8.3-4 | GNU readline and history libraries, common files |
 | rust-coreutils | 0.10.0-1ubuntu2~26.04.1 | Universal coreutils utils, written in Rust |
