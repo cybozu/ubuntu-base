@@ -63,11 +63,11 @@
 | libbrotli1:amd64 | 1.2.0-3ubuntu0.1 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.12.2-2build2 | utility functions from BSD systems - shared library |
 | libbz2-1.0:amd64 | 1.0.8-6ubuntu0.1 | high-quality block-sorting file compressor library - runtime |
-| libc-bin | 2.43-2ubuntu2.4 | GNU C Library: Binaries |
-| libc-dev-bin | 2.43-2ubuntu2.4 | GNU C Library: Development binaries |
-| libc-gconv-modules-extra:amd64 | 2.43-2ubuntu2.4 | GNU C Library: Non-essential gconv modules |
-| libc6:amd64 | 2.43-2ubuntu2.4 | GNU C Library: Shared libraries |
-| libc6-dev:amd64 | 2.43-2ubuntu2.4 | GNU C Library: Development Libraries and Header Files |
+| libc-bin | 2.43-2ubuntu2.7 | GNU C Library: Binaries |
+| libc-dev-bin | 2.43-2ubuntu2.7 | GNU C Library: Development binaries |
+| libc-gconv-modules-extra:amd64 | 2.43-2ubuntu2.7 | GNU C Library: Non-essential gconv modules |
+| libc6:amd64 | 2.43-2ubuntu2.7 | GNU C Library: Shared libraries |
+| libc6-dev:amd64 | 2.43-2ubuntu2.7 | GNU C Library: Development Libraries and Header Files |
 | libcap-ng0:amd64 | 0.8.5-4build5 | alternate POSIX capabilities library |
 | libcbor0.10:amd64 | 0.10.2-2ubuntu3 | library for parsing and generating CBOR (RFC 7049) |
 | libcc1-0:amd64 | 16-20260322-1ubuntu1 | GCC cc1 plugin for GDB |
@@ -163,7 +163,7 @@
 | libxxhash0:amd64 | 0.8.3-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.7+dfsg-3 | fast lossless compression algorithm |
 | linux-libc-dev:amd64 | 7.0.0-43.43 | Linux Kernel Headers for development |
-| locales | 2.43-2ubuntu2.4 | GNU C Library: National Language (locale) data [support] |
+| locales | 2.43-2ubuntu2.7 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.16.0-2+really2.41.3-3ubuntu2.2 | system login tools |
 | login.defs | 1:4.17.4-2ubuntu3 | system user management configuration |
 | logsave | 1.47.2-3ubuntu4 | save the output of a command in a log file |
