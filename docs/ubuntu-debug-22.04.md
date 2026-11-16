@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.118ubuntu5 | add and remove users and groups |
-| apache2-utils | 2.4.52-1ubuntu4.26 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.52-1ubuntu4.27 | Apache HTTP Server (utility programs for web servers) |
 | apt | 2.4.15ubuntu0.1 | commandline package manager |
 | apt-transport-https | 2.4.15ubuntu0.1 | transitional package for https support |
 | apt-utils | 2.4.15ubuntu0.1 | package management related utility programs |
