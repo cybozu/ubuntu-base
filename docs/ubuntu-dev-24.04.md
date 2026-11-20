@@ -151,17 +151,17 @@
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.16 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++-13-dev:amd64 | 13.3.0-6ubuntu2~24.04.1 | GNU Standard C++ Library v3 (development files) |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
-| libsystemd0:amd64 | 255.4-1ubuntu8.18 | systemd utility library |
+| libsystemd0:amd64 | 255.4-1ubuntu8.19 | systemd utility library |
 | libtasn1-6:amd64 | 4.19.0-3ubuntu0.24.04.2 | Manage ASN.1 structures (runtime) |
 | libtinfo6:amd64 | 6.4+20240113-1ubuntu2.2 | shared low-level terminfo library for terminal handling |
 | libtsan2:amd64 | 14.2.0-4ubuntu2~24.04.1 | ThreadSanitizer -- a Valgrind-based detector of data races (runtime) |
 | libubsan1:amd64 | 14.2.0-4ubuntu2~24.04.1 | UBSan -- undefined behaviour sanitizer (runtime) |
-| libudev1:amd64 | 255.4-1ubuntu8.18 | libudev shared library |
+| libudev1:amd64 | 255.4-1ubuntu8.19 | libudev shared library |
 | libunistring5:amd64 | 1.1-2build1.1 | Unicode string library for C |
 | libuuid1:amd64 | 2.39.3-9ubuntu6.6 | Universally Unique ID library |
 | libxxhash0:amd64 | 0.8.2-2build1 | shared library for xxhash |
 | libzstd1:amd64 | 1.5.5+dfsg2-2build1.1 | fast lossless compression algorithm |
-| linux-libc-dev:amd64 | 6.8.0-149.149 | Linux Kernel Headers for development |
+| linux-libc-dev:amd64 | 6.8.0-151.151 | Linux Kernel Headers for development |
 | locales | 2.39-0ubuntu8.12 | GNU C Library: National Language (locale) data [support] |
 | login | 1:4.13+dfsg1-4ubuntu3.2 | system login tools |
 | logsave | 1.47.0-2.4~exp1ubuntu4.1 | save the output of a command in a log file |
