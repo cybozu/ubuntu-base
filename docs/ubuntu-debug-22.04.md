@@ -169,7 +169,7 @@
 | libsource-highlight4v5 | 3.1.9-4.1build2 | source highlighting library |
 | libsqlite3-0:amd64 | 3.37.2-2ubuntu0.8 | SQLite 3 shared library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
-| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.8 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.9 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.30 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.23 | systemd utility library |
@@ -269,7 +269,7 @@
 | tcpdump | 4.99.1-3ubuntu0.2 | command-line network traffic analyzer |
 | telnet | 0.17-44build1 | basic telnet client |
 | traceroute | 1:2.1.0-2 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2026e-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026f-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043 | Update Configuration File(s): preserve user changes to config files |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |

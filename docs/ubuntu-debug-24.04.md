@@ -166,7 +166,7 @@
 | libsource-highlight4t64:amd64 | 3.1.9-4.3build1 | source highlighting library |
 | libsqlite3-0:amd64 | 3.45.1-1ubuntu2.9 | SQLite 3 shared library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
-| libssh-4:amd64 | 0.10.6-2ubuntu0.5 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.10.6-2ubuntu0.6 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.16 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.19 | systemd utility library |
@@ -241,7 +241,7 @@
 | tcpdump | 4.99.4-3ubuntu4.24.04.1 | command-line network traffic analyzer |
 | telnet | 0.17+2.5-3ubuntu4.2 | transitional dummy package for inetutils-telnet default switch |
 | traceroute | 1:2.1.5-1 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2026e-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026f-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0043+nmu1 | Update Configuration File(s): preserve user changes to config files |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |

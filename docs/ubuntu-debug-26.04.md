@@ -253,7 +253,7 @@
 | tcpdump | 4.99.6-1 | command-line network traffic analyzer |
 | telnet | 0.17+2.7-2ubuntu1.1 | transitional dummy package for inetutils-telnet default switch |
 | traceroute | 1:2.1.6-1build1 | Traces the route taken by packets over an IPv4/IPv6 network |
-| tzdata | 2026e-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026f-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1build1 | GnuPG keys of the Ubuntu archive |
 | ucf | 3.0052ubuntu1 | Update Configuration File(s): preserve user changes to config files |
 | unzip | 6.0-29ubuntu1 | De-archiver for .zip files |

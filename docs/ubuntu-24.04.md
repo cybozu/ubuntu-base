@@ -86,7 +86,7 @@
 | libsepol2:amd64 | 3.5-2build1 | SELinux library for manipulating binary security policies |
 | libsmartcols1:amd64 | 2.39.3-9ubuntu6.6 | smart column output alignment library |
 | libss2:amd64 | 1.47.0-2.4~exp1ubuntu4.1 | command-line interface parsing library |
-| libssh-4:amd64 | 0.10.6-2ubuntu0.5 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.10.6-2ubuntu0.6 | tiny C SSH library (OpenSSL flavor) |
 | libssl3t64:amd64 | 3.0.13-0ubuntu3.16 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 14.2.0-4ubuntu2~24.04.1 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 255.4-1ubuntu8.19 | systemd utility library |
@@ -114,7 +114,7 @@
 | sensible-utils | 0.0.22 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.08-6ubuntu3 | System-V-like utilities |
 | tar | 1.35+dfsg-3ubuntu0.4 | GNU version of the tar archiving utility |
-| tzdata | 2026e-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026f-0ubuntu0.24.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1 | GnuPG keys of the Ubuntu archive |
 | unminimize | 0.2.1 | Un-minimize your minimial images or setup |
 | util-linux | 2.39.3-9ubuntu6.6 | miscellaneous system utilities |
