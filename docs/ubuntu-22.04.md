@@ -87,7 +87,7 @@
 | libsepol2:amd64 | 3.3-1build1 | SELinux library for manipulating binary security policies |
 | libsmartcols1:amd64 | 2.37.2-4ubuntu3.6 | smart column output alignment library |
 | libss2:amd64 | 1.46.5-2ubuntu1.2 | command-line interface parsing library |
-| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.8 | tiny C SSH library (OpenSSL flavor) |
+| libssh-4:amd64 | 0.9.6-2ubuntu0.22.04.9 | tiny C SSH library (OpenSSL flavor) |
 | libssl3:amd64 | 3.0.2-0ubuntu1.30 | Secure Sockets Layer toolkit - shared libraries |
 | libstdc++6:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Standard C++ Library v3 |
 | libsystemd0:amd64 | 249.11-0ubuntu3.23 | systemd utility library |
@@ -118,7 +118,7 @@
 | sensible-utils | 0.0.17 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.01-1ubuntu1 | System-V-like utilities |
 | tar | 1.34+dfsg-1ubuntu0.1.22.04.6 | GNU version of the tar archiving utility |
-| tzdata | 2026e-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026f-0ubuntu0.22.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2021.03.26 | GnuPG keys of the Ubuntu archive |
 | usrmerge | 25ubuntu2 | Convert the system to the merged /usr directories scheme |
 | util-linux | 2.37.2-4ubuntu3.6 | miscellaneous system utilities |

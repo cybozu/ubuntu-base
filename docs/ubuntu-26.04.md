@@ -119,7 +119,7 @@
 | sensible-utils | 0.0.26build1 | Utilities for sensible alternative selection |
 | sysvinit-utils | 3.15-5ubuntu1 | System-V-like utilities |
 | tar | 1.35+dfsg-4ubuntu0.4 | GNU version of the tar archiving utility |
-| tzdata | 2026e-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
+| tzdata | 2026f-0ubuntu0.26.04.1 | time zone and daylight-saving time data |
 | ubuntu-keyring | 2023.11.28.1build1 | GnuPG keys of the Ubuntu archive |
 | util-linux | 2.41.3-3ubuntu2.2 | miscellaneous system utilities |
 | zlib1g:amd64 | 1:1.3.dfsg+really1.3.1-1ubuntu3.2 | compression library - runtime |
