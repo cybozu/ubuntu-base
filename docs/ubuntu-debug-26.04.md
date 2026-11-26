@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.153ubuntu1 | add and remove users and groups |
-| apache2-utils | 2.4.66-2ubuntu2.8 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.66-2ubuntu2.9 | Apache HTTP Server (utility programs for web servers) |
 | apt | 3.2.1ubuntu0.1 | commandline package manager |
 | apt-transport-https | 3.2.1ubuntu0.1 | transitional package for https support |
 | apt-utils | 3.2.1ubuntu0.1 | package management related utility programs |
@@ -14,9 +14,9 @@
 | bind9-dnsutils | 1:9.20.24-1ubuntu0.5 | Clients provided with BIND 9 |
 | bind9-host | 1:9.20.24-1ubuntu0.5 | DNS Lookup Utility |
 | bind9-libs:amd64 | 1:9.20.24-1ubuntu0.5 | Shared Libraries used by BIND 9 |
-| binutils | 2.46-3ubuntu2 | GNU assembler, linker and binary utilities |
-| binutils-common:amd64 | 2.46-3ubuntu2 | Common files for the GNU assembler, linker and binary utilities |
-| binutils-x86-64-linux-gnu | 2.46-3ubuntu2 | GNU binary utilities, for x86-64-linux-gnu target |
+| binutils | 2.46-3ubuntu2.1 | GNU assembler, linker and binary utilities |
+| binutils-common:amd64 | 2.46-3ubuntu2.1 | Common files for the GNU assembler, linker and binary utilities |
+| binutils-x86-64-linux-gnu | 2.46-3ubuntu2.1 | GNU binary utilities, for x86-64-linux-gnu target |
 | bsdextrautils | 2.41.3-3ubuntu2.2 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.8build1 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.41.3-3ubuntu2.2 | basic utilities from 4.4BSD-Lite |
@@ -58,7 +58,7 @@
 | libaudit-common | 1:4.1.2-1ubuntu0.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:4.1.2-1ubuntu0.1 | Dynamic library for security auditing |
 | libbabeltrace1:amd64 | 1.5.11-5build1 | Babeltrace conversion libraries |
-| libbinutils:amd64 | 2.46-3ubuntu2 | GNU binary utilities (private shared library) |
+| libbinutils:amd64 | 2.46-3ubuntu2.1 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.41.3-3ubuntu2.2 | block device ID library |
 | libbpf1:amd64 | 1:1.6.3-1ubuntu1 | eBPF helper library (shared library) |
 | libbrotli1:amd64 | 1.2.0-3ubuntu0.1 | library implementing brotli encoder and decoder (shared libraries) |
@@ -73,8 +73,8 @@
 | libcbor0.10:amd64 | 0.10.2-2ubuntu3 | library for parsing and generating CBOR (RFC 7049) |
 | libcom-err2:amd64 | 1.47.2-3ubuntu4 | common error description library |
 | libcrypt1:amd64 | 1:4.5.1-1 | libcrypt shared library |
-| libctf-nobfd0:amd64 | 2.46-3ubuntu2 | Compact C Type Format library (runtime, no BFD dependency) |
-| libctf0:amd64 | 2.46-3ubuntu2 | Compact C Type Format library (runtime, BFD dependency) |
+| libctf-nobfd0:amd64 | 2.46-3ubuntu2.1 | Compact C Type Format library (runtime, no BFD dependency) |
+| libctf0:amd64 | 2.46-3ubuntu2.1 | Compact C Type Format library (runtime, BFD dependency) |
 | libcurl3t64-gnutls:amd64 | 8.18.0-1ubuntu2.8 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
 | libcurl4t64:amd64 | 8.18.0-1ubuntu2.8 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3t64:amd64 | 5.3.28+dfsg2-10ubuntu1 | Berkeley v5.3 Database Libraries [runtime] |
@@ -99,8 +99,8 @@
 | libgoogle-perftools4t64:amd64 | 2.18.1-1 | libraries for CPU and heap analysis, plus an efficient thread-caching malloc |
 | libgpg-error0:amd64 | 1.58-2 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-12build1 | General Purpose Mouse - shared library |
-| libgprofng0:amd64 | 2.46-3ubuntu2 | GNU Next Generation profiler (runtime library) |
-| libgssapi-krb5-2:amd64 | 1.22.1-2ubuntu4.1 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
+| libgprofng0:amd64 | 2.46-3ubuntu2.1 | GNU Next Generation profiler (runtime library) |
+| libgssapi-krb5-2:amd64 | 1.22.1-2ubuntu4.3 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6t64:amd64 | 3.10.2-1 | low level cryptographic library (public-key cryptos) |
 | libibverbs1:amd64 | 61.0-2ubuntu3 | Library for direct userspace use of RDMA (InfiniBand/iWARP) |
 | libidn2-0:amd64 | 2.3.8-4build1 | Internationalized domain names (IDNA2008/TR46) library |
@@ -112,10 +112,10 @@
 | libjemalloc2:amd64 | 5.3.0-4 | general-purpose scalable concurrent malloc(3) implementation |
 | libjq1:amd64 | 1.8.1-4ubuntu2 | lightweight and flexible command-line JSON processor - shared library |
 | libjson-c5:amd64 | 0.18+ds-3 | JSON manipulation library - shared library |
-| libk5crypto3:amd64 | 1.22.1-2ubuntu4.1 | MIT Kerberos runtime libraries - Crypto Library |
+| libk5crypto3:amd64 | 1.22.1-2ubuntu4.3 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.3-6ubuntu3 | Linux Key Management Utilities (library) |
-| libkrb5-3:amd64 | 1.22.1-2ubuntu4.1 | MIT Kerberos runtime libraries |
-| libkrb5support0:amd64 | 1.22.1-2ubuntu4.1 | MIT Kerberos runtime libraries - Support library |
+| libkrb5-3:amd64 | 1.22.1-2ubuntu4.3 | MIT Kerberos runtime libraries |
+| libkrb5support0:amd64 | 1.22.1-2ubuntu4.3 | MIT Kerberos runtime libraries - Support library |
 | libldap-common | 2.6.10+dfsg-1ubuntu5 | OpenLDAP common files for libraries |
 | libldap2:amd64 | 2.6.10+dfsg-1ubuntu5 | OpenLDAP libraries |
 | liblmdb0:amd64 | 0.9.31-1build2 | Lightning Memory-Mapped Database shared library |
@@ -141,7 +141,7 @@
 | libpam-modules-bin | 1.7.0-5ubuntu3.2 | Pluggable Authentication Modules for PAM - helper binaries |
 | libpam-runtime | 1.7.0-5ubuntu3.2 | Runtime support for the PAM library |
 | libpam0g:amd64 | 1.7.0-5ubuntu3.2 | Pluggable Authentication Modules library |
-| libpcap0.8t64:amd64 | 1.10.6-1ubuntu1.1 | system interface for user-level packet capture |
+| libpcap0.8t64:amd64 | 1.10.6-1ubuntu1.2 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.46-1ubuntu0.1 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libperl5.40:amd64 | 5.40.1-7ubuntu0.4 | shared Perl library |
 | libpopt0:amd64 | 1.19+dfsg-2build1 | lib for parsing cmdline parameters |
@@ -163,7 +163,7 @@
 | libsensors-config | 1:3.6.2-2build1 | lm-sensors configuration files |
 | libsensors5:amd64 | 1:3.6.2-2build1 | library to read temperature/voltage/fan sensors |
 | libsepol2:amd64 | 3.9-2 | SELinux library for manipulating binary security policies |
-| libsframe3:amd64 | 2.46-3ubuntu2 | Library to handle the SFrame format (runtime library) |
+| libsframe3:amd64 | 2.46-3ubuntu2.1 | Library to handle the SFrame format (runtime library) |
 | libsmartcols1:amd64 | 2.41.3-3ubuntu2.2 | smart column output alignment library |
 | libsodium23:amd64 | 1.0.18-2 | Network communication, cryptography and signaturing library |
 | libsource-highlight-common | 3.1.9-4.3build2 | architecture-independent files for source highlighting library |

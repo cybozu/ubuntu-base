@@ -3,7 +3,7 @@
 | Name | Version | Description |
 |------|---------|-------------|
 | adduser | 3.118ubuntu5 | add and remove users and groups |
-| apache2-utils | 2.4.52-1ubuntu4.27 | Apache HTTP Server (utility programs for web servers) |
+| apache2-utils | 2.4.52-1ubuntu4.28 | Apache HTTP Server (utility programs for web servers) |
 | apt | 2.4.15ubuntu0.1 | commandline package manager |
 | apt-transport-https | 2.4.15ubuntu0.1 | transitional package for https support |
 | apt-utils | 2.4.15ubuntu0.1 | package management related utility programs |
@@ -15,9 +15,9 @@
 | bind9-dnsutils | 1:9.18.39-0ubuntu0.22.04.8 | Clients provided with BIND 9 |
 | bind9-host | 1:9.18.39-0ubuntu0.22.04.8 | DNS Lookup Utility |
 | bind9-libs:amd64 | 1:9.18.39-0ubuntu0.22.04.8 | Shared Libraries used by BIND 9 |
-| binutils | 2.38-4ubuntu2.12 | GNU assembler, linker and binary utilities |
-| binutils-common:amd64 | 2.38-4ubuntu2.12 | Common files for the GNU assembler, linker and binary utilities |
-| binutils-x86-64-linux-gnu | 2.38-4ubuntu2.12 | GNU binary utilities, for x86-64-linux-gnu target |
+| binutils | 2.38-4ubuntu2.14 | GNU assembler, linker and binary utilities |
+| binutils-common:amd64 | 2.38-4ubuntu2.14 | Common files for the GNU assembler, linker and binary utilities |
+| binutils-x86-64-linux-gnu | 2.38-4ubuntu2.14 | GNU binary utilities, for x86-64-linux-gnu target |
 | bsdextrautils | 2.37.2-4ubuntu3.6 | extra utilities from 4.4BSD-Lite |
 | bsdmainutils | 12.1.7+nmu3ubuntu2 | Transitional package for more utilities from FreeBSD |
 | bsdutils | 1:2.37.2-4ubuntu3.6 | basic utilities from 4.4BSD-Lite |
@@ -59,7 +59,7 @@
 | libaudit-common | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing |
 | libbabeltrace1:amd64 | 1.5.8-2build1 | Babeltrace conversion libraries |
-| libbinutils:amd64 | 2.38-4ubuntu2.12 | GNU binary utilities (private shared library) |
+| libbinutils:amd64 | 2.38-4ubuntu2.14 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.37.2-4ubuntu3.6 | block device ID library |
 | libboost-regex1.74.0:amd64 | 1.74.0-14ubuntu3 | regular expression library for C++ |
 | libbpf0:amd64 | 1:0.5.0-1ubuntu22.04.1 | eBPF helper library (shared library) |
@@ -74,18 +74,18 @@
 | libcbor0.8:amd64 | 0.8.0-2ubuntu1 | library for parsing and generating CBOR (RFC 7049) |
 | libcom-err2:amd64 | 1.46.5-2ubuntu1.2 | common error description library |
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
-| libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
-| libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
+| libctf-nobfd0:amd64 | 2.38-4ubuntu2.14 | Compact C Type Format library (runtime, no BFD dependency) |
+| libctf0:amd64 | 2.38-4ubuntu2.14 | Compact C Type Format library (runtime, BFD dependency) |
 | libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.30 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
 | libcurl4:amd64 | 7.81.0-1ubuntu1.30 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
 | libdbus-1-3:amd64 | 1.12.20-2ubuntu4.1 | simple interprocess messaging system (library) |
 | libdebconfclient0:amd64 | 0.261ubuntu1 | Debian Configuration Management System (C-implementation library) |
-| libdebuginfod-common | 0.186-1ubuntu0.1 | configuration to enable the Debian debug info server |
-| libdebuginfod1:amd64 | 0.186-1ubuntu0.1 | library to interact with debuginfod (development files) |
-| libdw1:amd64 | 0.186-1ubuntu0.1 | library that provides access to the DWARF debug information |
+| libdebuginfod-common | 0.186-1ubuntu0.2 | configuration to enable the Debian debug info server |
+| libdebuginfod1:amd64 | 0.186-1ubuntu0.2 | library to interact with debuginfod (development files) |
+| libdw1:amd64 | 0.186-1ubuntu0.2 | library that provides access to the DWARF debug information |
 | libedit2:amd64 | 3.1-20210910-1build1 | BSD editline and history libraries |
-| libelf1:amd64 | 0.186-1ubuntu0.1 | library to read and write ELF files |
+| libelf1:amd64 | 0.186-1ubuntu0.2 | library to read and write ELF files |
 | libexpat1:amd64 | 2.4.7-1ubuntu0.10 | XML parsing C library - runtime library |
 | libext2fs2:amd64 | 1.46.5-2ubuntu1.2 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.4.2-4 | Foreign Function Interface library runtime |
@@ -99,7 +99,7 @@
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.9 | GNU TLS library - main runtime library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
 | libgpm2:amd64 | 1.20.7-10build1 | General Purpose Mouse - shared library |
-| libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
+| libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.12 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6:amd64 | 3.7.3-1build2 | low level cryptographic library (public-key cryptos) |
 | libice6:amd64 | 2:1.0.10-1build2 | X11 Inter-Client Exchange library |
 | libicu70:amd64 | 70.1-2 | International Components for Unicode |
@@ -110,10 +110,10 @@
 | libipt2 | 2.0.5-1 | Intel Processor Trace Decoder Library |
 | libjq1:amd64 | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor - shared library |
 | libjson-c5:amd64 | 0.15-3~ubuntu1.22.04.2 | JSON manipulation library - shared library |
-| libk5crypto3:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries - Crypto Library |
+| libk5crypto3:amd64 | 1.19.2-2ubuntu0.12 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.1-2ubuntu3 | Linux Key Management Utilities (library) |
-| libkrb5-3:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries |
-| libkrb5support0:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries - Support library |
+| libkrb5-3:amd64 | 1.19.2-2ubuntu0.12 | MIT Kerberos runtime libraries |
+| libkrb5support0:amd64 | 1.19.2-2ubuntu0.12 | MIT Kerberos runtime libraries - Support library |
 | libldap-2.5-0:amd64 | 2.5.20+dfsg-0ubuntu0.22.04.1 | OpenLDAP libraries |
 | liblmdb0:amd64 | 0.9.24-1build2 | Lightning Memory-Mapped Database shared library |
 | liblz4-1:amd64 | 1.9.3-2build2 | Fast LZ compression algorithm library - runtime |
@@ -139,7 +139,7 @@
 | libpam-modules-bin | 1.4.0-11ubuntu2.8 | Pluggable Authentication Modules for PAM - helper binaries |
 | libpam-runtime | 1.4.0-11ubuntu2.8 | Runtime support for the PAM library |
 | libpam0g:amd64 | 1.4.0-11ubuntu2.8 | Pluggable Authentication Modules library |
-| libpcap0.8:amd64 | 1.10.1-4ubuntu1.22.04.2 | system interface for user-level packet capture |
+| libpcap0.8:amd64 | 1.10.1-4ubuntu1.22.04.3 | system interface for user-level packet capture |
 | libpcre2-8-0:amd64 | 10.39-3ubuntu0.2 | New Perl Compatible Regular Expression Library- 8 bit runtime files |
 | libpcre3:amd64 | 2:8.39-13ubuntu0.22.04.1 | Old Perl 5 Compatible Regular Expression Library - runtime files |
 | libperl5.34:amd64 | 5.34.0-3ubuntu1.10 | shared Perl library |
