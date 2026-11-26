@@ -83,7 +83,7 @@
 | libdpkg-perl | 1.23.7ubuntu1 | Dpkg perl modules |
 | libedit2:amd64 | 3.1-20251016-1 | BSD editline and history libraries |
 | liberror-perl | 0.17030-1 | Perl module for error/exception handling in an OO-ish way |
-| libexpat1:amd64 | 2.7.4-1ubuntu0.2 | XML parsing C library - runtime library |
+| libexpat1:amd64 | 2.7.4-1ubuntu0.3 | XML parsing C library - runtime library |
 | libext2fs2t64:amd64 | 1.47.2-3ubuntu4 | ext2/ext3/ext4 file system libraries |
 | libffi8:amd64 | 3.5.2-4 | Foreign Function Interface library runtime |
 | libfido2-1:amd64 | 1.16.0-2build1 | library for generating and verifying FIDO 2.0 objects |
