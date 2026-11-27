@@ -9,9 +9,9 @@
 | base-files | 12ubuntu4.7 | Debian base system miscellaneous files |
 | base-passwd | 3.5.52build1 | Debian base system master password and group files |
 | bash | 5.1-6ubuntu1.1 | GNU Bourne Again SHell |
-| binutils | 2.38-4ubuntu2.12 | GNU assembler, linker and binary utilities |
-| binutils-common:amd64 | 2.38-4ubuntu2.12 | Common files for the GNU assembler, linker and binary utilities |
-| binutils-x86-64-linux-gnu | 2.38-4ubuntu2.12 | GNU binary utilities, for x86-64-linux-gnu target |
+| binutils | 2.38-4ubuntu2.14 | GNU assembler, linker and binary utilities |
+| binutils-common:amd64 | 2.38-4ubuntu2.14 | Common files for the GNU assembler, linker and binary utilities |
+| binutils-x86-64-linux-gnu | 2.38-4ubuntu2.14 | GNU binary utilities, for x86-64-linux-gnu target |
 | bsdutils | 1:2.37.2-4ubuntu3.6 | basic utilities from 4.4BSD-Lite |
 | build-essential | 12.9ubuntu3 | Informational list of build-essential packages |
 | bzip2 | 1.0.8-5ubuntu0.1 | high-quality block-sorting file compressor - utilities |
@@ -50,7 +50,7 @@
 | libattr1:amd64 | 1:2.5.1-1ubuntu0.1 | extended attribute handling - shared library |
 | libaudit-common | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing - common files |
 | libaudit1:amd64 | 1:3.0.7-1ubuntu0.1 | Dynamic library for security auditing |
-| libbinutils:amd64 | 2.38-4ubuntu2.12 | GNU binary utilities (private shared library) |
+| libbinutils:amd64 | 2.38-4ubuntu2.14 | GNU binary utilities (private shared library) |
 | libblkid1:amd64 | 2.37.2-4ubuntu3.6 | block device ID library |
 | libbrotli1:amd64 | 1.0.9-2ubuntu0.1 | library implementing brotli encoder and decoder (shared libraries) |
 | libbsd0:amd64 | 0.11.5-1 | utility functions from BSD systems - shared library |
@@ -66,8 +66,8 @@
 | libcom-err2:amd64 | 1.46.5-2ubuntu1.2 | common error description library |
 | libcrypt-dev:amd64 | 1:4.4.27-1 | libcrypt development files |
 | libcrypt1:amd64 | 1:4.4.27-1 | libcrypt shared library |
-| libctf-nobfd0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, no BFD dependency) |
-| libctf0:amd64 | 2.38-4ubuntu2.12 | Compact C Type Format library (runtime, BFD dependency) |
+| libctf-nobfd0:amd64 | 2.38-4ubuntu2.14 | Compact C Type Format library (runtime, no BFD dependency) |
+| libctf0:amd64 | 2.38-4ubuntu2.14 | Compact C Type Format library (runtime, BFD dependency) |
 | libcurl3-gnutls:amd64 | 7.81.0-1ubuntu1.30 | easy-to-use client-side URL transfer library (GnuTLS flavour) |
 | libcurl4:amd64 | 7.81.0-1ubuntu1.30 | easy-to-use client-side URL transfer library (OpenSSL flavour) |
 | libdb5.3:amd64 | 5.3.28+dfsg1-0.8ubuntu3 | Berkeley v5.3 Database Libraries [runtime] |
@@ -88,16 +88,16 @@
 | libgnutls30:amd64 | 3.7.3-4ubuntu1.9 | GNU TLS library - main runtime library |
 | libgomp1:amd64 | 12.3.0-1ubuntu1~22.04.3 | GCC OpenMP (GOMP) support library |
 | libgpg-error0:amd64 | 1.43-3 | GnuPG development runtime library |
-| libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
+| libgssapi-krb5-2:amd64 | 1.19.2-2ubuntu0.12 | MIT Kerberos runtime libraries - krb5 GSS-API Mechanism |
 | libhogweed6:amd64 | 3.7.3-1build2 | low level cryptographic library (public-key cryptos) |
 | libidn2-0:amd64 | 2.3.2-2build1 | Internationalized domain names (IDNA2008/TR46) library |
 | libisl23:amd64 | 0.24-2build1 | manipulating sets and relations of integer points bounded by linear constraints |
 | libitm1:amd64 | 12.3.0-1ubuntu1~22.04.3 | GNU Transactional Memory Library |
 | libjq1:amd64 | 1.6-2.1ubuntu3.2 | lightweight and flexible command-line JSON processor - shared library |
-| libk5crypto3:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries - Crypto Library |
+| libk5crypto3:amd64 | 1.19.2-2ubuntu0.12 | MIT Kerberos runtime libraries - Crypto Library |
 | libkeyutils1:amd64 | 1.6.1-2ubuntu3 | Linux Key Management Utilities (library) |
-| libkrb5-3:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries |
-| libkrb5support0:amd64 | 1.19.2-2ubuntu0.10 | MIT Kerberos runtime libraries - Support library |
+| libkrb5-3:amd64 | 1.19.2-2ubuntu0.12 | MIT Kerberos runtime libraries |
+| libkrb5support0:amd64 | 1.19.2-2ubuntu0.12 | MIT Kerberos runtime libraries - Support library |
 | libldap-2.5-0:amd64 | 2.5.20+dfsg-0ubuntu0.22.04.1 | OpenLDAP libraries |
 | liblsan0:amd64 | 12.3.0-1ubuntu1~22.04.3 | LeakSanitizer -- a memory leak detector (runtime) |
 | liblz4-1:amd64 | 1.9.3-2build2 | Fast LZ compression algorithm library - runtime |
